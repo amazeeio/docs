@@ -1,4 +1,4 @@
-# Local Docker Development
+# amazee.io Local Drupal Docker Development
 
 amazee.io fully supports development work flows which involve local development sites. We provide a Docker development environment that runs on our local computer.
 It uses the exact same configuration for **all** services. This means:
