@@ -5,7 +5,7 @@
    * Get your Drupal Site hosted on amazee.io
    * Synchronize sites
 * [Local Docker Development](local_docker_development/local_docker_development.md)
-   * [Installation](local_docker_development/docker_installation.md)
+   * [Shared Containers](local_docker_development/docker_installation.md)
        * [OS X - Cachalot](local_docker_development/os_x_cachalot.md)
            * [Help](local_docker_development/os_x_cachalot/help.md)
            * [Extended Usage](local_docker_development/os_x_cachalot/extended_usage.md)
