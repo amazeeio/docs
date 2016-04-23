@@ -10,11 +10,17 @@ Installation of the amazee.io local Docker Development depends on each operating
 
 ## Installation
 
-- Clone this repo somehwere on your local computer
+- Clone the repo [amazeeio-docker](https://github.com/amazeeio/amazeeio-docker) somewhere on your local computer
+
+	```
+	git clone https://github.com/amazeeio/amazeeio-docker.git amazeeio-docker
+	```
+
 - Start the shared containers inside the cloned repo (they are defined that they automatically start themselves in the future)
 
 	```
-	docker-compose up -d
+	cd amazeeio-docker
+    docker-compose up -d
 	```
 
 ## Usage of development containers
