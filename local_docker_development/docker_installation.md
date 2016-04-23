@@ -1,21 +1,16 @@
 # Installation
 
 
-
 Installation of the amazee.io local Docker Development depends on each operating system:
  
 ## OS X
-You first need to install [amazee.io cachalot](./os_x_cachalot.md)
+- You first need to install [amazee.io cachalot](./os_x_cachalot.md)
+- [docker-compose](https://docs.docker.com/compose/install/) preferably installed via `brew install docker-compose`
 
 
-# amazee.io local Drupal Docker dev environment
-
-
-
-## Prerequirements
+## Prerequisites
 
 - [docker-compose](https://docs.docker.com/compose/install/)
-- OS X: [amazee.io cachalot](https://github.com/amazeeio/cachalot)
 
 ## Installation
 
