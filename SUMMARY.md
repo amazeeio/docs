@@ -6,7 +6,7 @@
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
    * [Installation](docker_installation.md)
-     * OS X - Cachalot
+       * [OS X - Cachalot](local_docker_development/os_x_cachalot.md)
    * Usage
        * Start shared containers
        * Create Drupal Containers
