@@ -5,7 +5,7 @@
    * Get your Drupal Site hosted on amazee.io
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
-   * Installation
+   * [Installation](docker_installation.md)
    * Usage
        * Start shared containers
        * Create Drupal Containers
