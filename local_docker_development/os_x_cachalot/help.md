@@ -45,7 +45,9 @@ The most common cause is the `DOCKER_*` environment variables not being set corr
 
     export DOCKER_HOST=tcp://192.168.99.101:2376
 
-This means your envionment variables aren't correctly set. Of course if `amazeeio-cachalot status` reports that the VM is stopped, you should run `amazeeio-cachalot up` as well.
+This means your environment variables aren't correctly set. 
+
+Of course if `amazeeio-cachalot status` reports that the VM is stopped, you should run `amazeeio-cachalot up` as well.
 
 ## The `docker` client reports errors like `x509: certificate is valid for 192.168.x.y, not 192.168.x.z`
 
