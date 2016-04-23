@@ -11,7 +11,7 @@ During [Part I](./shared_containers.md) we just started the shared Docker contai
 
 ## Connect into container
 
-To run commands like drush, git or other things within the container, you need to connect to the container.
+To run commands like `drush`, `git` or other things within the container, you need to connect to the container.
 
 	docker exec -itu drupal changeme.com.docker.amazee.io bash
 
