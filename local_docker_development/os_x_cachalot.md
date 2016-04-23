@@ -59,4 +59,22 @@ Commands:
 
 Cachalot installs a DNS server listening on the private interface, which resolves `*.docker.amazee.io` to the Cachalot VM.
 
+## NFS
+
+Cachalot shares your home directory (`/Users/<you>`) over NFS, using a private network interface between your host machine and the cachalot Docker Host. This sharing is done using a separate NFS daemon, not the system NFS daemon.
+
+## Upgrade
+
+To update cachalot itself, run
+
+    $ amazeeio-cachalot halt
+    $ brew update
+    $ brew upgrade cachalot
+    $ amazeeio-cachalot up
+
+To update the Docker VM, run:
+
+    $ amazeeio-cachalot upgrade
+
+This will run `docker-machine upgrade` and then restart the amazeeio-cachalot services.
 
