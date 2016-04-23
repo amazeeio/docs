@@ -15,7 +15,7 @@ To run commands like `drush`, `git` or other things within the container, you ne
 
 	docker exec -itu drupal changeme.com.docker.amazee.io bash
 
-replace `changeme.com.docker.amazee.io` with the docker container you want to connect to
+*Replace `changeme.com.docker.amazee.io` with the docker container you want to connect to*
 
 ## SSH Agent
 
@@ -25,7 +25,7 @@ If you have a passphrase protected SSH key or need another SSH Key, run this com
 
 	docker-compose run --rm ssh-agent_add_key ssh-add /ssh/id_rsa
 
-replace `id_rsa` with the ssh private key from your `~/ssh/` folder you would like to add, `/ssh/` is mounted from `~/ssh/`
+*Replace `id_rsa` with the ssh private key from your `~/ssh/` folder you would like to add, `/ssh/` is mounted from `~/ssh/`*
 
 ## Update Images
 
