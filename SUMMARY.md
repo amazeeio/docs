@@ -1,6 +1,10 @@
 # Summary
 
 * [Welcome](README.md)
+
+* Step by Step Guides
+  * Get your Drupal Site hosted on amazee.io
+  * Synchronize sites
 * Local Docker Development
   * Installation
   * Usage
@@ -8,11 +12,7 @@
     * Create Drupal Containers
     * SSH-Keys
     * Connect to MySQL from external
-    * 
   * Help
-* Step by Step Guides
-  * Get your Drupal Site hosted on amazee.io
-  * Synchronize sites
 * Architecture
   * stacks
     * single
@@ -23,11 +23,19 @@
   * URL structure
 * Drupal
   * settings.php files
+    * templates
+  * Environment variables
   * .amazeeio.yml file
+    * examples
 * Tools
   * xdebug
-  * blackfire
+  * blackfire.io
 * Deployments
   * production deployments
-  * development deployemnts
+  * development deployments
+  * 
+* Support
+  * Slack
+  * Mail
+  * 
 
