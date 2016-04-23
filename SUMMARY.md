@@ -12,7 +12,6 @@
        * SSH-Keys
        * Connect to MySQL from external
    * Help
-   * Cachalot
 * Architecture
    * stacks
        * single
