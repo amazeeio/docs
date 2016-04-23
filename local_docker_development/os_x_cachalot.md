@@ -1,4 +1,4 @@
-# OS X
+# OS X - Cachalot
 
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. 
  
@@ -38,7 +38,7 @@ To check that everything has been installed correctly:
 
 ## CLI Usage
 
-```bash
+```
 $ amazeeio-cachalot help
 Commands:
   amazeeio-cachalot create          # create the docker-machine VM
@@ -57,8 +57,7 @@ Commands:
 
 ## DNS
 
-Cachalot installs a DNS server listening on the private interface, which
-resolves \*.docker.amazee.io to the Cachalot VM.
+Cachalot installs a DNS server listening on the private interface, which resolves `*.docker.amazee.io` to the Cachalot VM.
 
 
 ## Preferences
