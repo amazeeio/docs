@@ -1,6 +1,6 @@
 # Part II: Drupal Site Containers
 
-During [Installation](./docker_installation.md)  we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
+During [Part I](./shared_containers.md) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
 1. Check your cloned repository and choose the example yaml file you need, see the table at the bottom to choose
 2. Copy the example file into your Drupal directory
@@ -27,6 +27,13 @@ If you have a passphrase protected SSH key or need another SSH Key, run this com
 
 replace `id_rsa` with the ssh private key from your `~/ssh/` folder you would like to add, `/ssh/` is mounted from `~/ssh/`
 
+## Update Images
+
+We constantly make improvemenets, updates and some other nice things to our container images. If you need to update the Docker Images to the newest version from the Docker Hub run:
+
+	docker-compose pull
+	docker-compose up -d
+
 ## Existing Docker Images
 
 | Example File  | PHP  | Services | Description |
@@ -36,9 +43,3 @@ replace `id_rsa` with the ssh private key from your `~/ssh/` folder you would li
 | `php70-composer` | 7.0 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
 | `php56-composer` | 5.6 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
 
-## Update Images
-
-If you need to update the Docker Images to the newest version from the Docker Hub run:
-
-	docker-compose pull
-	docker-compose up -d
