@@ -9,3 +9,13 @@ Cachalot creates a preferences file under ```HOME/.amazeeio-cachalot/preferences
   :create:
     provider: virtualbox
 ```
+## Overwrite machine name
+Per default cachalot creates a docker-machine whith the name `amazeeio-cachalot`. If you want to override this machine name (e.g. to change it to 'default' so it can work with Kitematic), it can be changed here. First, destroy your current amazeeio-cachalot VM and then add the following to your `preferences.yml` file:
+
+```
+:preferences:
+.
+.
+.
+  :machine_name: default
+```
