@@ -1,4 +1,4 @@
-# Connect to MySQL in Docker from external tools
+# Connect to MySQL in Docker Container
 
 If you like to connect to the MySQL Database inside the Docker container with an external Tool like [Sequel Pro](http://www.sequelpro.com/), [MySQL Workbench](http://www.mysql.com/products/workbench/), [HeidiSQL](http://www.heidisql.com/), [DBeaver](http://dbeaver.jkiss.org/), just plain old `mysql` cli or anything else.
 
