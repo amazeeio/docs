@@ -5,7 +5,6 @@
    * Get your Drupal Site hosted on amazee.io
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
-   * [OS X](docker_installation_os_x.md)
    * [Installation](docker_installation.md)
    * Usage
        * Start shared containers
