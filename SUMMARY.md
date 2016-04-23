@@ -6,12 +6,12 @@
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
    * [Installation](docker_installation.md)
-   * [OS X](docker_installation_os_x.md)
    * Usage
        * Start shared containers
        * Create Drupal Containers
        * SSH-Keys
        * Connect to MySQL from external
+   * [OS X](docker_installation_os_x.md)
    * Help
 * Architecture
    * stacks
