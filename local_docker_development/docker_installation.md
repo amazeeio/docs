@@ -22,5 +22,3 @@ Installation of the amazee.io local Docker Development depends on each operating
 	cd amazeeio-docker
     docker-compose up -d
 	```
-
-## 
