@@ -1,8 +1,8 @@
 # Usage
 
-Usage of development containers
+During [Installation](./docker_installation.md)  we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
-1. Choose the example yaml file you need, see the table at the bottom to choose
+1. Check your cloned repository and choose the example yaml file you need, see the table at the bottom to choose
 2. Copy the example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
 4. Edit the file according your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazeeio-docker can use it as well._
