@@ -13,5 +13,7 @@ This docker based Drupal Development environment consists of two parts:
 
 The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started with the `docker-compose.yml` in the repo folder.
 
+See [Installation](./docker_installation.md)
+
 ### Part II: Example Containers
 Example files for Drupal development containers, these are made to be copied into a Drupal root directory and to be started from there.
