@@ -29,7 +29,7 @@ If you have a passphrase protected SSH key or need another SSH Key, run this com
 
 ## Update Images
 
-We constantly make improvemenets, updates and some other nice things to our container images. If you need to update the Docker Images to the newest version from the Docker Hub run:
+We constantly make improvements, updates and some other nice things to our container images. If you need to update the Docker Images to the newest version from the Docker Hub run:
 
 	docker-compose pull
 	docker-compose up -d
