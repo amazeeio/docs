@@ -9,11 +9,10 @@ And the best: You don't need to have any amazee.io account or site running to us
 
 This docker based Drupal Development environment consists of two parts:
 
-### Part I: Shared Docker Containers
+### [Part I: Shared Docker Containers](./shared_containers.md)
 
 The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started with the `docker-compose.yml` in the repo folder.
 
-See [Installation](./docker_installation.md)
 
-### Part II: Example Containers
+### [Part II: Example Containers](./drupal_site_containers.md)
 Example files for Drupal development containers, these are made to be copied into a Drupal root directory and to be started from there.
