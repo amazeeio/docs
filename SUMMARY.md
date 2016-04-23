@@ -7,7 +7,7 @@
 * [Local Docker Development](local_docker_development.md)
    * [Installation](docker_installation.md)
        * [OS X - Cachalot](local_docker_development/os_x_cachalot.md)
-           * Help
+           * [Help](local_docker_development/os_x_cachalot/help.md)
            * [Extended Usage](local_docker_development/os_x_cachalot/extended_usage.md)
    * Usage
        * Start shared containers
