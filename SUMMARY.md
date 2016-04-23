@@ -10,7 +10,6 @@
            * [Help](local_docker_development/os_x_cachalot/help.md)
            * [Extended Usage](local_docker_development/os_x_cachalot/extended_usage.md)
    * [Drupal Site Containers](local_docker_development/drupal_site_containers.md)
-       * Create Drupal Containers
        * SSH-Keys
        * Connect to MySQL from external
    * Help
