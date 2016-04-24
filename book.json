@@ -3,7 +3,7 @@
         "atoc",
         "copy-code-button",
         "heading-anchors",
-        "headers"
+        "-headers"
     ],
     "pluginsConfig": {}
 }
