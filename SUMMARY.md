@@ -17,6 +17,7 @@
    * Stack-Types
        * Single
        * Cluster
+       * Compact
    * Environments
        * Production
        * Development
@@ -34,5 +35,7 @@
    * production deployments
    * development deployments
 * Support
-   * Slack
-   * Mail
+  * Slack
+  * Mail
+  * Statuspage
+* Regular Maintenance
