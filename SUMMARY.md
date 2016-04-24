@@ -3,6 +3,7 @@
 * [Welcome](README.md)
 * Step by Step Guides
    * Get your Drupal Site hosted on amazee.io
+     * Technical Requirements
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
    * [Shared Containers](local_docker_development/shared_containers.md)
@@ -13,16 +14,16 @@
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
    * Help
 * Architecture
-   * stacks
-       * single
-       * cluster
-   * environments
-       * production
-       * development
+   * Stack-Types
+       * Single
+       * Cluster
+   * Environments
+       * Production
+       * Development
    * URL structure
 * Drupal
    * settings.php files
-       * templates
+       * Templates
    * Environment variables
    * .amazeeio.yml file
        * examples
@@ -35,4 +36,3 @@
 * Support
    * Slack
    * Mail
-
