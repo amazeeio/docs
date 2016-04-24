@@ -35,7 +35,7 @@
    * production deployments
    * development deployments
 * Support
-  * Slack
-  * Mail
-  * Statuspage
+   * Slack
+   * Mail
+   * Statuspage
 * Regular Maintenance
