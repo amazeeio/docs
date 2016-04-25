@@ -2,6 +2,8 @@
 
 The compact stack is tailored for single-server environments and contains all Services on one server.
 
+![Compact Overview](compact.jpg)
+
 * Nginx  
 * Varnish  
 * Backend Nginx
