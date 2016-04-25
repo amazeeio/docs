@@ -1,2 +1,6 @@
-# GoLive on amazee.io
+# Going Live with amazee.io
 
+
+## DNS
+## Domains
+## SSL
