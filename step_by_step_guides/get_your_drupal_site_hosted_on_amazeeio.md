@@ -1,7 +1,7 @@
 # Get your Drupal Site hosted on amazee.io
 
 ##System Setup
-###Create site on
+###Prepare a site on amazee.io
 ###Configure ssh keys for accesssing the servers
 
 ##Configuration Files
