@@ -18,7 +18,7 @@
        * [Single](single.md)
        * [Cluster](cluster.md)
        * [Compact](compact.md)
-   * Environments
+   * [Environments](environments.md)
        * Production
        * Development
    * URL structure
