@@ -38,5 +38,5 @@
    * Slack
    * Mail
    * Statuspage
-* Regular Maintenance
+* [Regular Maintenance](regular_maintenance.md)
 
