@@ -9,7 +9,7 @@ Further read: [Set Up Git](https://help.github.com/articles/set-up-git/)
 
 [GitHub](http://github.com) and [BitBucket](http://bitbucket.org) are we-based Git repository hosting services. Both of them are fully compatible with our automated deployment system.
 
-The code of your Drupal website should be stored on one of those two hosters.
+The code of your Drupal website should be stored on one of those two hosters. This means the code is under your control all the time.
 
 
 ##SSH
