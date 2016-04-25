@@ -19,8 +19,10 @@ This is where Drupal is running
 * Database MariaDB
 
 ###Caching / Search:
-* Redis
-* Solr
+* Database MariaDB
+* In-Memory cache Redis
+* Search Apache Solr
+
 
 ###Filestorage
 * NFS File Server
