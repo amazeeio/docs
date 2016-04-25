@@ -5,7 +5,7 @@
    * [Technical Requirements](step_by_step_guides/technical_requirements.md)
    * [Get your Drupal Site hosted on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
    * Synchronize sites
-   * GoLive on amazee.io
+   * [GoLive on amazee.io](step_by_step_guides/step_by_step_guides/golive_on_amazeeio.md)
 * [Local Docker Development](local_docker_development/local_docker_development.md)
    * [Shared Containers](local_docker_development/shared_containers.md)
        * [OS X - Cachalot](local_docker_development/os_x_cachalot.md)
