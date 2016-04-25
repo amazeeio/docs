@@ -4,7 +4,7 @@ Our Single Stack consists of 3 Servers. This setup enables us to use specialized
 
 ### Frontend Server
 * **Frontend Nginx**  
-The frontend Nginx server takes care of SSL Termination and Redirects
+The frontend Nginx server takes care of SSL termination and Redirects
 * **Varnish**  
 Content which can be cached is cached in memory by Varnish
 
