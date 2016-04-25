@@ -2,11 +2,11 @@
 
 ##Preparation
 In order to get your website running on amazee.io you'll need to prepare three essential things:
-- Codebase  
+- **Codebase**  
 This is all your code including Drupal core, themes, modules. Best put this up on your GitHub or BitBucket Account
-- Database  
+- **Database**  
 Dump the whole Database in a file (to preserve some space and time to transfer compress the file with gzip)
-- Files  
+- **Files**  
 Everything under `sites/default/files` needs to be transfered over to the new environment.
 
 ##System Setup
