@@ -35,6 +35,5 @@
    * production deployments
    * development deployments
 * [Support](support.md)
-   * test
 * [Regular Maintenance](regular_maintenance.md)
 
