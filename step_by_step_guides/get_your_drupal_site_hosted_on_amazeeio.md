@@ -2,10 +2,11 @@
 
 ##System Setup
 ###Prepare a site on amazee.io
-###Configure ssh keys for accesssing the servers
+###Configure ssh keys for accesssing amazee.io
 
-##Configuration Files
+##Setup your site
+
 ###settings.php
 ###.amazeeio.yml
 
-##Setup Deployment Workflow
+##Setup automatic deployment
