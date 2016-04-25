@@ -1,6 +1,6 @@
-# Environment variables
+# Environment Variables
 
-Amazee.io exposes services to the webapplication by making use of environment variables.
+Amazee.io exposes services to the web application by making use of environment variables.
 
 | Variable   | Content  | Feature  |
 |---|---|---|
@@ -15,18 +15,8 @@ Amazee.io exposes services to the webapplication by making use of environment va
 |   |   |   |
 |   |   |   |
 
-Environment variables can be taken into the webapplication by making use of PHP's `getenv()` function.
+Environment variables can be access from your web application by using PHP's `getenv()` function.
 ```
-### AMAZEE.IO Database connection
-if(getenv('AMAZEEIO_SITENAME')){
-  $databases['default']['default'] = array(
-    'driver' => 'mysql',
-    'database' => getenv('AMAZEEIO_SITENAME'),
-    'username' => getenv('AMAZEEIO_DB_USERNAME'),
-    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
-    'host' => getenv('AMAZEEIO_DB_HOST'),
-    'port' => getenv('AMAZEEIO_DB_PORT'),
-    'prefix' => '',
-  );
-
+$database_username = getenv('AMAZEEIO_DB_USERNAME');
 ```
+For more information about the configuration of Drupal please see: 
