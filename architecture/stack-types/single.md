@@ -18,4 +18,4 @@ This is where Drupal is running
 ###Database / Caching / Search:
 * Database MariaDB
 * In-Memory cache Redis
-* Search Solr
+* Search Apache Solr
