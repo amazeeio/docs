@@ -15,10 +15,10 @@ Amazee.io exposes services to the web application by making use of environment v
 | AMAZEEIO_REDIS_PORT       | Redis Port         | Redis     |
 | AMAZEEIO_SITE_BRANCH      |                    | System    |
 | AMAZEEIO_SITE_ENVIRONMENT |                    | System    |
-| AMAZEEIO_SITE_NAME        |                    |System|
-| AMAZEEIO_SITE_URL         |                    |System|
-| AMAZEEIO_SITEBRANCH       |                    |System|
-| AMAZEEIO_SITENAME         |                    |System|
+| AMAZEEIO_SITE_NAME        |                    | System    |
+| AMAZEEIO_SITE_URL         |                    | System    |
+| AMAZEEIO_SITEBRANCH       |                    | System    |
+| AMAZEEIO_SITENAME         |                    | System    |
 | AMAZEEIO_SOLR_HOST        | Solr Host          | Solr      |
 | AMAZEEIO_SOLR_PORT        | Solr Port          | Solr      |
 | AMAZEEIO_VARNISH_HOSTS    |                    | Varnish   |
