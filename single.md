@@ -4,13 +4,14 @@ Our Single Stack consists of 3 Servers:
 This setup enables us to use specialized hardware configurations for certain workloads. For example the Database server can be tailored to use SSD storage.
 
 ### Frontend server
-* frontend Nginx
+* frontend Nginx  
 The frontend Nginx server takes care of SSL Termination and Redirects
-* Varnish
+* Varnish  
 Content which can be cached is cached in memory by Varnish
+
 ### Backend server 
 This is where Drupal is running
-* backend nginx
+* backend Nginx
 * PHP-FPM
 
 
