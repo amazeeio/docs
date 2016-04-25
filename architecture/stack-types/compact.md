@@ -7,5 +7,5 @@ The compact stack is taylored for single-server environments and contains all Se
 * Backend Nginx
 * PHP-FPM
 * Database MariaDB
-* Redis
-* Solr
+* In-Memory cache Redis
+* Search Apache Solr
