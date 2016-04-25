@@ -34,7 +34,7 @@
 * Deployments
    * production deployments
    * development deployments
-* Support
+* [Support](support.md)
    * Mail
    * Statuspage
 * Regular Maintenance
