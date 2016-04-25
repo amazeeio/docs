@@ -1,7 +1,8 @@
 {
     "plugins": [
         "atoc",
-        "copy-code-button"
+        "copy-code-button",
+        "heading-anchors"
     ],
     "pluginsConfig": {}
 }
