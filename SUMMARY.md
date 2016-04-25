@@ -25,7 +25,7 @@
    * [URL structure](url_structure.md)
 * Drupal
    * [settings.php files](settingsphp_files.md)
-       * Templates
+       * [Templates](templates.md)
    * [Environment variables](environment_variables.md)
    * [.amazeeio.yml file](amazeeioyml_file.md)
 * Tools
