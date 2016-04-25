@@ -1,6 +1,6 @@
 # Support
 
-## Support Mail
+## Mail
 If you have issues with the systems or need help feel free to send us a mail to support@amazee.io
 
 ## Slack Team
