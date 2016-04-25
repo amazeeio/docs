@@ -2,6 +2,8 @@
 
 Our Single Stack consists of 3 Servers. This setup enables us to use specialized hardware configurations for certain workloads. For example the Database server can be tailored to use SSD storage and have more Memory than the internet facing servers.
 
+![Single Stack Overview](single.jpg)
+
 ### Frontend Server
 * **Frontend Nginx**  
 The frontend Nginx server takes care of SSL termination and redirects
