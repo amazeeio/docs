@@ -1,5 +1,6 @@
 # .amazeeio.yml file
 
+The Deployment checks if a .amazeeio.yml file is present. This file is used for running tasks during an actual deployment.
 
 ```
 deploy_tasks:
