@@ -9,5 +9,4 @@ HTTP/1.1 200 OK
 Server: nginx
 [...]
 X-Robots-Tag: noindex, nofollow
-
 ```
