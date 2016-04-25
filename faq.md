@@ -10,3 +10,6 @@ Server: nginx
 [...]
 X-Robots-Tag: noindex, nofollow
 ```
+
+## I need a special nginx.conf / solr core configuration
+Send us a mail to support
