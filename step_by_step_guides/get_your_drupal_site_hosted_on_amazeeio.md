@@ -38,7 +38,9 @@ if(getenv('AMAZEEIO_SITENAME')){
 if (getenv('AMAZEEIO_SITE_URL')) {
   $base_url = 'http://' . getenv('AMAZEEIO_SITE_URL');
 }
-````
+```
+
+For more complex configuration examples head over to [Settings.php Files](./drupal/settings_php_files)
 
 
 
