@@ -4,7 +4,7 @@
 If you have issues with the systems or need help feel free to send us a mail to support@amazee.io
 
 ## Slack Team
-Customers have access to our Slack Chat where ongoing deployments and status information is passed on: [Get your account now.](https://slackinvite.me/to/amazeeio)
+Customers have access to our Slack Chat. In Slack you can see ongoing deployments and status information: [Get your account now.](https://slackinvite.me/to/amazeeio)
 
 ## Status Page
 Overal Systems status is published here:  [http://status.amazee.io/](http://status.amazee.io/)
