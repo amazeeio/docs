@@ -1,7 +1,5 @@
 # settings.php files
 
-# Templates
-
 ##settings.php
 ```
 <?php
