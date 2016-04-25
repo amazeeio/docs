@@ -24,7 +24,7 @@
        * Development
    * [URL structure](architecture/url_structure.md)
 * Drupal
-   * [settings.php files](drupal/settingsphpfiles_md.md)
+   * [settings.php Files](drupal/settingsphpfiles_md.md)
    * [Environment variables](drupal/environment_variables.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
