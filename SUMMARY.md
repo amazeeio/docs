@@ -6,7 +6,6 @@
    * Technical Requirements
    * Technical Requirements
    * [Get your Drupal Site hosted on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
-       * Technical Requirements
    * Synchronize sites
    * GoLive on amazee.io
 * [Local Docker Development](local_docker_development/local_docker_development.md)
