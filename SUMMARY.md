@@ -25,7 +25,7 @@
    * [URL structure](architecture/url_structure.md)
    * Platform Limitations
 * Drupal
-   * [settings.php Files](drupal/settingsphpfiles_md.md)
+   * [settings.php Files](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
