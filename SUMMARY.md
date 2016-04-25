@@ -16,7 +16,7 @@
    * Help
 * [Architecture](architecture.md)
    * [Stack-Types](stack-types.md)
-       * [Single](single.md)
+       * [Single](architecture/stack-types/single.md)
        * [Cluster](cluster.md)
        * [Compact](compact.md)
    * [Environments](environments.md)
