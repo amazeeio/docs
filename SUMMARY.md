@@ -1,12 +1,12 @@
 # Summary
 
 * [Welcome](README.md)
-* [Step by Step Guides](step_by_step_guides.md)
-   * [Get your Drupal Site hosted on amazee.io](get_your_drupal_site_hosted_on_amazeeio.md)
-       * Technical Requirements
-   * Synchronize sites
-   * GoLive on amazee.io
-* [Local Docker Development](local_docker_development.md)
+* [Step by Step Guides](step_by_step_guides/step_by_step_guides.md)
+   * [Technical Requirements](step_by_step_guides/technical_requirements.md)
+   * [Get your Drupal Site hosted on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
+   * [Synchronize Sites](step_by_step_guides/synchronize_sites.md)
+   * [GoLive on amazee.io](step_by_step_guides/step_by_step_guides/golive_on_amazeeio.md)
+* [Local Docker Development](local_docker_development/local_docker_development.md)
    * [Shared Containers](local_docker_development/shared_containers.md)
        * [OS X - Cachalot](local_docker_development/os_x_cachalot.md)
            * [Help](local_docker_development/os_x_cachalot/help.md)
@@ -14,27 +14,26 @@
    * [Drupal Site Containers](local_docker_development/drupal_site_containers.md)
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
    * Help
-* [Architecture](architecture.md)
-   * [Stack-Types](stack-types.md)
-       * [Single](single.md)
-       * [Cluster](cluster.md)
-       * [Compact](compact.md)
-   * [Environments](environments.md)
+* [Architecture](architecture/architecture.md)
+   * [Stack-Types](architecture/stack-types.md)
+       * [Single](architecture/stack-types/single.md)
+       * [Cluster](architecture/stack-types/cluster.md)
+       * [Compact](architecture/stack-types/compact.md)
+   * [Environments](architecture/environments.md)
        * Production
        * Development
-   * [URL structure](url_structure.md)
+   * [URL structure](architecture/url_structure.md)
 * Drupal
-   * [settings.php files](settingsphp_files.md)
-       * Templates
-   * [Environment variables](environment_variables.md)
-   * [.amazeeio.yml file](amazeeioyml_file.md)
-       * examples
+   * [settings.php files](drupal/settingsphpfiles_md.md)
+   * [Environment variables](drupal/environment_variables.md)
+   * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
-   * xdebug
-   * blackfire.io
+   * Xdebug
+   * Blackfire.io
 * Deployments
-   * production deployments
-   * development deployments
+   * Production Deployments
+   * Development Deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
+* [FAQ](faq.md)
 
