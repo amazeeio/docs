@@ -3,7 +3,7 @@
 
 ## DNS
 
-`entry.<location>.<stack>.amazee.io`
+`lb.<location>.<stack>.amazee.io`
 
 ## Domains
 ## SSL
