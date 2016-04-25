@@ -26,7 +26,7 @@
    * settings.php files
        * Templates
    * Environment variables
-   * .amazeeio.yml file
+   * [.amazeeio.yml file](amazeeioyml_file.md)
        * examples
 * Tools
    * xdebug
