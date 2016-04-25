@@ -9,7 +9,7 @@ Customers have access to our Slack Chat where ongoing deployments and status inf
 ## Status Page
 Overal Systems status is published here:  [http://status.amazee.io/](http://status.amazee.io/)
 
-## Changelog
+## Change Log
 Weekly changelogs are published here [https://headwayapp.co/amazeeio-changelog](https://headwayapp.co/amazeeio-changelog)
 
 ## 24/7 On Duty Call
