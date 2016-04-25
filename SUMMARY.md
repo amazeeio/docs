@@ -15,19 +15,19 @@
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
    * Help
 * [Architecture](architecture.md)
-   * [Stack-Types](stack-types.md)
+   * [Stack-Types](architecture/stack-types.md)
        * [Single](architecture/stack-types/single.md)
-       * [Cluster](cluster.md)
-       * [Compact](compact.md)
-   * [Environments](environments.md)
+       * [Cluster](architecture/stack-types/cluster.md)
+       * [Compact](architecture/stack-types/compact.md)
+   * [Environments](architecture/environments.md)
        * Production
        * Development
-   * [URL structure](url_structure.md)
+   * [URL structure](architecture/url_structure.md)
 * Drupal
-   * [settings.php files](settingsphp_files.md)
-       * [Templates](templates.md)
-   * [Environment variables](environment_variables.md)
-   * [.amazeeio.yml file](amazeeioyml_file.md)
+   * [settings.php files](drupal/settingsphp_files.md)
+       * [Templates](drupal/templates.md)
+   * [Environment variables](drupal/environment_variables.md)
+   * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
    * xdebug
    * blackfire.io
@@ -36,4 +36,3 @@
    * development deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
-
