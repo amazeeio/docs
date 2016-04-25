@@ -1,6 +1,7 @@
 # Summary
 
 * [Welcome](README.md)
+   * test
 * [Step by Step Guides](step_by_step_guides.md)
    * [Get your Drupal Site hosted on amazee.io](get_your_drupal_site_hosted_on_amazeeio.md)
        * Technical Requirements
@@ -36,3 +37,4 @@
    * development deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
+
