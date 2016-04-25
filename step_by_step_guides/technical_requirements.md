@@ -1,2 +1,5 @@
 # Technical Requirements
 
+##Git
+
+##SSH
