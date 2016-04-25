@@ -19,4 +19,4 @@ SSH consists of two Keys:
 - A **public key** stored on the amazee.io systemss
 
 ###Create SSH Key
-###Configure amazee.io access for your ssh keys
+
