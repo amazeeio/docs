@@ -30,7 +30,7 @@
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
    * Xdebug
-   * blackfire.io
+   * Blackfire.io
 * Deployments
    * Production Deployments
    * Development Deployments
