@@ -1,2 +1,2 @@
-# Synchronize sites
+# Synchronize Sites
 
