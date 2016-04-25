@@ -28,7 +28,6 @@
        * Templates
    * [Environment variables](environment_variables.md)
    * [.amazeeio.yml file](amazeeioyml_file.md)
-       * examples
 * Tools
    * xdebug
    * blackfire.io
