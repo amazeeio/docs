@@ -26,7 +26,7 @@
 * Drupal
    * [settings.php files](settingsphp_files.md)
        * Templates
-   * Environment variables
+   * [Environment variables](environment_variables.md)
    * [.amazeeio.yml file](amazeeioyml_file.md)
        * examples
 * Tools
