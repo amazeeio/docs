@@ -5,7 +5,10 @@ Git is a version control system that is widely used for software development and
 
 [Set Up Git](https://help.github.com/articles/set-up-git/)
 
-## GitHub / 
+## GitHub / BitBucket
+
+[GitHub](http://github.com) and [BitBucket](http://bitbucket.org) are we-based Git repository hosting services. Both of them are compatible with our automated deployment system.
+
 
 ##SSH
 SSH consists of two Keys:
