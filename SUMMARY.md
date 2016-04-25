@@ -3,7 +3,7 @@
 * [Welcome](README.md)
 * Step by Step Guides
    * Get your Drupal Site hosted on amazee.io
-     * Technical Requirements
+       * Technical Requirements
    * Synchronize sites
 * [Local Docker Development](local_docker_development.md)
    * [Shared Containers](local_docker_development/shared_containers.md)
@@ -35,7 +35,7 @@
    * production deployments
    * development deployments
 * Support
-   * Slack
    * Mail
    * Statuspage
 * Regular Maintenance
+
