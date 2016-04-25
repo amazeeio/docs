@@ -18,6 +18,27 @@ Everything under `sites/default/files` needs to be transfered over to the new en
 ###settings.php
 Amazee.io has the abillity to configure the site automatically according to the environment which the site is currently running. This means there are no hardcoded passwords or usernames anymore. In turn this needs some changes to the already existing settings.php files. 
 
+```
+### AMAZEE.IO Database connection
+if(getenv('AMAZEEIO_SITENAME')){
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => getenv('AMAZEEIO_SITENAME'),
+    'username' => getenv('AMAZEEIO_DB_USERNAME'),
+    'password' => getenv('AMAZEEIO_DB_PASSWORD'),
+    'host' => getenv('AMAZEEIO_DB_HOST'),
+    'port' => getenv('AMAZEEIO_DB_PORT'),
+    'prefix' => '',
+  );
+}
+
+### Base URL
+if (getenv('AMAZEEIO_SITE_URL')) {
+  $base_url = 'http://' . getenv('AMAZEEIO_SITE_URL');
+}
+````
+
+
 
 ###.amazeeio.yml
 
