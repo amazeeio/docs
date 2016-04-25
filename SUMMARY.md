@@ -33,7 +33,7 @@
    * blackfire.io
 * Deployments
    * Production Deployments
-   * development deployments
+   * Development Deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
