@@ -18,3 +18,5 @@ SSH consists of two Keys:
 - A **private key** which must be kept secret by the user at all times
 - A **public key** stored on the amazee.io systemss
 
+###Create SSH Key
+###Configure amazee.io access for your ssh keys
