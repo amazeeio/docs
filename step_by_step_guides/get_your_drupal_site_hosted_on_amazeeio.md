@@ -9,8 +9,6 @@ Dump the whole Database in a file (to preserve some space and time to transfer c
 - Files  
 Everything under `sites/default/files` needs to be ported over to the new environment.
 
-
-
 ##System Setup
 ###Prepare a site on amazee.io
 ###Configure ssh keys for accesssing amazee.io
@@ -18,6 +16,9 @@ Everything under `sites/default/files` needs to be ported over to the new enviro
 ##Setup your site
 
 ###settings.php
+Amazee.io has the abillity to configure the site automatically according to the environment which the site is currently running. This means there are no hardcoded passwords or usernames anymore. In turn this needs some changes to the already existing settings.php files. 
+
+
 ###.amazeeio.yml
 
 ##Setup automatic deployment
