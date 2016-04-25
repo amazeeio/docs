@@ -23,7 +23,7 @@
        * Development
    * URL structure
 * Drupal
-   * settings.php files
+   * [settings.php files](settingsphp_files.md)
        * Templates
    * Environment variables
    * [.amazeeio.yml file](amazeeioyml_file.md)
