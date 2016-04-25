@@ -16,7 +16,7 @@ The code of your Drupal website should be stored on one of those two hosters.
 SSH consists of two Keys:
 
 - A **private key** which must be kept secret by the user at all times
-- A **public key** stored on the amazee.io systemss
+- A **public key** stored on the amazee.io systems
 
 ###Create SSH Key
 
