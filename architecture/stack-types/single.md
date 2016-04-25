@@ -17,5 +17,5 @@ This is where Drupal is running
 
 ###Database / Caching / Search:
 * Database MariaDB
-* Redis
-* Solr
+* In-Memory cache Redis
+* Search Solr
