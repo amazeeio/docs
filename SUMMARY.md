@@ -17,7 +17,7 @@
    * [Stack-Types](stack-types.md)
        * [Single](single.md)
        * [Cluster](cluster.md)
-       * Compact
+       * [Compact](compact.md)
    * Environments
        * Production
        * Development
