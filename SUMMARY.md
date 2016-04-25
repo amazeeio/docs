@@ -29,7 +29,7 @@
    * [Environment variables](drupal/environment_variables.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * Tools
-   * xdebug
+   * Xdebug
    * blackfire.io
 * Deployments
    * Production Deployments
