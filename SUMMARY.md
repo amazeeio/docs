@@ -32,7 +32,7 @@
    * xdebug
    * blackfire.io
 * Deployments
-   * production deployments
+   * Production Deployments
    * development deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
