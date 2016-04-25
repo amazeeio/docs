@@ -14,7 +14,7 @@
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
    * Help
 * [Architecture](architecture.md)
-   * Stack-Types
+   * [Stack-Types](stack-types.md)
        * Single
        * Cluster
        * Compact
