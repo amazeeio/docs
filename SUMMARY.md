@@ -4,7 +4,6 @@
    * test
 * [Step by Step Guides](step_by_step_guides/step_by_step_guides.md)
    * Technical Requirements
-   * Technical Requirements
    * [Get your Drupal Site hosted on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
    * Synchronize sites
    * GoLive on amazee.io
