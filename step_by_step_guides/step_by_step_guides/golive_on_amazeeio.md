@@ -3,7 +3,7 @@
 
 ## DNS
 
-`lb.<location>.<stack>.amazee.io`
+`<loadbalancer-name>.hosted.on.amazee.io`
 
 ## Domains
 ## SSL
