@@ -35,7 +35,16 @@ The best to solve issues around not accessible docker sites is to try to turning
 
 ## Cachalot starts with `DNS failed to run`
 
-Do the same as above, start at Nr. 2
+Do the same as above, start at Nr. 2.
+If after that it still does not work, check if your brew installation works, do that with:
+  
+    brew doctor
+
+## Cachalot starts with `NFS failed to run`
+
+Check if your brew installation works, do that with 
+  
+    brew doctor
 
 ## The `docker` client gives an SSL error or times out
 
