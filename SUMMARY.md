@@ -26,7 +26,7 @@
    * [settings.php Files](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
-* Tools
+* [Tools](tools.md)
    * Xdebug
    * Blackfire.io
 * [Deployments](deployments.md)
