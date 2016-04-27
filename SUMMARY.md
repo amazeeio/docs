@@ -29,7 +29,7 @@
 * Tools
    * Xdebug
    * Blackfire.io
-* Deployments
+* [Deployments](deployments.md)
    * Production Deployments
    * Development Deployments
 * [Support](support.md)
