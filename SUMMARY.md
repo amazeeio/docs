@@ -21,7 +21,6 @@
        * Production
        * Development
    * [URL structure](architecture/url_structure.md)
-   * [Platform Limitations](architecture/platform_limitations.md)
 * [Synchronize Sites](step_by_step_guides/synchronize_sites.md)
 * Drupal
    * [settings.php Files](drupal/settingsphpfiles.md)
