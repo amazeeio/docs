@@ -1,7 +1,7 @@
 # Get your Drupal Site hosted on amazee.io
 
 ##Preparation
-In order to get your website running on amazee.io you'll need to prepare three essential things:
+To get your website running on amazee.io you'll need to prepare three essential things:
 - **Codebase**  
 This is all your code including Drupal core, themes, modules. Best put this up on your GitHub or BitBucket Account
 - **Database**  
