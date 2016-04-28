@@ -13,10 +13,9 @@
     },
     "title": "docs.amazee.io",
     "links": {
-        // Custom links at top of sidebar
         "sidebar": {
             "www.amazee.io": "https://www.amazee.io"
-        },
+        }
     }
 }
 
