@@ -16,7 +16,7 @@
         "sidebar": {
             "www.amazee.io": "https://www.amazee.io"
         },
-        "home": false
+        "home": "test"
     }
 }
 
