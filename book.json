@@ -11,6 +11,11 @@
             "footerPath" : "layouts/footer.html"
         }
     },
-    "title": "docs.amazee.io"
+    "title": "docs.amazee.io",
+    "links": {
+        "sidebar": {
+            "wwwasdf.amazee.io": "https://www.amazee.io"
+        }
+    }
 }
 
