@@ -20,6 +20,7 @@
    * [Environments](architecture/environments.md)
        * Production
        * Development
+       * E-Mail Delivery
    * [URL structure](architecture/url_structure.md)
 * [Synchronize Sites](step_by_step_guides/synchronize_sites.md)
 * Drupal
