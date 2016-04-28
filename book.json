@@ -14,8 +14,9 @@
     "title": "docs.amazee.io",
     "links": {
         "sidebar": {
-            "wwwasdf.amazee.io": "https://www.amazee.io"
-        }
+            "www.amazee.io": "https://www.amazee.io"
+        },
+        "home": "test"
     }
 }
 
