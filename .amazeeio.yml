@@ -1,0 +1,6 @@
+deploy_tasks:
+  production:
+    before_deploy:
+      - npm install gitbook-cli
+      - node ./node_modules/gitbook-cli/bin/gitbook.js fetch
+      - node ./node_modules/gitbook-cli/bin/gitbook.js build
