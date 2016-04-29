@@ -4,8 +4,7 @@
         "copy-code-button",
         "heading-anchors",
         "layout",
-        "gtm",
-        "-page-footer"
+        "gtm"
     ],
     "pluginsConfig": {
         "layout": {
