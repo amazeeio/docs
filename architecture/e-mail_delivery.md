@@ -6,6 +6,7 @@ amazee.io enables you to send out mails from any environment. There is a local M
 - [AmazonSES](https://aws.amazon.com/ses/?nc1=h_ls)
 - [Mailjet](https://www.mailjet.com/)
 
+If you plan in using an external Mail Provider you can make use of the Drupal SMTP Authentication Module.
 ## Mail Rerouting for enviroments
 We support the possibility to reroute mails sent from Drupal. You can enable this setting for every site you host on amazee.io
 
