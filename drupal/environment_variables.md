@@ -9,7 +9,7 @@ Amazee.io exposes services to the web application by making use of environment v
 | AMAZEEIO_DB_PASSWORD      | Database Password  | Database  |
 | AMAZEEIO_DB_PORT          | Database Port      | Database  |
 | AMAZEEIO_DB_USERNAME      | Database Username  | Database  |
-| AMAZEEIO_HOSTINGSTACK     |                    | System    |
+| AMAZEEIO_HOSTINGSTACK     | The stack identifier you are running on                    | System    |
 | AMAZEEIO_LOCATION         |                    | System    |
 | AMAZEEIO_REDIS_HOST       | Redis Host         | Redis     |
 | AMAZEEIO_REDIS_PORT       | Redis Port         | Redis     |
