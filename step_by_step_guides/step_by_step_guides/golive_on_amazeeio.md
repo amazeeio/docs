@@ -12,13 +12,11 @@ To make it as easy as possible for you to get your site pointing to our servers 
 
 Configuring the root domain (e.g. example.com) can be a bit tricky because the DNS specification does not allow to have the root domain pointed to a CNAME entry. Depending on your DNS Provider the record name is different:
 
-- ALIAS at DNSimple
-- ANAME at DNS Made Easy
-- ANAME at easyDNS
-- ALIAS at PointDNS
-- Alias record at Zerigo
-- CNAME at CloudFlare.
-
+- ALIAS at [DNSimple](https://dnsimple.com/)
+- ANAME at [DNS Made Easy](http://www.dnsmadeeasy.com/)
+- ANAME at [easyDNS](https://www.easydns.com/)
+- ALIAS at [PointDNS](https://pointhq.com/)
+- CNAME at [CloudFlare](https://www.cloudflare.com/).
 
 
 ## Domains
