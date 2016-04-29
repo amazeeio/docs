@@ -5,7 +5,7 @@
         "heading-anchors",
         "layout",
         "gtm",
-        "-light-it"
+        "light-it"
     ],
     "pluginsConfig": {
         "layout": {
