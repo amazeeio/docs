@@ -4,5 +4,3 @@ This documentation will give you insights into amazee.io and helps you getting y
 
 Getting started with the [Step by Step Guides](./step_by_step_guides) and the [Local Docker Development](./local_docker_development).
 
-[i] test
-
