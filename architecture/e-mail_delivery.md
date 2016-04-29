@@ -15,4 +15,4 @@ We support the possibility to reroute mails sent from Drupal. You can enable thi
 ## SPF Records
 We list our outgoing mailservers in a SPF Entry. If you send mails via amazee.io we suggest to add this record to your DNS.
 
-> example.com.IN	TXT	"v=spf1 a mx include:spf.amazee.io ?all"
+> example.com.  IN  TXT  "v=spf1 a mx include:spf.amazee.io ?all"
