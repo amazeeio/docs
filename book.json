@@ -4,7 +4,8 @@
         "copy-code-button",
         "heading-anchors",
         "layout",
-        "gtm"
+        "gtm",
+        "light-it"
     ],
     "pluginsConfig": {
         "layout": {
