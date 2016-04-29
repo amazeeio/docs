@@ -24,7 +24,7 @@
    * [URL structure](architecture/url_structure.md)
 * [Synchronize Sites](step_by_step_guides/synchronize_sites.md)
 * Drupal
-   * [Drupal Configuration - settings.php](drupal/settingsphpfiles.md)
+   * [Drupal Configuration](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
 * [Tools](tools.md)
