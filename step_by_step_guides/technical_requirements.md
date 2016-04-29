@@ -11,7 +11,7 @@ Git is a version control system that is widely used for software development and
 The code of your Drupal website should be stored on one of those two hosters we are working on adding more hosters (i.e. Gitlab). This means the code is under your control all the time.
 
 ##Secure Socket Shell (SSH)
-To keep our systems secure and access easily revokable we don't set static passwords on any amazee.io system. Every user access is tied to an SSH Key. 
+To keep our systems secure and access easily revokable we don't set static passwords on any amazee.io systems. Every user access is tied to an SSH Key. 
 
 SSH consists of two Keys:
 
