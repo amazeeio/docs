@@ -5,7 +5,3 @@
 `example.com.staging.us1.amazee.io`
 
 ## Production URLs
-
-
-
-P
