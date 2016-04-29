@@ -14,7 +14,7 @@ Amazee.io exposes services to the web application by making use of environment v
 | AMAZEEIO_REDIS_HOST       | Redis Host         | Redis     |
 | AMAZEEIO_REDIS_PORT       | Redis Port         | Redis     |
 | AMAZEEIO_SITE_BRANCH      | The branch configured for your site                   | System    |
-| AMAZEEIO_SITE_ENVIRONMENT | Environment (production / development                   | System    |
+| AMAZEEIO_SITE_ENVIRONMENT | Environment (production / development)                   | System    |
 | AMAZEEIO_SITE_NAME        |                    | System    |
 | AMAZEEIO_SITE_URL         |                    | System    |
 | AMAZEEIO_SITEBRANCH       |                    | System    |
