@@ -4,7 +4,8 @@
         "copy-code-button",
         "heading-anchors",
         "layout",
-        "gtm"
+        "gtm",
+        "page-footer"
     ],
     "pluginsConfig": {
         "layout": {
@@ -13,7 +14,7 @@
         },
         "gtm": {
             "token": "GTM-MRPMJ2"
-        }        
+        }
     },
     "title": "docs.amazee.io",
     "links": {
