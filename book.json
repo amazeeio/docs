@@ -6,7 +6,7 @@
         "layout",
         "gtm",
         "-page-footer",
-        "livereload"
+        "-livereload"
     ],
     "pluginsConfig": {
         "layout": {
