@@ -5,7 +5,7 @@
         "heading-anchors",
         "layout",
         "gtm",
-        "page-footer"
+        "-page-footer"
     ],
     "pluginsConfig": {
         "layout": {
