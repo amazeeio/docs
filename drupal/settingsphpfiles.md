@@ -1,4 +1,4 @@
-# Drupal Configuration settings.php
+# Drupal Configuration - settings.php
 
 ##settings.php
 ```
