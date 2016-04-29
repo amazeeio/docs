@@ -29,4 +29,4 @@ Environment variables can be access from your web application by using PHP's `ge
 ```
 $database_username = getenv('AMAZEEIO_DB_USERNAME');
 ```
-For more information about the configuration of Drupal please see: [Settings.php Files](./settings_php_files)
+For more information about the configuration of Drupal please see: [Settings.php Files](./settingsphpfiles)
