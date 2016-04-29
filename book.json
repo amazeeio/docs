@@ -2,7 +2,24 @@
     "plugins": [
         "atoc",
         "copy-code-button",
-        "heading-anchors"
+        "heading-anchors",
+        "layout",
+        "gtm"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "layout": {
+            "headerPath": "layouts/header.html",
+            "footerPath": "layouts/footer.html"
+        },
+        "gtm": {
+            "token": "GTM-MRPMJ2"
+        }        
+    },
+    "title": "docs.amazee.io",
+    "links": {
+        "sidebar": {
+            "www.amazee.io": "https://www.amazee.io"
+        },
+        "home": "test"
+    }
 }
