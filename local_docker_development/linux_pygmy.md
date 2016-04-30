@@ -72,7 +72,7 @@ If you like to cleanup though, use `pygmy down` to really remove the Docker cont
 
     $ pygmy update
     
-After it updated all containers, it will restart them as well.
+After it updated all containers, it will recreate them as well.
 
 
 ### Update `pygmy`
