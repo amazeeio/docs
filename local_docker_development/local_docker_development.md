@@ -1,7 +1,7 @@
 # amazee.io Local Drupal Docker Development
 
 amazee.io fully supports development work flows which involve local development sites. We provide a Docker development environment that runs on our local computer.
-It uses the exact same configuration for **all** services. This means:
+It uses the exact same configuration for **all** services like on production. This means:
  - If the site runs locally, it also runs on production
  - You can use the exact same `settings.php` file for local and production
 
@@ -11,7 +11,7 @@ This docker based Drupal Development environment consists of two parts:
 
 ### [Part I: Shared Docker Containers](./shared_containers.md)
 
-The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started with the `docker-compose.yml` in the repo folder.
+The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX or `pygmy` for Linux.
 
 
 ### [Part II: Example Containers](./drupal_site_containers.md)
