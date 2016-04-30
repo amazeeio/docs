@@ -5,7 +5,7 @@
 * Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
 * If on Linux: Add `nameserver 127.0.0.1` to your `/etc/resolv.conf` file, so that your local Linux can resolve `*.docker.amazee.io` via the dnsmasq container
 * If on Mac with Docker Beta: Create the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq container
-* Try to add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
+* Trying to add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
 
 
 
@@ -20,6 +20,4 @@
 
     $ pygmy up
 
-Multiple things will happen now:
-
-1. 
+`pygmy` will now start all the required Docker containers and add the ssh key.
