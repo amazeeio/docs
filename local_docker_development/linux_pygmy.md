@@ -26,6 +26,10 @@ If you don't run the new Docker for Mac Beta: Sorry `pygmy` is not for you, we h
 
 `pygmy` will now start all the required Docker containers and add the ssh key.
 
+## Help
+
+See Help for `pygmy`
+
 ## CLI Usage
 
 ```
