@@ -3,7 +3,7 @@
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. 
 
 {% hint style='info' %}
-Important info: this note needs to be highlighted
+If you already are using the Docker Mac Beta client, please head over to the `pygmy`, it is fully compatible to Docker Mac Beta.
 {% endhint %}
 
 Currently we provide our own system to run on OS X. Its called **cachalot** and can be found here: https://github.com/amazeeio/cachalot
@@ -61,7 +61,7 @@ Commands:
 
 ## DNS
 
-Cachalot installs a DNS server listening on the private interface, which resolves `*.docker.amazee.io` to the Cachalot VM.
+Cachalot installs a DNS server, which resolves `*.docker.amazee.io` to the Cachalot VM.
 
 ## NFS
 
