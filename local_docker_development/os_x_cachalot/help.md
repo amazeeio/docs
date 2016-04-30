@@ -1,4 +1,4 @@
-# OS X Cachalot Help
+# OS X `cachalot` Help
 
 <!-- toc -->
 
