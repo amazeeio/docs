@@ -14,7 +14,7 @@ The best to solve issues around not accessible docker sites is to try to turning
 1. Halt cachalot with (check that there are no errors)
 
   `amazeeio-cachalot halt`
-1. Take the first number (here 2139) and kill it with:
+1. Kill the dnsmasq service:
 
   `sudo killall dnsmasq`
 1. Tell OS X to update it's DNS cache:
