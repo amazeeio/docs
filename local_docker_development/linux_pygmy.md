@@ -16,7 +16,7 @@
 #### Installation
     $ gem install pygmy
 
-#### Usage
+#### Start
 
     $ pygmy up
 
