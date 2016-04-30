@@ -39,6 +39,7 @@ Commands:
 ```
 
 ### Adding ssh keys
+
 Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
 
     $ pygmy addkey /Users/amazeeio/.ssh/my_other_key
@@ -47,6 +48,7 @@ Call the `addkey` command with the **absolute** path to the key you would like t
     Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key) 
     
 ### Checking the status
+
 Run `pygmy status` and `pygmy` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
 
     $ pygmy status
@@ -59,6 +61,7 @@ Run `pygmy status` and `pygmy` will tell you how it fells right now and which ss
     
 
 ### `pygmy down` vs `pygmy stop`
+
 `pygmy` behaves like Docker, it's a whale in the end!  
 During regular development `pygmy stop` is perfectly fine, it will keep the Docker containers still alive, just in stopped state.
 If you like to cleanup though, use `pygmy down` to really remove the Docker containers.
