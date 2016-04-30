@@ -79,7 +79,7 @@ After it updated all containers, it will recreate them as well.
 
 `pygmy` gets new releases sometimes and who doesn't like them, so much excitement for new functionality!
 
-As rubygems does not remove old versions of gems when updating, you should remove old version after a new version has beein installed.
+As rubygems does not remove old versions of gems when updating, you should remove old version after a new version has been installed.
 
 First update:
 
