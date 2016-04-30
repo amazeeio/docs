@@ -65,3 +65,53 @@ Run `pygmy status` and `pygmy` will tell you how it fells right now and which ss
 `pygmy` behaves like Docker, it's a whale in the end!  
 During regular development `pygmy stop` is perfectly fine, it will keep the Docker containers still alive, just in stopped state.
 If you like to cleanup though, use `pygmy down` to really remove the Docker containers.
+
+### Update Docker Containers inside `pygmy`
+
+`pygmy` can update shared docker containers for you:
+
+    $ pygmy update
+    
+
+
+
+### Update `pygmy`
+
+`pygmy` gets new releases sometimes and who doesn't like them, so much excitement for new functionality!
+
+As rubygems does not remove old versions of gems when updating, you should remove old version after a new version has beein installed.
+
+First update:
+
+    $ gem update pygmy
+    
+    Updating installed gems
+    Updating pygmy
+    Successfully installed pygmy-0.9.4
+    Parsing documentation for pygmy-0.9.4
+    Installing ri documentation for pygmy-0.9.4
+    Installing darkfish documentation for pygmy-0.9.4
+    Done installing documentation for pygmy after 0 seconds
+    Parsing documentation for pygmy-0.9.4
+    Done installing documentation for pygmy after 0 seconds
+    Gems updated: pygmy
+
+A new version!
+
+Now uninstall the old one:
+
+    $ gem uninstall pygmy
+
+    Select gem to uninstall:
+     1. pygmy-0.9.3
+     2. pygmy-0.9.4
+     3. All versions
+    > 1
+    Successfully uninstalled pygmy-0.9.3
+
+check the correct version:
+
+    $ pygmy -v
+    
+    Pygmy - Version: 0.9.4
+
