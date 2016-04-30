@@ -1,25 +1,26 @@
 {
-  "plugins": [
-    "atoc",
-    "copy-code-button",
-    "heading-anchors",
-    "layout",
-    "gtm"
-  ],
-  "pluginsConfig": {
-    "layout": {
-      "headerPath": "layouts/header.html",
-      "footerPath": "layouts/footer.html"
+    "plugins": [
+        "atoc",
+        "copy-code-button",
+        "heading-anchors",
+        "layout",
+        "gtm",
+        "hints"
+    ],
+    "pluginsConfig": {
+        "layout": {
+            "headerPath": "layouts/header.html",
+            "footerPath": "layouts/footer.html"
+        },
+        "gtm": {
+            "token": "GTM-MRPMJ2"
+        }
     },
-    "gtm": {
-      "token": "GTM-MRPMJ2"
+    "title": "docs.amazee.io",
+    "links": {
+        "sidebar": {
+            "www.amazee.io": "https://www.amazee.io"
+        },
+        "home": "test"
     }
-  },
-  "title": "docs.amazee.io",
-  "links": {
-    "sidebar": {
-      "www.amazee.io": "https://www.amazee.io"
-    },
-    "home": "test"
-  }
 }
