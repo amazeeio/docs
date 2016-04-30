@@ -9,9 +9,13 @@ It uses the exact same configuration for **all** services like on production. Th
 
 This docker based Drupal Development environment consists of two parts:
 
-### [Part I: Shared Docker Containers](./shared_containers.md)
+### Part I: Shared Docker Containers
 
 The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX or `pygmy` for Linux.
+
+#### Part I for OS X `cachalot`
+
+#### Part I for Linux `pygmy`
 
 
 ### [Part II: Example Containers](./drupal_site_containers.md)
