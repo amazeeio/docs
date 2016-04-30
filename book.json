@@ -5,7 +5,8 @@
         "heading-anchors",
         "layout",
         "gtm",
-        "hints"
+        "hints",
+        "advanced-emoji"
     ],
     "pluginsConfig": {
         "layout": {
