@@ -1,7 +1,11 @@
 # Linux `pygmy`
-With beeing able to run Docker natively on Linux, the setup with Linux is a bit easier.
+`pygmy` is the single tool needed to get the amazee.io Docker Drupal Development Environment running on your Linux based system. It is also capable of working together with the very new and still in beta 
 
-`pygmy` will start:
+`pygmy` will handle for you:
+* Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
+* If on Linux: Add `nameserver 127.0.0.1` to your `/etc/resolv.conf` file, so that your local Linux can resolve `*.docker.amazee.io` via the dnsmasq container
+* If on Mac with Docker Beta: Create the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq container
+* Try to add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
 
 
 
