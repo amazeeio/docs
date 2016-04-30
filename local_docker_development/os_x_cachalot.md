@@ -1,7 +1,11 @@
 # OS X - Cachalot
 
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. 
- 
+
+{% hint style='info' %}
+Important info: this note needs to be highlighted
+{% endhint %}
+
 Currently we provide our own system to run on OS X. Its called **cachalot** and can be found here: https://github.com/amazeeio/cachalot
 
 Cachalot provides faster volume sharing via NFS, Filesystem event forwarding and easier access to the sites via a DNS server.
