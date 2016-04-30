@@ -14,11 +14,11 @@
 2. Ruby, see [the official guides ](https://www.ruby-lang.org/en/documentation/installation/)
 
 ## Installation
-    gem install pygmy
+    $ gem install pygmy
 
 ## Start
 
-    pygmy up
+    $ pygmy up
 
 `pygmy` will now start all the required Docker containers and add the ssh key.
 
