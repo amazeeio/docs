@@ -11,6 +11,7 @@
            * [Help](local_docker_development/os_x_cachalot/help.md)
            * [Extended Usage](local_docker_development/os_x_cachalot/extended_usage.md)
        * [Linux - `pygmy`](local_docker_development/linux_pygmy.md)
+           * Help
    * [Drupal Site Containers](local_docker_development/drupal_site_containers.md)
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
    * Help
