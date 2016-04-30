@@ -66,7 +66,7 @@ Run `pygmy status` and `pygmy` will tell you how it fells right now and which ss
 During regular development `pygmy stop` is perfectly fine, it will keep the Docker containers still alive, just in stopped state.
 If you like to cleanup though, use `pygmy down` to really remove the Docker containers.
 
-### Update Docker Containers inside `pygmy`
+### Update Docker Containers with `pygmy`
 
 `pygmy` can update shared docker containers for you:
 
