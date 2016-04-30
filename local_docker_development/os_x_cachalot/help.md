@@ -8,7 +8,7 @@ Solutions to many common problems can be found here.
 
 The best to solve issues around not accessible docker sites is to try to turning it off and on again:
 
-1. Make sure everything runs via
+1. Make sure everything is running
 
   `amazeeio-cachalot status`
 1. Halt cachalot with (check that there are no errors)
