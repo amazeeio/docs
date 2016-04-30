@@ -1,4 +1,4 @@
-# OS X - Cachalot
+# OS X `cachalot`
 
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. 
 
