@@ -3,12 +3,9 @@
 
 Installation of the amazee.io local Docker Development depends on each operating system:
 
-## Installation - OS X
-- You first need to install [amazee.io cachalot](./os_x_cachalot.md)
-- [docker-compose](https://docs.docker.com/compose/install/) preferably installed via `brew install docker-compose`
+## Installation - OS X `cachalot`
 
-Please see Brew documentation for installing bew on your Mac.
-
+## Installation - Linux `pygmy`
 
 ## Test
 
