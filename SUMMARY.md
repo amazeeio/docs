@@ -29,14 +29,14 @@
    * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
    * Blackfire.io
-   * [CDN Integration](tools/cdn_integration.md)
-   * New Relic
    * Xdebug
+* Add-ons
+   * [CDN Integration](add-on/cdn_integration.md)
    * Dropguard
+   * New Relic
 * Automated Deployments
    * Production Deployments
    * Development Deployments
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
-
