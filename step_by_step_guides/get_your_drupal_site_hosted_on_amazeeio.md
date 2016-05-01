@@ -13,7 +13,7 @@ Dump the whole Database in a file (to preserve some space and time to transfer c
 Everything under `sites/default/files` needs to be transferred over to the new environment.
 
 
-## Site configuration
+## Site Setup
 
 ### Step 1: Get Drupal Docker Development Environment
 
@@ -129,6 +129,8 @@ Thats it! Now visit the URL you defined for you Docker Container in your browser
 Congratulations! You just created your first amazee.io Drupal Site!
 
 <img src="../giphy.gif" width="200">
+
+
 
 ###.amazeeio.yml
 
