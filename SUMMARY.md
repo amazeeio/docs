@@ -32,6 +32,7 @@
    * [CDN Integration](tools/cdn_integration.md)
    * New Relic
    * Xdebug
+   * Dropguard
 * Automated Deployments
    * Production Deployments
    * Development Deployments
