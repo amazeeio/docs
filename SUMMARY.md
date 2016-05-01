@@ -9,7 +9,6 @@
    * [Shared Containers](local_docker_development/shared_containers.md)
        * [OS X - `cachalot`](local_docker_development/os_x_cachalot.md)
            * [Help](local_docker_development/os_x_cachalot/help.md)
-           * [Extended Usage](local_docker_development/os_x_cachalot/extended_usage.md)
        * [Linux - `pygmy`](local_docker_development/linux_pygmy.md)
            * [Help](local_docker_development/pygmy/help.md)
    * [Drupal Site Containers](local_docker_development/drupal_site_containers.md)
