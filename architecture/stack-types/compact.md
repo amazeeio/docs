@@ -1,6 +1,6 @@
 # Compact
 
-The compact stack (sometimes also refered as single stack) is tailored for single-server environments and contains all Services on one server.
+The compact stack (sometimes also referred as single stack) is tailored for single-server environments and contains all Services on one server.
 
 ![Schematic overview compact stack](compact.jpg)
 All services are running on the same server:
@@ -9,5 +9,4 @@ All services are running on the same server:
 * Frontend Caching: Varnish  
 * FastCGI Process Manager: PHP-FPM
 * Database MariaDB
-* In-Memory cache Redis
 * Search Apache Solr

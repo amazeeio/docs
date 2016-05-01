@@ -6,7 +6,7 @@ Solutions to many common problems can be found here.
 
 ## Cannot access any docker sites
 
-The best to solve issues around not accessible docker sites is to try to turning it off and on again:
+The best to solve issues around not accessible docker sites is to try to turn it off and on again:
 
 1. Make sure everything is running correctly
       
@@ -33,7 +33,7 @@ First check that `cachalot` is actually running:
 
 If not, start it : )
 
-Other common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `amazeeio-cachalot status` from the same terminal window. If it displays a message such as
+Another common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `amazeeio-cachalot status` from the same terminal window. If it displays a message such as
 
     Environment variables not set.
 
@@ -57,12 +57,12 @@ Unfortunately, there isn't yet a one-size-fits-all solution for sharing folders 
 Because cachalot is geared toward development, it optimizes for sharing source code directories between the containers and host, and then uses NFS for performance. This works really well for editing code in OS X and seeing the changes immediately in your running containers, but can cause problems with mounting volumes from the host in some containers that expect files to be owned by certain users, since the files can't be successfully chown'd to the user running in the container.
 
 In practice, this means that it's usually best to run containers such as
-postgres using a normal docker volume, rather than a host-shared volume. This is the default, so normally nothing needs to be done, but you may run into chown errors or other file permissions issues if you try to mount a host volume into such containers.
+Postgres using a normal docker volume, rather than a host-shared volume. This is the default, so normally nothing needs to be done, but you may run into chown errors or other file permissions issues if you try to mount a host volume into such containers.
 
 For more background on the decisions made here, see the discussion in issues such as https://github.com/codekitchen/dinghy/issues/31 and
 https://github.com/codekitchen/dinghy/issues/15
 
-In the future this may be solvable using user namespacing, which was introduced in a very limited form in docker 1.10. It would also be possible in theory to modify the NFS server process to do things such as ignore chown commands, but this isn't currently planned.
+In the future, this may be solvable using user namespacing, which was introduced in a very limited form in docker 1.10. It would also be possible in theory to modify the NFS server process to do things such as ignore chown commands, but this isn't currently planned.
 
 ## I can't connect to an app running in docker from another VM (commonly to test in IE)
 
@@ -71,6 +71,3 @@ If you are running the Windows VM in VirtualBox, you can configure it to use the
     VBoxManage modifyvm "IE11 - Win10" --natdnshostresolver1 on
 
 Replace `"IE11 - Win10"` with the name of your VM. This will allow the VM to resolve and connect directly to your `http://*.docker.amazee.io` services running in cachalot.
-
-
-
