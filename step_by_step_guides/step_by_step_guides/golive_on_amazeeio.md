@@ -6,7 +6,9 @@ To make it as easy as possible for you to get your site pointing to our servers 
 
 **Example:** `<loadbalancer-name>.hosted.on.amazee.io`
 
-> **Note:** We strongly suggest to not configure any static IP address in your DNS Zones. Our loadbalancer infrastructure may change over time which can have impact on your site availability if you configured a static IP address.
+{% hint style='info' %}
+**Note:** We strongly suggest to not configure any static IP address in your DNS Zones. Our loadbalancer infrastructure may change over time which can have impact on your site availability if you configured a static IP address.
+{% endhint %}
 
 ###Root Domains
 
