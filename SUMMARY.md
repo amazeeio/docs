@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Step by Step Guides](step_by_step_guides/step_by_step_guides.md)
-   * [Technical Requirements](step_by_step_guides/technical_requirements.md)
    * [Get your Drupal Site hosted on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
+   * [Technical Requirements](step_by_step_guides/technical_requirements.md)
    * [GoLive on amazee.io](step_by_step_guides/golive_on_amazeeio.md)
 * [Local Docker Development](local_docker_development/local_docker_development.md)
    * [Shared Containers](local_docker_development/shared_containers.md)
@@ -37,3 +37,4 @@
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
+
