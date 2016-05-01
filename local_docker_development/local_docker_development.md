@@ -26,8 +26,16 @@ The Docker Containers which will run Drupal. These are made to be copied into a 
 
 The amazee.io Local Docker Drupal Development environment equipes you with all the tools you need to develop your Drupal site locally:
 
-* Nginx  
-Fully configured for Drupal 7 and Drupal 8
+* Webserver: Nginx
+* Frontend Caching: Varnish
+* FastCGI Process Manager: PHP-FPM
+* Server-side Scripting Language: PHP
+* Database: MariaDB
+* Search: Apache Solr
+* Composer
+* NodeJS
+
+For more information about software componentes used in the amazee.io Stack head over to the [Components](../architecture/components.md) overview page.
 
 ## How this works
 
