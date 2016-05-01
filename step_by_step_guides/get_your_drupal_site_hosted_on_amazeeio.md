@@ -1,4 +1,4 @@
-# Get your Drupal site hosted on amazee.io
+# Get your Drupal Site running on amazee.io
 
 <!-- toc -->
 
