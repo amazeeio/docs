@@ -1,5 +1,9 @@
 # Drupal Configuration - settings.php
 
+This page lists a sample settings.php file structure which allows you to configure your drupal site according to the environment the site is running in. Those example files are taken from a Drupal8 Site.
+
+<!-- toc -->
+
 ##settings.php
 ```
 <?php
