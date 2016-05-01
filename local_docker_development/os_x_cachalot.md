@@ -14,7 +14,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 * Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
 * Add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
 
-#### Prerequisites
+### Prerequisites
 
 1. OS X Yosemite (10.10) or higher
 1. [Homebrew](https://github.com/Homebrew/homebrew)
@@ -25,7 +25,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
     * [VMware Fusion](http://www.vmware.com/products/fusion).
     * [Parallels](https://www.parallels.com/products/desktop/) installed with [docker-machine-parallels](https://github.com/Parallels/docker-machine-parallels).
 
-#### Installation
+## Installation
 
 Install cachalot via Brew:
 
