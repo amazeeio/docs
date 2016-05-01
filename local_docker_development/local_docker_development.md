@@ -18,9 +18,9 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 ##### [Documentation for Linux `pygmy`](local_docker_development/linux_pygmy.md)
 
 
-### [Part II: Example Containers](./drupal_site_containers.md)
+### [Part II: Drupal Docker Containers](./drupal_site_containers.md)
 
-Example files for Drupal development containers, these are made to be copied into a Drupal root directory and to be started from there with `docker-compose`
+The Docker Containers which will run Drupal. Tthese are made to be copied into a Drupal root directory and to be started from there with `docker-compose`.[ Read how they are used](./drupal_site_containers.md).
 
 
 ## How it works
