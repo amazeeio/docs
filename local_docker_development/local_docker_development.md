@@ -20,7 +20,7 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 
 ### [Part II: Example Containers](./drupal_site_containers.md)
 
-Example files for Drupal development containers, these are made to be copied into a Drupal root directory and to be started from there.
+Example files for Drupal development containers, these are made to be copied into a Drupal root directory and to be started from there with `docker-compose`
 
 
 ## How it works
