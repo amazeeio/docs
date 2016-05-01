@@ -19,6 +19,11 @@ Join us in our Slack channel and we will help you right away: [slack.amazee.io](
 Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
 
 
-## more about amazee.io
+## Blog
 
-Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
+Find our stories at [stories.amazee.io](https://stories.amazee.io)
+
+
+## Changelog
+
+We are releasing new features every week to the amazee.io universe, find them at: [changelog.amazee.io](http://changelog.amazee.io) 
