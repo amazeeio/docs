@@ -52,9 +52,9 @@ Replace `amazeeio-cachalot` with the VM machine name if you aren't using the def
 
 ## I'm running into file permissions issues on the NFS mounted volumes
 
-Unfortunately, there isn't yet a one-size-fits-all solution for sharing folders from the host OS X machine into the Linux VM and then into the docker containers, and permissions issues are sometimes a problem. This isn't an issue unique to Dinghy, and is a common point of discussion in projects like Docker Machine as well.
+Unfortunately, there isn't yet a one-size-fits-all solution for sharing folders from the host OS X machine into the Linux VM and then into the docker containers, and permissions issues are sometimes a problem. This isn't an issue unique to cachalot, and is a common point of discussion in projects like Docker Machine as well.
 
-Because Dinghy is geared toward development, it optimizes for sharing source code directories between the containers and host, and then uses NFS for performance. This works really well for editing code in OS X and seeing the changes immediately in your running containers, but can cause problems with mounting volumes from the host in some containers that expect files to be owned by certain users, since the files can't be successfully chown'd to the user running in the container.
+Because cachalot is geared toward development, it optimizes for sharing source code directories between the containers and host, and then uses NFS for performance. This works really well for editing code in OS X and seeing the changes immediately in your running containers, but can cause problems with mounting volumes from the host in some containers that expect files to be owned by certain users, since the files can't be successfully chown'd to the user running in the container.
 
 In practice, this means that it's usually best to run containers such as
 postgres using a normal docker volume, rather than a host-shared volume. This is the default, so normally nothing needs to be done, but you may run into chown errors or other file permissions issues if you try to mount a host volume into such containers.
