@@ -6,7 +6,8 @@
         "layout",
         "gtm",
         "hints",
-        "advanced-emoji"
+        "advanced-emoji",
+        "toc"
     ],
     "pluginsConfig": {
         "layout": {
