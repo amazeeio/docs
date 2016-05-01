@@ -57,7 +57,7 @@ Call the `addkey` command with the **absolute** path to the key you would like t
     
 ### Checking the status
 
-Run `pygmy status` and `pygmy` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
+Run `pygmy status` and `pygmy` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
 
     $ pygmy status
     
