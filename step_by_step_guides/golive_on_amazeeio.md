@@ -1,4 +1,4 @@
-# Going Live with amazee.io
+# Going Live on amazee.io
 
 <!-- toc -->
 

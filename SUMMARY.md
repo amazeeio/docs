@@ -21,8 +21,8 @@
     * Development
   * [E-Mail Delivery](architecture/e-mail_delivery.md)
   * [Stack Components](architecture/components.md)
-  * [URL structure](architecture/url_structure.md)
-* Drupal
+  * URL Structure
+* [Drupal](drupal/drupal.md)
   * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
   * [Drupal Configuration](drupal/settingsphpfiles.md)
   * [Environment Variables](drupal/environment_variables.md)
