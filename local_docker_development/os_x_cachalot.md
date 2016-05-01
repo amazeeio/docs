@@ -120,5 +120,5 @@ To update the Docker VM, run:
 
     $ amazeeio-cachalot upgrade
 
-This will run `docker-machine upgrade` and then restart the amazeeio-cachalot services.
+This will run `docker-machine upgrade` and then restart everything.
 
