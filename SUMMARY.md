@@ -32,7 +32,7 @@
    * Xdebug
 * Add-ons
    * [CDN Integration](add-on/cdn_integration.md)
-   * Dropguard
+   * [Dropguard](dropguard.md)
    * New Relic
 * Automated Deployments
    * Production Deployments
@@ -40,3 +40,4 @@
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
+
