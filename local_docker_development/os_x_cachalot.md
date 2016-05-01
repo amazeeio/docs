@@ -40,9 +40,7 @@ You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memor
 
 Once the VM is up, you'll get instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM. We suggest adding that to your `~/.bashrc` so that they are available all times.
 
-To check that everything has been installed correctly:
-
-    $ docker run hello-world
+To check that everything has beein installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
 ## CLI Usage
 
