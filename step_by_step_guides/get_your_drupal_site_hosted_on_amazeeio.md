@@ -1,5 +1,6 @@
 # Get your Drupal site hosted on amazee.io
 
+<!-- toc -->
 
 ## Preparation
 
