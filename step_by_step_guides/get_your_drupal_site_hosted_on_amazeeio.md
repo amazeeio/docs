@@ -1,4 +1,4 @@
-# Get your Drupal Site hosted on amazee.io
+# Get your Drupal site hosted on amazee.io
 
 ## Preparation
 
@@ -11,16 +11,18 @@ Dump the whole Database in a file (to preserve some space and time to transfer c
 Everything under `sites/default/files` needs to be transferred over to the new environment.
 
 
-## Step 1: Get Drupal Docker Development Environment
+## Site configuration
 
-The best and easiest way to get your site running on an amazee.io server, is first to get it running inside our Drupal Docker Development Environment. 
+### Step 1: Get Drupal Docker Development Environment
 
-### settings.php
+The best and easiest way to get your site running on an amazee.io server, is first to get it running inside our [Drupal Docker Development Environment](local_docker_development/local_docker_development.md). The Docker Environment is exactly the same as the amazee.io servers, so if you site is running inside the Docker Environment, it will also run on the amazee.io servers.
+
+## Step 2: settings.php
 
 amazee.io has an unique environment variable system, which will tell your Drupal all about the database servers, it's base URL, etc. 
 This means there are no hardcoded passwords or usernames anymore. In turn this needs some changes to the already existing settings.php files.
 
-Following you find a very basic example to configure the connection to the database.
+Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
 ```
 ### amazee.io Database connection
@@ -42,9 +44,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-
-
-For more complex configuration examples head over to [Settings.php Files](./drupal/settingsphpfiles.html)
+We do not suggest to just use this simple configuration for production sites, but for now it's all good. See 
 
 
 
