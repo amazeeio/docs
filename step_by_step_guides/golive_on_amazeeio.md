@@ -25,4 +25,4 @@ Configuring the root domain (e.g. example.com) can be a bit tricky because the D
 amazee.io allows you to point several domains to a single site. We recommend to use just one main domain and redirect the other domains to the main domain. This is better for SEO and easier for you to manage the sites.
 
 ## SSL/HTTPS
-You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site support@amazeelabs.com
+You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site support@amazee.io
