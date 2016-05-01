@@ -33,7 +33,7 @@ The amazee.io Local Docker Drupal Development environment equipes you with all t
 * Database: MariaDB
 * Search: Apache Solr
 * Dependency Manager for PHP: Composer
-* NodeJS
+* NodeJS / NPM
 
 For more information about software componentes used in the amazee.io Stack head over to the [Components](../architecture/components.md) overview page.
 

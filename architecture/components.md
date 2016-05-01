@@ -14,7 +14,7 @@ Fully configured out of the box for Drupal 7 and Drupal 8. [Nginx](http://nginx.
 
 ## Frontend Caching: Varnish
 
-[Varnish](https://www.varnish-cache.org/) is an HTTP accelerator designed for content-heavy dynymic websites. Varnish is used by many high-profile, high-traffic websites including Wikipedia or The Guardian. We're using Varnish since a long time and he never let us down. As traffic spikes, he'll get you covered.
+[Varnish](https://www.varnish-cache.org/) is an HTTP accelerator designed for content-heavy dynamic websites. Varnish is used by many high-profile, high-traffic websites including Wikipedia or The Guardian. We're using Varnish since a long time and he never let us down. As traffic spikes, he'll get you covered.
 
 ## FastCGI Process Manager: PHP-FPM
 
@@ -26,16 +26,17 @@ Every request is passed from PHP-FPM to PHP and is executed there. amazee.io sup
 
 ## Database: MariaDB
 
-[MariaDB](https://mariadb.org/) is a community developed fork of the well known MySQL database system. It's intended to be a drop-in replacement for MySQL. It comes with a couple of performance enhancements and new storage engines such as XtraDB.
+[MariaDB](https://mariadb.org/) is a community-developed fork of the well-known MySQL database system. It's intended to be a drop-in replacement for MySQL. It comes with a couple of performance enhancements and new storage engines such as XtraDB.
 
 ## Search: Apache Solr
 
-Solr is a search engine based on Apache Lucene™ which is used by Drupal modules such as [Search Api Solr Search](https://www.drupal.org/project/search_api_solr).
+Solr is a search engine based on Apache Lucene™ which is used by Drupal modules such as [Search API Solr Search](https://www.drupal.org/project/search_api_solr).
 
 ## Tools
 
 ### Dependency Manager for PHP: Composer
 
-Web development would be much more complicate if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
+Web development would be much more complicated if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
 
-### NodeJS
+### NodeJS / NPM
+[NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM
