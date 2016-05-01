@@ -70,6 +70,26 @@ $ amazeeio-cachalot help
   amazeeio-cachalot version                 # display amazeeio_cachalot version
 ```
 
+### Adding ssh keys
+
+Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
+
+    $ amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
+    
+    Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
+    Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key) 
+    
+### Checking the status
+
+Run `pygmy status` and `pygmy` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
+
+    $ pygmy status
+    
+    [*] Dnsmasq: Running as docker container amazeeio-dnsmasq
+    [*] Haproxy: Running as docker container amazeeio-haproxy
+    [*] Resolv is properly configured
+    [*] ssh-agent: Running as docker container amazeeio-ssh-agent, loaded keys:
+    4096 SHA256:QWzGNs1r2dfdfX2PHdPi5sdMxdsuddUbPSi7HsrRAwG43sHI /Users/amazeeio/.ssh/my_other_key (RSA)
 
 ## Upgrade
 
