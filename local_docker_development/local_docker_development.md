@@ -1,7 +1,5 @@
 # amazee.io Local Drupal Docker Development
 
-<!-- toc -->
-
 amazee.io fully supports development work flows which involve local development sites. We provide a Drupal Docker development environment that runs on our local computer.
 It uses the exact same configuration for **all** services like on the amazee.io servers. This means:
  - If the site runs locally, it also runs on production
@@ -11,16 +9,16 @@ It uses the exact same configuration for **all** services like on the amazee.io 
 
 This docker based Drupal Development environment consists of two parts:
 
-## Part I: Shared Docker Containers
+### Part I: Shared Docker Containers
 
 The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX or `pygmy` for Linux.
 
-### [Documentation for OS X `cachalot`](./os_x_cachalot.md)
+##### [Documentation for OS X `cachalot`](./os_x_cachalot.md)
 
-### [Documentation for Linux `pygmy`](./linux_pygmy.md)
+##### [Documentation for Linux `pygmy`](./linux_pygmy.md)
 
 
-## [Part II: Drupal Docker Containers](./drupal_site_containers.md)
+### [Part II: Drupal Docker Containers](./drupal_site_containers.md)
 
 The Docker Containers which will run Drupal. These are made to be copied into a Drupal root directory and to be started from there with `docker-compose`.[ Read how they are used](./drupal_site_containers.md)
 
@@ -29,11 +27,11 @@ The Docker Containers which will run Drupal. These are made to be copied into a 
 
 Docker is super awesome and the perfect tool for local development. There are some hurdles though:
 
-### Exposed ports
+#### Exposed ports
 
 If multiple Docker containers are exposing the same port it assignes a random port to the exposed port. In our case this would mean, that each Drupal Container which would like to listen on Port 80 would get a random port like 34564 assigned. As they are random assigned it would be a lot of hazzle of figuring out which port that the Drupal is found, additionally Drupal doesn't like to run on another Port then 80 or 443 so much.  
 
-### SSH Keys
+#### SSH Keys
 
 It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase procted key (as you should!). You would need to enter the passphrase for each container that you start. Not a lot of fun.  
 
@@ -51,7 +49,7 @@ The environment starts 3 containers:
 * [amazeeio/haproxy](https://hub.docker.com/r/amazeeio/haproxy/) Docker container which will listen on port 80 and 443. It additionally listens to the Docker socket, realize when you start a new Drupal Container and adapt fully automatically it's haproxy configuration (thanks to the awesome tool [docker-gen](https://github.com/jwilder/docker-gen)). It forwards HTTP and HTTPs requests to the correct Drupal Container. With that we can access all Drupal Containers via a single Port.
 * [amazeeio/ssh-agent](https://hub.docker.com/r/amazeeio/ssh-agent/) Docker container which will keeps an ssh-agent at hand for the other Drupal Containers. With that the Drupal Containers do not need to handle ssh-agenting themselves
 
-### Schema for Linux (native Docker)
+#### Schema for Linux (native Docker)
 
 ```
                                             +--------------------------------------------------------------------+
@@ -94,7 +92,7 @@ The environment starts 3 containers:
                                             +--------------------------------------------------------------------+
 ```
 
-### Schema for OS X (with boot2docker virtual machine)
+#### Schema for OS X (with boot2docker virtual machine)
 ```
                                           +-------------------------------------------------------------------------------+
                                           |                                                                               |
@@ -141,5 +139,4 @@ The environment starts 3 containers:
                                           |       |                                                                    |  |
                                           |       +--------------------------------------------------------------------+  |
                                           |                                                                               |
-                                          +-------------------------------------------------------------------------------+
-```
+                                          +-------------------------------------------------------------------------------+```

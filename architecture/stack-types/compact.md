@@ -2,9 +2,8 @@
 
 The compact stack (sometimes also refered as single stack) is tailored for single-server environments and contains all Services on one server.
 
-![Schematic overview compact stack](compact.jpg)  
-
-All services are running on the same server:  
+![Schematic overview compact stack](compact.jpg)
+All services are running on the same server:
 
 * Nginx (Frontend and Backend)
 * Varnish  
