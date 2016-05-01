@@ -107,6 +107,14 @@ Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it fell
 
     amazee.io wishes happy Drupaling!
 
+## Update Docker Containers with `cachalot`
+
+`cachalot` can update shared docker containers for you:
+
+    $ amazeeio-cachalot docker_update
+    
+After it updated all containers, it will recreate them as well.
+
 ## Upgrade
 
 To update cachalot itself, run
