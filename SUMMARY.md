@@ -28,8 +28,9 @@
   * [Environment Variables](drupal/environment_variables.md)
   * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
-  * Xdebug
   * Blackfire.io
+  * NewRelic
+  * Xdebug
 * Automated Deployments
   * Production Deployments
   * Development Deployments
