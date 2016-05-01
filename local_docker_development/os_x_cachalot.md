@@ -83,13 +83,29 @@ Call the `addkey` command with the **absolute** path to the key you would like t
 
 Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
 
-    $ pygmy status
+    $ amazeeio-cachalot status
     
-    [*] Dnsmasq: Running as docker container amazeeio-dnsmasq
-    [*] Haproxy: Running as docker container amazeeio-haproxy
-    [*] Resolv is properly configured
-    [*] ssh-agent: Running as docker container amazeeio-ssh-agent, loaded keys:
-    4096 SHA256:QWzGNs1r2dfdfX2PHdPi5sdMxdsuddUbPSi7HsrRAwG43sHI /Users/amazeeio/.ssh/my_other_key (RSA)
+    [virtual machine]
+    running
+
+    [services]
+    NFS: running
+    FsEvents: running
+
+    [resolver]
+    Resolver: correctly configured
+
+    [docker containers]
+    Haproxy: Running as docker container amazeeio-haproxy
+    Dnsmasq: Running as docker container amazeeio-dnsmasq
+    ssh-agent: Running as docker container amazeeio-ssh-agent, loaded keys:
+    4096 SHA256:QWzGN1r2X2PHdPi5MxsuUbPSi7HfOuwoSrRAwG43sHI /Users/Michael/.ssh/id_rsa (RSA)
+
+
+    [environment variables]
+    Your environment variables are already set correctly.
+
+    amazee.io wishes happy Drupaling!
 
 ## Upgrade
 
