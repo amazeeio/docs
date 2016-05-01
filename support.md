@@ -1,9 +1,9 @@
 # Support
 
 ## Mail
-If you have issues with the systems or need help feel free to send us a mail to support@amazee.io
+If you have issues with the systems or need help feel free to send us a mail to `support@amazee.io`
 
-## Slack Team
+## Slack Chat
 Customers have access to our Slack Chat where ongoing deployments and status information is passed on: [Get your account now. - https://slack.amazee.io](https://slack.amazee.io)
 
 ## Status Page
