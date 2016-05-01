@@ -23,7 +23,65 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 The Docker Containers which will run Drupal. Tthese are made to be copied into a Drupal root directory and to be started from there with `docker-compose`.[ Read how they are used](./drupal_site_containers.md).
 
 
-## How it works
+## How this works
+
+Docker is super awesome and the perfect tool for local development. There are some hurdles though:
+
+#### Exposed ports
+
+If multiple Docker containers are exposing the same port it assignes a random port to the exposed port. In our case this would mean, that each Drupal Container which would like to listen on Port 80 would get a random port like 34564 assigned. As they are random assigned it would be a lot of hazzle of figuring out which port that the Drupal is found, additionally Drupal doesn't like to run on another Port then 80 or 443 so much.  
+
+#### SSH Keys
+
+It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase procted key (as you should!). You would need to enter the passphrase for each container that you start. Not a lot of fun.  
+
+#### OS X
+
+OS X has currently no possibility to run 
+
+So amazee.io implemented a Drupal Docker Development environment which handles all these issues nicely for you.
+
 * [andyshinn/dnsmasq](https://hub.docker.com/r/andyshinn/dnsmasq/) Docker container which will listen on port 53 and resolv all DNS requests from `*.docker.amazee.io` to `127.0.0.1` (so basically a better way then filling your `/etc/hosts` file by hand)
 * [amazeeio/haproxy](https://hub.docker.com/r/amazeeio/haproxy/) Docker container which will listen on port 80 and 443. It listens to the Docker socket and will forward HTTP and HTTPs requests to the correct Drupal Container. With that we can access all Drupal Containers via a single Port.
 * [amazeeio/ssh-agent](https://hub.docker.com/r/amazeeio/ssh-agent/) Docker container which will keeps an ssh-agent at hand for the other Drupal Containers. With that the Drupal Containers do not need to handle ssh-agenting themselves
+
+```
+                                            +--------------------------------------------------------------------+
+                                            |Docker                                                              |
+                                            |                                                                    |
+                                            |          HAProxy knows which                                       |
+                                            |          *.docker.amazee.io is                                     |
+                                            |          handled by which container  +---------------------+       |
+                                            |                                      |                     |       |
+                                            |                              +-------+ Drupal Container 1  <--+    |
+                                            |                              |       |                     |  |    |
++--------------------+                      |     +------------------+     |       +---------------------+  |    |
+|                    |                      |     |                  |     |                                |    |
+|                    |                      |     |     HAProxy      +-----+                                |    |
+|                    +---------------------------->                  |     |       +---------------------+  |    |
+|                    |                      |     | Published Ports  |     |       |                     |  |    |
+|                    |  any HTTP/HTTPS      |     | 80/443           |     +-------+ Drupal Container 2  <--+    |
+|                    |  request             |     +------------------+             |                     |  |    |
+|      Browser       |                      |                                      +---------------------+  |    |
+|                    |                      |                                                               |    |
+|                    |                      |     +------------------+                                      |    |
+|                    +---------------------------->                  |                                      |    |
+|                    <----------------------------+   dns masq       |                                      |    |
+|                    |                      |     |                  |                                      |    |
+|                    |  Resolves            |     |                  |                                      |    |
+|                    |  *.docker.amaze.io   |     |                  |                                      |    |
++--------------------+  to IP of Haproxy    |     +------------------+                                      |    |
+                                            |                                                               |    |
+                                            |                                                               |    |
+                                            |                                                               |    |
+                                            |                                                               |    |
+                                            |                                                               |    |
++--------------------+                      |     +------------------+                                      |    |
+|                    |                      |     |                  |                                      |    |
+| pygmy              +---------------------------->    ssh agent     +--------------------------------------+    |
+|                    |                      |     |                  |                                           |
++--------------------+  injects ssh-key     |     +------------------+  Exposes ssh-agent via                    |
+                        into agent          |                           /tmp/amazeeio_ssh-agent/socket           |
+                                            |                                                                    |
+                                            +--------------------------------------------------------------------+
+```
