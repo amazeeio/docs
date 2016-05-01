@@ -1,6 +1,6 @@
 # OS X `cachalot`
 
- OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Till Docker has released their Docker for Mac, we provide our own system, called `cachalot`
+ OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Untill Docker has released their Docker for Mac, we provide our own system, called `cachalot`
 
 {% hint style='info' %}
 If you already are using the Docker Mac Beta client, please head over to the `pygmy`, it is fully compatible to Docker Mac Beta.
