@@ -11,8 +11,9 @@ Dump the whole Database in a file (to preserve some space and time to transfer c
 Everything under `sites/default/files` needs to be transferred over to the new environment.
 
 
-## Setup your site
+## Step 1: Get Drupal Docker Development Environment
 
+The best and easiest way to get your site running on an amazee.io server, is first to get it running inside our Drupal Docker Development Environment. 
 
 ### settings.php
 
@@ -35,11 +36,13 @@ if(getenv('AMAZEEIO_SITENAME')){
   );
 }
 
-### Base URL
+### amazee.io Base URL
 if (getenv('AMAZEEIO_BASE_URL')) {
   $base_url = getenv('AMAZEEIO_BASE_URL');
 }
 ```
+
+
 
 For more complex configuration examples head over to [Settings.php Files](./drupal/settingsphpfiles.html)
 
