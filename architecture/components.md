@@ -10,7 +10,7 @@ Our servers are set up using the latest [LTS (Long Term Support)](https://wiki.u
 
 ## Webserver: Nginx
 
-Fully configured out of the box for Drupal 7 and Drupal 8. [Nginx](http://nginx.org/) is the Webserver component in our stack and pronounced "engine x". Nginx serves dynamic content using FastCGI handlers (see PHP-FPM below). Nginx is a
+Every browser request needs to be forwarded to PHP and Drupal. amazee.io uses the industry-standard, super-fast webserver [NGINX](http://nginx.org/); not only for PHP but also for HTTPS offloading. Should you require a special configuration, feel free to apply your custom nginx settings.
 
 ## Frontend Caching: Varnish
 
