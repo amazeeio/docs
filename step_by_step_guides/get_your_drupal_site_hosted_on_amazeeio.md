@@ -138,12 +138,12 @@ Now you have a `dump.sql` file that contains your whole database.
 
 As the Docker Container has automatically access to your whole Drupal code, you can just place the dump inside your Drupal directory:
 
-    🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ ll dump.sql
+    $ ll dump.sql
     -rw-r--r-- 1 501 dialout 3098963 May  1 14:44 dump.sql
     
 ### Step 3: Import database from dump
 
-Again drush, this time `drush sql-connect`, important are the backticks!
+Again drush, this time `drush sql-connect`, the backticks are important!
 
     $ `drush sql-connect` < dump.sql
 
