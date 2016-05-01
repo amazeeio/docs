@@ -2,8 +2,8 @@
 
 During [Part I](./shared_containers.md) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
-1. Check your cloned repository and choose the example yaml file you need, see the table at the bottom to choose
-2. Copy the example file into your Drupal directory
+1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
+2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
 4. Edit the file according your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazeeio-docker can use it as well._
 5. Run `docker-compose up -d` in the same directory
@@ -17,15 +17,12 @@ To run commands like `drush`, `git` or other things within the container, you ne
 
 *Replace `changeme.com.docker.amazee.io` with the docker container you want to connect to*
 
+
 ## SSH Agent
 
-Per default your SSH Key at `~/.ssh/id_rsa` is added to the Docker containers.
+Per default your SSH Key at `~/.ssh/id_rsa` is added to the Docker containers from either `cachalot` or `pygmy`
 
-If you have a passphrase protected SSH key or need another SSH Key, run this command from the this directory (not inside the Drupal directory, also you don't need to do that for each Drupal site, just once)
-
-	docker-compose run --rm ssh-agent_add_key ssh-add /ssh/id_rsa
-
-*Replace `id_rsa` with the ssh private key from your `~/ssh/` folder you would like to add, `/ssh/` is mounted from `~/ssh/`*
+If you need another key, read the documentation of `cachalot` or `pygmy` about this.
 
 ## Update Images
 
@@ -38,8 +35,9 @@ We constantly make improvements, updates and some other nice things to our conta
 
 | Example File  | PHP  | Services | Description |
 | ------------- | ------------- | ------------- | ------------- |
-| `php70-basic` | 7.0 | nginx, varnish, mariadb | prefered for Drupal 8 |
-| `php56-basic` | 5.6 | nginx, varnish, mariadb | prefered for Drupal 7 |
-| `php70-composer` | 7.0 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
-| `php56-composer` | 5.6 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
-
+| [`php70-basic`](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml) | 7.0 | nginx, varnish, mariadb | prefered for Drupal 8 |
+| [`php56-basic`](https://github.com/amazeeio/docker/blob/master/example-php56-basic.yml) | 5.6 | nginx, varnish, mariadb | prefered for Drupal 7 |
+| [`php70-composer`](https://github.com/amazeeio/docker/blob/master/example-php70-composer.yml) | 7.0 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
+| [`php56-composer`](https://github.com/amazeeio/docker/blob/master/example-php56-composer.yml) | 5.6 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
+| [`php70-solr`](https://github.com/amazeeio/docker/blob/master/example-php70-solr.yml) | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs |
+| [`php56-solr`](https://github.com/amazeeio/docker/blob/master/example-php56-solr.yml) | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs |
