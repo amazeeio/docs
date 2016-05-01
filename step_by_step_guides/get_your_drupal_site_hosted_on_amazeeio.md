@@ -36,8 +36,8 @@ if(getenv('AMAZEEIO_SITENAME')){
 }
 
 ### Base URL
-if (getenv('AMAZEEIO_SITE_URL')) {
-  $base_url = 'http://' . getenv('AMAZEEIO_SITE_URL');
+if (getenv('AMAZEEIO_BASE_URL')) {
+  $base_url = getenv('AMAZEEIO_BASE_URL');
 }
 ```
 
