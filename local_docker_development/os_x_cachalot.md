@@ -9,7 +9,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 `cachalot` will handle for you:
 * Start it's own Virtual Machine which runs boot2docker. It does that, because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development. 
-* Start two deamons on OS X: NFS and FSEvents
+* Start two services on OS X: FSEvents and NFS (which will share the folder `/User/you` into the virtual machine).
 * Create the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq Docker container
 * Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
 * Add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
@@ -70,13 +70,6 @@ $ amazeeio-cachalot help
   amazeeio-cachalot version                 # display amazeeio_cachalot version
 ```
 
-## DNS
-
-Cachalot installs a DNS Resolver inside `/etc/resolver/docker.amazee.io`, this tells your OS X to resolves `*.docker.amazee.io` to the Cachalot VM.
-
-## NFS
-
-Cachalot shares your home directory (`/Users/<you>`) over NFS, using a private network interface between your host machine and the cachalot Docker Host. This sharing is done using a separate NFS daemon, not the system NFS daemon.
 
 ## Upgrade
 
