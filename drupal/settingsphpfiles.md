@@ -45,13 +45,6 @@ if (getenv('AMAZEEIO_VARNISH_HOSTS') && getenv('AMAZEEIO_VARNISH_SECRET')) {
   $settings['varnish_version'] = 3;
 }
 
-### AMAZEE.IO Redis settings
-if (getenv('AMAZEEIO_REDIS_HOST') && getenv('AMAZEEIO_REDIS_PORT')) {
-  $settings['redis_client_interface'] = 'PhpRedis';
-  $settings['redis_client_host'] = getenv('AMAZEEIO_REDIS_HOST');
-  $settings['redis_client_port'] = getenv('AMAZEEIO_REDIS_PORT');
-}
-
 ### AMAZEE.IO Database connection
 if(getenv('AMAZEEIO_SITENAME')){
   $databases['default']['default'] = array(
@@ -66,8 +59,8 @@ if(getenv('AMAZEEIO_SITENAME')){
 }
 
 ### Base URL
-if (getenv('AMAZEEIO_SITE_URL')) {
-  $base_url = 'http://' . getenv('AMAZEEIO_SITE_URL');
+if (getenv('AMAZEEIO_BASE_URL')) {
+  $base_url = getenv('AMAZEEIO_BASE_URL');
 }
 
 // Settings for all environments
