@@ -8,47 +8,39 @@ Solutions to many common problems can be found here.
 
 The best to solve issues around not accessible docker sites is to try to turning it off and on again:
 
-1. Make sure everything is running
+1. Make sure everything is running correctly
+      
+         $ amazeeio-cachalot status
+      
+1. Restart cachalot:
 
-  `amazeeio-cachalot status`
-1. Halt cachalot with (check that there are no errors)
+         $ amazeeio-cachalot restart
 
-  `amazeeio-cachalot halt`
-1. Kill the dnsmasq service:
-
-  `sudo killall dnsmasq`
-1. Tell OS X to update it's DNS cache:
-
-  `sudo killall mDNSResponder`
-1. Start cachalot again:
-
-  `amazeeio-cachalot up`
-1. Start docker containers again
-
-## Cachalot starts with `DNS failed to run`
-
-Do the same as above, start at Nr. 2.
-If after that it still does not work, check if your brew installation works, do that with:
-  
-    brew doctor
 
 ## Cachalot starts with `NFS failed to run`
 
-Check if your brew installation works, do that with 
+1. Restart your cachalot with `amazeeio-cachalot restart`
+2. Check if your brew installation is all correct, do that with 
   
-    brew doctor
+        brew doctor
+   and fix eventual issues. Then restart `amazeeio-cachalot restart`
 
 ## The `docker` client gives an SSL error or times out
 
-The most common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `amazeeio-cachalot status` from the same terminal window. If it displays a message such as
+First check that `cachalot` is actually running:
 
-    To connect the Docker client to the Docker daemon, please set:
+    `amazeeio-cachalot status`
 
-    export DOCKER_HOST=tcp://192.168.99.101:2376
+If not, start it : )
 
-This means your environment variables aren't correctly set. 
+Other common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `amazeeio-cachalot status` from the same terminal window. If it displays a message such as
 
-Of course if `amazeeio-cachalot status` reports that the VM is stopped, you should run `amazeeio-cachalot up` as well.
+    Environment variables not set.
+
+Set them with
+
+    eval $(amazeeio-cachalot env)
+
 
 ## The `docker` client reports errors like `x509: certificate is valid for 192.168.x.y, not 192.168.x.z`
 
