@@ -9,5 +9,4 @@ All services are running on the same server:
 * Frontend Caching: Varnish  
 * FastCGI Process Manager: PHP-FPM
 * Database MariaDB
-* In-Memory cache Redis
 * Search Apache Solr

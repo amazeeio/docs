@@ -5,6 +5,7 @@ The biggest and most reliable setup you can host your site on is our Cluster Sta
 ![Schematic overview Cluster stack](cluster.png)
 
 ### Frontend Server
+
 * **Frontend Nginx  **
 The frontend Nginx server takes care of SSL Termination and Redirects
 * **Varnish**  
@@ -18,12 +19,13 @@ The second Nginx instance takes care of running the actual drupal site. PHP requ
 
 
 ###Database
+
 * **Database MariaDB**
 
-###Caching / Search:
-* **In-Memory cache Redis**
+### Search
+
 * **Search Apache Solr**
 
-
 ###Filestorage
+
 * **NFS File Server**

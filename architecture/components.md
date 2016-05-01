@@ -31,3 +31,8 @@ Every request is passed from PHP-FPM to PHP and is executed there. amazee.io sup
 ## Search: Apache Solr
 
 Solr is a search engine based on Apache Lucene™ which is used by Drupal modules such as [Search Api Solr Search](https://www.drupal.org/project/search_api_solr).
+
+## Tools
+
+### Composer
+### NodeJS
