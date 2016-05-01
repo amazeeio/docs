@@ -7,5 +7,5 @@ High-Profile websites serve a lot of traffic on a global scale. We support follo
 - [Cloudflare](http://cloudflare.com/)
 
 {% hint style='info' %}
-Do you have a special use case or do you need to serve your website inside Mainland China 🇨🇳 ? No worries we got you covered. Talk to our engineers and we can support you on this endeavour: support@amazee.io
+Do you have a special use case or do you need to serve your websites from inside Mainland China 🇨🇳 ? No worries we got you covered. Talk to our engineers and we can support you on this endeavour: support@amazee.io
 {% endhint %}
