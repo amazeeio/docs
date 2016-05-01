@@ -16,7 +16,7 @@ Everything under `sites/default/files` needs to be transfered over to the new en
 ##Setup your site
 
 ###settings.php
-Amazee.io has the abillity to configure the site automatically according to the environment which the site is currently running. This means there are no hardcoded passwords or usernames anymore. In turn this needs some changes to the already existing settings.php files. 
+Amazee.io has the abillity to configure the site automatically according to the environment which the site is currently running. This means there are no hardcoded passwords or usernames anymore. In turn this needs some changes to the already existing settings.php files.
 
 Following you find a very basic example to configure the connection to the database.
 
