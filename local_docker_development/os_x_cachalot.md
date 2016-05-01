@@ -44,24 +44,31 @@ To check that everything has been installed correctly:
 
 ```
 $ amazeeio-cachalot help
-Commands:
-  amazeeio-cachalot create          # create the docker-machine VM
-  amazeeio-cachalot destroy         # stop and delete all traces of the VM
-  amazeeio-cachalot halt            # stop the VM and services
-  amazeeio-cachalot help [COMMAND]  # Describe available commands or one specific command
-  amazeeio-cachalot ip              # get the VM's IP address
-  amazeeio-cachalot restart         # restart the VM and services
-  amazeeio-cachalot env             # returns env variables to set, should be run like $(amazeeio-cachalot env)
-  amazeeio-cachalot ssh [args...]   # ssh to the VM
-  amazeeio-cachalot status          # get VM and services status
-  amazeeio-cachalot up              # start the Docker VM and services
-  amazeeio-cachalot upgrade         # upgrade the boot2docker VM to the newest available
-  amazeeio-cachalot version         # display amazeeio-cachalot version
+
+  amazeeio-cachalot addkey [~/.ssh/id_rsa]  # Add additional ssh-key
+  amazeeio-cachalot create                  # create the docker-machine VM
+  amazeeio-cachalot destroy                 # stop and delete all traces of the VM
+  amazeeio-cachalot docker_halt             # stop the Docker Containers
+  amazeeio-cachalot docker_restart          # Restarts all Docker Containers
+  amazeeio-cachalot docker_start            # starts the docker containers
+  amazeeio-cachalot docker_status           # Get Status of Docker containers
+  amazeeio-cachalot docker_update           # Pulls Docker Images and recreates the Containers
+  amazeeio-cachalot env                     # returns env variables to set, should be run like $(amazeeio_cachalot env)
+  amazeeio-cachalot halt                    # stop the VM and services
+  amazeeio-cachalot help [COMMAND]          # Describe available commands or one specific command
+  amazeeio-cachalot ip                      # get the VM's IP address
+  amazeeio-cachalot myip                    # get the hosts IP address
+  amazeeio-cachalot restart                 # restart the VM and services
+  amazeeio-cachalot ssh [args...]           # ssh to the VM
+  amazeeio-cachalot status                  # get VM and services status
+  amazeeio-cachalot up                      # start the Docker VM and services
+  amazeeio-cachalot upgrade                 # upgrade the boot2docker VM to the newest available
+  amazeeio-cachalot version                 # display amazeeio_cachalot version
 ```
 
 ## DNS
 
-Cachalot installs a DNS server, which resolves `*.docker.amazee.io` to the Cachalot VM.
+Cachalot installs a DNS Resolver inside `/etc/resolver/docker.amazee.io`, this tells your OS X to resolves `*.docker.amazee.io` to the Cachalot VM.
 
 ## NFS
 
