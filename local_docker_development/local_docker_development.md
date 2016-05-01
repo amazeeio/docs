@@ -1,7 +1,7 @@
 # amazee.io Local Drupal Docker Development
 
 amazee.io fully supports development work flows which involve local development sites. We provide a Drupal Docker development environment that runs on our local computer.
-It uses the exact same configuration for **all** services like on production. This means:
+It uses the exact same configuration for **all** services like on the amazee.io servers. This means:
  - If the site runs locally, it also runs on production
  - You can use the exact same `settings.php` file for local and production
 
