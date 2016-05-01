@@ -13,7 +13,6 @@
            * [Help](local_docker_development/pygmy/help.md)
    * [Drupal Docker Containers](local_docker_development/drupal_site_containers.md)
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
-   * Help
 * [Architecture](architecture/architecture.md)
    * [Stack-Types](architecture/stack-types.md)
        * [Cluster](architecture/stack-types/cluster.md)
