@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-During [Part I](./shared_containers.md) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
+During [Part I](./local_docker_development.md#part-i-shared-docker-containers) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
 2. Copy the desired example file into your Drupal directory
