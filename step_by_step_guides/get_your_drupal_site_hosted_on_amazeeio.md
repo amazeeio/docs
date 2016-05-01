@@ -2,17 +2,6 @@
 
 <!-- toc -->
 
-## Preparation
-
-To get your website running on amazee.io you'll need to prepare three essential things:
-- **Codebase**  
-This is all your code including Drupal core, themes, modules. It needs to live inside a Git Repository.
-- **Database**  
-Dump the whole Database in a file (to preserve some space and time to transfer compress the file with gzip). We suggest to use [`drush sql-dump`](http://drushcommands.com/drush-8x/sql/sql-dump/) for this.
-- **Files**  
-Everything under `sites/default/files` needs to be transferred over to the new environment.
-
-
 ## Site Setup
 
 ### Step 1: Get Drupal Docker Development Environment
@@ -130,7 +119,58 @@ Congratulations! You just created your first amazee.io Drupal Site!
 
 <img src="../giphy.gif" width="200">
 
+## Add existing database
 
+You may have an already existing Drupal database you would like to import into your Docker Container. Of course we support that.
+
+### Step 1: Get a database dump
+
+This step depends how you currently host. There are a lot of different ways on how to create a database dump.  
+If your current hoster has Drush installed, you can use something like that:
+
+    $ drush sql-dump --result-file=dump.sql
+    
+    Database dump saved to dump.sql
+
+Now you have a `dump.sql` file that contains your whole database.
+
+### Step 2: Add dump.sql file to the container
+
+As the Docker Container has automatically access to your whole Drupal code, you can just place the dump inside your Drupal directory:
+
+    🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ ll dump.sql
+    -rw-r--r-- 1 501 dialout 3098963 May  1 14:44 dump.sql
+    
+### Step 3: Import database from dump
+
+Again drush, this time `drush sql-connect`, important are the backticks!
+
+    $ `drush sql-connect` < dump.sql
+
+You can verify that it worked with:
+
+    $ drush sql-query "show tables;"
+
+    batch
+    block_content
+    block_content__body
+    block_content_field_data
+    block_content_field_revision
+    block_content_revision
+    block_content_revision__body
+    cache_bootstrap
+    cache_config
+    cache_container
+    ... (a lot more here)
+    
+That's it! It might be clever to clear all caches via `drush cr` for Drupal 8 or `drush cc all` for Drupal 7.
+
+Enjoy your Drupal site!
+
+## Add existing files
+
+As learned during the import of the DB, the Drupal directory is completely available inside the Docker Container.  
+So to add your Drupal files, just put them in the directory you had them before, probably `sites/default/files`.
 
 ###.amazeeio.yml
 
