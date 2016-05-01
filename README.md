@@ -1,7 +1,7 @@
 # amazee.io Documentation
   
   
-<img src="./Docs_amazeeio.png" width="200"/>
+<img src="./Docs_amazeeio.png" width="200" />
 
 
 Welcome to the amazee.io documentation. This site will give you insights into amazee.io and helps you getting your website online on our infrastructure as fast and easy as possible.
