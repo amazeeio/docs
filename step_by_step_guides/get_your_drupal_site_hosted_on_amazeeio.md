@@ -16,7 +16,7 @@ You should end up with a Terminal like this:
 
     $ docker-compose up -d
     Creating amazee_io.docker.amazee.io
-    
+
     $ docker exec -itu drupal amazee_io.docker.amazee.io bash
     🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$
 
@@ -31,10 +31,10 @@ You will not see an `index.php` file here, instead you will see a `web` folder a
 
 ### Step 3: settings.php
 
-amazee.io has an unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database, how to connect to it.  
+amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database, how to connect to it.  
 This has two main advantages:
-1. There are no paswords or usernames at all saved in settings.php files, so you safelly share your whole Drupal Code, without being worried, that somebody know credentials about your site.
-2. The settings.php is the exact same one, no mather if the Drupal is running on your Local Docker, on the development or production site.
+1. There are no passwords or usernames at all saved in settings.php files, so you safely share your whole Drupal Code, without being worried, that somebody know credentials about your site.
+2. The settings.php is the exact same one, no matter if the Drupal is running on your Local Docker, on the development or production site.
 
 Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
@@ -58,14 +58,14 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-We do not suggest to just use this simple configuration for production sites, but for now it's all good. See [Drupal Configuration](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
+We do not suggest to just use this simple configuration for production sites, but for now, it's all good. See [Drupal Configuration](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
 
 ### Step 4: Test connection to the database
 
 It's time to test! Easiest is that done with Drush, it will tell you some information about your site:
-    
+
     🔨  drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush status
-    
+
     Drupal version         :  8.0.6
     Site URI               :  http://amazee_io.docker.amazee.io
     Database driver        :  mysql
@@ -85,8 +85,8 @@ It's time to test! Easiest is that done with Drush, it will tell you some inform
     Drupal Settings File   :  sites/default/settings.php
     Site path              :  sites/default
     Sync config path       :  sites/default/config/sync
-    
-Your output may look a slightly bit different then this one. Here are the things you should see.
+
+Your output may look a slightly bit different than this one. Here are the things you should see.
 
 The database connection:
 
@@ -94,7 +94,7 @@ The database connection:
     Database port          :  3306
     Database username      :  drupal
     Database name          :  drupal
-    
+
 The Site URI which should be the same as you defined in the `docker-compose.yml`
 
     Site URI               :  http://amazee_io.docker.amazee.io
@@ -104,16 +104,16 @@ The Site URI which should be the same as you defined in the `docker-compose.yml`
 It's time to install Drupal and test the site in your browser! Again best and easiest done via Drush, this time via `drush site-install`
 
     🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush site-install
-    
+
     You are about to DROP all tables in your 'drupal' database. Do you want to continue? (y/n): y
-    
+
     Starting Drupal installation. This takes a while. Consider using the --notify global option.
     sh: 1: /usr/sbin/sendmail: not found
     Installation complete.  User name: admin  User password: rWYwHTxCK4
     Unable to send email. Contact the site administrator if the problem persists.
     Congratulations, you installed Drupal!
 
-Thats it! Now visit the URL you defined for you Docker Container in your browser and you should see a fresh installed Drupal Site. In this example this is `http://amazee_io.docker.amazee.io`
+That's it! Now visit the URL you defined for you Docker Container in your browser and you should see a fresh installed Drupal Site. In this example, this is `http://amazee_io.docker.amazee.io`
 
 Congratulations! You just created your first amazee.io Drupal Site!
 
@@ -121,15 +121,15 @@ Congratulations! You just created your first amazee.io Drupal Site!
 
 ## Add existing database
 
-You may have an already existing Drupal database you would like to import into your Docker Container. Of course we support that.
+You may have an already existing Drupal database you would like to import into your Docker Container. Of course, we support that.
 
 ### Step 1: Get a database dump
 
-This step depends how you currently host. There are a lot of different ways on how to create a database dump.  
-If your current hoster has Drush installed, you can use something like that:
+This step depends on how you currently host. There are a lot of different ways on how to create a database dump.  
+If your current hosting provider has Drush installed, you can use something like that:
 
     $ drush sql-dump --result-file=dump.sql
-    
+
     Database dump saved to dump.sql
 
 Now you have a `dump.sql` file that contains your whole database.
@@ -140,7 +140,7 @@ As the Docker Container has automatically access to your whole Drupal code, you 
 
     $ ll dump.sql
     -rw-r--r-- 1 501 dialout 3098963 May  1 14:44 dump.sql
-    
+
 ### Step 3: Import database from dump
 
 Again drush, this time `drush sql-connect`, the backticks are important!
@@ -162,7 +162,7 @@ You can verify that it worked with:
     cache_config
     cache_container
     ... (a lot more here)
-    
+
 That's it! It might be clever to clear all caches via `drush cr` for Drupal 8 or `drush cc all` for Drupal 7.
 
 Enjoy your Drupal site!
