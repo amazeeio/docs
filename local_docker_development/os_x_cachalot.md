@@ -8,7 +8,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 Currently we provide our own system to run on OS X. Its called **cachalot** and can be found here: https://github.com/amazeeio/cachalot
 
-`cachalot` will do for you:
+`cachalot` will handle for you:
 
 
 #### Prerequisites
