@@ -22,6 +22,12 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 
 The Docker Containers which will run Drupal. These are made to be copied into a Drupal root directory and to be started from there with `docker-compose`.[ Read how they are used](./drupal_site_containers.md)
 
+## What it includes
+
+The amazee.io Local Docker Drupal Development environment equipes you with all the tools you need to develop your Drupal site locally:
+
+* Nginx  
+Fully configured for Drupal 7 and Drupal 8
 
 ## How this works
 
