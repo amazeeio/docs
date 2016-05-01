@@ -21,6 +21,7 @@
        * Production
        * Development
        * [E-Mail Delivery](architecture/e-mail_delivery.md)
+   * [Components](architecture/components.md)
    * [URL structure](architecture/url_structure.md)
 * [Synchronize Sites](step_by_step_guides/synchronize_sites.md)
 * Drupal
