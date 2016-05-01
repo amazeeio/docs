@@ -2,7 +2,7 @@
 `pygmy` is the single tool needed to get the amazee.io Docker Drupal Development Environment running on your Linux based system. It is also capable of working together with the very new [Docker for Mac Beta](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/)! (quite a lot for such a [small whale](https://en.wikipedia.org/wiki/Pygmy_sperm_whale))
 
 {% hint style='info' %}
-If you don't run the new Docker for Mac Beta: Sorry `pygmy` is not for you, we have a bigger whale for you: `cachalot` for OS X! 
+If you don't run the new Docker for Mac Beta: Sorry `pygmy` is not for you, we have a bigger whale for you: `cachalot` for OS X!
 {% endhint %}
 
 `pygmy` will handle for you:
@@ -51,22 +51,22 @@ Commands:
 Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
 
     $ pygmy addkey /Users/amazeeio/.ssh/my_other_key
-    
+
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
-    Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key) 
-    
+    Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
+
 ### Checking the status
 
-Run `pygmy status` and `pygmy` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
+Run `pygmy status` and `pygmy` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
 
     $ pygmy status
-    
+
     [*] Dnsmasq: Running as docker container amazeeio-dnsmasq
     [*] Haproxy: Running as docker container amazeeio-haproxy
     [*] Resolv is properly configured
     [*] ssh-agent: Running as docker container amazeeio-ssh-agent, loaded keys:
     4096 SHA256:QWzGNs1r2dfdfX2PHdPi5sdMxdsuddUbPSi7HsrRAwG43sHI /Users/amazeeio/.ssh/my_other_key (RSA)
-    
+
 
 ### `pygmy down` vs `pygmy stop`
 
@@ -79,7 +79,7 @@ If you like to cleanup though, use `pygmy down` to really remove the Docker cont
 `pygmy` can update shared docker containers for you:
 
     $ pygmy update
-    
+
 After it updated all containers, it will recreate them as well.
 
 
@@ -92,7 +92,7 @@ As rubygems does not remove old versions of gems when updating, you should remov
 First update:
 
     $ gem update pygmy
-    
+
     Updating installed gems
     Updating pygmy
     Successfully installed pygmy-0.9.4
@@ -120,6 +120,5 @@ Now uninstall the old one:
 check the correct version:
 
     $ pygmy -v
-    
-    Pygmy - Version: 0.9.4
 
+    Pygmy - Version: 0.9.4

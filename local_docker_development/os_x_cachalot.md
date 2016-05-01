@@ -8,7 +8,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 
 `cachalot` will handle for you:
-* Start it's own Virtual Machine which runs boot2docker. It does that, because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development. 
+* Start it's own Virtual Machine which runs boot2docker. It does that, because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
 * Start two services on OS X: FSEvents and NFS (which will share the folder `/User/you` into the virtual machine).
 * Create the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq Docker container
 * Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
@@ -75,16 +75,16 @@ $ amazeeio-cachalot help
 Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
 
     $ amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
-    
+
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
-    Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key) 
-    
+    Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
+
 ### Checking the status
 
-Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it fells right now and which ssh-keys it currently has in it's stomach:
+Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
 
     $ amazeeio-cachalot status
-    
+
     [virtual machine]
     running
 
@@ -112,7 +112,7 @@ Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it fell
 `cachalot` can update shared docker containers for you:
 
     $ amazeeio-cachalot docker_update
-    
+
 After it updated all containers, it will recreate them as well.
 
 ## Upgrade
@@ -129,4 +129,3 @@ To update the Docker VM, run:
     $ amazeeio-cachalot upgrade
 
 This will run `docker-machine upgrade` and then restart everything.
-
