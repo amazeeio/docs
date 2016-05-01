@@ -35,11 +35,11 @@ We constantly make improvements, updates and some other nice things to our conta
 
 ## Existing Docker Images
 
-| Example File  | PHP  | Services | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| [`php70-basic`](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml) | 7.0 | nginx, varnish, mariadb | prefered for Drupal 8 |
-| [`php56-basic`](https://github.com/amazeeio/docker/blob/master/example-php56-basic.yml) | 5.6 | nginx, varnish, mariadb | prefered for Drupal 7 |
-| [`php70-composer`](https://github.com/amazeeio/docker/blob/master/example-php70-composer.yml) | 7.0 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
-| [`php56-composer`](https://github.com/amazeeio/docker/blob/master/example-php56-composer.yml) | 5.6 | nginx, varnish, mariadb | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
-| [`php70-solr`](https://github.com/amazeeio/docker/blob/master/example-php70-solr.yml) | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs |
-| [`php56-solr`](https://github.com/amazeeio/docker/blob/master/example-php56-solr.yml) | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs |
+| Example File                                                                                  | PHP | Services                      | Description                                                                                                                     |
+|-----------------------------------------------------------------------------------------------|-----|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [`php70-basic`](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml)       | 7.0 | nginx, varnish, mariadb       | prefered for Drupal 8                                                                                                           |
+| [`php56-basic`](https://github.com/amazeeio/docker/blob/master/example-php56-basic.yml)       | 5.6 | nginx, varnish, mariadb       | prefered for Drupal 7                                                                                                           |
+| [`php70-composer`](https://github.com/amazeeio/docker/blob/master/example-php70-composer.yml) | 7.0 | nginx, varnish, mariadb       | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
+| [`php56-composer`](https://github.com/amazeeio/docker/blob/master/example-php56-composer.yml) | 5.6 | nginx, varnish, mariadb       | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web` |
+| [`php70-solr`](https://github.com/amazeeio/docker/blob/master/example-php70-solr.yml)         | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs          |
+| [`php56-solr`](https://github.com/amazeeio/docker/blob/master/example-php56-solr.yml)         | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but additionally Apache Solr installed. Check the yaml file on how to define your solr configs          |

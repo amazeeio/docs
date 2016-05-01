@@ -25,13 +25,13 @@ If you are on Linux and run docker natively, you also need to get the IP of the 
 
 ### Connect to MySQL
 
-|  | Linux | OS X |
-| -- | -- | -- |
-| IP/Host | ip from container | `docker.amazee.io` |
-| Port | published port from container | published port from container |
-| Username | `drupal` | `drupal` |
-| Password | `drupal` | `drupal` |
-| Database | `drupal` | `drupal` |
+|          | Linux                         | OS X                          |
+|----------|-------------------------------|-------------------------------|
+| IP/Host  | ip from container             | `docker.amazee.io`            |
+| Port     | published port from container | published port from container |
+| Username | `drupal`                      | `drupal`                      |
+| Password | `drupal`                      | `drupal`                      |
+| Database | `drupal`                      | `drupal`                      |
 
 #### Example Sequel PRO
 
