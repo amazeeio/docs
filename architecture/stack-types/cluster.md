@@ -14,7 +14,7 @@ Content which can be cached is cached in memory by Varnish
 
 * **Backend Nginx**
 The second Nginx instance takes care of running the actual drupal site. PHP requests are passed to PHP-FPM.
-* **PHP-FPM**
+* **FastCGI Process Manager: PHP-FPM**
 
 
 ###Database
