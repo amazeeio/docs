@@ -29,7 +29,7 @@
   * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
   * Blackfire.io
-  * NewRelic
+  * New Relic
   * Xdebug
 * Automated Deployments
   * Production Deployments
