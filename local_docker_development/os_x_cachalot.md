@@ -1,5 +1,7 @@
 # OS X `cachalot`
 
+<!-- toc -->
+
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Untill Docker has released their Docker for Mac, we provide our own system, called `cachalot`
 
 {% hint style='info' %}
@@ -41,6 +43,8 @@ You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memor
 Once the VM is up, you'll get instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM. We suggest adding that to your `~/.bashrc` so that they are available all times.
 
 To check that everything has beein installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
+
+**You are all set-up!** Are you ready to get your first site setup on your local environment? Yes? Then head over to [Part II: Drupal Docker Containers](drupal_site_containers.md).
 
 ## CLI Usage
 
