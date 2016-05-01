@@ -10,7 +10,7 @@ Our servers are set up using the latest [LTS (Long Term Support)](https://wiki.u
 
 ## Webserver: Nginx
 
-[Nginx](http://nginx.org/) is the Webserver component in our stack and pronounced "engine x". Nginx serves dynamic content using FastCGI handlers (see PHP-FPM below). Nginx is a
+Fully configured out of the box for Drupal 7 and Drupal 8. [Nginx](http://nginx.org/) is the Webserver component in our stack and pronounced "engine x". Nginx serves dynamic content using FastCGI handlers (see PHP-FPM below). Nginx is a
 
 ## Frontend Caching: Varnish
 
@@ -35,4 +35,5 @@ Solr is a search engine based on Apache Lucene™ which is used by Drupal module
 ## Tools
 
 ### Composer
+
 ### NodeJS
