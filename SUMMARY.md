@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Step by Step Guides](step_by_step_guides/step_by_step_guides.md)
-   * [Get your Drupal Site running on amazee.io](step_by_step_guides/get_your_drupal_site_hosted_on_amazeeio.md)
+   * [Get your Drupal Site running on amazee.io](step_by_step_guides/get_your_drupal_site_running_on_amazeeio.md)
    * [Technical Requirements](step_by_step_guides/technical_requirements.md)
    * [GoLive on amazee.io](step_by_step_guides/golive_on_amazeeio.md)
 * [Local Docker Development](local_docker_development/local_docker_development.md)
