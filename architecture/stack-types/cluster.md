@@ -11,11 +11,9 @@ The frontend Nginx server takes care of SSL Termination and Redirects
 Content which can be cached is cached in memory by Varnish
 
 ### Backend servers
-
 * **Backend Nginx**
 The second Nginx instance takes care of running the actual drupal site. PHP requests are passed to PHP-FPM.
 * **PHP-FPM**
-
 
 ###Database
 * **Database MariaDB**
@@ -23,7 +21,6 @@ The second Nginx instance takes care of running the actual drupal site. PHP requ
 ###Caching / Search:
 * **In-Memory cache Redis**
 * **Search Apache Solr**
-
 
 ###Filestorage
 * **NFS File Server**
