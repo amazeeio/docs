@@ -7,11 +7,11 @@ During [Part I](./shared_containers.md) we just started the shared Docker contai
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
 2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
-4. Edit the file according your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazeeio-docker can use it as well._
+4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazeeio-docker can use it as well._
 5. Run `docker-compose up -d` in the same directory
 6. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
-## Connect into container
+## Connect to  the container
 
 To run commands like `drush`, `git` or other things within the container, you need to connect to the container.
 

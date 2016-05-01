@@ -1,7 +1,7 @@
 # Part I: Shared Containers
 
 
-Installation of the amazee.io local Docker Development depends on each operating system:
+Installation of the amazee.io local Docker Development depends on the operating system you use:
 
 ## Installation - OS X `cachalot`
 

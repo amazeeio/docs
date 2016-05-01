@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
- OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Untill Docker has released their Docker for Mac, we provide our own system, called `cachalot`
+ OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Until Docker has released their Docker for Mac, we provide our own system, called `cachalot`
 
 {% hint style='info' %}
 If you already are using the Docker Mac Beta client, please head over to the `pygmy`, it is fully compatible to Docker Mac Beta. If you like you can apply to the new Docker for Mac Beta here: https://beta.docker.com/
@@ -10,11 +10,11 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 
 `cachalot` will handle for you:
-* Start it's own Virtual Machine which runs boot2docker. It does that, because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
+* Start it's own Virtual Machine which runs boot2docker. It does that because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
 * Start two services on OS X: FSEvents and NFS (which will share the folder `/User/you` into the virtual machine).
 * Create the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq Docker container
 * Starting the necessary Docker Containers for the amazee.io Drupal Docker Development
-* Add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
+* Add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more anytime)
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memor
 
 Once the VM is up, you'll get instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM. We suggest adding that to your `~/.bashrc` so that they are available all times.
 
-To check that everything has beein installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
+To check that everything has been installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
 **You are all set-up!** Are you ready to get your first site setup on your local environment? Yes? Then head over to [Part II: Drupal Docker Containers](drupal_site_containers.md).
 
@@ -83,7 +83,7 @@ $ amazeeio-cachalot help
 
 ### Checking the status
 
-Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
+Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feels right now and which ssh-keys it currently has in its stomach:
 
     $ amazeeio-cachalot status
 

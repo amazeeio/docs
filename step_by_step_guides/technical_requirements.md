@@ -2,7 +2,7 @@
 
 ## Git
 
-Git is a version control system that is widely used for software development and other version control tasks. To deploy code to amazee.io it's necessary to use git.
+Git is a version control system that is widely used for software development and other version control tasks. To deploy code to amazee.io it is necessary to use git.
 
 **Further read: [Set Up Git](https://help.github.com/articles/set-up-git/)**
 
@@ -15,7 +15,7 @@ amazee.io is capable of using your own hosted Git Repository or on-premises vers
 
 ## Secure Socket Shell (SSH)
 
-To keep our systems secure and access easily revocable we don't set static passwords on any amazee.io systems. Every user access is tied to a personal SSH Key. 
+To keep our systems secure and access easily revocable we don't set static passwords on any amazee.io systems. Every user access is tied to a personal SSH Key.
 
 SSH consists of two Keys:
 
@@ -23,4 +23,3 @@ SSH consists of two Keys:
 - A **public key** stored on the amazee.io systems, that authenticates each user individually
 
 **Further read: [Generating a new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)**
-

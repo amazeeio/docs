@@ -4,12 +4,12 @@
 
 ## DNS
 
-To make it as easy as possible for you to get your site pointing to our servers we have dedicated loadbalancer DNS records. Those technical DNS resource records are used just for getting your site linked to amazee.io infrastructure and serve no other purpose.
+To make it as easy as possible for you to get your site pointing to our servers we have dedicated load balancer DNS records. Those technical DNS resource records are used just for getting your site linked to amazee.io infrastructure and serve no other purpose.
 
 **Example:** `<loadbalancer-name>.hosted.on.amazee.io`
 
 {% hint style='info' %}
-We strongly suggest to not configure any static IP address in your DNS Zones. Our loadbalancer infrastructure may change over time which can have impact on your site availability if you configured a static IP address.
+We strongly suggest to not configure any static IP address in your DNS Zones. Our load balancer infrastructure may change over time which can have impact on your site availability if you configured a static IP address.
 {% endhint %}
 
 ### Root Domains
