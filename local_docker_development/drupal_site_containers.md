@@ -1,4 +1,4 @@
-# Part II: Drupal Site Containers
+# Part II: Drupal Docker Containers
 
 During [Part I](./shared_containers.md) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
