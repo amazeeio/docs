@@ -1,5 +1,6 @@
 # Get your Drupal site hosted on amazee.io
 
+
 ## Preparation
 
 To get your website running on amazee.io you'll need to prepare three essential things:
