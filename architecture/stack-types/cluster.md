@@ -1,4 +1,4 @@
-# Cluster
+# Cluster Stack
 
 The biggest and most reliable setup you can host your site on is our Cluster Stack. It consists of several servers and is designed for high reliability and can serve high traffic sites with ease. If we see that we need to scale we can scale every component individually to optimize the infrastructure to the current traffic levels.
 
