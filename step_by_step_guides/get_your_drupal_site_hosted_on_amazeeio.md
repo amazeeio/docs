@@ -40,7 +40,7 @@ if (getenv('AMAZEEIO_SITE_URL')) {
 }
 ```
 
-For more complex configuration examples head over to [Settings.php Files](./drupal/settingsphpfiles.html)
+For more complex configuration examples head over to [Settings.php Files](../drupal/settingsphpfiles.md)
 
 
 
