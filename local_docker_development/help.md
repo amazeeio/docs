@@ -33,7 +33,7 @@ If this still is not enough, this is the 🔨  method:
     $ docker-compose up
 
 {% hint style='danger' %}
-This will remove your whole mysql database and maybe existing other created volumes (like the solr search index).
+This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).
 {% endhint %}
 
 ## Drupal Container logs
@@ -111,6 +111,9 @@ You shouldn't really need to do this, and if you think so, first try the above h
     
 This will stop and remove all containers and all attached volumes.
 
+{% hint style='danger' %}
+This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).
+{% endhint %}
 
 
 But sometimes we might have some old volumes that we don't need anymore, you can also get rid of them:
