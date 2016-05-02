@@ -14,7 +14,7 @@ We suggest the [Get your Drupal site running on amazee.io](step_by_step_guides/g
 
 Join us in our Slack channel and we will help you right away: [slack.amazee.io](https://slack.amazee.io)
 
-## More about amazee.io
+## More about amazee.io 🎉
 
 Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
 
@@ -24,6 +24,6 @@ Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
 Find our stories at [stories.amazee.io](https://stories.amazee.io)
 
 
-## Changelog 📔
+## Changelog 📃
 
 We are releasing new features every week to the amazee.io universe, find them at: [changelog.amazee.io](http://changelog.amazee.io) 
