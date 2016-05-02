@@ -5,6 +5,8 @@ actionable insights to monitor and improve the performance of your websites.
 With amazee.io you get New Relic for free. We believe that everybody should profit
 from the great tools that New Relic provides.
 
+![Screenshot New Relic](newrelic.png)
+
 **Steps for enabling New Relic on your site.**
 
 1. Get a New Relic account (you can start with a free account and switch to the paid version later if you like the service)
