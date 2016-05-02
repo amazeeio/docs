@@ -4,6 +4,8 @@
 
 During [Part I](./local_docker_development.md#part-i-shared-docker-containers) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
+## Find the right `docker-compose.yml`
+
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
 2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
@@ -11,7 +13,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 5. Run `docker-compose up -d` in the same directory
 6. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
-## Connect to  the container
+## Connect to the container
 
 To run commands like `drush`, `git` or other things within the container, you need to connect to the container.
 
@@ -33,7 +35,7 @@ We constantly make improvements, updates and some other nice things to our conta
 	docker-compose pull
 	docker-compose up -d
 
-## Existing Docker Images
+## `docker-compose.yml` example files
 
 | Example File                                                                                  | PHP | Services                      | Description                                                                                                                     |
 |-----------------------------------------------------------------------------------------------|-----|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
