@@ -80,7 +80,7 @@ Btw, you can also see the logs of the Drupal Containers, via that command.
 
 ## I get an error like `Conflict. The name "/amazee_io.docker.amazee.io" is already in use by container`
 
-It happened to all of us, you remove a local `docker-compose.yml` file, recreate it and now during `docker-compose up -d`, docker yells at you and tells you this dontainer exists already.
+It happened to all of us, you remove a local `docker-compose.yml` file, recreate it and now during `docker-compose up -d`, docker yells at you and tells you this container exists already.
 
 The easiest way would be to just give your new container another name, but there are better ways:
 
@@ -100,3 +100,19 @@ The easiest way would be to just give your new container another name, but there
 3. Remove the container with it's volumes:
 
         $ docker rm -v amazee_io.docker.amazee.io
+
+## Remove all containers and all volumes
+
+You shouldn't really need to do this, and if you think so, first try the above help. But sometimes the best way is to completely restart:
+
+    $ docker rm -vf $(docker ps -a -q)
+    
+This will stop and remove all containers and all attached volumes.
+
+
+
+But sometimes we might have some old volumes that we don't need anymore, you can also get rid of them:
+
+    $ docker volume rm $(docker volume ls -q)
+
+Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot.
