@@ -9,7 +9,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
 2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
-4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazeeio-docker can use it as well._
+4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazee.io docker can use it as well._
 5. Run `docker-compose up -d` in the same directory
 6. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
@@ -26,11 +26,11 @@ To run commands like `drush`, `git` or other things within the container, you ne
 
 Per default your SSH Key at `~/.ssh/id_rsa` is added to the Docker containers from either `cachalot` or `pygmy`
 
-If you need another key, read the documentation of `cachalot` or `pygmy` about this.
+If you need another key, read the documentation of [`cachalot`](local_docker_development/os_x_cachalot.md) or [`pygmy`](local_docker_development/linux_pygmy.md) about this.
 
 ## Update Images
 
-We constantly make improvements, updates and some other nice things to our container images. If you need to update the Docker Images to the newest version from the Docker Hub run:
+We constantly make improvements, updates and some other nice things to our container images. Visit [changelog.amazee.io](https://changelog.amazee.io) to see if there is something new. If you need to update the Docker Images to the newest version from the Docker Hub run in the same folder as the `docker-compose.yml`:
 
 	docker-compose pull
 	docker-compose up -d
