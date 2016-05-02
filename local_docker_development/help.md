@@ -122,14 +122,3 @@ But sometimes we might have some old volumes that we don't need anymore, you can
 
 Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot`.
 
-## I get an error like `port is already allocated.` during start
-
-If during the start of Docker containers you see an error like that:
-
-    docker: Error response from daemon: driver failed programming external connectivity on endpoint 
-    amazeeio-haproxy (654d1f1c17b0f7304570a763e1017808b214b81648045a5c64ed6a395daeec92): 
-    Bind for 0.0.0.0:443 failed: port is already allocated.
-
-This means that another service (can be another Docker container, or in case of Linux based systems another service like an installed nginx) is already using this Port. 
-
-You should stop this service or Docker container first.
