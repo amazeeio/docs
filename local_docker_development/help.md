@@ -32,7 +32,9 @@ If this still is not enough, this is the 🔨  method:
     $ docker-compose down -v
     $ docker-compose up
 
+{% hint style='warn' %}
 This will remove your whole mysql database and maybe existing other created volumes (like the solr search index).
+{% endhint %}
 
 ## Drupal Container logs
 
