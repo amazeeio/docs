@@ -107,7 +107,7 @@ The easiest way would be to just give your new container another name, but there
 
 You shouldn't really need to do this, and if you think so, first try the above help. But sometimes the best way is to completely restart:
 
-    $ docker rm -vf $(docker ps -a -q)
+    $ docker rm -vf $(docker ps -q)
     
 This will stop and remove all containers and all attached volumes.
 
@@ -122,3 +122,13 @@ But sometimes we might have some old volumes that we don't need anymore, you can
 
 Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot`.
 
+## I get an error like `Service "drupal" mounts volumes from "amazeeio-ssh-agent", which is not the name of a service or container.`
+
+This can happen when you start a Drupal Container via `docker-compose up -d`
+
+    $ docker-compose up -d
+    ERROR: Service "drupal" mounts volumes from "amazeeio-ssh-agent", which is not the name of a service or container.
+
+The Drupal Containers are depending on the `ssh-agent` shared Docker container (this is in order to have shared ssh-keys) and somehow this container is missing.
+
+You should try to restart either `pygmy` or `cachalot`, which will create the `ssh-agent` container with the name `amazeeio-ssh-agent` and then try again.
