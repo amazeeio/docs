@@ -10,7 +10,7 @@ from the great tools that New Relic provides.
 **Steps for enabling New Relic on your site.**
 
 1. Sign up for a [New Relic](https://newrelic.com/signup) account (you can start with a free account and switch to the paid version later if you like the service)
-2. Log into Newrelic [rpm.newrelic.com](http://rpm.newrelic.com)
+2. Log into Newrelic: [rpm.newrelic.com](http://rpm.newrelic.com)
 3. Navigate to the top right menu (the one with your organisation name)
 4. Select `Account settings`
 5. Copy the 40 Character Licence Key
