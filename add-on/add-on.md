@@ -1,4 +1,4 @@
-#Add-Ons
+#Add-Ons ➕
 
 What would a hosting be without bells ans whistles? We support several Add-Ons to the
 basic hosting package.
