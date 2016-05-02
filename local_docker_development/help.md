@@ -9,3 +9,8 @@ For most problems with the Docker Development environment, it's the best to rest
 ### Restart shared Docker containers
 
 This is done either in `pygmy` or `cachalot`
+
+         $ amazeeio-cachalot restart       
+or
+
+         $ pygmy restart       
