@@ -12,7 +12,7 @@
        * [Help](local_docker_development/pygmy/help.md)
    * [Drupal Docker Containers](local_docker_development/drupal_site_containers.md)
        * [Connect to MySQL in Docker Container](local_docker_development/connect_to_mysql_from_external.md)
-   * Help
+   * [Help](local_docker_development/help.md)
 * [Architecture](architecture/architecture.md)
    * [Stack-Types](architecture/stack-types.md)
        * [Compact Stack](architecture/stack-types/compact.md)
@@ -41,3 +41,4 @@
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
+
