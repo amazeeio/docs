@@ -6,6 +6,8 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 
 ## Find the right `docker-compose.yml`
 
+## Find the right `docker-compose.yml`
+
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
 2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
