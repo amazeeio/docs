@@ -121,3 +121,9 @@ But sometimes we might have some old volumes that we don't need anymore, you can
     $ docker volume rm $(docker volume ls -q)
 
 Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot.
+
+## I get an error like `port is already allocated.` during
+
+    docker: Error response from daemon: driver failed programming external connectivity on endpoint 
+    amazeeio-haproxy (654d1f1c17b0f7304570a763e1017808b214b81648045a5c64ed6a395daeec92): 
+    Bind for 0.0.0.0:443 failed: port is already allocated.
