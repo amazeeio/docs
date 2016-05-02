@@ -31,7 +31,7 @@
 * Tools
    * Blackfire.io
    * Xdebug
-* Add-ons
+* [Add-ons](add-on/add-on.md)
    * [CDN Integration](add-on/cdn_integration.md)
    * [Dropguard](add-on/dropguard.md)
    * [New Relic](add-on/newrelic.md)
@@ -41,4 +41,3 @@
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
-
