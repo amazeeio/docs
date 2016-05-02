@@ -13,4 +13,4 @@ Overall Systems status is published here:  [http://status.amazee.io/](http://sta
 Weekly changelogs are published here [https://changelog.amazee.io](https://changelog.amazee.io)
 
 ## 24/7 On Duty Call
-If you are a Cluster-Stack customer you receive a phone number which connects you directly to one of our on-call engineers. We're here for you. If you can't find the number in your files feel free to send us a mail to support@amazee.io.
+If you are a Cluster-Stack customer you receive a phone number which connects you directly to one of our on-call engineers. We're here for you. If you can't find the number in your files feel free to send us a mail to `support@amazee.io`.

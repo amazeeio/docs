@@ -29,4 +29,4 @@ amazee.io allows you to point several domains to a single site. We recommend to 
 
 ## SSL/HTTPS
 
-You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site support@amazee.io
+You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site `support@amazee.io`
