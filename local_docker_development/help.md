@@ -10,7 +10,93 @@ For most problems with the Docker Development environment, it's the best to rest
 
 This is done either in `pygmy` or `cachalot`
 
-         $ amazeeio-cachalot restart       
+    $ amazeeio-cachalot restart       
 or
 
-         $ pygmy restart       
+    $ pygmy restart -d       
+
+now you should also restart the Drupal specific Containers:
+
+### Restart Drupal Containers
+
+needs to be done separate for each Drupal container. Run this command where the `docker-compose.yml` is:
+
+    $ docker-compose restart
+        
+sometimes this is not enough, we can tell docker compose to recreate the containers:
+
+    $ docker-compose up -d --force-recreate
+
+If this still is not enough, this is the 🔨  method:
+
+    $ docker-compose down -v
+    $ docker-compose up
+
+This will remove your whole mysql database and maybe existing other created volumes (like the solr search index).
+
+## Drupal Container logs
+
+The above commands all assume that something is wrong with the containers, sometimes though the issue lies somewhere else.  
+To find such issues, we need to analyze the docker logs, do that via:
+
+    $ docker-compose logs
+    
+    Attaching to amazee_io.docker.amazee.io
+    amazee_io.docker.amazee.io | *** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
+    amazee_io.docker.amazee.io | *** Running /etc/my_init.d/20_virtual_host_replace.sh...
+    amazee_io.docker.amazee.io | *** Running /etc/rc.local...
+    amazee_io.docker.amazee.io | *** Booting runit daemon...
+    amazee_io.docker.amazee.io | *** Runit started as PID 33
+    amazee_io.docker.amazee.io | tail: cannot open ‘/var/log/nginx/10fe-drupal.error.log’ for reading: No such file or directory
+    amazee_io.docker.amazee.io | tail: cannot open ‘/var/log/nginx/20be-drupal.error.log’ for reading: No such file or directory
+    amazee_io.docker.amazee.io | tail: cannot open ‘/var/log/nginx/error.log’ for reading: No such file or directory
+    amazee_io.docker.amazee.io | tail: cannot open ‘/var/log/nginx/ssl-10fe-drupal.error.log’ for reading: No such file or directory
+    amazee_io.docker.amazee.io | 160502 05:13:44 mysqld_safe Logging to syslog.
+    amazee_io.docker.amazee.io | child (246) Started
+    amazee_io.docker.amazee.io | Child (246) said Child starts
+
+Check the latest few lines of code and you probably see the issue.  
+Stuck here? Join our Slack at [slack.amazee.io](https://slack.amazee.io) and we help you.
+
+## Shared container logs
+
+To see the logs of the shared container started via `pygmy` or `cachalot`, first display all docker containers:
+
+    $ docker ps
+    
+    CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+    9e27b9eadc67        amazeeio/drupal:php70-basic   "/sbin/my_init"          5 minutes ago       Up 5 minutes        80/tcp, 443/tcp, 0.0.0.0:32782->3306/tcp   amazee_io.docker.amazee.io
+    5ce655cd369f        andyshinn/dnsmasq:2.75        "dnsmasq -k -A /docke"   24 minutes ago      Up 24 minutes       0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp     amazeeio-dnsmasq
+    124b3919e89a        amazeeio/ssh-agent            "/run.sh ssh-agent"      24 minutes ago      Up 24 minutes                                                  amazeeio-ssh-agent
+    93eb7a384640        amazeeio/haproxy              "/app/docker-entrypoi"   24 minutes ago      Up 24 minutes       0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   amazeeio-haproxy
+
+You can see three containers that have names with starting `amazeeio-` these are the shared containers.
+
+You can view each container's logs via:
+
+    $ docker logs -f [container name]
+    
+Btw, you can also see the logs of the Drupal Containers, via that command.
+
+## I get an error like `Conflict. The name "/amazee_io.docker.amazee.io" is already in use by container`
+
+It happened to all of us, you remove a local `docker-compose.yml` file, recreate it and now during `docker-compose up -d`, docker yells at you and tells you this dontainer exists already.
+
+The easiest way would be to just give your new container another name, but there are better ways:
+
+## Remove a container
+
+1. Find the name of the container you would like to completely remove via:
+
+        $ docker ps
+        
+        CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+        9e27b9eadc67        amazeeio/drupal:php70-basic   "/sbin/my_init"          10 minutes ago      Up 10 minutes       80/tcp, 443/tcp, 0.0.0.0:32782->3306/tcp   amazee_io.docker.amazee.io
+
+2. Stop the container
+
+        $ docker stop amazee_io.docker.amazee.io
+        
+3. Remove the container with it's volumes:
+
+        $ docker rm -v amazee_io.docker.amazee.io
