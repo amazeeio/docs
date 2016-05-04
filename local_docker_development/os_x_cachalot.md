@@ -74,7 +74,7 @@ $ amazeeio-cachalot help
 
 ### Adding additional ssh keys
 
-`cachalot` will add `~/.ssh/id_rsa` per default to the Docker Environment, if you like to add another key, call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
+`cachalot` will add `~/.ssh/id_rsa` per default to the Docker Environment, if you like to add another key, call the `addkey` command with the **absolute** path to the key you would like to add. If the key is passphrase protected, it will ask for your passphrase.
 
     $ amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
 
