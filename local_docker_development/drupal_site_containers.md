@@ -20,6 +20,18 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 
 To run commands like `drush`, `git` or other things within the container, you need to connect to the container.
 
+There are two ways for that:
+
+#### Connect via `docker-compose`
+
+This is the easier way, you need to be in the same folder where also the `docker-compose.yml` for that to work:
+
+    docker-compose exec --user drupal drupal bash
+
+#### Connect via `docker`
+
+If you want to connect to a container wherever you are right now with your bash:
+
 	docker exec -itu drupal changeme.com.docker.amazee.io bash
 
 *Replace `changeme.com.docker.amazee.io` with the docker container you want to connect to*
