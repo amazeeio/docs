@@ -6,6 +6,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 
 ## Prerequisites
 * [Docker Compose](https://docs.docker.com/compose/install/)
+  * On OS X just run `brew install docker-compose`
 
 ## Find the right `docker-compose.yml`
 
@@ -13,7 +14,9 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 2. Copy the desired example file into your Drupal directory
 3. Rename the file to `docker-compose.yml`
 4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazee.io docker can use it as well._
-5. Run `docker-compose up -d` in the same directory
+5. Run in the same directory as the `docker-compose.yml`:
+
+        docker-compose up -d
 6. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
 ## Connect to the container
