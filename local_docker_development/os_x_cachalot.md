@@ -29,6 +29,15 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 ## Installation
 
+First make sure your brew is up to date:
+
+    $ brew update
+    
+Install Docker and Docker machine (if you don't have that yet)
+
+    $ brew install docker
+    $ brew install docker-machine
+
 Install cachalot via Brew:
 
     $ brew tap amazeeio/cachalot
