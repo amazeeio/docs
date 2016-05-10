@@ -14,6 +14,7 @@ Amazee.io exposes services to the web application by making use of environment v
 | AMAZEEIO_SITE_BRANCH      | The branch configured for your site           | System    |
 | AMAZEEIO_SITE_ENVIRONMENT | Environment (production / development)        | System    |
 | AMAZEEIO_SITE_NAME        | Sitename / Username of the Site               | System    |
+| AMAZEEIO_TMP_PATH         | A per site path for temporary files           | System    |
 | AMAZEEIO_SOLR_HOST        | Solr Host                                     | Solr      |
 | AMAZEEIO_SOLR_PORT        | Solr Port                                     | Solr      |
 | AMAZEEIO_VARNISH_HOSTS    | Varnish Hosts                                 | Varnish   |
