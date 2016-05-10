@@ -11,8 +11,6 @@ AMAZEEIO_DB_PORT          | Database Port                           | Database
 AMAZEEIO_DB_USERNAME      | Database Username                       | Database
 AMAZEEIO_HOSTINGSTACK     | The stack identifier you are running on | System
 AMAZEEIO_LOCATION         |                                         | System
-AMAZEEIO_REDIS_HOST       | Redis Host                              | Redis
-AMAZEEIO_REDIS_PORT       | Redis Port                              | Redis
 AMAZEEIO_SITE_BRANCH      | The branch configured for your site     | System
 AMAZEEIO_SITE_ENVIRONMENT | Environment (production / development)  | System
 AMAZEEIO_SITE_NAME        |                                         | System
