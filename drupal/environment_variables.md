@@ -16,8 +16,8 @@ Amazee.io exposes services to the web application by making use of environment v
 | AMAZEEIO_SITE_NAME        | Sitename / Username of the Site               | System    |
 | AMAZEEIO_SOLR_HOST        | Solr Host                                     | Solr      |
 | AMAZEEIO_SOLR_PORT        | Solr Port                                     | Solr      |
-| AMAZEEIO_VARNISH_HOSTS    |                                               | Varnish   |
-| AMAZEEIO_VARNISH_SECRET   |                                               | Varnish   |
+| AMAZEEIO_VARNISH_HOSTS    | Varnish Hosts                                 | Varnish   |
+| AMAZEEIO_VARNISH_SECRET   | Varnish Secret                                | Varnish   |
 
 Environment variables can be access from your web application by using PHP's `getenv()` function.
 
