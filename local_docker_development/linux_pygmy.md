@@ -18,7 +18,7 @@ If you don't run the new Docker for Mac Beta: Sorry `pygmy` is not for you, we h
 
 
 ## Prerequisites
-1. Docker, see [the official guides](https://docs.docker.com/engine/installation/) how to do that
+1. Docker (Version >= 1.11.1), see [the official guides](https://docs.docker.com/engine/installation/) how to do that
 2. Ruby, see [the official guides ](https://www.ruby-lang.org/en/documentation/installation/)
 
 ## Installation

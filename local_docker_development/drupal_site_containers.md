@@ -5,7 +5,7 @@
 During [Part I](./local_docker_development.md#part-i-shared-docker-containers) we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:
 
 ## Prerequisites
-* [Docker Compose](https://docs.docker.com/compose/install/)
+* [Docker Compose](https://docs.docker.com/compose/install/) (Version >= 1.7.0)
   * On OS X just run `brew install docker-compose`
 
 ## Find the right `docker-compose.yml`
