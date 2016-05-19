@@ -31,21 +31,21 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 First make sure your brew is up to date:
 
-    $ brew update
-    
+    brew update
+
 Install Docker and Docker machine (if you don't have that yet)
 
-    $ brew install docker
-    $ brew install docker-machine
+    brew install docker
+    brew install docker-machine
 
 Install cachalot via Brew:
 
-    $ brew tap amazeeio/cachalot
-    $ brew install cachalot
+    brew tap amazeeio/cachalot
+    brew install cachalot
 
 Create the VM and start services with:
 
-    $ amazeeio-cachalot create --provider virtualbox
+    amazeeio-cachalot create --provider virtualbox
 
 You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memory and CPU options when creating the VM. See available options: `amazeeio-cachalot help create`
 
@@ -58,7 +58,7 @@ To check that everything has been installed correctly, open http://docker.amazee
 ## CLI Usage
 
 ```
-$ amazeeio-cachalot help
+amazeeio-cachalot help
 
   amazeeio-cachalot addkey [~/.ssh/id_rsa]  # Add additional ssh-key
   amazeeio-cachalot create                  # create the docker-machine VM
@@ -85,7 +85,7 @@ $ amazeeio-cachalot help
 
 `cachalot` will add `~/.ssh/id_rsa` per default to the Docker Environment, if you like to add another key, call the `addkey` command with the **absolute** path to the key you would like to add. If the key is passphrase protected, it will ask for your passphrase.
 
-    $ amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
+    amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
 
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
     Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
@@ -94,7 +94,7 @@ $ amazeeio-cachalot help
 
 Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feels right now and which ssh-keys it currently has in its stomach:
 
-    $ amazeeio-cachalot status
+    amazeeio-cachalot status
 
     [virtual machine]
     running
@@ -122,7 +122,7 @@ Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feel
 
 `cachalot` can update shared docker containers for you:
 
-    $ amazeeio-cachalot docker_update
+    amazeeio-cachalot docker_update
 
 After it updated all containers, it will recreate them as well.
 
@@ -130,13 +130,13 @@ After it updated all containers, it will recreate them as well.
 
 To update cachalot itself, run
 
-    $ amazeeio-cachalot halt
-    $ brew update
-    $ brew upgrade cachalot
-    $ amazeeio-cachalot up
+    amazeeio-cachalot halt
+    brew update
+    brew upgrade cachalot
+    amazeeio-cachalot up
 
 To update the Docker VM, run:
 
-    $ amazeeio-cachalot upgrade
+    amazeeio-cachalot upgrade
 
 This will run `docker-machine upgrade` and then restart everything.
