@@ -33,7 +33,8 @@ First make sure your brew is up to date:
 
     brew update
 
-Install Docker and Docker machine (if you don't have that yet)
+Install Docker and Docker machine  
+(if you have that installed already, make sure you have the newest versions via `brew upgrade docker docker-machine`)
 
     brew install docker
     brew install docker-machine
@@ -69,12 +70,13 @@ amazeeio-cachalot help
   amazeeio-cachalot addkey [~/.ssh/id_rsa]  # Add additional ssh-key
   amazeeio-cachalot create                  # create the docker-machine VM
   amazeeio-cachalot destroy                 # stop and delete all traces of the VM
-  amazeeio-cachalot docker_halt             # stop the Docker Containers
+  amazeeio-cachalot docker_halt             # stop and remove the Docker Containers
   amazeeio-cachalot docker_restart          # Restarts all Docker Containers
   amazeeio-cachalot docker_start            # starts the docker containers
   amazeeio-cachalot docker_status           # Get Status of Docker containers
+  amazeeio-cachalot docker_stop             # stop the Docker Containers
   amazeeio-cachalot docker_update           # Pulls Docker Images and recreates the Containers
-  amazeeio-cachalot env                     # returns env variables to set, should be run like $(amazeeio_cachalot env)
+  amazeeio-cachalot env                     # returns env variables to set, should be run like $(amazeeio_cachalot...
   amazeeio-cachalot halt                    # stop the VM and services
   amazeeio-cachalot help [COMMAND]          # Describe available commands or one specific command
   amazeeio-cachalot ip                      # get the VM's IP address
