@@ -49,7 +49,13 @@ Create the VM and start services with:
 
 You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memory and CPU options when creating the VM. See available options: `amazeeio-cachalot help create`
 
-Once the VM is up, you'll get instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM. We suggest adding that to your `~/.bashrc` so that they are available all times.
+Once the VM is up, cachalot will tell you it's own status and instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM, do that with:
+
+    eval $(amazeeio-cachalot env)
+
+We suggest adding that to your `~/.bashrc` so that the environment variables are available all times:
+
+    echo "eval \$(amazeeio-cachalot env)" >> ~/.bashrc
 
 To check that everything has been installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
