@@ -54,9 +54,13 @@ Once the VM is up, cachalot will tell you it's own status and instructions to ad
 
     eval $(amazeeio-cachalot env)
 
-We suggest adding that to your `~/.bashrc` so that the environment variables are available all times:
+We suggest adding that to your `~/.bash_profile` so that the environment variables are available all times:
 
-    echo "eval \$(amazeeio-cachalot env)" >> ~/.bashrc
+    echo "eval \$(amazeeio-cachalot env)" >> ~/.bash_profile
+
+or for zsh users:
+
+    echo "eval \$(amazeeio-cachalot env)" >> ~/.zshrc
 
 To check that everything has been installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
