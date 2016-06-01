@@ -107,9 +107,9 @@ The easiest way would be to just give your new container another name, but there
 
 You shouldn't really need to do this, and if you think so, first try the above help. But sometimes the best way is to completely restart:
 
-    $ docker rm -vf $(docker ps -q)
-    
-This will stop and remove all containers and all attached volumes.
+    $ docker rm -vf $(docker ps -q -a)
+
+This will stop and remove **all** containers and **all** attached volumes.
 
 {% hint style='danger' %}
 This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).
