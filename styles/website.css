@@ -1,1 +1,3 @@
-/* CSS for website */
+.book-summary ul.summary li span {
+  color: #cccccc !important;
+}
