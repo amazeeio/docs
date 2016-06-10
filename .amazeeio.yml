@@ -2,6 +2,6 @@ deploy_tasks:
   development:
     before_deploy:
       - npm install gitbook-cli
-      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 2.6.7 fetch
-      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 2.6.7 install
-      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 2.6.7 build
+      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 3.1.0 fetch
+      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 3.1.0 install
+      - node ./node_modules/gitbook-cli/bin/gitbook.js -v 3.1.0 build
