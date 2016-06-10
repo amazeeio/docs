@@ -44,7 +44,7 @@ If you want to connect to a container wherever you are right now with your bash:
 
 Per default your SSH Key at `~/.ssh/id_rsa` is added to the Docker containers from either `cachalot` or `pygmy`
 
-If you need another key, read the documentation of [`cachalot`](local_docker_development/os_x_cachalot.md) or [`pygmy`](local_docker_development/linux_pygmy.md) about this.
+If you need another key, read the documentation of [`cachalot`](os_x_cachalot.md) or [`pygmy`](linux_pygmy.md) about this.
 
 ## Update Images
 
