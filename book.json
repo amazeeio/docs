@@ -21,7 +21,6 @@
     "links": {
         "sidebar": {
             "www.amazee.io": "https://www.amazee.io"
-        },
-        "home": "test"
+        }
     }
 }
