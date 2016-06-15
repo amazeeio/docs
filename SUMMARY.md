@@ -17,9 +17,7 @@
    * [Stack-Types](architecture/stack-types.md)
        * [Compact Stack](architecture/stack-types/compact.md)
        * [Cluster Stack](architecture/stack-types/cluster.md)
-   * Environments
-       * Production
-       * Development
+   * [Environments](environments.md)
    * [E-Mail Delivery](architecture/e-mail_delivery.md)
    * [Stack Components](architecture/components.md)
    * URL Structure
