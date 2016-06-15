@@ -20,7 +20,8 @@ Configuring the root domain (e.g. example.com) can be a bit tricky because the D
 - ANAME at [DNS Made Easy](http://www.dnsmadeeasy.com/)
 - ANAME at [easyDNS](https://www.easydns.com/)
 - ALIAS at [PointDNS](https://pointhq.com/)
-- CNAME at [CloudFlare](https://www.cloudflare.com/).
+- CNAME at [CloudFlare](https://www.cloudflare.com/)
+- CNAME at [NS1](http://ns1.com)
 
 
 ## Domains
@@ -29,4 +30,8 @@ amazee.io allows you to point several domains to a single site. We recommend to 
 
 ## SSL/HTTPS
 
-You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site `support@amazee.io`
+You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site `support@amazee.io`. To make sure that your site is ready to serve traffic via https ensure that following parts are already incldued via https:
+
+  - Iframes
+  - external Javascript libraries
+  - external Fonts
