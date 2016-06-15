@@ -14,15 +14,15 @@ Choose a Drupal Docker Container for your site, create the `docker-compose.yml` 
 
 You should end up with a Terminal like this:
 
-    $ docker-compose up -d
+    docker-compose up -d
     Creating amazee_io.docker.amazee.io
 
-    $ docker exec -itu drupal amazee_io.docker.amazee.io bash
+    docker exec -itu drupal amazee_io.docker.amazee.io bash
     🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$
 
 Please make sure that this `public_html` directory is the same where your Drupal lives in, so where the `index.php` file is:
 
-    $ ll index.php
+    ll index.php
     -rw-r--r-- 1 501 dialout 549 Apr 26 06:11 index.php
 
 
@@ -39,7 +39,6 @@ This has two main advantages:
 Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
 ```
-### amazee.io Database connection
 if(getenv('AMAZEEIO_SITENAME')){
   $databases['default']['default'] = array(
     'driver' => 'mysql',
@@ -117,7 +116,7 @@ That's it! Now visit the URL you defined for you Docker Container in your browse
 
 Congratulations! You just created your first amazee.io Drupal Site!
 
-<img src="../giphy.gif" width="200">
+![Congratulations](congratulations.gif)
 
 ## Add existing database
 
@@ -128,7 +127,7 @@ You may have an already existing Drupal database you would like to import into y
 This step depends on how you currently host. There are a lot of different ways on how to create a database dump.  
 If your current hosting provider has Drush installed, you can use something like that:
 
-    $ drush sql-dump --result-file=dump.sql
+    drush sql-dump --result-file=dump.sql
 
     Database dump saved to dump.sql
 
@@ -138,18 +137,18 @@ Now you have a `dump.sql` file that contains your whole database.
 
 As the Docker Container has automatically access to your whole Drupal code, you can just place the dump inside your Drupal directory:
 
-    $ ll dump.sql
+    ll dump.sql
     -rw-r--r-- 1 501 dialout 3098963 May  1 14:44 dump.sql
 
 ### Step 3: Import database from dump
 
 Again drush, this time `drush sql-connect`, the backticks are important!
 
-    $ `drush sql-connect` < dump.sql
+    `drush sql-connect` < dump.sql
 
 You can verify that it worked with:
 
-    $ drush sql-query "show tables;"
+    drush sql-query "show tables;"
 
     batch
     block_content
@@ -174,5 +173,40 @@ So to add your Drupal files, just put them in the directory you had them before,
 
 ###.amazeeio.yml
 
+In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml`
+
+For a Drupal 8 Deployment with npm the file could look like following:
+```
+deploy_tasks:
+  development:
+    before_deploy:
+      - npm run gulp -- compile
+    after_deploy:
+      - drush -y updb --cache-clear=0
+      - drush -y cr
+  production:
+    before_deploy:
+      - npm install
+      - npm run gulp -- build
+    after_deploy:
+      - drush -y updb --cache-clear=0
+      - drush -y cr
+shared:
+  production:
+    - src: files
+      dst: sites/default/files
+```
+
+### development / production
+Defines the tasks which are run in different environments
+
+### before_deploy
+Tasks which are ran before the release is going to be activated on the server
+
+### after_deploy:
+Tasks which are ran after the releease is activated on the server
+
+### shared
+The shared part of the configuration file will be used to symlink shared resources (e.g. files or other directoies which need to be present on all backend webservers).
 
 ##Setup automatic deployment

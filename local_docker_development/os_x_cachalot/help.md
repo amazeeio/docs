@@ -9,31 +9,40 @@ Solutions to many common problems can be found here.
 The best to solve issues around not accessible docker sites is to try to turn it off and on again:
 
 1. Make sure everything is running correctly
-      
-         $ amazeeio-cachalot status
-      
+
+  ```
+  amazeeio-cachalot status
+  ```
+
 1. Restart cachalot:
 
-         $ amazeeio-cachalot restart
+  ```
+  amazeeio-cachalot restart
+  ```
 
 
 ## Cachalot starts with `NFS failed to run`
 
 1. Restart your cachalot with `amazeeio-cachalot restart`
-2. Check if your brew installation is all correct, do that with 
-  
-        brew doctor
+2. Check if your brew installation is all correct, do that with
+
+  ```
+  brew doctor
+  ```
+
    and fix eventual issues. Then restart `amazeeio-cachalot restart`
 
 ## I get an error like `port is already allocated.` during start
 
 If during the start of Docker containers you see an error like that:
 
-    docker: Error response from daemon: driver failed programming external connectivity on endpoint 
-    amazeeio-haproxy (654d1f1c17b0f7304570a763e1017808b214b81648045a5c64ed6a395daeec92): 
-    Bind for 0.0.0.0:443 failed: port is already allocated.
+  ```
+  docker: Error response from daemon: driver failed programming external connectivity on endpoint
+  amazeeio-haproxy (654d1f1c17b0f7304570a763e1017808b214b81648045a5c64ed6a395daeec92):
+  Bind for 0.0.0.0:443 failed: port is already allocated.
+  ```
 
-This means that another service (can be another Docker container, or in case of Linux based systems another service like an installed nginx) is already using this Port. 
+This means that another service (can be another Docker container, or in case of Linux based systems another service like an installed nginx) is already using this Port.
 
 You should stop this service or Docker container first.
 
@@ -41,7 +50,9 @@ You should stop this service or Docker container first.
 
 First check that `cachalot` is actually running:
 
-    `amazeeio-cachalot status`
+```
+amazeeio-cachalot status
+```
 
 If not, start it : )
 
@@ -51,7 +62,7 @@ Another common cause is the `DOCKER_*` environment variables not being set corre
 
 Set them with
 
-    eval $(amazeeio-cachalot env)
+  eval $(amazeeio-cachalot env)
 
 
 ## The `docker` client reports errors like `x509: certificate is valid for 192.168.x.y, not 192.168.x.z`
