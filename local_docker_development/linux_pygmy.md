@@ -22,11 +22,11 @@ If you don't run the new Docker for Mac Beta: Sorry `pygmy` is not for you, we h
 2. Ruby, see [the official guides ](https://www.ruby-lang.org/en/documentation/installation/)
 
 ## Installation
-    $ gem install pygmy
+    gem install pygmy
 
 ## Start
 
-    $ pygmy up
+    pygmy up
 
 `pygmy` will now start all the required Docker containers and add the ssh key.
 
@@ -37,7 +37,7 @@ See Help for `pygmy`
 ## CLI Usage
 
 ```
-$ pygmy help
+pygmy help
 
 Commands:
   pygmy addkey [~/.ssh/id_rsa]  # Add additional ssh-key
@@ -54,7 +54,7 @@ Commands:
 
 Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
 
-    $ pygmy addkey /Users/amazeeio/.ssh/my_other_key
+    pygmy addkey /Users/amazeeio/.ssh/my_other_key
 
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
     Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
@@ -63,7 +63,7 @@ Call the `addkey` command with the **absolute** path to the key you would like t
 
 Run `pygmy status` and `pygmy` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
 
-    $ pygmy status
+    pygmy status
 
     [*] Dnsmasq: Running as docker container amazeeio-dnsmasq
     [*] Haproxy: Running as docker container amazeeio-haproxy
@@ -82,7 +82,7 @@ If you like to cleanup though, use `pygmy down` to really remove the Docker cont
 
 `pygmy` can update shared docker containers for you:
 
-    $ pygmy update
+    pygmy update
 
 After it updated all containers, it will recreate them as well.
 
@@ -95,7 +95,7 @@ As rubygems does not remove old versions of gems when updating, you should remov
 
 First update:
 
-    $ gem update pygmy
+    gem update pygmy
 
     Updating installed gems
     Updating pygmy
@@ -112,7 +112,7 @@ A new version!
 
 Now uninstall the old one:
 
-    $ gem uninstall pygmy
+    gem uninstall pygmy
 
     Select gem to uninstall:
      1. pygmy-0.9.3
@@ -123,6 +123,6 @@ Now uninstall the old one:
 
 check the correct version:
 
-    $ pygmy -v
+    pygmy -v
 
     Pygmy - Version: 0.9.4
