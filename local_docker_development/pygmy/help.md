@@ -1,7 +1,7 @@
 # Linux `pygmy` Help
 Most issues with `pygmy` can be resolved with:
 
-![](../../200_s.gif)
+![Have you tried turning it off and on again?](itsupport.gif)
 
 
     $ pygmy restart -d
