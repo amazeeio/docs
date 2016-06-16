@@ -41,7 +41,7 @@ If you want to connect to a container wherever you are right now with your bash:
 
 ### Drush from your host machine
 
-To use drush, you can either connect to the container as above, or add a bash alias that will connect for you to run your drush command. To add the alias, add this to your .bashrc file:
+To use drush, you can either connect to the container as above, or add a bash function that will connect for you to run your drush command. To add the function, add this to your .bashrc file:
 
 ```
 ddrush() {
