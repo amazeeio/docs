@@ -45,7 +45,7 @@ To use drush, you can either connect to the container as above, or add a bash fu
 
 ```
 ddrush() {
- docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/web && drush $@"
+  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/\"\$WEBROOT\" && drush $@"
 }
 ```
 
