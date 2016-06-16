@@ -21,7 +21,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 
 ## Connect to the container
 
-To run commands like `drush`, `git` or other things within the container, you need to connect to the container.
+To run commands like `git` or other things within the container, you need to connect to the container.
 
 There are two ways for that:
 
@@ -39,6 +39,17 @@ If you want to connect to a container wherever you are right now with your bash:
 
 *Replace `changeme.com.docker.amazee.io` with the docker container you want to connect to*
 
+### Drush from your host machine
+
+To use drush, you can either connect to the container as above, or add a bash alias that will connect for you to run your drush command. To add the alias, add this to your .bashrc file:
+
+```
+ddrush() {
+ docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/web && drush $@"
+}
+```
+
+When you next start a bash session, you'll be able to use `ddrush` just like your normal `drush` command.
 
 ## SSH Agent
 
