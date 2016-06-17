@@ -26,6 +26,7 @@
    * [Drupal Configuration](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [Synchronize Sites](drupal/synchronize_sites.md)
+* [Deployments](deployments.md)
 * Tools
    * Blackfire.io
    * Xdebug
@@ -33,9 +34,7 @@
    * [CDN Integration](add-on/cdn_integration.md)
    * [Dropguard](add-on/dropguard.md)
    * [New Relic](add-on/newrelic.md)
-* Automated Deployments
-   * Production Deployments
-   * Development Deployments
+* [Automated Deployments](automated_deployments.md)
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
