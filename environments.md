@@ -1,6 +1,14 @@
 # Environments
 
 ## Production
+
+- Varnish enabled by default
+- NewRelic is enabled
+- PHP Errors are not displayed
+
 ## Development
-- Search Engines access is blocked by sending no-index headers with all Dev sites
-- URL is generated to have direct access to the development environment
+
+- Varnish disabled by default
+- NewRelic is disabled
+- PHP Errors are not displayed
+- Every server response is being tagged with a no-index header that tells search engines to not index the development site
