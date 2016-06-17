@@ -21,12 +21,12 @@
    * [Environments](environments.md)
    * [E-Mail Delivery](architecture/e-mail_delivery.md)
    * URL Structure
+* [Automated Deployments](automated_deployments.md)
 * [Drupal](drupal/drupal.md)
    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
    * [Drupal Configuration](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [Synchronize Sites](drupal/synchronize_sites.md)
-* [Deployments](deployments.md)
 * Tools
    * Blackfire.io
    * Xdebug
@@ -34,7 +34,6 @@
    * [CDN Integration](add-on/cdn_integration.md)
    * [Dropguard](add-on/dropguard.md)
    * [New Relic](add-on/newrelic.md)
-* [Automated Deployments](automated_deployments.md)
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [FAQ](faq.md)
