@@ -46,21 +46,21 @@ Install cachalot via Brew:
 
 Create the VM and start services with:
 
-    amazeeio-cachalot create --provider virtualbox
+    cachalot create --provider virtualbox
 
-You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memory and CPU options when creating the VM. See available options: `amazeeio-cachalot help create`
+You can specify provider (`virtualbox`, `vmware`, `xhyve` or `parallels`), memory and CPU options when creating the VM. See available options: `cachalot help create`
 
 Once the VM is up, cachalot will tell you it's own status and instructions to add some Docker-related environment variables, so that your Docker client can contact the Docker server inside the VM, do that with:
 
-    eval $(amazeeio-cachalot env)
+    eval $(cachalot env)
 
 We suggest adding that to your `~/.bash_profile` so that the environment variables are available all times:
 
-    echo "eval \$(amazeeio-cachalot env)" >> ~/.bash_profile
+    echo "eval \$(cachalot env)" >> ~/.bash_profile
 
 or for zsh users:
 
-    echo "eval \$(amazeeio-cachalot env)" >> ~/.zshrc
+    echo "eval \$(cachalot env)" >> ~/.zshrc
 
 To check that everything has been installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
@@ -69,7 +69,7 @@ To check that everything has been installed correctly, open http://docker.amazee
 ## CLI Usage
 
 ```
-amazeeio-cachalot help
+cachalot help
 
   amazeeio-cachalot addkey [~/.ssh/id_rsa]  # Add additional ssh-key
   amazeeio-cachalot create                  # create the docker-machine VM
@@ -97,16 +97,16 @@ amazeeio-cachalot help
 
 `cachalot` will add `~/.ssh/id_rsa` per default to the Docker Environment, if you like to add another key, call the `addkey` command with the **absolute** path to the key you would like to add. If the key is passphrase protected, it will ask for your passphrase.
 
-    amazeeio-cachalot addkey /Users/amazeeio/.ssh/my_other_key
+    cachalot addkey /Users/amazeeio/.ssh/my_other_key
 
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
     Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
 
 ### Checking the status
 
-Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feels right now and which ssh-keys it currently has in its stomach:
+Run `cachalot status` and `cachalot` will tell you how it feels right now and which ssh-keys it currently has in its stomach:
 
-    amazeeio-cachalot status
+    cachalot status
 
     [virtual machine]
     running
@@ -134,7 +134,7 @@ Run `amazeeio-cachalot status` and `amazeeio-cachalot` will tell you how it feel
 
 `cachalot` can update shared docker containers for you:
 
-    amazeeio-cachalot docker_update
+    cachalot docker_update
 
 After it updated all containers, it will recreate them as well.
 
@@ -142,13 +142,13 @@ After it updated all containers, it will recreate them as well.
 
 To update cachalot itself, run
 
-    amazeeio-cachalot halt
+    cachalot halt
     brew update
     brew upgrade cachalot
-    amazeeio-cachalot up
+    cachalot up
 
 To update the Docker VM, run:
 
-    amazeeio-cachalot upgrade
+    cachalot upgrade
 
 This will run `docker-machine upgrade` and then restart everything.
