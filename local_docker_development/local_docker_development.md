@@ -110,7 +110,7 @@ The environment starts 3 containers:
 ```
                                           +-------------------------------------------------------------------------------+
                                           |                                                                               |
-                                          |  amazeeio-cachalot VM with boot2docker                                        |
+                                          |  cachalot VM with boot2docker                                                 |
                                           |  usually has IP 192.168.99.100                                                |
                                           |                                                                               |
                                           |                                                                               |
