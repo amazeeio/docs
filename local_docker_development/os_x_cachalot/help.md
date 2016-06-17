@@ -11,26 +11,26 @@ The best to solve issues around not accessible docker sites is to try to turn it
 1. Make sure everything is running correctly
 
   ```
-  amazeeio-cachalot status
+  cachalot status
   ```
 
 1. Restart cachalot:
 
   ```
-  amazeeio-cachalot restart
+  cachalot restart
   ```
 
 
 ## Cachalot starts with `NFS failed to run`
 
-1. Restart your cachalot with `amazeeio-cachalot restart`
+1. Restart your cachalot with `cachalot restart`
 2. Check if your brew installation is all correct, do that with
 
   ```
   brew doctor
   ```
 
-   and fix eventual issues. Then restart `amazeeio-cachalot restart`
+   and fix eventual issues. Then restart `cachalot restart`
 
 ## I get an error like `port is already allocated.` during start
 
@@ -51,27 +51,27 @@ You should stop this service or Docker container first.
 First check that `cachalot` is actually running:
 
 ```
-amazeeio-cachalot status
+cachalot status
 ```
 
 If not, start it : )
 
-Another common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `amazeeio-cachalot status` from the same terminal window. If it displays a message such as
+Another common cause is the `DOCKER_*` environment variables not being set correctly. Check the output of `cachalot status` from the same terminal window. If it displays a message such as
 
     Environment variables not set.
 
 Set them with
 
-  eval $(amazeeio-cachalot env)
+  eval $(cachalot env)
 
 
 ## The `docker` client reports errors like `x509: certificate is valid for 192.168.x.y, not 192.168.x.z`
 
 Sometimes the IP address of the docker-machine VM changes on restart, which in turn causes the certificates for the VM to not work. Current versions of docker-machine don't handle this for you, and neither does Dinghy, so to fix this you need to regenerate the certificates with:
 
-    $ docker-machine regenerate-certs amazeeio-cachalot
+    $ docker-machine regenerate-certs cachalot
 
-Replace `amazeeio-cachalot` with the VM machine name if you aren't using the default name.
+Replace `cachalot` with the VM machine name if you aren't using the default name.
 
 ## I'm running into file permissions issues on the NFS mounted volumes
 
