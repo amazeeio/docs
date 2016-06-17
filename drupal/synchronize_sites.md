@@ -1,7 +1,6 @@
 # Synchronize Sites
 Amazee.io tightly integrates with [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias). Therefore, you can use drush to sync between environments, amazee.io knows about your site environments and will automatically add them as you add a new site (e.g. a staging environment) to your account.
 
-
 ```
 dsql @<environment>
 ```
@@ -13,3 +12,7 @@ dfiles @<environment>
 ```
 
 This command synchronizes the file directory of Drupal to your current environment. Please make sure you have the Database set up correctly before running this command. If the database is not present the discovery of the correct file directory can fail.
+
+{% hint style='info' %}
+`dfiles` and `dsql` are just  aliases for drush sql-sync or drush rsync. As we had the issues in the past that people mixed up environments and synchronized the wrong way we free you of remembering a long command by adding short versions of it, nice isn't it?
+{% endhint %}
