@@ -10,10 +10,10 @@ For most problems with the Docker Development environment, it's the best to rest
 
 This is done either in `pygmy` or `cachalot`
 
-    $ amazeeio-cachalot restart       
+    cachalot restart       
 or
 
-    $ pygmy restart -d       
+    pygmy restart -d       
 
 now you should also restart the Drupal specific Containers:
 
@@ -21,16 +21,16 @@ now you should also restart the Drupal specific Containers:
 
 needs to be done separate for each Drupal container. Run this command where the `docker-compose.yml` is:
 
-    $ docker-compose restart
-        
+    docker-compose restart
+
 sometimes this is not enough, we can tell docker compose to recreate the containers:
 
-    $ docker-compose up -d --force-recreate
+    docker-compose up -d --force-recreate
 
 If this still is not enough, this is the 🔨  method:
 
-    $ docker-compose down -v
-    $ docker-compose up
+    docker-compose down -v
+    docker-compose up
 
 {% hint style='danger' %}
 This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).
@@ -41,8 +41,8 @@ This will remove your whole local MySQL database and maybe existing other local 
 The above commands all assume that something is wrong with the containers, sometimes though the issue lies somewhere else.  
 To find such issues, we need to analyze the docker logs, do that via:
 
-    $ docker-compose logs
-    
+
+    docker-compose logs
     Attaching to amazee_io.docker.amazee.io
     amazee_io.docker.amazee.io | *** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
     amazee_io.docker.amazee.io | *** Running /etc/my_init.d/20_virtual_host_replace.sh...
@@ -64,8 +64,8 @@ Stuck here? Join our Slack at [slack.amazee.io](https://slack.amazee.io) and we 
 
 To see the logs of the shared container started via `pygmy` or `cachalot`, first display all docker containers:
 
-    $ docker ps
-    
+    docker ps
+
     CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
     9e27b9eadc67        amazeeio/drupal:php70-basic   "/sbin/my_init"          5 minutes ago       Up 5 minutes        80/tcp, 443/tcp, 0.0.0.0:32782->3306/tcp   amazee_io.docker.amazee.io
     5ce655cd369f        andyshinn/dnsmasq:2.75        "dnsmasq -k -A /docke"   24 minutes ago      Up 24 minutes       0.0.0.0:53->53/tcp, 0.0.0.0:53->53/udp     amazeeio-dnsmasq
@@ -76,8 +76,8 @@ You can see three containers that have names with starting `amazeeio-` these are
 
 You can view each container's logs via:
 
-    $ docker logs -f [container name]
-    
+    docker logs -f [container name]
+
 Btw, you can also see the logs of the Drupal Containers, via that command.
 
 ## I get an error like `Conflict. The name "/amazee_io.docker.amazee.io" is already in use by container`
@@ -90,24 +90,24 @@ The easiest way would be to just give your new container another name, but there
 
 1. Find the name of the container you would like to completely remove via:
 
-        $ docker ps
-        
+        docker ps
+
         CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
         9e27b9eadc67        amazeeio/drupal:php70-basic   "/sbin/my_init"          10 minutes ago      Up 10 minutes       80/tcp, 443/tcp, 0.0.0.0:32782->3306/tcp   amazee_io.docker.amazee.io
 
 2. Stop the container
 
-        $ docker stop amazee_io.docker.amazee.io
-        
+        docker stop amazee_io.docker.amazee.io
+
 3. Remove the container with it's volumes:
 
-        $ docker rm -v amazee_io.docker.amazee.io
+        docker rm -v amazee_io.docker.amazee.io
 
 ## Remove all containers and all volumes
 
 You shouldn't really need to do this, and if you think so, first try the above help. But sometimes the best way is to completely restart:
 
-    $ docker rm -vf $(docker ps -q -a)
+    docker rm -vf $(docker ps -q -a)
 
 This will stop and remove **all** containers and **all** attached volumes.
 
@@ -116,9 +116,14 @@ This will remove your whole local MySQL database and maybe existing other local 
 {% endhint %}
 
 
-But sometimes we might have some old volumes that we don't need anymore, you can also get rid of them:
+But sometimes we might have some old volumes and images that we don't need anymore, you can also get rid of them:
 
-    $ docker volume rm $(docker volume ls -q)
+    docker volume rm $(docker volume ls -q)
+
+If you also want to get rid of all the docker images you can run:
+
+    docker rmi $(docker images -q)
+
 
 Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot`.
 
@@ -126,9 +131,9 @@ Now you have a completely empty Docker, now it's time to start again with `pygmy
 
 This can happen when you start a Drupal Container via `docker-compose up -d`
 
-    $ docker-compose up -d
+    docker-compose up -d
     ERROR: Service "drupal" mounts volumes from "amazeeio-ssh-agent", which is not the name of a service or container.
 
 The Drupal Containers are depending on the `ssh-agent` shared Docker container (this is in order to have shared ssh-keys) and somehow this container is missing.
 
-You should try to restart either `pygmy` or `cachalot`, which will create the `ssh-agent` container with the name `amazeeio-ssh-agent` and then try again.
+Try to restart either `pygmy` or `cachalot`, this will create the `ssh-agent` container with the name `amazeeio-ssh-agent` and then try again.
