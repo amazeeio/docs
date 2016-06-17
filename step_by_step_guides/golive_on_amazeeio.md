@@ -35,3 +35,7 @@ You can enable SSL on your sites. Feel free to get in touch with us to enable th
   - Iframes
   - external Javascript libraries
   - external Fonts
+
+{% hint style='info' %}
+As checking every page of your website might get a bit a tedious job you can make use of <a href="https://github.com/bramus/mixed-content-scan">mixed-content-scan</a>. This will crawl the entire site and give you back Sites that include assets from a non-https site.
+{% endhint %}
