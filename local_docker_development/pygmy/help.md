@@ -9,7 +9,7 @@ Most issues with `pygmy` can be resolved with:
 If that does not help, try restart other services, in this order:
 
 1. Docker
-2. Whole system
+2. Reboot your computer
 
 ## I get an error like `port is already allocated.` during start
 
