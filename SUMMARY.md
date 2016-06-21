@@ -4,7 +4,7 @@
 * [Step by Step Guides](step_by_step_guides/step_by_step_guides.md)
    * [Technical Requirements](step_by_step_guides/technical_requirements.md)
    * [Get your Drupal Site running](step_by_step_guides/get_your_drupal_site_running_on_amazeeio.md)
-   * [Granting access to your source](step_by_step_guides/grant_amazeeio_access_to_sourcecode.md)
+   * [Grant access to your sourcecode](step_by_step_guides/grant_amazeeio_access_to_sourcecode.md)
    * [Going Live](step_by_step_guides/golive_on_amazeeio.md)
 * [Local Docker Development](local_docker_development/local_docker_development.md)
    * [OS X - `cachalot`](local_docker_development/os_x_cachalot.md)

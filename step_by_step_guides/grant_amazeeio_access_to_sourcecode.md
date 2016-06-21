@@ -61,4 +61,4 @@ You're using a private installation of Gitlab, AWS Git repositories or something
 
 No worries, we only need reed access on the repository so we will provide you with a SSH Public-Key which then needs to be granted access.
 
-Feel free to get in touch with us `support@amazee.io` and we help you getting the repository access setup.
+Feel free to get in touch with us on slack or via `support@amazee.io` and we help you getting the repository access in line.
