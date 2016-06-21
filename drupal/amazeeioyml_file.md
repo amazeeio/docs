@@ -34,7 +34,7 @@ shared:
 ```
 
 ### deploy_tasks > development / deploy_tasks > production
-Defines the tasks which are run in the different different environments (see Envoronments)
+Defines the tasks which are run in the different different environments (see environments)
 
 ### before_deploy
 Tasks which are ran before the release is going to be activated on the server
