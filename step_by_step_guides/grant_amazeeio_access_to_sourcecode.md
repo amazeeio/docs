@@ -1,4 +1,4 @@
-# Giving amzee.io access to your git repository
+# Grant amzee.io access to your git repository
 
 Amazee.io needs to have read access on the git repositories which needs to be deployed. To support you in getting this permissions aligned please follow following guide:
 
