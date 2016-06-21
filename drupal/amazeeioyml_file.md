@@ -44,7 +44,7 @@ Tasks which are ran before the release is going to be activated on the server
 Tasks which are ran after the releease is activated on the server
 
 ### deploy_tasks → branch_deploy_tasks
-If you have several envrionments and need to run specific tasks on those envrionments you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
+If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
   - Dropping the SQL Database
   - Synchronize production Database to testbranch site
