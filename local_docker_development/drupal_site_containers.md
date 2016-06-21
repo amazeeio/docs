@@ -11,7 +11,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 ## Find the right `docker-compose.yml`
 
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
-2. Copy the desired example file into your Drupal directory
+2. Copy the desired example file into your Drupal directory (see descriptions below). Pick a 'basic' file if unsure.
 3. Rename the file to `docker-compose.yml`
 4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazee.io docker can use it as well._
 5. Run in the same directory as the `docker-compose.yml`:
