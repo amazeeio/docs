@@ -35,7 +35,7 @@ shared:
 ```
 
 ### deploy_tasks  → development / deploy_tasks → production
-Defines the tasks which are run in the different sites with their respective [environment type](environment_type.md).
+Defines the tasks which are run in the different sites with their respective [environment type](../environment_type.md).
 
 ### before_deploy
 Tasks which are ran before the release is going to be activated on the server
