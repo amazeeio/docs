@@ -2,7 +2,8 @@
 
 The automated deployment checks if a `.amazeeio.yml` file is present. This file is used to run tasks during the process of the deployment.
 
-For a Drupal 8 Deployment with npm the file could look like following:
+For a Drupal 8 Deployment with npm the `.amazeeio.yml` file could look like following:
+
 ```
 deploy_tasks:
   development:
@@ -33,8 +34,8 @@ shared:
       dst: sites/default/files
 ```
 
-### deploy_tasks > development / deploy_tasks > production
-Defines the tasks which are run in the different different environments (see Envoronments)
+### deploy_tasks  → development / deploy_tasks → production
+Defines the tasks which are run in the different sites with their respective [environment type](environment_type.md).
 
 ### before_deploy
 Tasks which are ran before the release is going to be activated on the server
@@ -42,12 +43,12 @@ Tasks which are ran before the release is going to be activated on the server
 ### after_deploy:
 Tasks which are ran after the releease is activated on the server
 
-### deploy_tasks > branch_deploy_tasks
+### deploy_tasks → branch_deploy_tasks
 If you have several envrionments and need to run specific tasks on those envrionments you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
   - Dropping the SQL Database
-  - Synchronize production Database to testbranch environment
-  - Synchronize production files to testbranch environment
+  - Synchronize production Database to testbranch site
+  - Synchronize production files to testbranch site
 
 You can make use of before_deploy and after_deploy tasks also within the branch_deploy_tasks.
 
