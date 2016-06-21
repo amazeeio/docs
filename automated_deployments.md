@@ -7,12 +7,12 @@ The deployment strategy used at amazee.io is heavily inspired by [drush deploy](
 ## Filesystem Structure
 
 ```
-├── public_html -> /var/www/site_name/releases/20160607095542Z/
+├── public_html -> /var/www/site_name/releases/20160607095555Z/
 ├── releases
 │   ├── 20160612075028Z
 │   ├── 20160607095540Z
 │   ├── 20160607095542Z
-│   └── 20150110104000
+│   └── 20160607095555Z
 ├── repo
 │   └── <VCS related data>
 └── shared
