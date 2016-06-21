@@ -56,7 +56,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 5. Afterwards you should see the User in the List with the appropriate access permission
 ![](giving-access/bitbucket5.png)
 
-## Other / Generig Git Hosting
+## Other / Generic Git Hosting
 You're using a private installation of Gitlab, AWS Git repositories or something else we didn't come up with yet?
 
 No worries, we only need reed access on the repository so we will provide you with a SSH Public-Key which then needs to be granted access.
