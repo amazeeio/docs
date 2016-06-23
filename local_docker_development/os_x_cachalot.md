@@ -29,7 +29,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 ## Installation
 
-First make sure your brew is up to date:
+Switch back to your Terminal. First make sure your brew is up to date:
 
     brew update
 
@@ -54,11 +54,11 @@ Once the VM is up, cachalot will tell you it's own status and instructions to ad
 
     eval $(cachalot env)
 
-We suggest adding that to your `~/.bash_profile` so that the environment variables are available all times:
+If you are using **Bash** Shell. We suggest adding that to your `~/.bash_profile` so that the environment variables are available all times:
 
     echo "eval \$(cachalot env)" >> ~/.bash_profile
 
-or for zsh users:
+Or for **zsh** users:
 
     echo "eval \$(cachalot env)" >> ~/.zshrc
 
@@ -122,7 +122,7 @@ Run `cachalot status` and `cachalot` will tell you how it feels right now and wh
     Haproxy: Running as docker container amazeeio-haproxy
     Dnsmasq: Running as docker container amazeeio-dnsmasq
     ssh-agent: Running as docker container amazeeio-ssh-agent, loaded keys:
-    4096 SHA256:QWzGN1r2X2PHdPi5MxsuUbPSi7HfOuwoSrRAwG43sHI /Users/Michael/.ssh/id_rsa (RSA)
+    4096 SHA256:QWzGN1r2X2PHdPi5MxsuUbPSi7HfOuwoSrRAwG43sHI /Users/amazeeio/.ssh/id_rsa (RSA)
 
 
     [environment variables]
