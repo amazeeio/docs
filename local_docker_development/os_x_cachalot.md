@@ -18,7 +18,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 
 ### Prerequisites
 
-1. OS X Yosemite (10.10) or higher
+1. OS X Yosemite (10.10) or newer
 1. [Homebrew](http://brew.sh/)
 1. Docker and Docker Machine. These can either be installed with Homebrew (`brew install docker docker-machine`), or using a package such as the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
 1. A Virtual Machine provider for Docker Machine. Currently supported options are:
