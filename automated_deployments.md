@@ -1,16 +1,18 @@
 # Deployments
 
-The deployment strategy used at amazee.io is heavily inspired by [drush deploy](https://www.drupal.org/project/drush_deploy) which is in turn inspired by capistrano. In the end all to the same thing.
+## Deployment on production sites
+
+The deployment strategy used at amazee.io is heavily inspired by [drush deploy](https://www.drupal.org/project/drush_deploy) which is in turn inspired by capistrano. In the end they all do the same thing.
 
 ## Filesystem Structure
 
 ```
-├── public_html -> /var/www/site_name/releases/20160607095542Z/
+├── public_html -> /var/www/site_name/releases/20160607095555Z/
 ├── releases
 │   ├── 20160612075028Z
 │   ├── 20160607095540Z
 │   ├── 20160607095542Z
-│   └── 20150110104000
+│   └── 20160607095555Z
 ├── repo
 │   └── <VCS related data>
 └── shared
@@ -27,5 +29,5 @@ The deployment strategy used at amazee.io is heavily inspired by [drush deploy](
 
 - `shared` contains the linked_files and linked_directories which are symlinked into each release. This data persists across deployments and releases. It should be used for things like database configuration files and static and persistent user storage handed over from one release to the next.
 
-## Development Environment Process
-As we don't need the rollback capability on development environments we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
+## Deployment on development sites
+As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
