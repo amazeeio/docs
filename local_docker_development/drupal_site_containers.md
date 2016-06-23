@@ -44,8 +44,13 @@ If you want to connect to a container wherever you are right now with your bash:
 To use drush, you can either connect to the container as above, or add a bash function that will connect for you to run your drush command. To add the function, add this to your .bashrc file:
 
 ```
-ddrush() {
-  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/\"\$WEBROOT\" && drush $@"
+function ddrush() {
+  args=""
+  while [ "$1" != "" ]; do
+    args="${args} '$1'" && shift
+  done;
+
+  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/\"\$WEBROOT\" && PATH=`pwd`/../vendor/bin:$PATH && drush ${args}"
 }
 ```
 
