@@ -1,6 +1,6 @@
 # Local Drupal Docker Development
 
-amazee.io fully supports development workflows which involve local development sites. We provide a Drupal Docker development environment that runs on our local computer.
+amazee.io fully supports development workflows which involve local development sites. We provide a Drupal Docker development environment that runs on your local computer.
 It uses the exact same configuration for **all** services like on the amazee.io servers. This means:
  - If the site runs locally, it also runs on production
  - You can use the exact same `settings.php` file for local and production
@@ -43,11 +43,11 @@ Docker is super awesome and the perfect tool for local development. There are so
 
 #### Exposed ports
 
-If multiple Docker containers are exposing the same port it assigned a random port to the exposed port. In our case, this would mean, that each Drupal Container which would like to listen on Port 80 would get a random port like 34564 assigned. As they are random assigned it would be a lot of hassle of figuring out which port that the Drupal is found, additionally, Drupal doesn't like to run on another Port then 80 or 443 so much.  
+If multiple Docker containers are exposing the same port it assigned a random port to the exposed port. In our case, this would mean, that each Drupal Container which would like to listen on Port 80 would get a random port like 34564 assigned. As they are random assigned it would be a lot of hassle of figuring out which port that the Drupal is found, additionally, Drupal doesn't like to run on another Port then 80 or 443 so much.
 
 #### SSH Keys
 
-It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase protected key (as you should!). You would need to enter the passphrase for each container that you start. Not a lot of fun.  
+It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase protected key (as you should!). You would need to enter the passphrase for each container that you start. Not a lot of fun.
 
 ### The Solution
 
