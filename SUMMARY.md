@@ -28,6 +28,7 @@
    * [Drupal Configuration](drupal/settingsphpfiles.md)
    * [Environment Variables](drupal/environment_variables.md)
    * [Synchronize Sites](drupal/synchronize_sites.md)
+   * [Settings.php Files](drupal/settingsphpfiles.md)
 * Tools
    * Blackfire.io
    * Xdebug
