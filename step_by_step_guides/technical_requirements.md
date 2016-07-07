@@ -15,7 +15,7 @@ amazee.io is capable of using your own hosted Git Repository or on-premises vers
 
 ## Secure Socket Shell (SSH)
 
-To keep our systems secure and access easily revocable we don't set static passwords on any amazee.io systems. Every user access is tied to a personal SSH Key.
+To keep our systems secure and access easily revokable we don't set static passwords on any amazee.io systems. Every user access is tied to a personal SSH RSA Key.
 
 SSH consists of two Keys:
 
