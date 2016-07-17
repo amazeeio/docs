@@ -7,6 +7,8 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 ## Prerequisites
 * [Docker Compose](https://docs.docker.com/compose/install/) (Version >= 1.7.0)
   * On OS X just run `brew install docker-compose`
+  * On Linux use your favorite package manager or https://docs.docker.com/compose/install/
+  * On Windows it's already installed with "Docker for Windows"
 
 ## Find the right `docker-compose.yml`
 
@@ -17,7 +19,8 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 5. Run in the same directory as the `docker-compose.yml`:
 
         docker-compose up -d
-6. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
+6. If you are on Windows add the URL to the Hosts file (see 
+7. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
 ## Connect to the container
 
@@ -25,13 +28,13 @@ To run commands like `git` or other things within the container, you need to con
 
 There are two ways for that:
 
-#### Connect via `docker-compose`
+#### Connect via `docker-compose` (easier, but does not work in Windows)
 
 This is the easier way, you need to be in the same folder where also the `docker-compose.yml` for that to work:
 
     docker-compose exec --user drupal drupal bash
 
-#### Connect via `docker`
+#### Connect via `docker` (only way for Windows)
 
 If you want to connect to a container wherever you are right now with your bash:
 
