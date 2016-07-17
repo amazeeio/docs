@@ -19,7 +19,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 5. Run in the same directory as the `docker-compose.yml`:
 
         docker-compose up -d
-6. If you are on Windows add the URL to the Hosts file (see 
+6. If you are on Windows add the URL to the Hosts file (see [windows documentation](local_docker_development/windows.md) for that).
 7. Open your browser with the entered URL in the `docker-compose.yml`, happy Drupaling!
 
 ## Connect to the container
