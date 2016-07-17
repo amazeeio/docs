@@ -2,9 +2,8 @@
 
 amazee.io fully supports development workflows which involve local development sites. We provide a Drupal Docker development environment that runs on your local computer.
 It uses the exact same configuration for **all** services like on the amazee.io servers. This means:
-
-* If the site runs locally, it also runs on production
-* You can use the exact same `settings.php` file for local and production
+ - If the site runs locally, it also runs on production
+ - You can use the exact same `settings.php` file for local and production
 
 **And the best:** You don't need to have any amazee.io account or site running to use the local development environment! Just install it, and use all the power of amazee.io for free.
 
@@ -12,13 +11,12 @@ This docker based Drupal Development environment consists of two parts:
 
 ### Part I: Shared Docker Containers
 
-The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX, `pygmy` for Linux or via `docker-compose` on Windows
+The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX or `pygmy` for Linux.
 
-##### [Documentation for OS X ](./os_x_cachalot.md)`cachalot`
+##### [Documentation for OS X `cachalot`](./os_x_cachalot.md)
 
-##### [Documentation for Linux ](./linux_pygmy.md)`pygmy`
+##### [Documentation for Linux `pygmy`](./linux_pygmy.md)
 
-##### [Documentation for Windows ](./windows.md)
 
 ### [Part II: Drupal Docker Containers](./drupal_site_containers.md)
 
@@ -35,7 +33,7 @@ The amazee.io Local Docker Drupal Development environment equips you with all th
 * Database: MariaDB
 * Search: Apache Solr
 * Dependency Manager for PHP: Composer
-* NodeJS \/ NPM
+* NodeJS / NPM
 
 For more information about software components used in the amazee.io Stack head over to the [Components](../architecture/components.md) overview page.
 
@@ -49,9 +47,10 @@ If multiple Docker containers are exposing the same port it assigned a random po
 
 #### SSH Keys
 
-It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase protected key \(as you should!\). You would need to enter the passphrase for each container that you start. Not a lot of fun.
+It is possible to add mount ssh private keys into Docker containers, but this is again cumbersome, especially when you have a passphrase protected key (as you should!). You would need to enter the passphrase for each container that you start. Not a lot of fun.
 
 ### The Solution
+
 
 amazee.io implemented a Drupal Docker Development environment which handles all these issues nicely for you. It allows you to:
 
@@ -60,11 +59,11 @@ amazee.io implemented a Drupal Docker Development environment which handles all 
 
 The environment starts 3 containers:
 
-* [andyshinn\/dnsmasq](https://hub.docker.com/r/andyshinn/dnsmasq/) Docker container which will listen on port 53 and resolv all DNS requests from `*.docker.amazee.io` to `127.0.0.1` \(so basically a better way then filling your `/etc/hosts` file by hand\)
-* [amazeeio\/haproxy](https://hub.docker.com/r/amazeeio/haproxy/) Docker container which will listen on port 80 and 443. It additionally listens to the Docker socket, realize when you start a new Drupal Container and adapt fully automatically it's haproxy configuration \(thanks to the awesome tool [docker-gen](https://github.com/jwilder/docker-gen)\). It forwards HTTP and HTTPs requests to the correct Drupal Container. With that we can access all Drupal Containers via a single Port.
-* [amazeeio\/ssh-agent](https://hub.docker.com/r/amazeeio/ssh-agent/) Docker container which will keeps an ssh-agent at hand for the other Drupal Containers. With that the Drupal Containers do not need to handle ssh-agenting themselves
+* [andyshinn/dnsmasq](https://hub.docker.com/r/andyshinn/dnsmasq/) Docker container which will listen on port 53 and resolv all DNS requests from `*.docker.amazee.io` to `127.0.0.1` (so basically a better way then filling your `/etc/hosts` file by hand)
+* [amazeeio/haproxy](https://hub.docker.com/r/amazeeio/haproxy/) Docker container which will listen on port 80 and 443. It additionally listens to the Docker socket, realize when you start a new Drupal Container and adapt fully automatically it's haproxy configuration (thanks to the awesome tool [docker-gen](https://github.com/jwilder/docker-gen)). It forwards HTTP and HTTPs requests to the correct Drupal Container. With that we can access all Drupal Containers via a single Port.
+* [amazeeio/ssh-agent](https://hub.docker.com/r/amazeeio/ssh-agent/) Docker container which will keeps an ssh-agent at hand for the other Drupal Containers. With that the Drupal Containers do not need to handle ssh-agenting themselves
 
-#### Schema for Linux \(native Docker\)
+#### Schema for Linux (native Docker)
 
 ```
                                             +--------------------------------------------------------------------+
@@ -107,9 +106,9 @@ The environment starts 3 containers:
                                             +--------------------------------------------------------------------+
 ```
 
-#### Schema for OS X \(with boot2docker virtual machine\)
-
-`+-------------------------------------------------------------------------------+
+#### Schema for OS X (with boot2docker virtual machine)
+```
+                                          +-------------------------------------------------------------------------------+
                                           |                                                                               |
                                           |  cachalot VM with boot2docker                                                 |
                                           |  usually has IP 192.168.99.100                                                |
@@ -154,5 +153,4 @@ The environment starts 3 containers:
                                           |       |                                                                    |  |
                                           |       +--------------------------------------------------------------------+  |
                                           |                                                                               |
-                                          +-------------------------------------------------------------------------------+`
-
+                                          +-------------------------------------------------------------------------------+```
