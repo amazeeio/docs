@@ -6,7 +6,7 @@ Every site within amazee.io runs in a certain environment. Either this is **prod
 
 - Varnish enabled by default
 - NewRelic is enabled
-- PHP Errors are not displayed
+- PHP Errors are not displayed (`display_errors = off` and `display_startup_errors = off`(
 
 ## Development Environment
 
