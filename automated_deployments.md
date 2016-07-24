@@ -19,7 +19,7 @@ home directory (like /var/www/site_name)
     └── <linked_files and linked_directories>
 ```
 
-##### Folders
+###### Folders
 
 * `public_html` is a symlink pointing to the latest release. This symlink is updated after the `before_deploy` tasks are executed. If the deployment fails before or during execution of `before_deploy` tasks the  symlink is not touched and still points to the old release.
 * `releases` holds all deployments in a timestamped folder in UTC. These folders are the target of the current symlink. We keep 3 release folders present, the older folders get deleted after a successful deployment
