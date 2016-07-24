@@ -40,7 +40,7 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
   * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
 
 5. (If on cluster only on one backend) The `after_deploy` are executed.
-  * 
+  * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
