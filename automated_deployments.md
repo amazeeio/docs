@@ -1,6 +1,6 @@
 # Deployments
 
-## Production sites
+## On production sites
 
 The deployment strategy used at amazee.io is heavily inspired by capistrano.
 
@@ -26,5 +26,5 @@ The deployment strategy used at amazee.io is heavily inspired by capistrano.
 * `repo` holds a checkout of the configured git repository.
 * `shared` contains directories which are symlinked into each release. This data persists across deployments and releases. It is used for things like the Drupal files directory.
 
-## Development sites
+## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
