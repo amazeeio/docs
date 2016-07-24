@@ -26,7 +26,10 @@ home directory (like /var/www/site_name)
 * `repo` holds a checkout of the configured git repository.
 * `shared` contains directories which are symlinked into each release. This data persists across deployments and releases. It is used for things like the Drupal files directory.
 
-##### Deployment tasks order
+##### Task execution order
+
+1. The git repo inside `repo` is checked out to the desired git branch
+
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
