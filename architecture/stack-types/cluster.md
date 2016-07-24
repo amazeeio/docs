@@ -20,7 +20,7 @@ The second Nginx instance takes care of running the actual drupal site. PHP requ
 
 ###Database
 
-* **Database MariaDB**
+* **Database MariaDB Galera Cluster**
 
 ### Search
 
