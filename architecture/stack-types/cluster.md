@@ -23,7 +23,7 @@ The second Nginx instance takes care of running the actual drupal site. PHP requ
 
 ### Search
 
-* **Search Apache Solr**
+* **Apache Solr**
 
 ###Filestorage
 
