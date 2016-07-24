@@ -5,7 +5,7 @@ The compact stack (sometimes also referred as single stack) is tailored for sing
 ![Schematic overview compact stack](compact.png)
 
 
-**All services are running in one instancer:**
+**All services are running in one instance:**
 
 * Webserver: Nginx (Frontend and Backend)
 * Frontend Caching: Varnish  
