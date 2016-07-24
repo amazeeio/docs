@@ -13,10 +13,10 @@ Content which can be cached is cached in memory by Varnish
 
 ### Backend servers
 
-* **Backend Nginx**
+* **Backend Nginx:**
 The second Nginx instance takes care of running the actual drupal site. PHP requests are passed to PHP-FPM.
 * **FastCGI Process Manager:** PHP-FPM with either PHP 5.6 or PHP 7.0
-* **Maxscale Database Proxy** Connects to the correct MariaDB Server within the Galera Cluster
+* **Maxscale Database Proxy:** Connects to the correct MariaDB Server within the Galera Cluster
 
 
 ###Database
