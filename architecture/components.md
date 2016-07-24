@@ -36,7 +36,7 @@ Solr is a search engine based on Apache Lucene™ which is used by Drupal module
 
 ### Drush: Drupal Console
 
-Web development would be much more complicated if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
+[Drush](http://www.drush.org/) is a command line shell interface for Drupal. At amazee.io Drush is used for connecting and synchronizing different sites within a sitegroup. Beside of that Drush is perfect for running your administrative tasks within a Drupal site, like downloading modules, installing modules, exporting configuration, etc.
 
 ### Dependency Manager for PHP: Composer
 
