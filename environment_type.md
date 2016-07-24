@@ -10,7 +10,7 @@ Every site within amazee.io runs in a certain environment. Either this is **prod
 
 ## Development Environment
 
-- Varnish disabled by default
+- Varnish bypassed by default
 - NewRelic is disabled
 - PHP Errors are displayed (`display_errors = on` and `display_startup_errors = on`)
 - Every server response is tagged with a no-index header that tells search engines to not index the development site
