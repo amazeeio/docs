@@ -51,3 +51,7 @@ As we don't need the rollback capability on development sites we simply run a gi
 
 ##### Filesystem Structure
 
+```
+home directory (like /var/www/site_name)
+└── public_html -> /var/www/site_name/releases/20160607095555Z/
+```
