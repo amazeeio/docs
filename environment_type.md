@@ -1,6 +1,6 @@
 # Environments
 
-Every site within amazee.io runs in a certain environment. Either this is **production** or it is **development**. Those environments have slight differnces to eachother, you can read about those differences below:
+Every site within amazee.io runs in a certain environment. Either this is **production** or it is **development**. Those environments have slight differnces to each other, you can read about those differences below:
 
 ## Production Environment
 
