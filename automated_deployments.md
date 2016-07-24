@@ -31,16 +31,18 @@ home directory (like /var/www/site_name)
 This shows the order of a regular deployment. If on a cluster stack, these tasks are all executed simultaneously at the same time on all backends: 
 
 1. The git repo inside `repo` is checked out to the desired git branch
-2. The whole folder `repo` is copied into the `releases` folder with the folder name of the current time in UTC.
+2. The whole folder `repo` is copied into the `releases` folder, with the folder name of the current time in UTC.
 3. The `before_deploy` tasks are executed inside the created folder. 
   * Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`
-  * If any of these `before_deploy` tasks is failing, the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
+  * If any of these `before_deploy` tasks is failingì (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
 
 4. The `public_html` symlink is switched to the new folder within `releases` 
   * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
 
 5. (If on cluster only on one backend) The `after_deploy` are executed.
   * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
+  * If any of the `after_deploy` tasks is failed  (return code is not 0), the rollback routine is called:
+     1. 
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
