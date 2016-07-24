@@ -36,7 +36,7 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
     
 3.1 asdasdfasdf
 
-4. 
+4. asdfasdf
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
