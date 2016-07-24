@@ -38,8 +38,7 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
 
 4. The `public_html` symlink is switched to the new folder within `releases` - this is refeered to the actual `deploy` to have happened (this why the tasks are called `before` and `after` deploy tasks)
 
-
-5. 
+5. asdf
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
