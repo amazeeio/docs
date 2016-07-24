@@ -14,9 +14,9 @@ This docker based Drupal Development environment consists of two parts:
 
 The shared docker containers for HAProxy and the SSH Agent, these are used by all other containers in order to properly work. They are started either with `cachalot` for OSX, `pygmy` for Linux or via `docker-compose` on Windows
 
-##### [Documentation for OS X ](./os_x_cachalot.md)`cachalot`
+##### [Documentation for OS X ](./os_x_cachalot.md)
 
-##### [Documentation for Linux ](./linux_pygmy.md)`pygmy`
+##### [Documentation for Linux ](./linux_pygmy.md)
 
 ##### [Documentation for Windows ](./windows.md)
 
@@ -41,7 +41,7 @@ For more information about software components used in the amazee.io Stack head 
 
 ## How this works
 
-Docker is super awesome and the perfect tool for local development. There are some hurdles, though:
+Docker is super awesome and the perfect tool for local development. There are some hurdles though \(no worries, we have a solution for all of them\):
 
 #### Exposed ports
 
@@ -109,50 +109,51 @@ The environment starts 3 containers:
 
 #### Schema for OS X \(with boot2docker virtual machine\)
 
-`+-------------------------------------------------------------------------------+
-                                          |                                                                               |
-                                          |  cachalot VM with boot2docker                                                 |
-                                          |  usually has IP 192.168.99.100                                                |
-                                          |                                                                               |
-                                          |                                                                               |
-                                          |       +--------------------------------------------------------------------+  |
-                                          |       |Docker                                                              |  |
-                                          |       |                                                                    |  |
-                                          |       |          HAProxy knows which                                       |  |
-                                          |       |          *.docker.amazee.io is                                     |  |
-                                          |       |          handled by which container  +---------------------+       |  |
-                                          |       |                                      |                     |       |  |
-                                          |       |                              +-------+ Drupal Container 1  <--+    |  |
-                                          |       |                              |       |                     |  |    |  |
-+--------------------+                    |       |     +------------------+     |       +---------------------+  |    |  |
-|                    |                    |       |     |                  |     |                                |    |  |
-|                    |                    |       |     |     HAProxy      +-----+                                |    |  |
-|                    +---------------------------------->                  |     |       +---------------------+  |    |  |
-|                    |                    |       |     | Published Ports  |     |       |                     |  |    |  |
-|                    |  any HTTP/HTTPS    |       |     | 80/443           |     +-------+ Drupal Container 2  <--+    |  |
-|                    |  request to        |       |     +------------------+             |                     |  |    |  |
-|      Browser       |  *.docker.amazee.io|       |                                      +---------------------+  |    |  |
-|                    |                    |       |                                                               |    |  |
-|                    |                    |       |     +------------------+                                      |    |  |
-|                    +---------------------------------->                  |                                      |    |  |
-|                    <----------------------------------+   dns masq       |                                      |    |  |
-|                    |                    |       |     |                  |                                      |    |  |
-|                    |  Resolves          |       |     +------------------+                                      |    |  |
-|                    |  *.docker.amaze.io |       |                                                               |    |  |
-+--------------------+  to IP of Haproxy  |       |                                                               |    |  |
-                                          |       |                                                               |    |  |
-                                          |       |                                                               |    |  |
-                                          |       |                                                               |    |  |
-                                          |       |                                                               |    |  |
-                                          |       |                                                               |    |  |
-+--------------------+                    |       |     +------------------+                                      |    |  |
-|                    |                    |       |     |                  |                                      |    |  |
-| cachalot           +---------------------------------->    ssh agent     +--------------------------------------+    |  |
-|                    |                    |       |     |                  |                                           |  |
-+--------------------+  injects ssh+key   |       |     +------------------+  Exposes ssh agent via                    |  |
-                        into agent        |       |                           /tmp/amazeeio_ssh-agent/socket           |  |
-                                          |       |                                                                    |  |
-                                          |       +--------------------------------------------------------------------+  |
-                                          |                                                                               |
+\`+-------------------------------------------------------------------------------+
+                                          \|                                                                               \|
+                                          \|  cachalot VM with boot2docker                                                 \|
+                                          \|  usually has IP 192.168.99.100                                                \|
+                                          \|                                                                               \|
+                                          \|                                                                               \|
+                                          \|       +--------------------------------------------------------------------+  \|
+                                          \|       \|Docker                                                              \|  \|
+                                          \|       \|                                                                    \|  \|
+                                          \|       \|          HAProxy knows which                                       \|  \|
+                                          \|       \|          _.docker.amazee.io is                                     \|  \|
+                                          \|       \|          handled by which container  +---------------------+       \|  \|
+                                          \|       \|                                      \|                     \|       \|  \|
+                                          \|       \|                              +-------+ Drupal Container 1  &lt;--+    \|  \|
+                                          \|       \|                              \|       \|                     \|  \|    \|  \|
++--------------------+                    \|       \|     +------------------+     \|       +---------------------+  \|    \|  \|
+\|                    \|                    \|       \|     \|                  \|     \|                                \|    \|  \|
+\|                    \|                    \|       \|     \|     HAProxy      +-----+                                \|    \|  \|
+\|                    +----------------------------------&gt;                  \|     \|       +---------------------+  \|    \|  \|
+\|                    \|                    \|       \|     \| Published Ports  \|     \|       \|                     \|  \|    \|  \|
+\|                    \|  any HTTP\/HTTPS    \|       \|     \| 80\/443           \|     +-------+ Drupal Container 2  &lt;--+    \|  \|
+\|                    \|  request to        \|       \|     +------------------+             \|                     \|  \|    \|  \|
+\|      Browser       \|  _.docker.amazee.io\|       \|                                      +---------------------+  \|    \|  \|
+\|                    \|                    \|       \|                                                               \|    \|  \|
+\|                    \|                    \|       \|     +------------------+                                      \|    \|  \|
+\|                    +----------------------------------&gt;                  \|                                      \|    \|  \|
+\|                    &lt;----------------------------------+   dns masq       \|                                      \|    \|  \|
+\|                    \|                    \|       \|     \|                  \|                                      \|    \|  \|
+\|                    \|  Resolves          \|       \|     +------------------+                                      \|    \|  \|
+\|                    \|  \*.docker.amaze.io \|       \|                                                               \|    \|  \|
++--------------------+  to IP of Haproxy  \|       \|                                                               \|    \|  \|
+                                          \|       \|                                                               \|    \|  \|
+                                          \|       \|                                                               \|    \|  \|
+                                          \|       \|                                                               \|    \|  \|
+                                          \|       \|                                                               \|    \|  \|
+                                          \|       \|                                                               \|    \|  \|
++--------------------+                    \|       \|     +------------------+                                      \|    \|  \|
+\|                    \|                    \|       \|     \|                  \|                                      \|    \|  \|
+\| cachalot           +----------------------------------&gt;    ssh agent     +--------------------------------------+    \|  \|
+\|                    \|                    \|       \|     \|                  \|                                           \|  \|
++--------------------+  injects ssh+key   \|       \|     +------------------+  Exposes ssh agent via                    \|  \|
+                        into agent        \|       \|                           \/tmp\/amazeeio\_ssh-agent\/socket           \|  \|
+                                          \|       \|                                                                    \|  \|
+                                          \|       +--------------------------------------------------------------------+  \|
+                                          \|                                                                               \|
                                           +-------------------------------------------------------------------------------+
-```
+\`\`\`
+
