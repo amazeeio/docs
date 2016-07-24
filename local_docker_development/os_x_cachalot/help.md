@@ -20,7 +20,6 @@ The best to solve issues around not accessible docker sites is to try to turn it
   cachalot restart
   ```
 
-
 ## Cachalot starts with `NFS failed to run`
 
 1. Restart your cachalot with `cachalot restart`
@@ -31,6 +30,8 @@ The best to solve issues around not accessible docker sites is to try to turn it
   ```
 
    and fix eventual issues. Then restart `cachalot restart`
+
+## I don't see any files inside my Drupal Docker container
 
 ## I get an error like `port is already allocated.` during start
 
