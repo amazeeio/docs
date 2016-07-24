@@ -30,7 +30,7 @@ amazee.io allows you to point several domains to a single site. We recommend to 
 
 ## SSL/HTTPS
 
-You can enable SSL on your sites. Feel free to get in touch with us to enable this feature on your site `support@amazee.io`. To make sure that your site is ready to serve traffic via https ensure that following parts are already incldued via https:
+You can enable SSL for free on your sites. amazee.io provides you with a free SSL certificate! Get in touch with us to enable this feature on your site `support@amazee.io`. To make sure that your site is ready to serve traffic via https ensure that following parts are already incldued via https:
 
   - Iframes
   - external Javascript libraries
