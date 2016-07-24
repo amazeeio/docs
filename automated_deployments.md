@@ -11,7 +11,6 @@ home directory (like /var/www/site_name)
 ├── public_html -> /var/www/site_name/releases/20160607095555Z/
 ├── releases
 │   ├── 20160612075028Z
-│   ├── 20160607095540Z
 │   ├── 20160607095542Z
 │   └── 20160607095555Z
 ├── repo
