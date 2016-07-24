@@ -2,7 +2,7 @@
 
 ## Deployment on production sites
 
-The deployment strategy used at amazee.io is heavily inspired by [drush deploy](https://www.drupal.org/project/drush_deploy) which is in turn inspired by capistrano. In the end they all do the same thing.
+The deployment strategy used at amazee.io is heavily inspired by capistrano. In the end they all do the same thing.
 
 ## Filesystem Structure
 
