@@ -34,7 +34,7 @@ Solr is a search engine based on Apache Lucene™ which is used by Drupal module
 
 ## Tools
 
-### Dependency Manager for PHP: Composer
+### Drush: Drupal Console
 
 Web development would be much more complicated if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
 
