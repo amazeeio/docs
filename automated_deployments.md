@@ -42,8 +42,9 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
 5. (If on cluster only on one backend) The `after_deploy` are executed.
   * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
   * If any of the `after_deploy` tasks is failed  (return code is not 0), the rollback routine is called on all backends:
-     1. The `public_html` symlink is changed back to the previous deployment.
-     2. The `releases` folder of the failed deployment is removed.
+    1. The `public_html` symlink is changed back to the previous deployment.
+    2. The `releases` folder of the failed deployment is removed.
+    * **No tasks from the before or after deploy tasks are called**, as the state of the Drupal site is very hard to understand for the deployment system. In case of a rollbacked deployment, you should ensure yourself that the site is working properly.
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
