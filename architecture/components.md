@@ -44,4 +44,4 @@ Web development would be much more complicated if there weren't any Dependency m
 
 ### NodeJS / NPM
 
-[NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM
+[NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM.
