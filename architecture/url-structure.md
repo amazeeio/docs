@@ -8,7 +8,11 @@ Development sites follow a special URL structure which allows you to easily find
 
 An example:
 
-http://amazee.io.dev.dev1.compact.amazee.io/
+http://yoursite.com.dev.zh1.compact.amazee.io/
 
-* `amazee.io` is the defined domain for this site
-* `dev
+* `yoursite.com` is the defined domain for this site
+* `dev` is the branch this site is deploying
+* `zh1.compact` is the server this site is running on
+* `amazee.io` tells you that you are hosted with us! ❤️
+
+## Production sites
