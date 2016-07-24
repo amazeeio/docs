@@ -4,7 +4,7 @@
 
 The deployment strategy used at amazee.io is heavily inspired by capistrano.
 
-## Filesystem Structure
+### Filesystem Structure
 
 ```
 ├── public_html -> /var/www/site_name/releases/20160607095555Z/
