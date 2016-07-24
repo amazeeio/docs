@@ -1,6 +1,6 @@
 # Deployments
 
-## Deployment on production sites
+## Production sites
 
 The deployment strategy used at amazee.io is heavily inspired by capistrano.
 
