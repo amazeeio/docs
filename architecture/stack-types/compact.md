@@ -1,6 +1,6 @@
 # Compact Stack
 
-The compact stack (sometimes also referred as single stack) is tailored for single-server environments and contains all Services on one server.
+The compact stack (sometimes also referred as single stack) is tailored for single-server environments and contains all services on one server.
 
 ![Schematic overview compact stack](compact.png)
 
