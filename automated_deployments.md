@@ -29,7 +29,8 @@ home directory (like /var/www/site_name)
 ##### Task execution order
 
 1. The git repo inside `repo` is checked out to the desired git branch
-2. The whole folder `repo` is copied into the `release` folder with the folder name of the current time in UTC
+2. The whole folder `repo` is copied into the `release` folder with the folder name of the current time in UTC.
+3. 
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
