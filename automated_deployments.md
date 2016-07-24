@@ -34,7 +34,7 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
 2. The whole folder `repo` is copied into the `releases` folder with the folder name of the current time in UTC.
 3. The `before_deploy` tasks are executed inside the created folder. (Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`).
     
-3.1. asdasdfasdf
+  1. asdasdfasdf
 
 4. asdfasdf
 
