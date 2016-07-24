@@ -38,5 +38,10 @@ Solr is a search engine based on Apache Lucene™ which is used by Drupal module
 
 Web development would be much more complicated if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
 
+### Dependency Manager for PHP: Composer
+
+Web development would be much more complicated if there weren't any Dependency managers around. [Composer](https://getcomposer.org/) assists you keeping track of the dependencies used in your web application.
+
 ### NodeJS / NPM
+
 [NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM
