@@ -45,4 +45,4 @@ Web development would be much more complicated if there weren't any Dependency m
 ### NodeJS / NPM
 
 [NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM.
-amaze.io ships per default with NodeJS 6 LTS, but you can define any other NodeJS version via the `.amazeeio.yml` files, read more about them.
+amaze.io ships per default with NodeJS 6 LTS, but you can define any other NodeJS version via the `.amazeeio.yml` files, [read more](../drupal/amazeeioyml_file.md) about them.

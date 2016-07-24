@@ -22,7 +22,7 @@
     * [Stack Components](architecture/components.md)
     * [Environment type](environment_type.md)
     * [E-Mail Delivery](architecture/e-mail_delivery.md)
-    * URL Structure
+    * [URL Structure](architecture/url-structure.md)
 * [Automated Deployments](automated_deployments.md)
 * [Drupal](drupal/drupal.md)
     * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
