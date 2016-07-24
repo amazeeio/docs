@@ -33,6 +33,11 @@ The best to solve issues around not accessible docker sites is to try to turn it
 
 ## I don't see any files inside my Drupal Docker container
 
+Currently only files that are inside of your home folder (something like `/User/yourname` are shared inside the Docker Containers.
+If you connect to the Docker container and there are no files at all, make sure that your Drupal and the docker-compose.yml file are within your home folder. If this is not the case, move everything and restart the container via:
+
+        docker-compose up -d --force
+
 ## I get an error like `port is already allocated.` during start
 
 If during the start of Docker containers you see an error like that:
