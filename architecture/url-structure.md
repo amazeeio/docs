@@ -29,4 +29,4 @@ In the example where the domain of the production site is `www.yoursite.com` and
 
     http://www.yoursite.com.master.zh1.compact.amazee.io/
 
-To ensure that this URL is not indexed by search engines, responses from these URLs are appended with a no-cache header: 
+To ensure that this URL is not indexed by search engines, responses from these URLs are appended with a no-index header: (`X-Robots-Tag: noindex, nofollow`)
