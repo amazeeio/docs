@@ -27,3 +27,4 @@ For testing purposes, production sites can also be reached via the same URL stru
 
 In the example where the domain of the production site is `www.yoursite.com`, the site is also reachable under:
 
+    http://www.yoursite.com.dev.zh1.compact.amazee.io/
