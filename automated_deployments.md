@@ -29,5 +29,5 @@ The deployment strategy used at amazee.io is heavily inspired by capistrano.
 
 - `shared` contains the linked_files and linked_directories which are symlinked into each release. This data persists across deployments and releases. It should be used for things like database configuration files and static and persistent user storage handed over from one release to the next.
 
-## Deployment on development sites
+## Development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
