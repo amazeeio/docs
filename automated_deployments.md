@@ -36,9 +36,11 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
   * Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`
   * If any of these `before_deploy` tasks is failing, the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
 
-4. The `public_html` symlink is switched to the new folder within `releases` - this is refeered to the actual `deploy` to have happened (this why the tasks are called `before` and `after` deploy tasks)
+4. The `public_html` symlink is switched to the new folder within `releases` 
+  * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
 
-5. asdf
+5. (If on cluster only on one backend) The `after_deploy` are executed.
+  * 
 
 ## On development sites
 As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
