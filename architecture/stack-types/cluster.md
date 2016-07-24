@@ -6,10 +6,8 @@ The biggest and most reliable setup you can host your site on is our Cluster Sta
 
 ### Frontend Server
 
-* **Frontend Nginx  **
-The frontend Nginx server takes care of SSL Termination and Redirects
-* **Varnish**  
-Content which can be cached is cached in memory by Varnish
+* **Frontend Nginx:** The frontend Nginx server takes care of SSL Termination and Redirects
+* **Varnish:** Content which can be cached is cached in memory by Varnish
 
 ### Backend servers
 
