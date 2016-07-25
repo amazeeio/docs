@@ -70,4 +70,4 @@ There are no additional directories, everything is within `public_html`
  * If any of these `before_deploy` tasks is failing (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening.
 3. The `after_deploy` are executed (if on cluster only on one backend).
  * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
- * If any of the `after_deploy` tasks is failed (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening
+ * If any of the `after_deploy` tasks failed (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening
