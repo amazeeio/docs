@@ -66,7 +66,6 @@ There are no additional directories, everything is within `public_html`
 ##### Task execution order
 
 1. The git repository inside `public_html` is checked out to the desired git branch (basically a `git pull`)
-2. The whole folder `repo` is copied into the `releases` folder, with the folder name of the current time in UTC.
 3. The `before_deploy` tasks are executed inside the created folder.
  * Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`
  * If any of these `before_deploy` tasks is failingì (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
