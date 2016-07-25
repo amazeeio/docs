@@ -67,7 +67,7 @@ There are no additional directories, everything is within `public_html`
 
 1. The git repository inside `public_html` is checked out to the desired git branch (basically a `git pull`)
 2. The `before_deploy` tasks are executed inside the `public_html` folder.
- * If any of these `before_deploy` tasks is failingì (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
+ * If any of these `before_deploy` tasks is failing (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
 
 4. The `public_html` symlink is switched to the new folder within `releases`
  * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
