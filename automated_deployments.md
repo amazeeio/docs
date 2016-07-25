@@ -68,5 +68,5 @@ There are no additional directories, everything is within `public_html`
 1. The git repository inside `public_html` is checked out to the desired git branch (basically a `git pull`)
 2. The `before_deploy` tasks are executed inside the `public_html` folder.
  * If any of these `before_deploy` tasks failed (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening.
-3. The `after_deploy` are executed.
+3. The `after_deploy` tasks are executed.
  * If any of the `after_deploy` tasks failed (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening
