@@ -1,5 +1,6 @@
 # .amazeeio.yml file
 
+
 The automated deployment checks if a `.amazeeio.yml` file is present. This file is used to run tasks during the process of the deployment.
 
 For a Drupal 8 Deployment with npm the `.amazeeio.yml` file could look like following:
