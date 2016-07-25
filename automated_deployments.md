@@ -2,7 +2,7 @@
 
 ## On production sites
 
-The deployment strategy used at amazee.io is heavily inspired by capistrano.
+The deployment strategy used at amazee.io for production is heavily inspired by capistrano.
 
 ##### Filesystem Structure
 
