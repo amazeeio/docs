@@ -47,7 +47,8 @@ This shows the order of a regular deployment. If on a cluster stack, these tasks
     * **No tasks from the `before_deploy` or `after_deploy` task lists are executed**, as the state of the Drupal site is very hard to understand for the deployment system. In case of a rollbacked deployment, you should ensure yourself that the site is working properly.
 
 ## On development sites
-As we don't need the rollback capability on development sites we simply run a git-pull for the configured branch and run the deployment tasks afterwards.
+
+Development sites do not need a complex deployment system and are therefore easier. Basically it's just a git pull directly on the `public_html` directory and deployment tasks executed.
 
 ##### Filesystem Structure
 
