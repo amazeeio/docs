@@ -28,7 +28,7 @@ home directory (like /var/www/site_name)
 
 ##### Task execution order
 
-This shows the order of a regular deployment. If on a cluster stack, these tasks are all executed simultaneously at the same time on all backends: 
+This shows the order of a regular production deployment. If on a cluster stack, these tasks are all executed simultaneously at the same time on all backends: 
 
 1. The git repo inside `repo` is checked out to the desired git branch
 2. The whole folder `repo` is copied into the `releases` folder, with the folder name of the current time in UTC.
