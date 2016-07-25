@@ -69,9 +69,6 @@ There are no additional directories, everything is within `public_html`
 2. The `before_deploy` tasks are executed inside the `public_html` folder.
  * If any of these `before_deploy` tasks is failing (return code is not 0), the deployment is stopped immediately, no rollback to the previous deployment is happening.
 
-4. The `public_html` symlink is switched to the new folder within `releases`
- * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
-
 5. The `after_deploy` are executed (If on cluster only on one backend).
  * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
  * If any of the `after_deploy` tasks is failed (return code is not 0), the rollback routine is called on all backends:
