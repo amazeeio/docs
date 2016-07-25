@@ -30,7 +30,7 @@ home directory (like /var/www/site_name)
 
 This shows the order of a production deployment. If on a cluster stack, these tasks are all executed simultaneously at the same time on all backends: 
 
-1. The git repo inside `repo` is checked out to the desired git branch (basically a git pull)
+1. The git repo inside `repo` is checked out to the desired git branch (basically a `git pull`)
 2. The whole folder `repo` is copied into the `releases` folder, with the folder name of the current time in UTC.
 3. The `before_deploy` tasks are executed inside the created folder. 
   * Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`
