@@ -60,4 +60,5 @@ home directory (like /var/www/site_name)
 ###### Folders
 
 * `public_html` is git checkout of the desired git branch
-* 
+
+There are no additiona
