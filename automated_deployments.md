@@ -16,7 +16,7 @@ home directory (like /var/www/site_name)
 ├── repo
 │   └── <GIT repo>
 └── shared
-    └── <linked_files and linked_directories>
+    └── <directories>
 ```
 
 ###### Folders
