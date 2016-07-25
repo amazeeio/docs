@@ -34,7 +34,7 @@ This shows the order of a production deployment. If on a cluster stack, these ta
 2. The whole folder `repo` is copied into the `releases` folder, with the folder name of the current time in UTC.
 3. The `before_deploy` tasks are executed inside the created folder. 
   * Important: `before_deploy` tasks should only be used for tasks that do not change anything on the Drupal Database and for tasks that need to be executed on all servers within a cluster. Some examples: `composer install`, `npm`
-  * If any of these `before_deploy` tasks is failingì (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
+  * If any of these `before_deploy` tasks is failing (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
 
 4. The `public_html` symlink is switched to the new folder within `releases` 
   * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
