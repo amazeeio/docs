@@ -39,7 +39,7 @@ This shows the order of a production deployment. If on a cluster stack, these ta
 4. The `public_html` symlink is switched to the new folder within `releases` 
   * This is refeered to the actual **deploy** to have happened (this why the tasks are called `before` and `after` deploy tasks)
 
-5. The `after_deploy` tasks are executed (if on cluster only on one backend).
+5. The `after_deploy` tasks are executed (if on cluster only on one backend!).
   * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.
   * If any of the `after_deploy` tasks failed  (return code is not 0), the rollback routine is called on all backends:
     1. The `public_html` symlink is changed back to the previous deployment.
