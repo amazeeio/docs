@@ -56,3 +56,8 @@ Development sites do not need a complex deployment system and are therefore easi
 home directory (like /var/www/site_name)
 └── public_html
 ```
+
+###### Folders
+
+* `public_html` is git checkout of the desired git branch
+* 
