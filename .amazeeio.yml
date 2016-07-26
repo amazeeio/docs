@@ -1,3 +1,4 @@
+sitegroup: docs_amazee_io
 deploy_tasks:
   development:
     before_deploy:
