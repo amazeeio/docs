@@ -7,4 +7,4 @@ deploy_tasks:
       - node ./node_modules/gitbook-cli/bin/gitbook.js install
       - node ./node_modules/gitbook-cli/bin/gitbook.js build
 versions:
-  node: 4
+  node: 0.12
