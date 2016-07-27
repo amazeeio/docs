@@ -72,6 +72,13 @@ We constantly make improvements, updates and some other nice things to our conta
 	docker-compose pull
 	docker-compose up -d
 
+###### Slow Updates?
+
+When pulling a new docker image, the download can get stuck. There is a nice workaround for that: pull a second time :)
+
+Just open another terminal window at the exact same directory than you run the first `docker-compose pull` and just run that command again. The download will be unstuck and continue again. If the download is stuck again, cancel the second command with CTRL+c, and run it again (no worries, the first one will continue to run). Repeat that until the download is completely done.
+
+
 ## `docker-compose.yml` example files
 
 | Example File                                                                                  | PHP | Services                      | Description                                                                                                                     |
