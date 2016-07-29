@@ -31,6 +31,15 @@ dfiles @<environment>
 
 This command synchronizes the file directory from the given site to the files directory of the site you're running the command from. This command needs a Drupal site correctly running, as it needs to bootstrap Drupal in order to discover the location of the files directory.
 
+###### Examples
+
+* `dfiles @prod` inside the local Docker Container: Synchronizes the files directory from the `prod` site into the local files directory.
+* `dfiles @staging` while connected via SSH to the `develop` site: Synchronizes the files directory from the `staging` site into the files directory on the `develop` site.
+
+
+
+`dfiles` is actually a Bash alias for `drush rsync $1:%files default:%files -d -v`
+
 {% hint style='info' %}
-`dfiles` and `dsql` are just  aliases for drush sql-sync or drush rsync. As we had the issues in the past that people mixed up environments and synchronized the wrong way we free you of remembering a long command by adding short versions of it, nice isn't it?
+We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
 {% endhint %}
