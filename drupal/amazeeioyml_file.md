@@ -1,12 +1,19 @@
 # .amazeeio.yml file
 
-To ensure a perfect system and tell the deployment system what it should do doring a deployment, your Git repository requires an `.amazeeio.yml` file to be present.
+To ensure a perfect system and tell the deployment system what it should do doring a deployment, your Git repository requires an `.amazeeio.yml` file to be present. It is written in YAML and needs to be in the root directory of the Git Repository.
 
-The automated deployment checks if a `.amazeeio.yml` file is present. This file is used to run tasks during the process of the deployment.
+The most minimal file looks at follows:
+
+```
+sitegroup: mysitegroup
+```
+
+`sitegroup` is the only required key that needs to be present, all other keys are optional, but provide a lot of power.
 
 For a Drupal 8 Deployment with npm the `.amazeeio.yml` file could look like following:
 
 ```
+sitegroup: mysitegroup
 deploy_tasks:
   development:
     before_deploy:
