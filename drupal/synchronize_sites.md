@@ -1,6 +1,6 @@
 # Synchronize Sites
 
-amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. 
+amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. You need the `aliases.drushrc.php` file correctly placed in order for site synchronizations to work, see 
 
 Therefore, you can use drush to sync between environments, amazee.io knows about your site environments and will automatically add them as you add a new site (e.g. a staging environment) to your account.
 
