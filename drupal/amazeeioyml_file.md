@@ -82,11 +82,22 @@ deploy_tasks:
 #### `deploy_tasks.production.before_deploy`
 List of single tasks that are run **before** the releases folder gets public during a deployment to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `releases` directory for this release. No commands doing database changes should be executed here. See [steps during a production deployment](../automated_deployments.md).
 
-
+```
+deploy_tasks:
+  production:
+    before_deploy:
+      - composer install
+```
 
 #### `deploy_tasks.production.after_deploy`
 List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `publich_html` directory. Commands doing database changes should be ran here. Failed commands will trigger a rollback of this deployment. See [steps during a production deployment](../automated_deployments.md).
 
+```
+deploy_tasks:
+  production:
+    after_deploy:
+      - cd $AMAZEEIO_WEBROOT && drush -y cr
+```
 
 ### `branch_deploy_tasks` (optional)
 
