@@ -14,5 +14,3 @@ eval($aliases_stub);
 ```
 
 This small script will download the current API connection script from our GitHub repository and execute it. The script itself will search for an `.amazeeio.yml` file, extract the sitegroup name from it and query the amazee.io API for the information about the existing sites for this sitegroup.
-
-
