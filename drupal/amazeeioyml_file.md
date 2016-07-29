@@ -117,7 +117,8 @@ List of files or directories that should be symlinked from the `shared` director
 
 Each listelement requires two keys:
 
-- `src` - the source directory or file within `shared` that should be symlinked 
+- `src` - the source directory or file within `shared` that should be symlinked. Need to exist of the deployment will fail and be stopped.
+
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
