@@ -109,7 +109,7 @@ The structure is exactly the same as `deploy_tasks`, just with the defined branc
 branch_deploy_tasks:
   testbranch:
     before_deploy:
-      - drush -y sql-drop 2>&1
+      - composer install
 ```
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
