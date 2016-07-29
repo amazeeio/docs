@@ -21,16 +21,16 @@ deploy_tasks:
       - npm install
       - npm run gulp -- compile
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
-      - cd $AMAZEEIO_WEBROOT && drush -y cr
+      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cr
   production:
     before_deploy:
       - composer install
       - npm install
       - npm run gulp -- build
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
-      - cd $AMAZEEIO_WEBROOT && drush -y cr
+      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cr
 branch_deploy_tasks:
   testbranch:
     before_deploy:
@@ -38,15 +38,15 @@ branch_deploy_tasks:
       - npm install
       - npm run gulp -- build
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y sql-drop 2>&1
-      - cd $AMAZEEIO_WEBROOT && drush -y sql-sync @prod default 2>&1
-      - cd $AMAZEEIO_WEBROOT && drush -y rsync @prod:%files default:%files 2>&1
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
-      - cd $AMAZEEIO_WEBROOT && drush -y cr
+      - cd web && drush -y sql-drop 2>&1
+      - cd web && drush -y sql-sync @prod default 2>&1
+      - cd web && drush -y rsync @prod:%files default:%files 2>&1
+      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y cr
 shared:
   production:
     - src: files
-      dst: sites/default/files
+      dst: web/sites/default/files
 versions:
   node: 4
 ```
@@ -76,7 +76,7 @@ List of single tasks that are run as a **second** step during a deployment to a 
 deploy_tasks:
   development:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
+      - cd web && drush -y updb --cache-clear=0
 ```
 
 #### `deploy_tasks.production.before_deploy`
@@ -96,7 +96,7 @@ List of single tasks that are run as **after** the releases folder is public to 
 deploy_tasks:
   production:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y cr
+      - cd web && drush -y cr
 ```
 
 ### `branch_deploy_tasks` (optional)
@@ -109,8 +109,12 @@ The structure is exactly the same as `deploy_tasks`, just with the defined branc
 branch_deploy_tasks:
   testbranch:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush -y sql-drop 2>&1
+      - cd web && drush -y sql-drop 2>&1
 ```
+
+### `shared` (optional)
+
+
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
