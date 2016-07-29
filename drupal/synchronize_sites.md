@@ -23,7 +23,7 @@ We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a dang
 {% endhint %}
 
 {% hint style='info' %}
-`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
+`drush sql-sync` and also `dsql` will not remove the existing database on the target site. Already tables will be completely overwritten though. Existing tables on the target database, which do not exist on the source database, will still exist and can cause issues (like when enabling a new module that will not install because a new table already exists). In order to have an exact copy of a source database on the target database, run `drush sql-drop` first and then `dsql`.
 {% endhint %}
 
 ## Synchronizing Files
@@ -48,5 +48,5 @@ We suggest though to use `dfiles` in stead of `drush rsync`, as there is a dange
 {% endhint %}
 
 {% hint style='info' %}
-`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
+`drush rsync` and also `dfiles` will not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
 {% endhint %}
