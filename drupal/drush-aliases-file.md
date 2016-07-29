@@ -1,5 +1,9 @@
 # Drush Configuration Files
 
+Both of these files, should be placed within a `drush` folder inside the root directory of the Git repository.
+
+See https://github.com/amazeeio/drupal-setting-files for examples.
+
 ## Drush Aliases File `aliases.drushrc.php`
 
 In order for Drush to connect to remote sites and perform synchronizations and other commands, it needs a small file that connects Drush to the amazee.io API.
