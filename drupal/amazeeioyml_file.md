@@ -66,7 +66,12 @@ deploy_tasks:
 #### `deploy_tasks.development.after_deploy`
 List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
 
-
+```
+deploy_tasks:
+  development:
+    after_deploy:
+      - cd $AMAZEEIO_WEBROOT && drush updb
+```
 
 #### `deploy_tasks.production.before_deploy`
 List of single tasks that are run **before** the releases folder gets public during a deployment to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `releases` directory for this release. No commands doing database changes should be executed here. See [steps during a production deployment](../automated_deployments.md).
