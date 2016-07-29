@@ -23,6 +23,7 @@ Amazee.io exposes services to the web application by making use of environment v
 | `AMAZEEIO_VARNISH_SECRET` | Varnish Secret (used to authenticate to Varnish for Commands like bans) | `2PJt6hzzD-xmDYjHtpHaHe-Ld42sCCXpGaitQRg-6shG2q` |
 
 
+
 Environment variables can be access from your web application by using PHP's `getenv()` function.
 
 ```
