@@ -144,6 +144,8 @@ Defines installation and usage of software or tools on the CLI. (the PHP Version
 
 Defines the version number of Node.js that should automatically be installed and used. Can be defined as either just a major version number like `4` or specific versions like `6.3.0`. We're using `nvm` to handle the different nodejs versions, please check with nvm which versions do apply.
 
+If defined, every connection via SSH to a site or deployment tasks will have this version first of nodejs first installed and all nodejs specific commands are ran with that version (like `node` or `npm`).
+
 
 
 
