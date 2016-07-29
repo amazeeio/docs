@@ -63,7 +63,7 @@ List of single tasks that are run as a **first** step during a deployment to a s
 List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
 
 #### `deploy_tasks.production`
-Defines all tasks that are run during a deployment to a site marked with the environment type [production](../environment_type.md).
+Group for all tasks that are run during a deployment to a site marked with the environment type [production](../environment_type.md).
 
 #### `deploy_tasks.development.before_deploy`
 List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md).
