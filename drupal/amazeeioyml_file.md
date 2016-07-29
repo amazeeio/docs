@@ -110,7 +110,7 @@ branch_deploy_tasks:
       - cd web && drush -y sql-drop 2>&1
 ```
 
-See the page [Automatic Synchronization of Sites - Continous Integration](./automatic-synchronization-of-sites.md) for a real live example on using branch deploy tasks.
+See [Automatic Synchronization of Sites - Continous Integration](./automatic-synchronization-of-sites.md) for a real live example on using branch deploy tasks.
 
 ### `shared` (optional)
 *Applies only to sites marked as type production, as type development sites do not use symlinked and releases folders.*
