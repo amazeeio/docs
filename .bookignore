@@ -1,2 +1,3 @@
 .amazeeio.yml
 sites/default/aliases.drushrc.php
+package.json
