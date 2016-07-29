@@ -44,5 +44,5 @@ We suggest though to use `dfiles` in stead of `drush rsync`, as there is a dange
 {% endhint %}
 
 {% hint style='info' %}
-`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see
+`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
 {% endhint %}
