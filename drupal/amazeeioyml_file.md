@@ -113,15 +113,27 @@ branch_deploy_tasks:
 ```
 
 ### `shared` (optional)
-List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory. This applies only for deployments marked as type prodution.
+Applies only to sites marked as type production.
+List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory. 
 
 Each listelement requires two keys:
 
 - `src` - the source directory or file within `shared` that should be symlinked. Need to exist of the deployment will fail and be stopped.
-- `dst` - the destination directory or file where the symlink to `src` should be created. Can not exist already or the deployment will be failed and stopped (to prevent data loss)
+- `dst` - the destination directory or file where the symlink to `src` should be created. If already existing the deployment will be failed and stopped (to prevent data loss).
 
+Example:
 
+```
+shared:
+  production:
+    - src: files
+      dst: web/sites/default/files
+```
 
+This example will create a symlink that is as follows:
+```
+~/public_html/web/sites/default/files -> ~/shared/files
+```
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
