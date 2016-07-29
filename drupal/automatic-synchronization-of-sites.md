@@ -16,8 +16,9 @@ branch_deploy_tasks:
      - cd web && drush -y cr
 ```
 
-In this example on every deployment to the `preprod` branch, the regular defined `deploy_tasks` int he yaml file are ignored and instead the tasks defined here are called.
+In this example on every deployment to the `preprod` branch, the regular defined `deploy_tasks` in the yaml file are ignored and instead the tasks defined here are called.
 
 As during a deployment we have full access to a drush, we can also call commands that involve site aliases, like `sql-sync`.
 
-In this case the current existing database from the `preprod` site will be emptied (drush sql-drop)
+* In this case the current existing database from the `preprod` site will be deleted (`drush sql-drop`).
+* Then 
