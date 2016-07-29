@@ -41,10 +41,20 @@ shared:
   production:
     - src: files
       dst: sites/default/files
+versions:
+  node: 4
 ```
 
-### deploy_tasks  → development / deploy_tasks → production
-Defines the tasks which are run in the different sites with their respective [environment type](../environment_type.md).
+## Explanation of keys
+
+#### `sitegroup` (required)
+Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup. 
+
+### `deploy_tasks` (optional)
+Defines all tasks that are automatically run during a deployment. 
+
+#### `deploy_tasks.development`
+Defines all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
 
 ### before_deploy
 Tasks which are ran before the release is going to be activated on the server
