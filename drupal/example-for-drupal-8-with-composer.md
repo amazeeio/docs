@@ -26,3 +26,7 @@ shared:
    - src: files
      dst: web/sites/default/files
 ```
+
+Other important things to note:
+* All drush commands are called with a `-y`, in order to ensure that no command is waiting for user input, which will not be possible during automated deployments. 
+* 
