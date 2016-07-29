@@ -15,6 +15,7 @@ Examples:
 * `dsql @staging` while connected via SSH to the `develop` site: Synchronizes the database from the `staging` site into the database on the `develop` site.
 
 `dsql` is actually a Bash alias for `drush sql-sync $1 default -d -v`
+
 We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
 
 
