@@ -1,22 +1,21 @@
-# `.amazeeio.yml` Example for Drupal 8 without Composer
+# `.amazeeio.yml` Example for Drupal 7 
 
-If Drupal 8 is regularly installed, there are no special precautions to take in terms of subfolders for the Drupal itself.
 
 ```
 sitegroup: mysitegroup
 deploy_tasks:
- development:
- after_deploy:
- - drush -y updb --cache-clear=0
- - drush -y cr
- production:
- after_deploy:
- - drush -y updb --cache-clear=0
- - drush -y cr
+  development:
+    after_deploy:
+      - drush -y updb --cache-clear=0
+      - drush -y cc all
+  production:
+    after_deploy:
+      - drush -y updb --cache-clear=0
+      - drush -y cc all
 shared:
- production:
- - src: files
- dst: sites/default/files
+  production:
+    - src: files
+      dst: sites/default/files
 ```
 
 Other important things to note:
