@@ -23,9 +23,9 @@ This means that another service (can be another Docker container, or in case of 
 
 You should stop this service or Docker container first.
 
-## I get an error like `listen tcp 0.0.0.0:53: bind: address already in use` during start
+## I get an error like `listen tcp 0.0.0.0:53: bind: address already in use` during `pygmy up`
 
-If during the start of Docker containers you see an error like that:
+If during starting of `pygmy` you see an error like that:
 
         Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-dnsmasq: 
         Error starting userland proxy: listen tcp 0.0.0.0:53: bind: address already in use
