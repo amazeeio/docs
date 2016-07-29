@@ -113,10 +113,11 @@ branch_deploy_tasks:
 ```
 
 ### `shared` (optional)
-Applies only to sites marked as type production.
-List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory. 
+*Applies only to sites marked as type production, as type development sites do not use symlinked and releases folders.*
 
-Each listelement requires two keys:
+List of files or directories that should be symlinked from the `shared` directory inside the home directory, into the `public_html` directory. (the `shared` directory is synchronized among all backend servers in a [cluster stack](../architecture/stack-types/cluster.md).
+
+Each element in this list requires two keys:
 
 - `src` - the source directory or file within `shared` that should be symlinked. Need to exist of the deployment will fail and be stopped.
 - `dst` - the destination directory or file where the symlink to `src` should be created. If already existing the deployment will be failed and stopped (to prevent data loss).
