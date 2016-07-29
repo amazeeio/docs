@@ -25,6 +25,6 @@ As during a deployment we have full access to a drush, we can also call commands
 
 Now a possible change to the production site should be first merged into the `preprod` branch. The deployment will run through and applies the new code automatically to the existing production database, if any of the commands will fail (like `drush updb`, as the code has an module update which does not apply to the production site) you get informed about this error and can prevent a possible broken production website!
 
-Additionally after the code has been deployed, you have full access to the site itself via the URL of the `preprod` site. You can test everything again and make sure that your changes really apply to the current production database.
+After the code has been deployed, you have full access to the site itself via the URL of the `preprod` site. You can test everything again and make sure that your changes really apply to the current production database.
 
 When you are sure that everything is according to your likings, merge the code into the `prod` branch and be happy :)
