@@ -51,13 +51,26 @@ versions:
 Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup. 
 
 ### `deploy_tasks` (optional)
-Defines all tasks that are automatically run during a deployment. 
+Group for all tasks that are automatically run during a deployment. 
 
 #### `deploy_tasks.development`
-Defines all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
+Group for all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
+
+#### `deploy_tasks.development.before_deploy`
+List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). Learn more about the steps during a development deployment.
+
+#### `deploy_tasks.development.after_deploy`
+List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). 
 
 #### `deploy_tasks.production`
 Defines all tasks that are run during a deployment to a site marked with the environment type [production](../environment_type.md).
+
+#### `deploy_tasks.development.before_deploy`
+List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md).
+
+#### `deploy_tasks.development.after_deploy`
+List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md).
+
 
 ### before_deploy
 Tasks which are ran before the release is going to be activated on the server
