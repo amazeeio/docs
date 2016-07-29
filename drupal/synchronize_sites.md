@@ -43,4 +43,6 @@ This command synchronizes the file directory from the given site to the files di
 We suggest though to use `dfiles` in stead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride production files!.
 {% endhint %}
 
-
+{% hint style='info' %}
+`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see
+{% endhint %}
