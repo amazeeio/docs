@@ -28,7 +28,7 @@
     * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
         * example for Drupal 7
         * [example for Drupal 8](drupal/example-for-drupal-8.md)
-        * example for Drupal 8 with composer
+        * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
     * [Drupal Configuration](drupal/settingsphpfiles.md)
     * [Environment Variables](drupal/environment_variables.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
