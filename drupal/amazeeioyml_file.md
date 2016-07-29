@@ -70,6 +70,8 @@ List of single tasks that are run as **after** the releases folder is public to 
 
 Group for tasks specifically to a branche. If defined, they run **instead** of the defined tasks within `deploy_tasks`.
 
+The structure is exactly the same as `deploy_tasks`, just prefixed with the defined branch name, example:
+
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
