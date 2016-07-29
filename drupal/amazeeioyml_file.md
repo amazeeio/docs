@@ -142,7 +142,9 @@ Defines installation and usage of software or tools on the CLI. (the PHP Version
 
 #### `versions.node`
 
-Defines the version number of Node.js that should automatically be installed and used. Can be defined as either just a major version number like `4` or specific versions like `6.3.0`.
+Defines the version number of Node.js that should automatically be installed and used. Can be defined as either just a major version number like `4` or specific versions like `6.3.0`. We're using `nvm` to handle the different nodejs versions, please check with nvm which versions do apply.
+
+
 
 
 
