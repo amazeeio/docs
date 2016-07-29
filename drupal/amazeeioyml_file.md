@@ -30,6 +30,9 @@ deploy_tasks:
       - cd $AMAZEEIO_WEBROOT && drush -y cr
 branch_deploy_tasks:
   testbranch:
+    before_deploy:
+      - npm install
+      - npm run gulp -- build
     after_deploy:
       - cd $AMAZEEIO_WEBROOT && drush -y sql-drop 2>&1
       - cd $AMAZEEIO_WEBROOT && drush -y sql-sync @prod default 2>&1
@@ -69,7 +72,7 @@ List of single tasks that are run as a **second** step during a deployment to a 
 deploy_tasks:
   development:
     after_deploy:
-      - cd $AMAZEEIO_WEBROOT && drush updb
+      - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
 ```
 
 #### `deploy_tasks.production.before_deploy`
@@ -81,7 +84,7 @@ List of single tasks that are run as **after** the releases folder is public to 
 
 ### `branch_deploy_tasks` (optional)
 
-Group for tasks specifically to a branche. If defined, they run **instead** of the defined tasks within `deploy_tasks`.
+Group for tasks specifically to a branch. If defined, they run **instead** of the defined tasks within `deploy_tasks`.
 
 The structure is exactly the same as `deploy_tasks`, just with the defined branch name, instead of the environment type, example:
 
