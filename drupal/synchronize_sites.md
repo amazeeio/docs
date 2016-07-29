@@ -59,4 +59,4 @@ Stage File Proxy will tell Drupal to connect to the production site and download
 
 amazee.io has full support for Stage File Proxy and exposes an environment variable called `AMAZEEIO_PRODUCTION_URL` which contains the URL to the production site. Stage File Proxy suppports setting the production URL via settings.php. Additionally the functionality of the module can be disabled without the need to uninstall the module. This is required on production sites, as on production sites the module does not make sense, but selective deinstalled modules is very hard to acchieve with Configuration Management or Features.
 
-l
+Please see https://github.com/amazeeio/drupal-setting-files for examples on how to use Stage File Proxy with amazee.io and the Drupal settings files (check the `development.settings.php` and `production.settings.php` files).
