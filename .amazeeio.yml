@@ -2,9 +2,6 @@ sitegroup: docs_amazee_io
 deploy_tasks:
   development:
     before_deploy:
-      - npm install gitbook-cli
-      - node ./node_modules/gitbook-cli/bin/gitbook.js fetch
+      - npm install
       - node ./node_modules/gitbook-cli/bin/gitbook.js install
       - node ./node_modules/gitbook-cli/bin/gitbook.js build
-versions:
-  node: 0.12
