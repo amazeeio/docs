@@ -21,3 +21,7 @@ This small script will download the current API connection script from our GitHu
 
 
 ## Drush RC File `drush/drushrc.php`
+
+In order for Drush to understand the URL of he current site, Drush searches for a file with the name `drushrc.php`. Knowing the URL of the current site ensures that cronjobs or other commands are running with the correct URL.
+
+```
