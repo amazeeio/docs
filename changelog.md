@@ -4,7 +4,7 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 
 <!-- toc -->
 
-## selectable Node.js Versions, because one Node.js is not enough
+## 2016-07-27 - selectable Node.js Versions, because one Node.js is not enough
 
 We just launched our newest addition: selectable Node.js versions.
 You can now define exactly which Node.js version you would like to run your frontend build system with.
@@ -26,7 +26,7 @@ This also applies to the Docker containers! Just make sure that you pull the new
 Happy Node.js-ing!
 
 ---
-## Updated Docker Images
+## 2016-07-27 - Updated Docker Images
 
 With the launch of selectable Node.js versions, we finally updated our Docker Images as well, here some of the goodies:
 
@@ -41,7 +41,7 @@ With the launch of selectable Node.js versions, we finally updated our Docker Im
 How to get the newest images? [Read here!](https://docs.amazee.io/local_docker_development/drupal_site_containers.html#update-images) And also specifically read the part about slow updates.
 
 ---
-## PHP and Nginx logs at your fingertips
+## 2016-07-13 - PHP and Nginx logs at your fingertips
 Sometimes you just need to see the bare metal logs of what is happening on your Drupal site, and now you can!
 
 Every site hosted on amazee.io has now a new folder called `~/logs/nginx` were we put all logs from the two nginx serving your site. So you know exactly what is going on on your site.
@@ -62,7 +62,7 @@ Btw if you would like to see real time logs, try:
 and you will see the access logs of the frontend Nginx in real🕔, wooho!
 
 ---
-## New environment variables which makes your Drupal Life easier
+## 2016-07-13 - New environment variables which makes your Drupal Life easier
 Environment variables are awesome✌️: They allow us to define some defaults for you, which you then just can use and don't need to worry about configuring our Drupal correctly or securely.
 
 Since the last maintenance last night we welcome a few more environment variables to the 👨‍👩‍👧‍👦 👨‍👨‍👧‍👦:👩‍👩‍👧‍👦
@@ -78,7 +78,7 @@ Check out our [Drupal Settings Files](https://github.com/amazeeio/drupal-setting
 Happy Drupaling!
 
 ---
-##Drupal in sub-📂? Now with SSH support 💪!
+## 2016-07-08 - Drupal in sub-📂? Now with SSH support 💪!
 More and more of our clients are using Drupal inside a subfolder of a Git repository. The reasons for this are multiple: Coming from other Drupal Hosters where this is required, using the Drupal Composer Project or just preference.
 
 Since the beginning amazee.io supported all ways of building your folder structure: Having Drupal directly in the root folder of Git, having it inside a subfolder or even in a deeper folder structure, full freedom 🆓!
@@ -92,14 +92,14 @@ Today we rolled out two small fixes to all sites:
 Improvements every week! - amazee.io
 
 ---
-##New image processing and git improvements on backends
+## 2016-07-05 - New image processing and git improvements on backends
 
 As part of this week's maintenance, we have installed [GraphicsMagick](http://www.graphicsmagick.org/) on all our backend servers. If you would like to use this alternative to GD and ImageMagick, you will need the [ImageMagick Drupal module](http://dgo.to/imagemagick), and to tell it the executable path for GraphicsMagick is at /usr/bin/gm.
 
 Also updated today, the git command line tool on our backend servers now knows who it is! We are publishing a .gitconfig file to the home directory of your site, so that when git runs it can know what user it belongs to.
 
 ---
-##Higher Security by default 🔐
+## 2016-06-28 - Higher Security by default 🔐
 Our whole stack has a strong focus on security, from the beginning we implemented a highly restrictive Linux User permissions system, which prevented a site to have access to any other site, not to code, not the database, not the files or anything else.
 
 Today we go a step further: We have now AppArmor profiles running, which lock sites down even more.
@@ -107,11 +107,13 @@ Today we go a step further: We have now AppArmor profiles running, which lock si
 Wanna try it out? Start trying out with a "ps aux".
 
 Got any questions about AppArmor or problems with it? Shoot us a 📧 to support@amazee.io or in Slack, we're happy to help.
-##Varnish Configuration Improvements
+
+---
+## 2016-05-10 Varnish Configuration Improvements
 Last week we upgraded to Varnish 4.0🌪 to make your site blazing fast . We optimized some portions of the configuration to make error handling more robust and also implemented some security measures. Go Varnish Go👌🏼
 
 ---
-## Fancy a, TMP Directory 📂
+## 2016-05-10 Fancy a, TMP Directory 📂
 
 Drupal needs a directory to handle uploads or save data temporarily - the so-called tmp or temp directory. Our servers come with that pre-equipped now. You can now rely on using the Environment Variable AMAZEEIO_TMP_PATH for temporary files.
 
@@ -120,7 +122,7 @@ For more information about Environment Variables head over to the Documentation:
 But how is that working for the cluster hosted sites you might ask? No worries we got you covered there too. The path is just slightly different for cluster sites but synchronized 🔃 across the backend web servers. It's easy as that!
 
 ---
-## Security: ImageTragick / OpenSSL
+## 2016-05-04 Security: ImageTragick / OpenSSL
 Yesterday was quite intense regarding security updates:
 
 First there was a OpenSSL Patch🔒  released and applied to all our systems.
@@ -128,14 +130,14 @@ First there was a OpenSSL Patch🔒  released and applied to all our systems.
 Later we saw that the [ImageTragick🖼](https://imagetragick.com/) remote code execution vulnerability was made public. Our engineers acted fast and came up with a patch to mitigate this threat to all amazee.io servers.
 
 ---
-## Varnish 4.0
+## 2016-05-04 Varnish 4.0
 
 Varnish 3 was the workhorse on our frontend servers and saved us many times from having to add more servers on the backend. Why? Because he does his job so very well! He withstands the biggest traffic spikes but now it's time to retire and make space for Varnish 4.0☄️.
 
 We rewrote the frontend caching configuration and polished everything to get the most OOMPH🌪 out of Varnish 4.0.
 
 ---
-## PHP 5.6 and PHP 7.0 <3
+## 2016-04-26 PHP 5.6 and PHP 7.0 <3
 Two PHP Versions on the same server? When we had this idea people said "This is not possible. Or at least it's crazy!" Then our engineers went to work. And we're happy to announce that we are able to support PHP 7.0 on all systems. Switching is done faster than you can say "I can compile php 7 from scratch". Send us a mail to support@amazee.io and we switch your sites over to PHP 7.0.👌
 
 PHP 7.0 comes with a huge performance boost and makes your Drupal Site faster than ever. And we all love fast websites.
@@ -143,7 +145,7 @@ PHP 7.0 comes with a huge performance boost and makes your Drupal Site faster th
 🏼🏁 The future is here!
 
 ---
-## Redirects : www and non-www
+## 2016-04-12 Redirects : www and non-www
 
 You might want to have your site prefixed with www. Or maybe you fancy not having it.
 
@@ -154,7 +156,7 @@ We're proud to announce that this feature has now rolled out to all AmazeeIO Inf
 If you want to have the redirects put in place, talk to our engineers they’ll be happy to get you set up.👷🏻
 
 ---
-## New Deployment Infrastructure
+## 2016-04-12 New Deployment Infrastructure
 Our deployment was great already. We set out to improve the rough edges and rewrote it from scratch based on the learnings of the previous version.
 
 **Features include:**
@@ -165,7 +167,7 @@ Our deployment was great already. We set out to improve the rough edges and rewr
 Happy Deployments!
 
 ---
-## IPv6 - Redirects and Resolver
+## 2016-04-12 IPv6 - Redirects and Resolver
 
 IPv6 is gaining momentum but it looked like our server level redirect didn't support it right from the beginning ☔️. And visitors ended up seeing our splash-page 😾.  
 
@@ -174,7 +176,7 @@ We fixed that by now and all domain redirects work now out of the box with IPv6 
 Another issue lived within nginx and DNS resolving. Nginx had issues with the notation of the addresses we provided. Glad we fixed that! 😺
 
 ---
-## Say 'Adios' to Database usernames and passwords
+## 2016-04-05 Say 'Adios' to Database usernames and passwords
 
 We went great lengths with making setting up a Drupal site as easy as possible by having everything configured with environment variables 🎯.
 
@@ -185,7 +187,7 @@ Enjoy!
 The AmazeeIO DevOps Team
 
 ---
-## zh1.cluster: Good things like PHP 5.6 will take a while
+## 2016-03-30 zh1.cluster: Good things like PHP 5.6 will take a while
 Remember that we said three weeks ago, that we will wait with the PHP 5.6 rollout for the zh1.cluster another week? Well we lied 😅, just a bit 😇
 
 It took us a bit longer. Reasons are many, and one of them includes a 🦄
@@ -195,7 +197,7 @@ We are very happy to announce that all servers have successfully been upgraded t
 Happy coding!
 
 ---
-##  No Access for You
+## 2016-03-24 No Access for You
 Since the beginning, AmazeeIO kept non-productive sites hidden from search engines and crawlers 💪
 
 It did that with sending the "X-Robots-Tag: noindex, nofollow" Headers, which keeps the search engines from indexing the sites.
@@ -205,7 +207,7 @@ Unfortunately that is not enough in some cases, the data that the development si
 Starting from today, it is now possible to set a Basic Auth for all sites (a simple username and password prompt, sometimes wrongly 🤓 refereed as "htaccess"), to keep the bad guys 🕵 from spying  👀 👻
 
 ---
-##  bye bye OCFS & CEPH, welcome NFS
+## 2016-03-15 bye bye OCFS & CEPH, welcome NFS
 
 Dear OCFS & CEPH
 
@@ -222,7 +224,7 @@ All the best
 The AmazeeIO DevOps Team
 
 ---
-##  Welcome blackfire.io
+## 2016-03-08 Welcome blackfire.io
 
 As promised last week, we're very pleased to have blackfire.io as a tool ready to be used within AmazeeIO ◾️🔥
 
@@ -237,7 +239,7 @@ Not convinced? Check out a [demo profiling](https://blackfire.io/profiles/f89f14
 - Install the [Google Chrome extension](https://blackfire.io/docs/integrations/chrome) or the [CLI tool](https://blackfire.io/docs/up-and-running/installation#install-cli-debian), point them to a site hosted on AmazeeIO and 💥: start profiling
 
 ---
-##  PHP 5.6 Rollout compact and single
+## 2016-03-08 PHP 5.6 Rollout compact and single
 Remember how we tested PHP 5.6 last week on dev1.compact? Looks like there where no issues and so we decided to roll it out to more Servers 😎
 
 These servers are now running with a 🏃🆙💪 PHP 5.6:
@@ -252,26 +254,26 @@ These servers are now running with a 🏃🆙💪 PHP 5.6:
 For zh1.cluster we decided that we gonna wait another week
 
 ---
-## Improvement day!
+## 2016-03-02 Improvement day!
 
 - MariaDB only allowed 200 connections at the same time, which with all the success of AmazeeIO was not enough anymore, MariaDB accepts now 400 connections 💪
 - Solr logged per default every single request to it's log file. Believe us, that was a lot of logs. Solr is now only logging what is really necessary 📝
 - We forgot that some sites just don't need a cron 🙈, we implemented that non-possibility now 🐵
 
 ---
-##  Xhprof removed
+## 2016-03-02 Xhprof removed
 
 Xhprof reached it's end of life and is not compatible to php 5.6 and php 7, fare well xhprof 😚👋
 
 But we're already working on adding Blackfire.io support! Stay tuned. 😎
 
 ---
-##  Solr Environment Variables
+## 2016-03-02 Solr Environment Variables
 
 Solr environment variables where exposed to PHP even though Solr was maybe not enabled for this site. We know that we all like Solr, but this was too much. Solr Environment Variables behave now correctly and are only exposed if Solr is enabled.
 
 ---
-##  PHP 5.6 for dev1.compact
+## 2016-03-02 PHP 5.6 for dev1.compact
 With the soon (July 2016) end of life of PHP 5.5, we thought it's a good idea to upgrade our PHP 5.5 to 5.6! 🚀
 
 In case some things break, we only rolled it out to dev1.compact.amazee.io so we all can test before it's rolled out to the production servers next week.
@@ -279,7 +281,7 @@ In case some things break, we only rolled it out to dev1.compact.amazee.io so we
 Please report any issues to @devops.
 
 ---
-##  Welcome :)
+##  2016-02-24 Welcome :)
 
 Welcome to our AmazeeIO changelog, where you will find the latest changes of AmazeeIO and all it's services.
 
