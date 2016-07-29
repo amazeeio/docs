@@ -115,7 +115,9 @@ branch_deploy_tasks:
 ### `shared` (optional)
 List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory.
 
-Each
+Each listelement requires two keys:
+
+- `src` - the source directory or file within `shared` that should be symlinked 
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
