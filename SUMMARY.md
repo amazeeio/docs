@@ -26,7 +26,7 @@
 * [Automated Deployments](automated_deployments.md)
 * [Drupal](drupal/drupal.md)
     * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
-        * example for Drupal 7
+        * [example for Drupal 7](drupal/example-for-drupal-7.md)
         * [example for Drupal 8 without composer](drupal/example-for-drupal-8.md)
         * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
     * [Drupal Configuration](drupal/settingsphpfiles.md)
