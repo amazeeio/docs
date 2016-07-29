@@ -2,7 +2,7 @@
 
 Both of these files, should be placed within a `drush` folder inside the root directory of the Git repository.
 
-See https://github.com/amazeeio/drupal-setting-files for examples.
+See https://github.com/amazeeio/drupal-setting-files for more examples.
 
 ## Drush Aliases File `aliases.drushrc.php`
 
