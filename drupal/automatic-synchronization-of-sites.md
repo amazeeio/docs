@@ -10,8 +10,8 @@ branch_deploy_tasks:
    before_deploy:
      - composer install
    after_deploy:
-     - cd web && drush -y sql-drop 2>&1
-     - cd web && drush -y sql-sync @prod default 2>&1
+     - cd web && drush -y sql-drop
+     - cd web && drush -y sql-sync @prod default
      - cd web && drush -y updb --cache-clear=0
      - cd web && drush -y cr
 ```
@@ -21,4 +21,4 @@ In this example on every deployment to the `preprod` branch, the regular defined
 As during a deployment we have full access to a drush, we can also call commands that involve site aliases, like `sql-sync`.
 
 * In this case the current existing database from the `preprod` site will be deleted (`drush sql-drop`).
-* Then 
+* Then the database is synced from the site with the name `prod` (assuming this is the production site)
