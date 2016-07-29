@@ -23,4 +23,6 @@ As during a deployment we have full access to a drush, we can also call commands
 * `drush -y sql-drop` - The current existing database from the `preprod` site will be deleted.
 * `drush -y sql-sync @prod default` - The `preprod` database is synced from the site with the name `prod`
 
-Now a possible change to the production site, should be first merged into the `preprod` branch, after this 
+Now a possible change to the production site should be first merged into the `preprod` branch. The deployment will run through and applies the new code automatically to the existing production database, if any of the commands will fail (like `drush updb`, as the code has an module update which does not apply to the production site) you get informed about this error and can prevent a possible broken production website!
+
+Additionally 
