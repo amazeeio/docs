@@ -158,11 +158,3 @@ This will install the newest available minor version 4 of Node.js.
 ## Examples
 
 Please see the examples for different Drupal Versions and other ideas as subpages.
-
-If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
-
-  - Dropping the SQL Database
-  - Synchronize production Database to testbranch site
-  - Synchronize production files to testbranch site
-
-You can make use of before_deploy and after_deploy tasks also within the branch_deploy_tasks.
