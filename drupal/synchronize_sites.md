@@ -22,6 +22,10 @@ This command synchronizes the Database from the given site to the site you're ru
 We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
 {% endhint %}
 
+{% hint style='info' %}
+`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
+{% endhint %}
+
 ## Synchronizing Files
 
 ```
@@ -44,5 +48,5 @@ We suggest though to use `dfiles` in stead of `drush rsync`, as there is a dange
 {% endhint %}
 
 {% hint style='info' %}
-`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`.
+`drush rsync` does not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
 {% endhint %}
