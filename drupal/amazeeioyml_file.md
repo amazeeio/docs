@@ -9,7 +9,6 @@ sitegroup: mysitegroup
 ```
 
 `sitegroup` is the only required key that needs to be present, all other keys are optional, but provide a lot of power.
-
 For a Drupal 8 with composer site and npm as frontend build system the `.amazeeio.yml` file could look like following: (see more examples as subpages)
 
 ```
