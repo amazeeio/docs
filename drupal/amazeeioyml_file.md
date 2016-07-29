@@ -56,7 +56,6 @@ Defines all tasks that are automatically run during a deployment.
 #### `deploy_tasks.development`
 Defines all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
 
-
 #### `deploy_tasks.production`
 Defines all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
 
