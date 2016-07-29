@@ -4,15 +4,8 @@ Amazee.io exposes services to the web application by making use of environment v
 
 | Variable | Content | Component |
 | :--- | :--- | :--- |
-|  |
-| Generated Base URL |
-| Drupal    s |
-| AMAZEEIO\_DB\_HOST |
-| Database Hostname |
-| Database |
-|  |  |  |
-| AMAZEEIO_BASE_URL |  |  |
-
+| AMAZEEIO_BASE_URL | Database Hostname |  |
+| AMAZEEIO\_DB\_HOST |  |  |
 | AMAZEEIO\_DB\_PASSWORD | Database Password | Database |
 | AMAZEEIO\_DB\_PORT | Database Port | Database |
 | AMAZEEIO\_DB\_USERNAME | Database Username | Database |
