@@ -26,6 +26,7 @@
 * [Automated Deployments](automated_deployments.md)
 * [Drupal](drupal/drupal.md)
     * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
+        * example for Drupal 7
     * [Drupal Configuration](drupal/settingsphpfiles.md)
     * [Environment Variables](drupal/environment_variables.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
