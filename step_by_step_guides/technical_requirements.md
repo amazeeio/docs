@@ -10,7 +10,7 @@ Git is a version control system that is widely used for software development and
 
 amazee.io needs access to your Git repository in order to deploy the code. There are some widely used cloud Git repository services like [GitHub](http://github.com), [BitBucket](http://bitbucket.org) and [Gitlab](https://gitlab.com). amazee.io has currently sites hosted which uses one of these.
 
-amazee.io is capable of using your own hosted Git Repository or on-premises versions of the mentioned Cloud Git repositories. Please check with support@amazee.io to connect amazee.io to these Git Repositories (tldr; If you can send us a Webhook on each push, it's all perfect)
+amazee.io is capable of using your own hosted Git Repository or on-premises versions of the mentioned Cloud Git repositories. Please check with [support@amazee.io](mailto:support@amazee.io) to connect amazee.io to these Git Repositories (tldr; If you can send us a Webhook on each push, it's all perfect)
 
 
 ## Secure Socket Shell (SSH)

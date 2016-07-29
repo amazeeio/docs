@@ -1,4 +1,4 @@
-# Grant amzee.io access to your git repository
+# Grant amazee.io access to your git repository
 
 Amazee.io needs to have read access on the git repositories which needs to be deployed. To support you in getting this permissions aligned please follow following guide:
 
@@ -59,6 +59,6 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 ## Other / Generic Git Hosting
 You're using a private installation of Gitlab, AWS Git repositories or something else we didn't come up with yet?
 
-No worries, we only need reed access on the repository so we will provide you with a SSH Public-Key which then needs to be granted access.
+No worries, we only need read access on the repository so we will provide you with a SSH Public-Key which then needs to be granted access.
 
 Feel free to get in touch with us on slack or via `support@amazee.io` and we help you getting the repository access in line.
