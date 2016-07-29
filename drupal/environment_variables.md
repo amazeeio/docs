@@ -13,7 +13,8 @@ Amazee.io exposes services to the web application by making use of environment v
 | `AMAZEEIO_LOCATION` | System location \(used for debugging purposes\) | `digitalocean` |
 | `AMAZEEIO_SITE_BRANCH` | The branch configured for your site | `prod` |
 | `AMAZEEIO_SITE_ENVIRONMENT` | Environment Type | `production` or `development` |
-| `AMAZEEIO_SITE_NAME` | Sitename \/ Username of the Site | System |
+| `AMAZEEIO_SITE_NAME` | Sitegroup name suffixed with branch | `mysite_com_prod` |
+
 | `AMAZEEIO_TMP_PATH` | A per site path for temporary files | System |
 | `AMAZEEIO_SOLR_HOST` | Solr Host | Solr |
 | `AMAZEEIO_SOLR_PORT` | Solr Port | Solr |
