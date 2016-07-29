@@ -15,6 +15,8 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
+See https://github.com/amazeeio/drupal-setting-files for more interesting things that can be put into the `drushrc.php` file. 
+
 ## Drush Aliases File `drush/aliases.drushrc.php`
 
 In order for Drush to connect to remote sites and perform synchronizations and other commands, it needs a small file that connects Drush to the amazee.io API.

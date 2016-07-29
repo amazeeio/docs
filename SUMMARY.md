@@ -32,7 +32,7 @@
 * [Environment Variables](drupal/environment_variables.md)
 * [Drupal & Drush](drupal/drupal.md)
     * [Drupal Configuration and settings.php](drupal/settingsphpfiles.md)
-    * [Drush Aliases File](drupal/drush-aliases-file.md)
+    * [Drush Configuration Files](drupal/drush-aliases-file.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
     * Blackfire.io
