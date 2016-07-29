@@ -69,7 +69,7 @@ Group for all tasks that are run during a deployment to a site marked with the e
 List of single tasks that are run **before** the releases folder gets public during a deployment to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the release directory for this release. No commands doing database changes should be executed here. See [steps during a production deployment](../automated_deployments.md).
 
 #### `deploy_tasks.development.after_deploy`
-List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md).
+List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md).
 
 
 ### before_deploy
