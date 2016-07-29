@@ -54,7 +54,9 @@ Defines the name of the site group this Git repository is in. You receive this s
 Group for all tasks that are automatically run during a deployment, unless there are branch specific tasks defined.
 
 #### `deploy_tasks.development.before_deploy`
-List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
+List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md). Example:
+
+
 
 #### `deploy_tasks.development.after_deploy`
 List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
