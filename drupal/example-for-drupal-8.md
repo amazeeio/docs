@@ -1,6 +1,6 @@
 # `.amazeeio.yml` Example for Drupal 8 without Composer
 
-If Drupal 8 is regularly installed, there are no special precautions to take in terms of subfolders for the Drupal itself
+If Drupal 8 is regularly installed, there are no special precautions to take in terms of subfolders for the Drupal itself.
 
 ```
 sitegroup: mysitegroup
