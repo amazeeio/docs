@@ -29,6 +29,7 @@
         * [example for Drupal 7](drupal/example-for-drupal-7.md)
         * [example for Drupal 8 without composer](drupal/example-for-drupal-8.md)
         * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
+        * [automatic synchronization of sites](drupal/automatic-synchronization-of-sites.md)
     * [Drupal Configuration](drupal/settingsphpfiles.md)
     * [Environment Variables](drupal/environment_variables.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
