@@ -30,10 +30,9 @@
         * [example for Drupal 8 without composer](drupal/example-for-drupal-8.md)
         * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
         * [Automatic synchronization of sites](drupal/automatic-synchronization-of-sites.md)
-    * [Drupal Configuration](drupal/settingsphpfiles.md)
+    * [Drupal Configuration and settings.php](drupal/settingsphpfiles.md)
     * [Environment Variables](drupal/environment_variables.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
-    * [Settings.php Files](drupal/settingsphpfiles.md)
 * Tools
     * Blackfire.io
     * Xdebug
