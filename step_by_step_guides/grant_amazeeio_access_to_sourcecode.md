@@ -1,4 +1,4 @@
-# Grant amzaee.io access to your git repository
+# Grant amazee.io access to your git repository
 
 Amazee.io needs to have read access on the git repositories which needs to be deployed. To support you in getting this permissions aligned please follow following guide:
 
@@ -18,10 +18,10 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 4. Grant `amazeeio-deploy` access to the repository
   ![](giving-access/github4.png)
 
-5. Afterwards it will thake several minutes until the invitation for the repository has been accepted
+5. Afterwards it will take several minutes until the invitation for the repository has been accepted
   ![](giving-access/github5.png)
 
-6. If everything is okay you'll see that the `Copy invite link` Button has disapeared now you're good to start deploying to amazee.io
+6. If everything is okay you'll see that the `Copy invite link` button has disappeared now you're good to start deploying to amazee.io
 ![](giving-access/github6.png)
 
 ## Gitlab
@@ -57,8 +57,8 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 ![](giving-access/bitbucket5.png)
 
 ## Other / Generic Git Hosting
-You're using a private installation of Gitlab, AWS Git repositories or something else we didn't come up with yet?
+You're using a private installation of GitLab, AWS Git repositories or something else we didn't come up with yet?
 
-No worries, we only need reed access on the repository so we will provide you with a SSH Public-Key which then needs to be granted access.
+No worries, we only need read access on the repository so we will provide you with a SSH Public Key which then needs to be granted access.
 
-Feel free to get in touch with us on slack or via `support@amazee.io` and we help you getting the repository access in line.
+Feel free to get in touch with us on slack or via [support@amazee.io](mailto:support@amazee.io) and we help you getting the repository access in line.
