@@ -2,7 +2,7 @@
 
 Amazee.io exposes services to the web application by making use of environment variables.
 
-| Variable | Content | Component |
+| Variable | Content | Example |
 | :--- | :--- | :--- |
 | AMAZEEIO_BASE_URL | Database Hostname |  |
 | AMAZEEIO\_DB\_HOST |  |  |
