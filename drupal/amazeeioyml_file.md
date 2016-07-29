@@ -103,7 +103,7 @@ deploy_tasks:
 
 Group for tasks specifically to a branch. If defined, they run **instead** of the defined tasks within `deploy_tasks`.
 
-The structure is exactly the same as `deploy_tasks`, just with the defined branch name, instead of the environment type, example:
+The structure is exactly the same as `deploy_tasks`, just with the defined branch name as key instead of the environment type, example:
 
 ```
 branch_deploy_tasks:
@@ -113,7 +113,7 @@ branch_deploy_tasks:
 ```
 
 ### `shared` (optional)
-List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory.
+List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory. This applies only for deployments marked as type prodution.
 
 Each listelement requires two keys:
 
