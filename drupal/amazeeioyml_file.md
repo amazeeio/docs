@@ -51,7 +51,7 @@ versions:
 Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup. 
 
 ### `deploy_tasks` (optional)
-Group for all tasks that are automatically run during a deployment. 
+Group for all tasks that are automatically run during a deployment, unless there are branch specific tasks defined.
 
 #### `deploy_tasks.development.before_deploy`
 List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
@@ -66,8 +66,10 @@ List of single tasks that are run **before** the releases folder gets public dur
 List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `publich_html` directory. Commands doing database changes should be ran here. Failed commands will trigger a rollback of this deployment. See [steps during a production deployment](../automated_deployments.md).
 
 
+### `branch_deploy_tasks` (optional)
 
-### branch_deploy_tasks
+Group for tasks specifically to a branches. If defined, they run **instead** of the defined tasks within `deploy_tasks`.
+
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
   - Dropping the SQL Database
