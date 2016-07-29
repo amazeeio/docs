@@ -22,3 +22,13 @@ If during the start of Docker containers you see an error like that:
 This means that another service (can be another Docker container, or in case of Linux based systems another service like an installed nginx) is already using this Port.
 
 You should stop this service or Docker container first.
+
+## I get an error like `listen tcp 0.0.0.0:53: bind: address already in use` during start
+
+If during the start of Docker containers you see an error like that:
+
+        Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-dnsmasq: 
+        Error starting userland proxy: listen tcp 0.0.0.0:53: bind: address already in use
+        Error: failed to start containers: amazeeio-dnsmasq
+
+You are probably on Ubuntu and the by default started DNS server by Ubuntu conflicts with the one we provide with `pygmy`. You should disable it, see here: http://askubuntu.com/a/233223 (no worries, the default started DNS server is actually not used, so it's safe to disable it).
