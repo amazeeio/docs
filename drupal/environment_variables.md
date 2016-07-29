@@ -15,11 +15,12 @@ Amazee.io exposes services to the web application by making use of environment v
 | `AMAZEEIO_SITE_ENVIRONMENT` | Environment Type | `production` or `development` |
 | `AMAZEEIO_SITE_NAME` | Sitegroup name suffixed with branch | `mysite_com_prod` |
 | `AMAZEEIO_SITE_GROUP` | Sitegroup name | `mysite_com` |
-| `AMAZEEIO_TMP_PATH` | A per site path for temporary files | System |
-| `AMAZEEIO_SOLR_HOST` | Solr Host | Solr |
-| `AMAZEEIO_SOLR_PORT` | Solr Port | Solr |
-| `AMAZEEIO_VARNISH_HOSTS` | Varnish Hosts | Varnish |
-| `AMAZEEIO_VARNISH_SECRET` | Varnish Secret | Varnish |
+| `AMAZEEIO_TMP_PATH` | Absolute path of temporary directory | `/var/www/mysite_com_prod/tmp` |
+| `AMAZEEIO_SOLR_HOST` | Apache Solr Host (only if Solr enabled for site) | `127.0.0.1` |
+| `AMAZEEIO_SOLR_PORT` | Apache Solr Port (only if Solr enabled for site) | `8149` |
+| `AMAZEEIO_VARNISH_HOSTS` | Varnish Hosts, comma separated if multiple (on cluster stacks) | `10.144.64.15,10.144.64.16` |
+| `AMAZEEIO_VARNISH_SECRET` | Varnish Secret (used to authenticate to Varnish for Commands like bans) | `2PJt6hzzD-xmDYjHtpHaHe-Ld42sCCXpGaitQRg-6shG2q` |
+
 
 Environment variables can be access from your web application by using PHP's `getenv()` function.
 
