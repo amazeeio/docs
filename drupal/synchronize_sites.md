@@ -22,7 +22,6 @@ This command synchronizes the Database from the given site to the site you're ru
 We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
 {% endhint %}
 
-
 ## Synchronizing Files
 
 ```
