@@ -6,13 +6,14 @@ One of the possible applications of these branch specific tasks is to synchroniz
 
 ```
 branch_deploy_tasks:
-  testbranch:
+  preprod:
    before_deploy:
- - composer install
- after_deploy:
- - cd web && drush -y sql-drop 2>&1
- - cd web && drush -y sql-sync @prod default 2>&1
- - cd web && drush -y rsync @prod:%files default:%files 2>&1
- - cd web && drush -y updb --cache-clear=0
- - cd web && drush -y cr
+     - composer install
+   after_deploy:
+     - cd web && drush -y sql-drop 2>&1
+     - cd web && drush -y sql-sync @prod default 2>&1
+     - cd web && drush -y updb --cache-clear=0
+     - cd web && drush -y cr
 ```
+
+In this example on every deployment to the `preprod` branch, the regular defined `deploy_tasks` int he yaml file are ignored and instead the tasks defined here are called.
