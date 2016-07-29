@@ -40,5 +40,7 @@ This command synchronizes the file directory from the given site to the files di
 `dfiles` is actually a Bash alias for `drush rsync $1:%files default:%files -d -v`
 
 {% hint style='info' %}
-We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
+We suggest though to use `dfiles` in stead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride production files!.
 {% endhint %}
+
+
