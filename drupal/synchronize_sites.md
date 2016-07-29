@@ -50,3 +50,6 @@ We suggest though to use `dfiles` in stead of `drush rsync`, as there is a dange
 {% hint style='info' %}
 `drush rsync` and also `dfiles` will not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
 {% endhint %}
+
+### Do not synchronize Files
+
