@@ -7,7 +7,7 @@ amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://do
 ```
 dsql @<site>
 ```
-This command synchronizes the Database from the given site to the site you're currently logged in.
+This command synchronizes the Database from the given site to the site you're running the command from.
 
 ###### Examples
 
@@ -18,16 +18,18 @@ This command synchronizes the Database from the given site to the site you're cu
 
 `dsql` is actually a Bash alias for `drush sql-sync $1 default -d -v`
 
+{% hint style='info' %}
 We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
+{% endhint %}
 
 
-
+## Synchronizing Files
 
 ```
 dfiles @<environment>
 ```
 
-This command synchronizes the file directory of Drupal to your current environment. Please make sure you have the Database set up correctly before running this command. If the database is not present the discovery of the correct file directory can fail.
+This command synchronizes the file directory from the given site to the files directory of the site you're running the command from. This command needs a Drupal site correctly running, as it needs to bootstrap Drupal in order to discover the location of the files directory.
 
 {% hint style='info' %}
 `dfiles` and `dsql` are just  aliases for drush sql-sync or drush rsync. As we had the issues in the past that people mixed up environments and synchronized the wrong way we free you of remembering a long command by adding short versions of it, nice isn't it?
