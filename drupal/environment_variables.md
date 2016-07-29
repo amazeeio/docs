@@ -2,23 +2,30 @@
 
 Amazee.io exposes services to the web application by making use of environment variables.
 
-| Variable                  | Content                                       | Component |
-|---------------------------|-----------------------------------------------|-----------|
-| AMAZEEIO_BASE_URL         | Generated Base URL                            | Drupal    |
-| AMAZEEIO_DB_HOST          | Database Hostname                             | Database  |
-| AMAZEEIO_DB_PASSWORD      | Database Password                             | Database  |
-| AMAZEEIO_DB_PORT          | Database Port                                 | Database  |
-| AMAZEEIO_DB_USERNAME      | Database Username                             | Database  |
-| AMAZEEIO_HOSTINGSTACK     | The stack identifier you are running on       | System    |
-| AMAZEEIO_LOCATION         | System Location (used for debugging purposes) | System    |
-| AMAZEEIO_SITE_BRANCH      | The branch configured for your site           | System    |
-| AMAZEEIO_SITE_ENVIRONMENT | Environment (production / development)        | System    |
-| AMAZEEIO_SITE_NAME        | Sitename / Username of the Site               | System    |
-| AMAZEEIO_TMP_PATH         | A per site path for temporary files           | System    |
-| AMAZEEIO_SOLR_HOST        | Solr Host                                     | Solr      |
-| AMAZEEIO_SOLR_PORT        | Solr Port                                     | Solr      |
-| AMAZEEIO_VARNISH_HOSTS    | Varnish Hosts                                 | Varnish   |
-| AMAZEEIO_VARNISH_SECRET   | Varnish Secret                                | Varnish   |
+| Variable | Content | Component |
+| :--- | :--- | :--- |
+|  |
+| Generated Base URL |
+| Drupal    s |
+| AMAZEEIO\_DB\_HOST |
+| Database Hostname |
+| Database |
+|  |  |  |
+| AMAZEEIO_BASE_URL |  |  |
+
+| AMAZEEIO\_DB\_PASSWORD | Database Password | Database |
+| AMAZEEIO\_DB\_PORT | Database Port | Database |
+| AMAZEEIO\_DB\_USERNAME | Database Username | Database |
+| AMAZEEIO\_HOSTINGSTACK | The stack identifier you are running on | System |
+| AMAZEEIO\_LOCATION | System Location \(used for debugging purposes\) | System |
+| AMAZEEIO\_SITE\_BRANCH | The branch configured for your site | System |
+| AMAZEEIO\_SITE\_ENVIRONMENT | Environment \(production \/ development\) | System |
+| AMAZEEIO\_SITE\_NAME | Sitename \/ Username of the Site | System |
+| AMAZEEIO\_TMP\_PATH | A per site path for temporary files | System |
+| AMAZEEIO\_SOLR\_HOST | Solr Host | Solr |
+| AMAZEEIO\_SOLR\_PORT | Solr Port | Solr |
+| AMAZEEIO\_VARNISH\_HOSTS | Varnish Hosts | Varnish |
+| AMAZEEIO\_VARNISH\_SECRET | Varnish Secret | Varnish |
 
 Environment variables can be access from your web application by using PHP's `getenv()` function.
 
@@ -27,3 +34,4 @@ $database_username = getenv('AMAZEEIO_DB_USERNAME');
 ```
 
 For more information about the configuration of Drupal please see: [Settings.php Files](./settingsphpfiles.html)
+
