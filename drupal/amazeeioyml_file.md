@@ -47,14 +47,12 @@ versions:
 
 ## Explanation of keys
 
-#### `sitegroup` (required)
+### `sitegroup` (required)
 Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup. 
 
 ### `deploy_tasks` (optional)
 Group for all tasks that are automatically run during a deployment. 
 
-#### `deploy_tasks.development`
-Group for all tasks that are run during a deployment to a site marked with the environment type [development](../environment_type.md).
 
 #### `deploy_tasks.development.before_deploy`
 List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
@@ -62,21 +60,13 @@ List of single tasks that are run as a **first** step during a deployment to a s
 #### `deploy_tasks.development.after_deploy`
 List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
 
-#### `deploy_tasks.production`
-Group for all tasks that are run during a deployment to a site marked with the environment type [production](../environment_type.md).
-
-#### `deploy_tasks.development.before_deploy`
+#### `deploy_tasks.production.before_deploy`
 List of single tasks that are run **before** the releases folder gets public during a deployment to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `releases` directory for this release. No commands doing database changes should be executed here. See [steps during a production deployment](../automated_deployments.md).
 
-#### `deploy_tasks.development.after_deploy`
+#### `deploy_tasks.production.after_deploy`
 List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `publich_html` directory. Commands doing database changes should be ran here. Failed commands will trigger a rollback of this deployment. See [steps during a production deployment](../automated_deployments.md).
 
 
-### before_deploy
-Tasks which are ran before the release is going to be activated on the server
-
-### after_deploy:
-Tasks which are ran after the releease is activated on the server
 
 ### branch_deploy_tasks
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
