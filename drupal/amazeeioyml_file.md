@@ -115,7 +115,7 @@ branch_deploy_tasks:
 ### `shared` (optional)
 *Applies only to sites marked as type production, as type development sites do not use symlinked and releases folders.*
 
-List of files or directories that should be symlinked from the `shared` directory inside the home directory, into the `public_html` directory. (the `shared` directory is synchronized among all backend servers in a [cluster stack](../architecture/stack-types/cluster.md).
+List of files or directories that should be symlinked from the `shared` directory inside the home directory, into the `public_html` directory. (the `shared` directory is synchronized across all backend servers in a [cluster stack](../architecture/stack-types/cluster.md)).
 
 Each element in this list requires two keys:
 
@@ -135,6 +135,14 @@ This example will create a symlink that is as follows:
 ```
 ~/public_html/web/sites/default/files -> ~/shared/files
 ```
+
+### `versions` (optional)
+
+Defines installation and usage of software or tools on the CLI. (the PHP Version is defined during setup of the site and not in the `.amazeeio.yml` file.
+
+
+
+
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
