@@ -1,5 +1,7 @@
 # Changelog
 
+Hi there! As we are improving amazee.io we started to release changelogs to highlight changes and new additions to the hosting stack.
+
 <!-- toc -->
 
 ## selectable Node.js Versions, because one Node.js is not enough
