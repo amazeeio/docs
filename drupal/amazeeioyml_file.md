@@ -17,12 +17,14 @@ sitegroup: mysitegroup
 deploy_tasks:
   development:
     before_deploy:
+      - composer install
       - npm run gulp -- compile
     after_deploy:
       - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
       - cd $AMAZEEIO_WEBROOT && drush -y cr
   production:
     before_deploy:
+      - composer install
       - npm install
       - npm run gulp -- build
     after_deploy:
