@@ -113,8 +113,9 @@ branch_deploy_tasks:
 ```
 
 ### `shared` (optional)
+List of files or directories that should be symlinked from the `shared` directory inside the home directory of this site, into the `public_html` directory.
 
-
+Each
 
 If you have several sites and need to run a different set of tasks you can make us of `branch_deploy_tasks` which will then be run on those specific branches. The shown example would run following commands on deployment of the git branch `testbranch`:
 
@@ -123,6 +124,3 @@ If you have several sites and need to run a different set of tasks you can make 
   - Synchronize production files to testbranch site
 
 You can make use of before_deploy and after_deploy tasks also within the branch_deploy_tasks.
-
-### shared
-The shared part of the configuration file will be used to symlink shared resources (e.g. files or other directoies which need to be present on all backend webservers).
