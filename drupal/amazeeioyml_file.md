@@ -33,6 +33,7 @@ deploy_tasks:
 branch_deploy_tasks:
   testbranch:
     before_deploy:
+      - composer install
       - npm install
       - npm run gulp -- build
     after_deploy:
