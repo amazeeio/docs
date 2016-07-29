@@ -18,6 +18,7 @@ deploy_tasks:
   development:
     before_deploy:
       - composer install
+      - npm install
       - npm run gulp -- compile
     after_deploy:
       - cd $AMAZEEIO_WEBROOT && drush -y updb --cache-clear=0
