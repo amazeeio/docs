@@ -1,13 +1,18 @@
 # Synchronize Sites
 
-amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. You need the `aliases.drushrc.php` file correctly placed in order for site synchronizations to work, see 
+amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. You need the `aliases.drushrc.php` file correctly placed in order for site synchronizations to work, see [Drush Configuration Files](./drush_configuration_files.md)
 
-Therefore, you can use drush to sync between environments, amazee.io knows about your site environments and will automatically add them as you add a new site (e.g. a staging environment) to your account.
+## Synchronizing Databases
 
 ```
-dsql @<environment>
+dsql @<site>
 ```
-This command synchronizes the Database from the mentioned environment to the environment you're currently logged in.
+This command synchronizes the Database from the given site to the site you're currently logged in.
+
+Examples:
+
+* Running `dsql @prod` inside the local Docker Container will synchronize the database from the `prod` site into the local Docker database
+* 
 
 
 ```
