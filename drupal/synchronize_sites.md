@@ -9,10 +9,12 @@ dsql @<site>
 ```
 This command synchronizes the Database from the given site to the site you're currently logged in.
 
-Examples:
+###### Examples
 
 * `dsql @prod` inside the local Docker Container: Synchronizes the database from the `prod` site into the local Docker database
 * `dsql @staging` while connected via SSH to the `develop` site: Synchronizes the database from the `staging` site into the database on the `develop` site.
+
+###### Remarks
 
 `dsql` is actually a Bash alias for `drush sql-sync $1 default -d -v`
 
