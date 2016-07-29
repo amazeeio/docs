@@ -51,5 +51,12 @@ We suggest though to use `dfiles` in stead of `drush rsync`, as there is a dange
 `drush rsync` and also `dfiles` will not remove already existing files on the target files directory. Already existing files will be overwritten though. Please see https://drushcommands.com/drush-8x/rsync to learn more about additional parameters for `drush rsync`
 {% endhint %}
 
-### Pro Tipp: Do not synchronize Files
+### Pro Tipp: Do not synchronize files - use Stage File Proxy
 
+Synchronizing files can take very long and use huge amount of storage space. In order to prevent that, amazee.io suggest to use the Drupal Module [Stage File Proxy](https://www.drupal.org/project/stage_file_proxy).
+
+Stage File Proxy will tell Drupal to connect to the production site and download a requested file if it does not exist on the current site. With that the need to synchronize files to local Docker Sites or any development sites is completely gone.
+
+amazee.io has full support for Stage File Proxy and exposes an environment variable called `AMAZEEIO_PRODUCTION_URL` which contains the URL to the production site. Stage File Proxy suppports setting the production URL via settings.php. Additionally the functionality of the module can be disabled without the need to uninstall the module. This is required on production sites, as on production sites the module does not make sense, but selective deinstalled modules is very hard to acchieve with Configuration Management or Features.
+
+l
