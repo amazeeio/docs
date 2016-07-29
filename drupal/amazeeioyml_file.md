@@ -1,5 +1,6 @@
 # .amazeeio.yml file
 
+To ensure a perfect system and tell the deployment system what it should do doring a deployment, your Git repository requires an `.amazeeio.yml` file to be present.
 
 The automated deployment checks if a `.amazeeio.yml` file is present. This file is used to run tasks during the process of the deployment.
 
