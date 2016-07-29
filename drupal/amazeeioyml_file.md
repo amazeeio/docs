@@ -140,7 +140,9 @@ This example will create a symlink that is as follows:
 
 Defines installation and usage of software or tools on the CLI. (the PHP Version is defined during setup of the site and not in the `.amazeeio.yml` file.
 
+#### `versions.node`
 
+Defines the version number of Node.js that should automatically be installed and used. Can be defined as either just a major version number like `4` or specific versions like `6.3.0`.
 
 
 
