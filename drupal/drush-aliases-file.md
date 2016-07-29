@@ -1,4 +1,14 @@
-# Drush Aliases File
+# Drush Configuration Files
+
+## Drush Aliases File `aliases.drushrc.php`
 
 In order for Drush to connect to remote sites and perform synchronizations and other commands, it needs a small file that connects Drush to the amazee.io API.
 
+```
+<?php
+global $aliases_stub;
+if (empty($aliases_stub)) { 
+  $aliases_stub = file_get_contents('https://raw.githubusercontent.com/amazeeio/drush-aliases/master/aliases.drushrc.php.stub?' . rand(0, 99999999999));
+}
+eval($aliases_stub);
+```
