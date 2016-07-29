@@ -11,8 +11,10 @@ This command synchronizes the Database from the given site to the site you're cu
 
 Examples:
 
-* Running `dsql @prod` inside the local Docker Container will synchronize the database from the `prod` site into the local Docker database
-* 
+* `dsql @prod` inside the local Docker Container: Synchronizes the database from the `prod` site into the local Docker database
+* `dsql @staging` while connected via SSH to the `develop` site: Synchronizes the database from the `staging` site into the database on the `develop` site.
+
+
 
 
 ```
