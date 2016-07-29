@@ -56,10 +56,17 @@ Group for all tasks that are automatically run during a deployment, unless there
 #### `deploy_tasks.development.before_deploy`
 List of single tasks that are run as a **first** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md). Example:
 
-
+```
+deploy_tasks:
+  development:
+    before_deploy:
+      - npm run gulp -- compile
+```
 
 #### `deploy_tasks.development.after_deploy`
 List of single tasks that are run as a **second** step during a deployment to a site marked with the environment type [development](../environment_type.md). See [steps during a development deployment](../automated_deployments.md).
+
+
 
 #### `deploy_tasks.production.before_deploy`
 List of single tasks that are run **before** the releases folder gets public during a deployment to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `releases` directory for this release. No commands doing database changes should be executed here. See [steps during a production deployment](../automated_deployments.md).
