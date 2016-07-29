@@ -23,7 +23,7 @@ We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a dang
 {% endhint %}
 
 {% hint style='info' %}
-`drush sql-sync` and also `dsql` will not remove a possible existing database on the target site. Already tables will be completely overwritten though. Existing tables on the target database, which do not exist on the source database, will still exist and can cause issues (like when enabling a new module that will not install because a new table already exists). In order to have an exact copy of a source database on the target database, run `drush sql-drop` first and then `dsql`.
+`drush sql-sync` and also `dsql` will not remove a possible existing database on the target site. Already existing tables will be completely overwritten though. Existing tables on the target database, which do not exist on the source database, will still exist and can cause issues (like when enabling a new module that will not install because a new table already exists). In order to have an exact copy of a source database on the target database, run `drush sql-drop` first and then `dsql`.
 {% endhint %}
 
 ## Synchronizing Files
