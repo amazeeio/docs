@@ -39,5 +39,5 @@
     * [New Relic](add-on/newrelic.md)
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
+* [Changelog](changelog.md)
 * [FAQ](faq.md)
-
