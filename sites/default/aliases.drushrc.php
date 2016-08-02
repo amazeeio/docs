@@ -1,9 +1,4 @@
 <?php
-
-$sitename = 'docs_amazee_io';   //use the username on our servers like testsite_ch
-$options['newrelic-api-key'] = 'CHANGEME';
-$options['deploy-repository'] = 'git@github.com:amazeeio/docs.git';
-
 // - And we load the aliases file here
 global $aliases_stub;
 if (empty($aliases_stub)) {
