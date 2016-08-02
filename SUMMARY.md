@@ -24,12 +24,16 @@
     * [E-Mail Delivery](architecture/e-mail_delivery.md)
     * [URL Structure](architecture/url-structure.md)
 * [Automated Deployments](automated_deployments.md)
-* [Drupal](drupal/drupal.md)
-    * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
-    * [Drupal Configuration](drupal/settingsphpfiles.md)
-    * [Environment Variables](drupal/environment_variables.md)
+* [.amazeeio.yml file](drupal/amazeeioyml_file.md)
+    * [example for Drupal 7](drupal/example-for-drupal-7.md)
+    * [example for Drupal 8 without composer](drupal/example-for-drupal-8.md)
+    * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
+    * [Automatic synchronization of sites](drupal/automatic-synchronization-of-sites.md)
+* [Environment Variables](drupal/environment_variables.md)
+* [Drupal & Drush](drupal/drupal.md)
+    * [Drupal Configuration and settings.php](drupal/settingsphpfiles.md)
+    * [Drush Configuration Files](drupal/drush-configuration-files.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
-    * [Settings.php Files](drupal/settingsphpfiles.md)
 * Tools
     * Blackfire.io
     * Xdebug
