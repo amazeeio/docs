@@ -45,3 +45,4 @@
 * [Regular Maintenance](regular_maintenance.md)
 * [Changelog](changelog.md)
 * [FAQ](faq.md)
+* [Comparison](comparison.md)
