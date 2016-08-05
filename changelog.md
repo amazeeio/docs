@@ -4,6 +4,15 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 
 <!-- toc -->
 
+## 2016-07-27 - Naming consistency for production sites
+
+As all sites are available via `[sitename].[branchname].[server].[stack].amazee.io`. Sadly the production URL's were not sticking to that naming schema.
+We rolled out a patch to include the branch name for production sites within the direct url.
+
+Before: `example.com.zh1.compact.amazee.io`
+New : `example.com.master.zh1.compact.amazee.io`
+
+
 ## 2016-07-27 - selectable Node.js Versions, because one Node.js is not enough
 
 We just launched our newest addition: selectable Node.js versions.

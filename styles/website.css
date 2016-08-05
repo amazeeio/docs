@@ -1,3 +1,6 @@
 .book-summary ul.summary li span {
   color: #cccccc !important;
 }
+a.gitbook-link {
+  display: none !important;
+}
