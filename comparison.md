@@ -90,7 +90,7 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>❌️ no local development</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Drupal and PHP</h3></td>
+		<td colspan="5"><h3>Drupal, PHP, Composer, Node.js</h3></td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -114,6 +114,20 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>⚠️ only via external service</td>
 	</tr>
 	<tr>
+		<td><strong>Support for Composer</strong></td>
+		<td>✅ full support for composer, run composer install with deploy_tasks, no need to commit vendor folder</td>
+		<td>❌️ no execution of composer install possible, need to commit vendor folder</td>
+		<td>❌️ no execution of composer install possible, need to commit vendor folder</td>
+		<td>✅ full support for composer, no need to commit vendor folder</td>
+	</tr>
+	<tr>
+		<td><strong>Support for Node.js</strong></td>
+		<td>✅ full support for Node.js tasks like gulp during deployment tasks</td>
+		<td>❌️ no execution of Node.js possible</td>
+		<td>❌️ no execution of Node.js possible</td>
+		<td>✅ full support for Node.js tasks like gulp during deployment tasks</td>
+	</tr>
+	<tr>
 		<td colspan="5"><h3>SSL Certificates &amp; HTTPs</h3></td>
 	</tr>
 	<tr>
@@ -124,10 +138,10 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td><strong>Free SSL/HTTPs Support</strong></td>
+		<td><strong>Free SSL/HTTPs</strong></td>
 		<td>✅</td>
-		<td>⚠️ extra costs</td>
-		<td>⚠️ extra costs</td>
+		<td>❌️ extra costs</td>
+		<td>❌️ extra costs</td>
 		<td>✅</td>
 	</tr>
 	<tr>
@@ -255,6 +269,13 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>✅ via UI or via CLI tool</td>
 	</tr>
 	<tr>
+		<td><strong>Custom deployment tasks</strong></td>
+		<td>✅ any command possible</td>
+		<td>❌️ no custom deployment tasks, only update.php and drush cr</td>
+		<td>✅ any command possible</td>
+		<td>✅ any command possible</td>
+	</tr>
+	<tr>
 		<td><strong>Cloud hooks / web hooks</strong></td>
 		<td>✅ possibility for webhooks inside of .amazeeio.yml file</td>
 		<td>✅ via pantheon.yml file</td>
@@ -284,6 +305,37 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
+	</tr>
+	<tr>
+		<td colspan="5"><h3>xDebug, Blackfire, New Relic</h3></td>
+	</tr>
+	<tr>
+		<th style="width: 20%"></th>
+		<th style="width: 20%">amazee.io</th>
+		<th style="width: 20%">Pantheon</th>
+		<th style="width: 20%">Acquia Cloud</th>
+		<th style="width: 20%">platform.sh</th>
+	</tr>
+	<tr>
+		<td><strong>xDebug on development or production sites/environments</strong></td>
+		<td>✅ remote xDebug via ssh tunnel</td>
+		<td>❌️ no xDebug</td>
+		<td>⚠️ needs to be enabled first</td>
+		<td>✅ remote xDebug via ssh tunnel</td>
+	</tr>
+	<tr>
+		<td><strong>Blackfire on development or production sites/environments</strong></td>
+		<td>✅ blackfire available</td>
+		<td>❌️ no blackfire</td>
+		<td>❌️ no blackfire</td>
+		<td>✅ blackfire available</td>
+	</tr>
+	<tr>
+		<td><strong>New Relic</strong></td>
+		<td>✅ free New Relic Pro</td>
+		<td>✅ free New Relic Pro</td>
+		<td>⚠️ only NewRelic Lite</td>
+		<td>❌️ no New Relic</td>
 	</tr>
 	<tr>
 		<td colspan="5"><h3>Support &amp; SLAs</h3></td>
@@ -370,6 +422,30 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>❌️ No custom configurations, no stopwords, no multilingual.</td>
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
+	</tr>
+	<tr>
+		<td colspan="5"><h3>Crons</h3></td>
+	</tr>
+	<tr>
+		<th style="width: 20%"></th>
+		<th style="width: 20%">amazee.io</th>
+		<th style="width: 20%">Pantheon</th>
+		<th style="width: 20%">Acquia Cloud</th>
+		<th style="width: 20%">platform.sh</th>
+	</tr>
+	<tr>
+		<td><strong>Drush Cron</strong></td>
+		<td>✅ fully customizable, up to 1 minute crons</td>
+		<td>⚠️ forced to run once an hour, no possibility to set lower times</td>
+		<td>✅ fully customizable, up to 1 minute crons</td>
+		<td>✅ fully customizable, minimum 5 minute crons</td>
+	</tr>
+	<tr>
+		<td><strong>Custom Crons scripts</strong></td>
+		<td>✅</td>
+		<td>❌️ </td>
+		<td>✅</td>
+		<td>✅</td>
 	</tr>
 </tbody>
 </table>
