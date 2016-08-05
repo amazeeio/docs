@@ -6,6 +6,6 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 
 |  | amazee.io | Pantheon | Acquia Cloud | platform.sh |
 | --- | --- | --- | --- | --- |
-| Drupal optimized hosting enevironemnt | ✅ | ✅ | ✅ | ⚠️ some DevOps knowledge and configuratin necessary, examples existing |
+| Drupal optimized hosting environemnt | ✅ | ✅ | ✅ | ⚠️ some DevOps knowledge and configuratin necessary, examples existing |
 |  |  |  |  |  |
 
