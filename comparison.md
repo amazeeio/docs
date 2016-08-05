@@ -17,49 +17,49 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Drupal optimized hosting Stack**</td>
+		<td><strong>Drupal optimized hosting Stack</strong></td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>⚠️ some DevOps knowledge and configuratin necessary, examples existing</td>
 	</tr>
 	<tr>
-		<td>Custom webserver configurations</td>
+		<td><strong>Custom webserver configurations</strong></td>
 		<td>✅ custom configurations possible. Easy testing inside Local Docker Development</td>
 		<td>❌️ no custom configurations</td>
 		<td>❌️ no custom configurations</td>
 		<td>⚠️ some customizability via ‘.platform.app.yaml’ file</td>
 	</tr>
 	<tr>
-		<td>On-demand server elasticity</td>
+		<td><strong>On-demand server elasticity</strong></td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>⚠️ only on Enterprise plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td>Automated security updates of OS and Services</td>
+		<td><strong>Automated security updates of OS and Services</strong></td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>24x7 infrastructure and application monitoring</td>
+		<td><strong>24x7 infrastructure and application monitoring</strong></td>
 		<td>✅</td>
 		<td>⚠️ only on Elite plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td>Locations</td>
+		<td><strong>Locations</strong></td>
 		<td>anywhere in the word possible, currently: Switzerland, USA, South Africa, UK</td>
 		<td>US only</td>
 		<td>Bound to Amazon AWS: US, Ireland, Japan, Singapore, Australia</td>
 		<td>no information</td>
 	</tr>
 	<tr>
-		<td>On-premises Hosting possible</td>
+		<td><strong>On-premises Hosting possible</strong></td>
 		<td>✅</td>
 		<td>❌️</td>
 		<td>❌️</td>
@@ -76,14 +76,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Local development provided</td>
+		<td><strong>Local development provided</strong></td>
 		<td>✅ Local Docker Based Development - Windows, Linux, Mac</td>
 		<td>✅ via kalabox, external tool with support for Pantheon - Windows, Linux, Mac</td>
 		<td>✅ Acquia Dev Desktop - Windows, Mac - no Linux</td>
 		<td>❌️</td>
 	</tr>
 	<tr>
-		<td>Local development congruent to development and production sites</td>
+		<td><strong>Local development congruent to development and production sites</strong></td>
 		<td>✅ exactly the same services and configurations like development and production sites</td>
 		<td>❌️ different services and configurations, no Varnish locally</td>
 		<td>❌️ different services and configurations, no Varnish or Apache Solr locally</td>
@@ -100,14 +100,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>PHP Versions</td>
+		<td><strong>PHP Versions</strong></td>
 		<td>5.6, 7.0</td>
 		<td>5.3, 5.4, 5.5, 5.6, 7.0</td>
 		<td>5.6, 7.0</td>
 		<td>5.6, 7.0, HHVM</td>
 	</tr>
 	<tr>
-		<td>Drupal core &amp; contrib security updates</td>
+		<td><strong>Drupal core &amp; contrib security updates</strong></td>
 		<td>✅ via Drop Guard (price reduction for <a href="http://amazee.io">amazee.io</a> clients)</td>
 		<td>✅ when using Pantheon Drupal Version Drops</td>
 		<td>⚠️ only enterprise or external service</td>
@@ -124,14 +124,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Free SSL/HTTPs Support</td>
+		<td><strong>Free SSL/HTTPs Support</strong></td>
 		<td>✅</td>
 		<td>⚠️ extra costs</td>
 		<td>⚠️ extra costs</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>Free SSL Certificate provided</td>
+		<td><strong>Free SSL Certificate provided</strong></td>
 		<td>✅ free and fully automated Let’s Encrypt certificate. Or bring your own certificate</td>
 		<td>❌️ need to self organize, additional costs</td>
 		<td>❌️ need to self organize, additional costs</td>
@@ -148,21 +148,21 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Caching</td>
+		<td><strong>Caching</strong></td>
 		<td>✅ Varnish 4, definable max-caching time, purging via varnish, expire or purge module</td>
 		<td>✅ Varnish, maximum caching of 24h</td>
 		<td>✅ Varnish 3</td>
 		<td>✅ no Varnish but HTTP Caching on nginx level, maximum caching of 15min</td>
 	</tr>
 	<tr>
-		<td>Cache purging from Drupal</td>
+		<td><strong>Cache purging from Drupal</strong></td>
 		<td>✅ via varnish, expire or purge module</td>
 		<td>❌️ no purging from Drupal</td>
 		<td>via Acquia Purge Module</td>
 		<td>❌️ no purging from Drupal</td>
 	</tr>
 	<tr>
-		<td>External Caching Systems (CDNs, Fastly)</td>
+		<td><strong>External Caching Systems (CDNs, Fastly)</strong></td>
 		<td>✅ Varnish automatically detects external Caching system and disables caching</td>
 		<td>✅</td>
 		<td>✅</td>
@@ -179,14 +179,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Shell access via SSH</td>
+		<td><strong>Shell access via SSH</strong></td>
 		<td>✅ authentication via ssh public key</td>
 		<td>❌️ no shell access, only remote Drush commands</td>
 		<td>✅ authentication via ssh public key</td>
 		<td>✅ authentication via ssh public key</td>
 	</tr>
 	<tr>
-		<td>File transfers</td>
+		<td><strong>File transfers</strong></td>
 		<td>✅ scp, sftp, rsync</td>
 		<td>✅ sftp (easy), rsync (complicated)</td>
 		<td>✅ scp, sftp, rsync</td>
@@ -203,14 +203,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Git support</td>
+		<td><strong>Git support</strong></td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>External hosted Git Repositories</td>
+		<td><strong>External hosted Git Repositories</strong></td>
 		<td>✅, by default</td>
 		<td>❌️ only with custom built synchronisation server or pushing into two git remotes</td>
 		<td>❌️ only with custom built synchronisation server or pushing into two git remotes</td>
@@ -227,35 +227,35 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Separate development, staging, and production sites/environments</td>
+		<td><strong>Separate development, staging, and production sites/environments</strong></td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>Custom naming of development sites/environments</td>
+		<td><strong>Custom naming of development sites/environments</strong></td>
 		<td>✅ fully custom, based on git branch names</td>
 		<td>⚠️ only multidev environments, default ones are called dev, test, live</td>
 		<td>⚠️ only additional environments, default ones are called dev, staging, prod</td>
 		<td>✅ fully custom, based on git branch names</td>
 	</tr>
 	<tr>
-		<td>Custom development, branching and merging workflows</td>
+		<td><strong>Custom development, branching and merging workflows</strong></td>
 		<td>✅ fully custom, no forced workflows, deployment of branches</td>
 		<td>⚠️ code can be committed via git to dev and multidev enviornments, deployments to test and live environments only via UI or CLI.</td>
 		<td>✅ fully custom, no forced workflows, deployment either via branches or tags selected in UI</td>
 		<td>✅ fully custom, no forced workflows, deployment of branches</td>
 	</tr>
 	<tr>
-		<td>Synchronisation of files and database between sites/environments</td>
+		<td><strong>Synchronisation of files and database between sites/environments</strong></td>
 		<td>✅ based on drush sql-sync and drush rsync commands</td>
 		<td>✅ via UI or via CLI tool</td>
 		<td>✅ via UI only</td>
 		<td>✅ via UI or via CLI tool</td>
 	</tr>
 	<tr>
-		<td>Cloud hooks / web hooks</td>
+		<td><strong>Cloud hooks / web hooks</strong></td>
 		<td>✅ possibility for webhooks inside of .amazeeio.yml file</td>
 		<td>✅ via pantheon.yml file</td>
 		<td>✅ via Acquia Cloud Hooks</td>
@@ -272,14 +272,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Drush support</td>
+		<td><strong>Drush support</strong></td>
 		<td>✅ full support of all commands</td>
 		<td>⚠️ some commands not supported (like sql-sqlc, php-eval)</td>
 		<td>✅</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>Automated Drush Site-Aliases</td>
+		<td><strong>Automated Drush Site-Aliases</strong></td>
 		<td>✅ no need for downloading new alias files by hand or run a CLI command</td>
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
@@ -296,28 +296,28 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>SLA</td>
+		<td><strong>SLA</strong></td>
 		<td>✅</td>
 		<td>⚠️ only on Elite plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td>Support</td>
+		<td><strong>Support</strong></td>
 		<td>Slack, E-Mail, Website, Phone</td>
 		<td>E-Mail, Website; Elite only: Phone</td>
 		<td>E-Mail, Website; Enterprise only: Phone</td>
 		<td>Slack, E-Mail, Website, Phone</td>
 	</tr>
 	<tr>
-		<td>24x7 emergency phone support</td>
+		<td><strong>24x7 emergency phone support</strong></td>
 		<td>✅</td>
 		<td>⚠️ only on Elite plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td>Drupal support</td>
+		<td><strong>Drupal support</strong></td>
 		<td>✅</td>
 		<td>⚠️ only on Elite plan</td>
 		<td>⚠️ only on Enterprise plan</td>
@@ -334,14 +334,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Automated Backups</td>
+		<td><strong>Automated Backups</strong></td>
 		<td>✅ automated complete (files, code, db) backups. Daily backups kept for 1 week, weekly backups for 1 month</td>
 		<td>✅ automated complete (files, code, db) backups. Daily backups kept for 1 week, weekly backups for 1 month</td>
 		<td>⚠️ only automated database backups. Daily backups kept for 3 days. (longer internal backups but no access for clients)</td>
 		<td>❌️ no automated backups, needs to be executed manually, backups kept for 14 days max</td>
 	</tr>
 	<tr>
-		<td>Support for “backup and migrate” module</td>
+		<td><strong>Support for “backup and migrate” module</strong></td>
 		<td>✅ full support to save backups externally. Custom Crons provide even more flexibility.</td>
 		<td>❌️ no support of “backup and migrate” module</td>
 		<td>❌️ no support of “backup and migrate” module</td>
@@ -358,14 +358,14 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td>Free Apache Solr</td>
+		<td><strong>Free Apache Solr</strong></td>
 		<td>✅ free Apache Solr for every site</td>
 		<td>⚠️ free, but available only on Professional, Business and Elite.</td>
 		<td>✅</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td>Custom configurations for Apache Solr</td>
+		<td><strong>Custom configurations for Apache Solr</strong></td>
 		<td>✅ custom configurations possible. Easy testing inside Local Docker Development</td>
 		<td>❌️ No custom configurations, no stopwords, no multilingual.</td>
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
