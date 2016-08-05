@@ -1,7 +1,9 @@
 # Comparison of amazee.io, Pantheon, Acquia Cloud, Platform.sh
 
-This comparison is provided by amazee.io itself and does not take guarantee that it is completely correct. We love our competitors and know that they provide an outstanding service. This comparison shows how amazee.io is different than our loved competitors.
+We like our competitors and know that they provide an outstanding service.
+This comparison is provided by amazee.io itself, we took careful care in researching the capabilities of our competitors, but we cannot guarantee that it is correct.
 
+If you found a mistake, we're happy to fix it! You can find the original file [in our github repository](https://github.com/amazeeio/docs/blob/master/comparison.md) and send us a pull request.
 
 
 <table>
@@ -21,10 +23,10 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>✅</td>
 		<td>✅</td>
 		<td>✅</td>
-		<td>⚠️ some DevOps knowledge and configuratin necessary, examples existing</td>
+		<td>⚠️ some DevOps knowledge and configuration necessary, examples existing</td>
 	</tr>
 	<tr>
-		<td><strong>Custom webserver configurations</strong></td>
+		<td><strong>Custom web server configurations</strong></td>
 		<td>✅ custom configurations possible. Easy testing inside Local Docker Development</td>
 		<td>❌️ no custom configurations</td>
 		<td>❌️ no custom configurations</td>
@@ -226,9 +228,9 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 	<tr>
 		<td><strong>External hosted Git Repositories</strong></td>
 		<td>✅, by default</td>
-		<td>❌️ only with custom built synchronisation server or pushing into two git remotes</td>
-		<td>❌️ only with custom built synchronisation server or pushing into two git remotes</td>
-		<td>⚠️ integration into GitHub and Bitbucket, other repositories only with custom built synchronisation server or pushing into two git remotes</td>
+		<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
+		<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
+		<td>⚠️ integration into GitHub and Bitbucket, other repositories only with custom built synchronization server or pushing into two git remotes</td>
 	</tr>
 	<tr>
 		<td colspan="5"><h3>Development sites/environments &amp; Workflows</h3></td>
@@ -255,9 +257,9 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 		<td>✅ fully custom, based on git branch names</td>
 	</tr>
 	<tr>
-		<td><strong>Custom development, branching and merging workflows</strong></td>
+		<td><strong>Custom development, branching and merging work flows</strong></td>
 		<td>✅ fully custom, no forced workflows, deployment of branches</td>
-		<td>⚠️ code can be committed via git to dev and multidev enviornments, deployments to test and live environments only via UI or CLI.</td>
+		<td>⚠️ code can be committed via git to dev and multidev environments, deployments to test and live environments only via UI or CLI.</td>
 		<td>✅ fully custom, no forced workflows, deployment either via branches or tags selected in UI</td>
 		<td>✅ fully custom, no forced workflows, deployment of branches</td>
 	</tr>
@@ -277,7 +279,7 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 	</tr>
 	<tr>
 		<td><strong>Cloud hooks / web hooks</strong></td>
-		<td>✅ possibility for webhooks inside of .amazeeio.yml file</td>
+		<td>✅ possibility for web hooks inside of .amazeeio.yml file</td>
 		<td>✅ via pantheon.yml file</td>
 		<td>✅ via Acquia Cloud Hooks</td>
 		<td>✅</td>
@@ -325,10 +327,10 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 	</tr>
 	<tr>
 		<td><strong>Blackfire on development or production sites/environments</strong></td>
-		<td>✅ blackfire available</td>
-		<td>❌️ no blackfire</td>
-		<td>❌️ no blackfire</td>
-		<td>✅ blackfire available</td>
+		<td>✅ Blackfire available</td>
+		<td>❌️ no Blackfire</td>
+		<td>❌️ no Blackfire</td>
+		<td>✅ Blackfire available</td>
 	</tr>
 	<tr>
 		<td><strong>New Relic</strong></td>
@@ -394,7 +396,7 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 	</tr>
 	<tr>
 		<td><strong>Support for “backup and migrate” module</strong></td>
-		<td>✅ full support to save backups externally. Custom Crons provide even more flexibility.</td>
+		<td>✅ full support to save backups externally. Custom crons provide even more flexibility.</td>
 		<td>❌️ no support of “backup and migrate” module</td>
 		<td>❌️ no support of “backup and migrate” module</td>
 		<td>✅</td>
@@ -419,7 +421,7 @@ This comparison is provided by amazee.io itself and does not take guarantee that
 	<tr>
 		<td><strong>Custom configurations for Apache Solr</strong></td>
 		<td>✅ custom configurations possible. Easy testing inside Local Docker Development</td>
-		<td>❌️ No custom configurations, no stopwords, no multilingual.</td>
+		<td>❌️ No custom configurations, no stop words, no multilingual.</td>
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
 	</tr>
