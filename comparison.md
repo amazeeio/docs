@@ -9,7 +9,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 <table>
 <tbody>
 	<tr>
-		<td colspan="5"><h3>Hosting Stack</h3></td>
+		<td colspan="5"><h3>Hosting Stack</h3>
+			The hosting stack runs all your code and is essential for the availability and performance of your Drupal site.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -54,6 +56,18 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
+		<td colspan="5"><h3>Locations</h3>
+			Data privacy and protection laws sometimes force you to host in a specific country or even data center, therefore it is important where your Drupal Site is hosted.
+		</td>
+	</tr>
+	<tr>
+		<th style="width: 20%"></th>
+		<th style="width: 20%">amazee.io</th>
+		<th style="width: 20%">Pantheon</th>
+		<th style="width: 20%">Acquia Cloud</th>
+		<th style="width: 20%">platform.sh</th>
+	</tr>
+	<tr>
 		<td><strong>Locations</strong></td>
 		<td>anywhere in the word possible, currently: Switzerland, USA, South Africa, UK</td>
 		<td>US only</td>
@@ -62,13 +76,15 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 	</tr>
 	<tr>
 		<td><strong>On-premises Hosting possible</strong></td>
-		<td>✅</td>
+		<td>✅ any data center or cloud provider in the world</td>
 		<td>❌️</td>
 		<td>❌️</td>
 		<td>❌️</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Local Development</h3></td>
+		<td colspan="5"><h3>Local Development</h3>
+			The best and fastest way to develop a website is when it is running locally. So a good local development environment is key for efficient development of a website.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -92,7 +108,10 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>❌️ no local development</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Drupal, PHP, Composer, Node.js</h3></td>
+		<td colspan="5"><h3>Drupal, PHP, Composer, Node.js</h3>
+			Composer is the new way of managing external dependencies and is required by Drupal 8. <br />
+			Node.js is the tool of choice for Frontend build systems. Tools like gulp are built on Node.js and allow modern and faster development cycles.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -130,7 +149,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>✅ full support for Node.js tasks like gulp during deployment tasks</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>SSL Certificates &amp; HTTPs</h3></td>
+		<td colspan="5"><h3>SSL Certificates &amp; HTTPs</h3>
+			The Internet can be a dangerous place and only with HTTPs you can be sure that nobody steals your login credentials or passwords.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -154,7 +175,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>❌️ need to self organize, additional costs</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Caching</h3></td>
+		<td colspan="5"><h3>Caching</h3>
+			Caching is essential for any Drupal site, as it allows Drupal to focus on the hard tasks and leave serving of assets to the caching system.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -185,7 +208,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>SSH &amp; Remote Access</h3></td>
+		<td colspan="5"><h3>SSH &amp; Remote Access</h3>
+			Having access to the server that runs the Drupal site can be very important in order to find bugs, execute special tasks or just test something real fast.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -209,7 +234,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>✅ rsync</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Git</h3></td>
+		<td colspan="5"><h3>Git</h3>
+			Git is the tool of choice if it comes to source code repositories, but multiple Git hosting solutions exist and everybody has it's own favorite.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -233,7 +260,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>⚠️ integration into GitHub and Bitbucket, other repositories only with custom built synchronization server or pushing into two git remotes</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Development sites/environments &amp; Workflows</h3></td>
+		<td colspan="5"><h3>Development sites/environments &amp; Workflows</h3>
+			Multiple development environments or sites allow proper testing of new functionality and efficient development cycles. But they can also be confining if they cannot be adapted to the developers needs.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -258,13 +287,13 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 	</tr>
 	<tr>
 		<td><strong>Custom development, branching and merging work flows</strong></td>
-		<td>✅ fully custom, no forced workflows, deployment of branches</td>
+		<td>✅ fully custom, no forced work flows, deployment of branches</td>
 		<td>⚠️ code can be committed via git to dev and multidev environments, deployments to test and live environments only via UI or CLI.</td>
-		<td>✅ fully custom, no forced workflows, deployment either via branches or tags selected in UI</td>
-		<td>✅ fully custom, no forced workflows, deployment of branches</td>
+		<td>✅ fully custom, no forced work flows, deployment either via branches or tags selected in UI</td>
+		<td>✅ fully custom, no forced work flows, deployment of branches</td>
 	</tr>
 	<tr>
-		<td><strong>Synchronisation of files and database between sites/environments</strong></td>
+		<td><strong>Synchronization of files and database between sites/environments</strong></td>
 		<td>✅ based on drush sql-sync and drush rsync commands</td>
 		<td>✅ via UI or via CLI tool</td>
 		<td>✅ via UI only</td>
@@ -285,7 +314,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Drush</h3></td>
+		<td colspan="5"><h3>Drush</h3>
+			Drush makes development and managing of a Drupal site extremely easy and fast. Where Drush site-alias allows developers to interact with remote sites without needing to login into them.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -309,7 +340,11 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>xDebug, Blackfire, New Relic</h3></td>
+		<td colspan="5"><h3>Xdebug, Blackfire, New Relic</h3>
+			Xdebug allows step-by-step debugging of a Drupal request and is sometimes the only way in finding and fixing an issue. <br />
+			Blackfire allows to find performance bottlenecks in a Drupal Site. <br />
+			New Relic gives you insights into the performance of your Drupal site over time and after deployments.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -319,11 +354,11 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<th style="width: 20%">platform.sh</th>
 	</tr>
 	<tr>
-		<td><strong>xDebug on development or production sites/environments</strong></td>
-		<td>✅ remote xDebug via ssh tunnel</td>
-		<td>❌️ no xDebug</td>
+		<td><strong>Xdebug on development or production sites/environments</strong></td>
+		<td>✅ remote Xdebug via ssh tunnel</td>
+		<td>❌️ no Xdebug</td>
 		<td>⚠️ needs to be enabled first</td>
-		<td>✅ remote xDebug via ssh tunnel</td>
+		<td>✅ remote Xdebug via ssh tunnel</td>
 	</tr>
 	<tr>
 		<td><strong>Blackfire on development or production sites/environments</strong></td>
@@ -340,7 +375,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>❌️ no New Relic</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Support &amp; SLAs</h3></td>
+		<td colspan="5"><h3>Support &amp; SLAs</h3>
+			Support gives you help right when you need it and SLAs allow you to sleep better, because you know that somebody is watching your Drupal sites.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -378,7 +415,10 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>⚠️ only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Backups</h3></td>
+		<td colspan="5"><h3>Backups</h3>
+			Things can go wrong and so it is important to have Backup ready. Automated backups ensure that backups are created automatically and without the need to think about them. <br />
+			Saving a backup outside of the hosting provider, ensures that you have a backup even if the hosting provider makes a mistake.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -395,14 +435,16 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>❌️ no automated backups, needs to be executed manually, backups kept for 14 days max</td>
 	</tr>
 	<tr>
-		<td><strong>Support for “backup and migrate” module</strong></td>
+		<td><strong>Support for external backups via “backup and migrate” module</strong></td>
 		<td>✅ full support to save backups externally. Custom crons provide even more flexibility.</td>
 		<td>❌️ no support of “backup and migrate” module</td>
 		<td>❌️ no support of “backup and migrate” module</td>
 		<td>✅</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Apache Solr</h3></td>
+		<td colspan="5"><h3>Apache Solr</h3>
+			Apache Solr allows Drupal to build fast and rich search experiences. In some cases it is even needed to have a custom Solr configurations in order to make sure that the search does exactly what you need.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
@@ -426,7 +468,9 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 		<td>⚠️ Custom configurations only on Enterprise plan</td>
 	</tr>
 	<tr>
-		<td colspan="5"><h3>Crons</h3></td>
+		<td colspan="5"><h3>Crons</h3>
+			Running the Drush Cron regularly is vital for any Drupal site and once per hour should be enough. In some cases though you need it more often or custom cron scripts to ensure your Drupal site runs correctly.
+		</td>
 	</tr>
 	<tr>
 		<th style="width: 20%"></th>
