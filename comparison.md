@@ -34,11 +34,17 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<td>⚠️ some customizability via ‘.platform.app.yaml’ file</td>
 			</tr>
 			<tr>
-				<td><strong>On-demand server elasticity</strong></td>
-				<td>✅</td>
-				<td>✅</td>
-				<td>⚠️ only on Enterprise plan</td>
-				<td>⚠️ only on Enterprise plan</td>
+				<td><strong>Automatic scaling</strong></td>
+				<td>✅, unlimited CPU and RAM, no maximum amount of requests</td>
+				<td>⚠️ only on Elite plan, too many concurrent requests on smaller plans will cause service outages <a href="https://pantheon.io/docs/platform-resources/" target="_blank"><i>source</i></a></td>
+				<td>⚠️ only on Enterprise plan, too many concurrent requests on smaller plans will cause service outages <a href="https://docs.acquia.com/cloud/arch/compare-dev-managed" target="_blank"><i>source</i></a></td>
+				<td>⚠️ only on Enterprise plan, too many concurrent requests on smaller plans will cause service outages <a href="https://docs.platform.sh/discover/overview/pricing.html" target="_blank"><i>source</i></a></td>
+			</tr>
+				<td><strong>No pricing based on CPU and RAM</strong></td>
+				<td>✅, pricing purely based on Hits, no maximum CPU or RAM, no resource capping</td>
+				<td>❌️ each plan has max CPU and RAM resources <a href="https://pantheon.io/docs/platform-resources/" target="_blank"><i>source</i></a></td>
+				<td>❌️ pricing based on CPU and RAM <a href="https://www.acquia.com/cloud-pricing" target="_blank"><i>source</i></a></td>
+				<td>❌️ max RAM resources <a href="https://platform.sh/pricing/" target="_blank"><i>source</i></a></td>
 			</tr>
 			<tr>
 				<td><strong>Automated security updates of OS and Services</strong></td>
