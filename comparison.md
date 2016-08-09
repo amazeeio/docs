@@ -74,7 +74,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>Locations</strong></td>
-				<td>anywhere in the word possible, currently: Switzerland, USA, South Africa, UK</td>
+				<td>anywhere in the word possible, existing servers in: Switzerland, USA, South Africa, UK, Spain, France, Germany, Netherlands, Turkey, Italy, Toronto, India</td>
 				<td>US only</td>
 				<td>Bound to Amazon AWS: US, Ireland, Japan, Singapore, Australia</td>
 				<td>US and EU <a href="https://docs.platform.sh/user_guide/reference/public-ip-addresses.html" target="_blank"><i>source</i></a></td>
