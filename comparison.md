@@ -193,16 +193,16 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>Caching</strong></td>
-				<td>✅ Varnish 4, definable max-caching time, purging via varnish, expire or purge module</td>
+				<td>✅ Varnish 4, definable max-caching time</td>
 				<td>✅ Varnish, maximum caching of 24h</td>
 				<td>✅ Varnish 3</td>
-				<td>✅ no Varnish but HTTP Caching on nginx level, maximum caching of 15min</td>
+				<td>✅ no Varnish but HTTP Caching on nginx level, maximum caching of 15min (⚠️)</td>
 			</tr>
 			<tr>
 				<td><strong>Cache purging from Drupal</strong></td>
 				<td>✅ via varnish, expire or purge module</td>
 				<td>❌️ no purging from Drupal</td>
-				<td>via Acquia Purge Module</td>
+				<td>✅ via Acquia Purge Module</td>
 				<td>❌️ no purging from Drupal</td>
 			</tr>
 			<tr>
