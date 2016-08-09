@@ -35,13 +35,13 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>Automatic scaling</strong></td>
-				<td>✅, unlimited CPU and RAM, no maximum amount of requests</td>
+				<td>✅ unlimited CPU and RAM, no maximum amount of requests</td>
 				<td>⚠️ only on Elite plan, too many concurrent requests on smaller plans will cause service outages <a href="https://pantheon.io/docs/platform-resources/" target="_blank"><i>source</i></a></td>
 				<td>⚠️ only on Enterprise plan, too many concurrent requests on smaller plans will cause service outages <a href="https://docs.acquia.com/cloud/arch/compare-dev-managed" target="_blank"><i>source</i></a></td>
 				<td>⚠️ only on Enterprise plan, too many concurrent requests on smaller plans will cause service outages <a href="https://docs.platform.sh/discover/overview/pricing.html" target="_blank"><i>source</i></a></td>
 			</tr>
 				<td><strong>No pricing based on CPU and RAM</strong></td>
-				<td>✅, pricing purely based on Hits, no maximum CPU or RAM, no resource capping</td>
+				<td>✅ pricing purely based on Hits, no maximum CPU or RAM, no resource capping</td>
 				<td>❌️ each plan has max CPU and RAM resources <a href="https://pantheon.io/docs/platform-resources/" target="_blank"><i>source</i></a></td>
 				<td>❌️ pricing based on CPU and RAM <a href="https://www.acquia.com/cloud-pricing" target="_blank"><i>source</i></a></td>
 				<td>❌️ max RAM resources <a href="https://platform.sh/pricing/" target="_blank"><i>source</i></a></td>
@@ -74,7 +74,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>Locations</strong></td>
-				<td>anywhere in the word possible, existing servers in: Switzerland, USA, South Africa, UK, Spain, France, Germany, Netherlands, Turkey, Italy, Toronto, India</td>
+				<td>anywhere in the world possible, existing servers in: Switzerland, USA, South Africa, UK, Spain, France, Germany, Netherlands, Turkey, Italy, Toronto, India</td>
 				<td>US only</td>
 				<td>Bound to Amazon AWS: US, Ireland, Japan, Singapore, Australia</td>
 				<td>US and EU <a href="https://docs.platform.sh/user_guide/reference/public-ip-addresses.html" target="_blank"><i>source</i></a></td>
@@ -259,7 +259,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>External hosted Git Repositories</strong></td>
-				<td>✅, by default</td>
+				<td>✅ by default</td>
 				<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
 				<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
 				<td>⚠️ integration into GitHub and Bitbucket, other repositories only with custom built synchronization server or pushing into two git remotes</td>
