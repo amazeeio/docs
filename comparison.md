@@ -440,7 +440,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<td>❌️ no automated backups, needs to be executed manually, backups kept for 14 days max</td>
 			</tr>
 			<tr>
-				<td><strong>Support for external backups via “backup and migrate” module</strong></td>
+				<td><strong>Support for external (Amazon S3, Dropbox, etc.) backups via “backup and migrate” module</strong></td>
 				<td>✅ full support to save backups externally. Custom crons provide even more flexibility.</td>
 				<td>⚠️ “backup and migrate” module not recommended</td>
 				<td>❌️ no support of “backup and migrate” module</td>
