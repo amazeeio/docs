@@ -5,9 +5,8 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 <!-- toc -->
 
 ## 2016-08-09 - 📬 Mail Logfile
-Did you ever wonder how many mails are sent out via your website? We do too! We implemented logging for your outoging mails.
-
-You can find that in your homedirectory `logs/mail.log`
+Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outoging mails.
+You'll find the `mail.log` in your homedirectory `logs/mail.log`
 
 ## 2016-08-09 - 🔐 HTTP Strict Transport Security Headers
 
