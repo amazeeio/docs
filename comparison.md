@@ -442,7 +442,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			<tr>
 				<td><strong>Support for external backups via “backup and migrate” module</strong></td>
 				<td>✅ full support to save backups externally. Custom crons provide even more flexibility.</td>
-				<td>❌️ no support of “backup and migrate” module</td>
+				<td>⚠️ “backup and migrate” module not recommended</td>
 				<td>❌️ no support of “backup and migrate” module</td>
 				<td>✅</td>
 			</tr>
