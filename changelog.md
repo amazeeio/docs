@@ -4,6 +4,17 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 
 <!-- toc -->
 
+## 2016-08-09 - 📬 Mail Logfile
+Did you ever wonder how many mails are sent out via your website? We do too! We implemented logging for your outoging mails.
+
+You can find that in your homedirectory `logs/mail.log`
+
+## 2016-08-09 - 🔐 HTTP Strict Transport Security Headers
+
+[HTTP Strict Transport Security Headers](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security) short HSTS is a security policy mechanism which instructs your browser to talk only via HTTPS to a Site which sends out this header.
+
+We follow best-practices and send out a HSTS max-age of one year. If you need a shorter HSTS max-age you can dial it in for every of your production sites individually.
+
 ## 2016-07-27 - Naming consistency for production sites
 
 As all sites are available via `[sitename].[branchname].[server].[stack].amazee.io`. Sadly the production URL's were not sticking to that naming schema.
