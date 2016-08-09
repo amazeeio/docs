@@ -20,11 +20,11 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<th style="width: 20%">platform.sh</th>
 			</tr>
 			<tr>
-				<td><strong>Drupal optimized hosting Stack</strong></td>
+				<td><strong>Drupal optimized hosting stack</strong></td>
 				<td>✅</td>
 				<td>✅</td>
 				<td>✅</td>
-				<td>⚠️ some DevOps knowledge and configuration necessary, examples existing</td>
+				<td>⚠️ optimized stack available but some DevOps knowledge and configuration necessary, examples existing</td>
 			</tr>
 			<tr>
 				<td><strong>Custom web server configurations</strong></td>
@@ -77,14 +77,14 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<td>anywhere in the word possible, currently: Switzerland, USA, South Africa, UK</td>
 				<td>US only</td>
 				<td>Bound to Amazon AWS: US, Ireland, Japan, Singapore, Australia</td>
-				<td>no information</td>
+				<td>US and EU <a href="https://docs.platform.sh/user_guide/reference/public-ip-addresses.html" target="_blank"><i>source</i></a></td>
 			</tr>
 			<tr>
 				<td><strong>On-premises Hosting possible</strong></td>
-				<td>✅ any data center or cloud provider in the world</td>
+				<td>✅ any data center or cloud provider in the world, starting already with 1 instance</td>
 				<td>❌️</td>
 				<td>❌️</td>
-				<td>❌️</td>
+				<td>✅ <a href="https://platform.sh/product/enterprise/on-premises-paas/" target="_blank"><i>source</i></a></td>
 			</tr>
 			<tr>
 				<td colspan="5"><h3>Local Development</h3>
@@ -236,7 +236,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<td>✅ scp, sftp, rsync</td>
 				<td>✅ sftp (easy), rsync (complicated)</td>
 				<td>✅ scp, sftp, rsync</td>
-				<td>✅ rsync</td>
+				<td>✅ sftp, rsync</td>
 			</tr>
 			<tr>
 				<td colspan="5"><h3>Git</h3>
@@ -338,11 +338,11 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 				<td>✅</td>
 			</tr>
 			<tr>
-				<td><strong>Automated Drush Site-Aliases</strong></td>
+				<td><strong>Fully Automated Drush Site-Aliases</strong></td>
 				<td>✅ no need for downloading new alias files by hand or run a CLI command</td>
 				<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
 				<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
-				<td>⚠️ need to download new Drush Site-Aliases via UI or CLI</td>
+				<td>⚠️ need to create new Drush Site-Aliases via CLI</td>
 			</tr>
 			<tr>
 				<td colspan="5"><h3>Xdebug, Blackfire, New Relic</h3>
