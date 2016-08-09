@@ -374,8 +374,8 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>New Relic</strong></td>
-				<td>✅ Free New Relic Pro</td>
-				<td>✅ Free New Relic Pro</td>
+				<td>✅ Free New Relic Pro (all production sites in one single account)</td>
+				<td>✅ Free New Relic Pro (each production site in separate accounts)</td>
 				<td>⚠️ Only NewRelic Lite</td>
 				<td>❌️ No New Relic</td>
 			</tr>
