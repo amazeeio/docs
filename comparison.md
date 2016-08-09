@@ -259,7 +259,7 @@ If you found a mistake, we're happy to fix it! You can find the original file [i
 			</tr>
 			<tr>
 				<td><strong>External hosted Git Repositories</strong></td>
-				<td>✅ by default</td>
+				<td>✅ by default, full support for GitHub, Github Enterprise, Bitbucket, Gitlab CE, Gitlab EE, Gitlab.com and any other Git Server.</td>
 				<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
 				<td>❌️ only with custom built synchronization server or pushing into two git remotes</td>
 				<td>⚠️ integration into GitHub and Bitbucket, other repositories only with custom built synchronization server or pushing into two git remotes</td>
