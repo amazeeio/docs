@@ -136,7 +136,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td>✅ Via Drop Guard (price reduction for <a href="http://amazee.io">amazee.io</a> clients)</td>
 				<td>✅ When using Pantheon Drupal Version Drops</td>
 				<td>⚠️ Only enterprise or external service</td>
-				<td>⚠️ Only via external service</td>
+				<td>✅ Only via external service</td>
 			</tr>
 			<tr>
 				<td><strong>Support for Composer</strong></td>
