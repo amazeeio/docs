@@ -1,7 +1,7 @@
 # Comparison of amazee.io, Pantheon, Acquia Cloud, Platform.sh
 
-We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work!
-Help improve our documentation! If you find anything wrong or which could be improved in our chart, please submit a [pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository.
+We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work! 
+Help improve our documentation! If you find anything wrong or which could be improved in our chart, please submit a pull request to our GitHub repository. 
 
 <div style="overflow-x: scroll;">
 	<table>
