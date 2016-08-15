@@ -301,7 +301,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Synchronization of files and database between sites/environments</strong></td>
 				<td>✅ Based on drush sql-sync and drush rsync commands</td>
 				<td>✅ Via UI or via CLI tool</td>
-				<td>✅ Via UI , CLI, API<td>
+				<td>✅ Via UI , CLI, API<t/d>
 				<td>✅ Via UI or via CLI tool</td>
 			</tr>
 			<tr>
