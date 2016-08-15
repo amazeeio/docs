@@ -30,7 +30,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Custom web server configurations</strong></td>
 				<td>✅ Custom configurations possible. Easy testing inside Local Docker Development</td>
 				<td>❌️ No custom configurations</td>
-				<td>❌️ No custom configurations</td>
+				<td>⚠️ Some customizability - PHP version, memory limits, memcache pool size</td>
 				<td>⚠️ Some customizability via ‘.platform.app.yaml’ file</td>
 			</tr>
 			<tr>
@@ -57,7 +57,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>24x7 infrastructure and application monitoring</strong></td>
 				<td>✅</td>
 				<td>⚠️ Only on Elite plan</td>
-				<td>⚠️ Only on Enterprise plan</td>
+				<td>⚠️ Self serve tools, full monitoring on Enterprise and Elite plans</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
 			<tr>
@@ -76,7 +76,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Locations</strong></td>
 				<td>Anywhere in the world possible, existing servers in: Switzerland, USA, South Africa, UK</td>
 				<td>US only</td>
-				<td>Bound to Amazon AWS: US, Ireland, Japan, Singapore, Australia</td>
+				<td>Bound to Amazon AWS: US (East and West), Ireland, Japan, Singapore, Germany, Australia</td>
 				<td>US and EU <a href="https://docs.platform.sh/user_guide/reference/public-ip-addresses.html" target="_blank"><i>source</i></a></td>
 			</tr>
 			<tr>
@@ -136,8 +136,8 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Drupal core &amp; contrib security updates</strong></td>
 				<td>✅ Via Drop Guard (price reduction for <a href="http://amazee.io">amazee.io</a> clients)</td>
 				<td>✅ When using Pantheon Drupal Version Drops</td>
-				<td>⚠️ Only enterprise or external service</td>
-				<td>✅ Only via external service</td>
+				<td>⚠️ Included in Enterprise or Elite plans, add-on service available for other plans</td>
+				<td>❌️ Only via external service</td>
 			</tr>
 			<tr>
 				<td><strong>Support for Composer</strong></td>
@@ -169,7 +169,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Free SSL/HTTPs</strong></td>
 				<td>✅</td>
 				<td>❌️ Extra costs</td>
-				<td>❌️ Extra costs</td>
+				<td>⚠️ Provide own bought certificate via Self Serve SSL</td>
 				<td>✅</td>
 			</tr>
 			<tr>
@@ -287,7 +287,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Custom naming of development sites/environments</strong></td>
 				<td>✅ Fully custom, based on git branch names</td>
 				<td>⚠️ Only multidev environments, default ones are called dev, test, live</td>
-				<td>⚠️ Only additional environments, default ones are called dev, staging, prod</td>
+				<td>⚠️ Default environments are called dev, staging, and prod. Additional environments can have custom names.</td>
 				<td>✅ Fully custom, based on git branch names</td>
 			</tr>
 			<tr>
@@ -301,7 +301,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Synchronization of files and database between sites/environments</strong></td>
 				<td>✅ Based on drush sql-sync and drush rsync commands</td>
 				<td>✅ Via UI or via CLI tool</td>
-				<td>✅ Via UI only</td>
+				<td>✅ Via UI, CLI (Drush), API<t/d>
 				<td>✅ Via UI or via CLI tool</td>
 			</tr>
 			<tr>
@@ -334,14 +334,14 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Drush support</strong></td>
 				<td>✅ Full support of all commands</td>
 				<td>⚠️ some commands not supported (like sql-sqlc, php-eval)</td>
-				<td>✅</td>
+				<td>✅ Full support of all commands</td>
 				<td>✅</td>
 			</tr>
 			<tr>
 				<td><strong>Fully Automated Drush Site-Aliases</strong></td>
 				<td>✅ No need for downloading new alias files by hand or run a CLI command</td>
 				<td>⚠️ Need to download new Drush Site-Aliases via UI or CLI</td>
-				<td>⚠️ Need to download new Drush Site-Aliases via UI or CLI</td>
+				<td>⚠️ Drush command to auto-update aliases, need to create cron job for automated updates</td>
 				<td>⚠️ Need to create new Drush Site-Aliases via CLI</td>
 			</tr>
 			<tr>
@@ -409,14 +409,14 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>24x7 emergency phone support</strong></td>
 				<td>✅</td>
 				<td>⚠️ Only on Elite plan</td>
-				<td>⚠️ Only on Enterprise plan</td>
+				<td>✅ Available on all plans, different entitlements per plan<</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
 			<tr>
 				<td><strong>Drupal support</strong></td>
 				<td>✅</td>
 				<td>⚠️ Only on Elite plan</td>
-				<td>⚠️ Only on Enterprise plan</td>
+				<td>✅ Available on all plans, different entitlements per plan</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
 			<tr>
