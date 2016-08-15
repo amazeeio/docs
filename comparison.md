@@ -1,8 +1,8 @@
 # Comparison of amazee.io, Pantheon, Acquia Cloud, Platform.sh
 
-We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work! 
+We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work!
 
-Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository. 
+Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository.
 
 <div style="overflow-x: scroll;">
 	<table>
@@ -76,7 +76,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Locations</strong></td>
 				<td>Anywhere in the world possible, existing servers in: Switzerland, USA, South Africa, UK</td>
 				<td>US only</td>
-				<td>Bound to Amazon AWS: US, Ireland, Frankfurt, Japan, Singapore, Brazil, Australia</td>
+				<td>Bound to Amazon AWS: US (East and West), Ireland, Frankfurt, Japan, Singapore, Germany, Australia</td>
 				<td>US and EU <a href="https://docs.platform.sh/user_guide/reference/public-ip-addresses.html" target="_blank"><i>source</i></a></td>
 			</tr>
 			<tr>
@@ -209,7 +209,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>External Caching Systems (CDNs, Fastly)</strong></td>
 				<td>✅ Varnish automatically detects external Caching system and disables caching</td>
 				<td>✅</td>
-				<td>✅ Exteernal caches respect Varnish/Druapal headers, Drupal modules available</td>
+				<td>✅ External caches respect Varnish/Drupal headers, Drupal modules available</td>
 				<td>✅</td>
 			</tr>
 			<tr>
@@ -287,7 +287,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Custom naming of development sites/environments</strong></td>
 				<td>✅ Fully custom, based on git branch names</td>
 				<td>⚠️ Only multidev environments, default ones are called dev, test, live</td>
-				<td>⚠️ Default are called dev, staging, prod, can be renamed on request</td>
+				<td>⚠️ Default environments are called dev, staging, and prod. Additional environments can have custom names.</td>
 				<td>✅ Fully custom, based on git branch names</td>
 			</tr>
 			<tr>
@@ -301,7 +301,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Synchronization of files and database between sites/environments</strong></td>
 				<td>✅ Based on drush sql-sync and drush rsync commands</td>
 				<td>✅ Via UI or via CLI tool</td>
-				<td>✅ Via UI , CLI, API<t/d>
+				<td>✅ Via UI, CLI (Drush), API<t/d>
 				<td>✅ Via UI or via CLI tool</td>
 			</tr>
 			<tr>
@@ -341,7 +341,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Fully Automated Drush Site-Aliases</strong></td>
 				<td>✅ No need for downloading new alias files by hand or run a CLI command</td>
 				<td>⚠️ Need to download new Drush Site-Aliases via UI or CLI</td>
-				<td>⚠️ Drush command to auto-update aliases, need to create cron job for automated updated</td>
+				<td>⚠️ Drush command to auto-update aliases, need to create cron job for automated updates</td>
 				<td>⚠️ Need to create new Drush Site-Aliases via CLI</td>
 			</tr>
 			<tr>
@@ -409,14 +409,14 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>24x7 emergency phone support</strong></td>
 				<td>✅</td>
 				<td>⚠️ Only on Elite plan</td>
-				<td>✅  Available on all plans, different entitlements per plan<</td>
+				<td>✅ Available on all plans, different entitlements per plan<</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
 			<tr>
 				<td><strong>Drupal support</strong></td>
 				<td>✅</td>
 				<td>⚠️ Only on Elite plan</td>
-				<td>✅  Available on all plans, different entitlements per plan</td>
+				<td>✅ Available on all plans, different entitlements per plan</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
 			<tr>
