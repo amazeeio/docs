@@ -34,7 +34,7 @@ It is easily configured and setup:
   docker-compose up -d --force-recreate
   ```
 
-4. Visit your local Docker site
+4. Visit your local Docker site (in this example http:
 
 5. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 
