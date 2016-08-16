@@ -10,11 +10,11 @@ It is easily configured and setup.
 
 1. In order to use Blackfire.io you need an Blackfire.io account, which is completely free! [Create one right now.](https://blackfire.io/signup)
 2. Visit [your Blackfire.io account](https://blackfire.io/account) and copy the `Server ID` and `Server Token` from the _My Server Credentials_ section \(not the _My Client Credentials_ section!\)
-3. Install the [Blackfire Chrome Compagnion](https://blackfire.io/docs/integrations/chrome)
+3. Install the [Blackfire Chrome Companion](https://blackfire.io/docs/integrations/chrome)
 
 ![](/assets/Account_-_Blackfire.jpg)
 
-## Local Docker Development Environment with Blackfire Chrome Compagnion
+## Local Docker Development with Blackfire Chrome Companion
 
 1. Find the commented Blackfire section inside your `docker-compose.yml` file \(see an example [here](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml#L13)\)
 2. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the copied information from your Blackfire.io account. Here an example:
@@ -33,6 +33,11 @@ It is easily configured and setup.
   ```
 
 4. Visit your local Docker site
-5. Click on the Blackfire Chrome Compagnion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
+5. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 6. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
+## Local Docker Development with `blackfire` CLI tool
+
+Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion.
+
+Follow Steps 1-3 from above.
