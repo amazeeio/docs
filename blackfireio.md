@@ -41,4 +41,4 @@ It is easily configured and setup.
 Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion.
 
 1. Follow Steps 1-3 from above.
-2. 
+2. Connect to the Docker Container
