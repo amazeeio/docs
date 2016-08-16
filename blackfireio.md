@@ -33,8 +33,6 @@ It is easily configured and setup.
   ```
 
 4. Visit your local Docker site
-
 5. Click on the Blackfire Chrome Compagnion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
-
 6. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
