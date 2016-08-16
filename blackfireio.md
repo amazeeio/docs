@@ -22,8 +22,8 @@ It is easily configured and setup:
   ```
   environment:
   # If you would like to use blackfire.io, uncomment and add your server credentials:
-  BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
-  BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
+    BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
+    BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
   ```
 
 3. restart your Docker container if it is running:
