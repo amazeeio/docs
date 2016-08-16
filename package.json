@@ -11,9 +11,7 @@
     "gitbook-plugin-gtm": "^0.0.4",
     "gitbook-plugin-heading-anchors": "^1.0.3",
     "gitbook-plugin-hints": "^1.0.1",
-    "gitbook-plugin-layout": "^0.0.1",
-    "gitbook-plugin-page-toc": "^1.0.2",
-    "gitbook-plugin-toc-for-3": "^0.1.0"
+    "gitbook-plugin-layout": "^0.0.1"
   },
   "devDependencies": {},
   "scripts": {
