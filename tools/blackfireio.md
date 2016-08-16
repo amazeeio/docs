@@ -28,7 +28,6 @@ services:
 ```
 
 1. restart your Docker container if it is running:
-
 ```
 docker-compose up -d --force-recreate
 ```
