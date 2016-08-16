@@ -47,12 +47,13 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 2. Connect to the Docker Container
 3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example: 
   ```
-   blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
+  blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
   ```
+
 
 ## Development and Production sites
 
 One of the greatness of Blackfire is the capability to run Blackfire on development and production sites witouth harm. This is possible because each request from a Blackfire client is authenticated via the Client-ID and the Client-Token and with that checked that this client has the authority to profile a specific site. Plus the Blackfire PHP module does nothing when you are not profiling, so it does not add any overhead to a regular request.
 
-
+In order to profile your development or production sites, just pass the amazee.io team your `Server ID` and `Server Token` from your [Blackfire.io account](https://blackfire.io/account) we will then deploy these keys to all your sites and you can start to profile in no time!
 
