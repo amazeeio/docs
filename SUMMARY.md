@@ -35,7 +35,7 @@
     * [Drush Configuration Files](drupal/drush-configuration-files.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
-    * [Blackfire.io](blackfireio.md)
+    * [Blackfire.io](tools/blackfireio.md)
     * Xdebug
 * [Add-ons](add-on/add-on.md)
     * [CDN Integration](add-on/cdn_integration.md)
