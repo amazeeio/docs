@@ -10,7 +10,7 @@ It is easily configured and setup.
 
 1. In order to use Blackfire.io you need an Blackfire.io account, which is completely free! [Create one right now.](https://blackfire.io/signup)
 2. Visit [your Blackfire.io account](https://blackfire.io/account) and copy the `Server ID` and `Server Token` from the _My Server Credentials_ section \(not the _My Client Credentials_ section!\)
-
+3. Install the [Blackfire Chrome Compagnion](https://blackfire.io/docs/integrations/chrome)
 
 ![](/assets/Account_-_Blackfire.jpg)
 
