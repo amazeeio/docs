@@ -28,7 +28,7 @@ It is easily configured and setup:
 ```
 4. restart your Docker container if it is running:
 ```
-docker-compose up -d --force-recreate
+    docker-compose up -d --force-recreate
 ```
 5. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
 
