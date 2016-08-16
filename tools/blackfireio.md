@@ -18,7 +18,6 @@ It is easily configured and setup:
 1. Install the [Blackfire Chrome Companion](https://blackfire.io/docs/integrations/chrome)
 2. Find the commented Blackfire section inside your `docker-compose.yml` file \(see an example [here](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml#L13)\)
 3. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Example:
-
 ```
 services: 
  drupal:
@@ -27,17 +26,18 @@ services:
      BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
      BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
 ```
-4. restart your Docker container if it is running:
+
+1. restart your Docker container if it is running:
 
 ```
 docker-compose up -d --force-recreate
 ```
 
-5. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
+1. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
 
-6. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
+2. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 
-7. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
+3. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
 
 ## Local Docker Development with `blackfire` CLI tool
