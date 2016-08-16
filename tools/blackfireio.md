@@ -27,16 +27,16 @@ services:
      BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
 ```
 
-1. restart your Docker container if it is running:
+4. restart your Docker container if it is running:
 ```
 docker-compose up -d --force-recreate
 ```
 
-1. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
+5. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
 
-2. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
+6. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 
-3. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
+7. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
 
 ## Local Docker Development with `blackfire` CLI tool
