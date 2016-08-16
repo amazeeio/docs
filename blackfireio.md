@@ -40,11 +40,12 @@ It is easily configured and setup:
 
 7. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
+
 ## Local Docker Development with `blackfire` CLI tool
 
 Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Companion. Learn more about the profiling of HTTP Request at the [Blackfire documentation](https://blackfire.io/docs/cookbooks/profiling-http).
 
-1. Follow Steps 2-4 from above.
+1. Follow Steps 2-4 from _Local Docker Development with Blackfire Chrome Companion_
 2. Connect to the Docker Container
 3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example: 
   ```
