@@ -20,7 +20,7 @@
         * [Compact Stack](architecture/stack-types/compact.md)
         * [Cluster Stack](architecture/stack-types/cluster.md)
     * [Stack Components](architecture/components.md)
-    * [Environment type](environment_type.md)
+    * [Environment type](architecture/environment_type.md)
     * [E-Mail Delivery](architecture/e-mail_delivery.md)
     * [URL Structure](architecture/url-structure.md)
 * [Automated Deployments](automated_deployments.md)
