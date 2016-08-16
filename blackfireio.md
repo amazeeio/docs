@@ -4,7 +4,7 @@
 
 At amazee.io we ship Blackfire with every Local Drupal Development site and it is enabled on all development and production sites.
 
-It is easily configured and setup.
+It is easily configured and setup:
 
 ## Initial Setup
 
@@ -59,7 +59,7 @@ In order to profile your development or production sites, just pass the amazee.i
 
 ## Triggering Blackfire Scenarios after deployments
 
-Another great feature of Blackfire: You can profile and test fully automatically without you needing to do anything. Blackfire will tell you exactly if a deployment made your site faster or slower! They are an Enterprise feature only though, but they are worth the costs, never has been automated profiling been easier. Talk to us if you are interested in a discount on Blackfire Enterprise!
+Another great feature of Blackfire: You can profile and test fully automatically without you needing to do anything. Blackfire will tell you exactly if a deployment made your site faster or slower! They are an Enterprise feature only though, but they are worth the costs, never has been automated profiling been easier. [Talk to us](/mailto:support@amazee.io) if you are interested in a discount on Blackfire Enterprise!
 
 Blackfire calls them Scenarios and they are based on Tests. Read more about them [over at the Blackfire docs](https://blackfire.io/docs/cookbooks/scenarios). After you have Tests and Scenarios written, you need to trigger them after a deployment. This happens within the `.amazeeio.yml` file within a deploy task.
 
