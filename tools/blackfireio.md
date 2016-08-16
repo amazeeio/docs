@@ -20,7 +20,7 @@ It is easily configured and setup:
 3. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Example:
 ```
 services: 
- drupal:
+  drupal:
    hostname: &hostname mysite.docker.amazee.io
    environment:
      BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
