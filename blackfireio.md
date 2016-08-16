@@ -19,7 +19,6 @@ It is easily configured and setup:
 1. Find the commented Blackfire section inside your `docker-compose.yml` file \(see an example [here](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml#L13)\)
 2. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Here an example:
 
-
     services: 
       drupal:
         environment:
