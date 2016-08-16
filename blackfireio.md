@@ -42,3 +42,4 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
+3. Run the `blackfire` command with defining the client-id and client-token from your
