@@ -26,4 +26,4 @@ It is easily configured and setup.
         docker-compose up -d --force-recreate
 4. Visit your local Docker site
 5. Click on the Blackfire Chrome Compagnion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
-
+6. Read more at [Analyzing Profiles]()
