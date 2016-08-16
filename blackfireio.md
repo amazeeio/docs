@@ -41,10 +41,15 @@ It is easily configured and setup.
 
 ## Local Docker Development with `blackfire` CLI tool
 
-Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion. Learn more about the profiling of HTTP Request at the Blackfire documentation.
+Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion. Learn more about the profiling of HTTP Request at the [Blackfire documentation](https://blackfire.io/docs/cookbooks/profiling-http).
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
 3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example: 
-        blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
+  ```
+   blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
+  ```
+
+## Development and Production Sites
+
 
