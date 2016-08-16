@@ -55,7 +55,7 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 ## Development and Production sites
 
-One of the greatness of Blackfire is the capability to run Blackfire on development and production sites witouth harm. This is possible because each request from a Blackfire client is authenticated via the Client-ID and the Client-Token and with that checked that this client has the authority to profile a specific site. Plus the Blackfire PHP module does nothing when you are not profiling, so it does not add any overhead to a regular request.
+One of the greatness of Blackfire is the capability to run profile on development and production sites witouth harm. This is possible because each request from a Blackfire client is authenticated via the Client-ID and the Client-Token and with that checked that this client has the authority to profile a specific site. Plus the Blackfire PHP module does nothing when you are not profiling, so it does not add any overhead to a regular request.
 
 In order to profile your development or production sites, just pass the amazee.io team your `Server ID` and `Server Token` from your [Blackfire.io account](https://blackfire.io/account) we will then deploy these keys to all your sites and you can start to profile in no time!
 
