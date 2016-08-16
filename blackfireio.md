@@ -17,15 +17,15 @@ It is easily configured and setup:
 ## Local Docker Development with Blackfire Chrome Companion
 
 1. Find the commented Blackfire section inside your `docker-compose.yml` file \(see an example [here](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml#L13)\)
-2. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Here an example:
+2. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Example:
 
   ```
   services: 
   drupal:
   hostname: &hostname mysite.docker.amazee.io
-    environment:
-      BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
-      BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
+   environment:
+     BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
+     BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
   ```
 
 3. restart your Docker container if it is running:
