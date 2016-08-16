@@ -18,6 +18,9 @@ Join us in our Slack channel and we will help you right away: [slack.amazee.io](
 
 Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
 
+## Too many choices? ⚖
+
+We created a thorough comparison of amazee.io and our competitors: [Comparison](./comparison.md) 
 
 ## Blog 📖
 
