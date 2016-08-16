@@ -21,11 +21,11 @@ It is easily configured and setup:
 
   ```
   services: 
-   drupal:
-   hostname: &hostname mysite.docker.amazee.io
-     environment:
-       BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
-       BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
+  drupal:
+  hostname: &hostname mysite.docker.amazee.io
+    environment:
+      BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
+      BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
   ```
 
 3. restart your Docker container if it is running:
@@ -43,7 +43,7 @@ It is easily configured and setup:
 
 ## Local Docker Development with `blackfire` CLI tool
 
-Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion. Learn more about the profiling of HTTP Request at the [Blackfire documentation](https://blackfire.io/docs/cookbooks/profiling-http).
+Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Companion. Learn more about the profiling of HTTP Request at the [Blackfire documentation](https://blackfire.io/docs/cookbooks/profiling-http).
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
