@@ -50,6 +50,6 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
    blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
   ```
 
-## Development and Production Sites
+## Development and Production sites
 
 
