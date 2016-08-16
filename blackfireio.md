@@ -55,17 +55,17 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 ## Development and Production sites
 
-One of the greatness of Blackfire is the capability to run profile on development and production sites witouth harm. This is possible because each request from a Blackfire client is authenticated via the Client-ID and the Client-Token and with that checked that this client has the authority to profile a specific site. Plus the Blackfire PHP module does nothing when you are not profiling, so it does not add any overhead to a regular request.
+One of the greatness of Blackfire is the capability to profile on development and production sites without harm. This is possible as each request from a Blackfire client is authenticated via the Client-ID and the Client-Token and ensured that this client has the authority to profile a specific site. Plus the Blackfire PHP module does nothing when you are not profiling, so it does not add any overhead to a regular request.
 
-In order to profile your development or production sites, just pass the amazee.io team your `Server ID` and `Server Token` from your [Blackfire.io account](https://blackfire.io/account) we will then deploy these keys to all your sites and you can start to profile in no time!
+In order to profile your development or production sites, just pass the amazee.io team your `Server ID` and `Server Token` from your [Blackfire.io account,](https://blackfire.io/account) we will then deploy these keys to all your sites and you can start to profile in no time!
 
 ## Triggering Blackfire Scenarios after deployments
 
-Another great feature of Blackfire: You can profile and test fully automatically without you needing to do anything. Blackfire will tell you exactly if a deployment made your site faster or slower! They are an Enterprise feature only though, but they are worth the costs, never has been automated profiling been easier. [Talk to us](/mailto:support@amazee.io) if you are interested in a discount on Blackfire Enterprise!
+Another great feature of Blackfire: You can profile and test fully automatically without you needing to do anything. Blackfire will tell you exactly if a deployment made your site faster or slower! This is an Enterprise feature only though, but they are worth the price, never has been automated profiling been easier. [Talk to us](/mailto:support@amazee.io) if you are interested in a discount on Blackfire Enterprise!
 
-Blackfire calls them Scenarios and they are based on Tests. Read more about them [over at the Blackfire docs](https://blackfire.io/docs/cookbooks/scenarios). After you have Tests and Scenarios written, you need to trigger them after a deployment. This happens within the `.amazeeio.yml` file within a deploy task.
+Blackfire calls them Scenarios and they are based on Tests. Read more about them [over at the Blackfire docs](https://blackfire.io/docs/cookbooks/scenarios). After you have defined your Tests and Scenarios, you need to trigger them after a deployment. This happens within the `.amazeeio.yml` file within a deploy task.
 
-The best practice is to add them add the last step within the `after_deploy` step. Please see the [Trigger API documentation](https://blackfire.io/docs/reference-guide/builds-and-integrations#start-build-with-api) from Blackfire on how to call a trigger via curl or the blackfire tool \(which is also installed on all development and production sites\).
+The best practice is to add them add the last step within the `after_deploy` task list. Please see the [Trigger API documentation](https://blackfire.io/docs/reference-guide/builds-and-integrations#start-build-with-api) from Blackfire on how to call a trigger via curl or the blackfire tool \(which is also installed on all development and production sites\).
 
 Hint hint: the API needs to know the URL of the site to test via the `endpoint` parameter, we provide you the `AMAZEEIO_BASE_URL` environment variable which contains exactly that.
 
