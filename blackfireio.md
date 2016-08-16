@@ -21,9 +21,9 @@ It is easily configured and setup.
 
   ```
   environment:
-   # If you would like to use blackfire.io, uncomment and add your server credentials:
-   BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
-   BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
+  # If you would like to use blackfire.io, uncomment and add your server credentials:
+  BLACKFIRE_SERVER_ID: bdda64f6-7c4f-4ec5-be32-f1a6f5680cb0
+  BLACKFIRE_SERVER_TOKEN: fcc9ec9e54ffb4a35a5fcf7376f462eb85fe47e9fc978ed1df067c8b82afe500
   ```
 
 3. restart your Docker container if it is running:
@@ -33,6 +33,7 @@ It is easily configured and setup.
   ```
 
 4. Visit your local Docker site
+
 5. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 6. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
@@ -42,4 +43,5 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
-3. Run the `blackfire` command with defining the client-id and client-token from your
+3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account) 
+
