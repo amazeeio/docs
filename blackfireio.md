@@ -29,7 +29,6 @@ It is easily configured and setup:
 
 3. restart your Docker container if it is running:
 
-
         docker-compose up -d --force-recreate
 
 4. Visit your local Docker site
