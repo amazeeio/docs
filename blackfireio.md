@@ -35,6 +35,7 @@ It is easily configured and setup.
 4. Visit your local Docker site
 
 5. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
+
 6. Read more at [Analyzing Profiles](https://blackfire.io/docs/reference-guide/analyzing-profiles) about the Profiles that Blackfire generates.
 
 ## Local Docker Development with `blackfire` CLI tool
@@ -43,5 +44,6 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
-3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account) 
+3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example
+        
 
