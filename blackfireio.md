@@ -41,7 +41,7 @@ It is easily configured and setup.
 
 ## Local Docker Development with `blackfire` CLI tool
 
-Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion.
+Every amazee.io Docker image has the `blackfire` CLI tool already installed, so you can use that instead of the Chrome Compagnion. Learn more about the profiling of HTTP Request at the Blackfire documentation.
 
 1. Follow Steps 1-3 from above.
 2. Connect to the Docker Container
