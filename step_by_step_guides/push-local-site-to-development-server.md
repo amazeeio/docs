@@ -76,7 +76,14 @@ Ok here we go, we will do the first deployment. We hope you are as excited as we
 
 In order to deploy on the `develop` site we just need to git push into it. And everything will happen from there.
 
-The easiest way is to commit an empty commit and push that:
+The easiest way is to commit an empty commit and push that with:
+
+```
+git commit --allow-empty -m "go, go! Power Rangers!"
+git push
+```
+
+Example:
 
 ```
 🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
@@ -95,7 +102,9 @@ The code is committed, but a vital part of every Drupal site is missing: The dat
 
 As we have the database in our local development site, we can just easily synchronize it to the develop site via the command:
 
-
+```
+drush sql-sync @self @develop
+```
 
 Example:
 
@@ -116,14 +125,8 @@ Starting to import dump file onto Destination database. [ok]
 Now let's try another deployment, again with an empty commit:
 
 ```
-🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
-[develop 410e523] go, go! Power Rangers!
-🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push
-Counting objects: 1, done.
-Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done.
-Total 1 (delta 0), reused 0 (delta 0)
-To git@github.com:amazeeio/mysite.git
- 980afa9..410e523 develop -> develop
+git commit --allow-empty -m "go, go! Power Rangers!"
+git push
 ```
 
 This time the deployment should be all green and happy:
@@ -137,6 +140,4 @@ But we can get them into very easy, you probably guessed it, with drush!
 ## Step 7: Synchronize local files to the develop site
 
 Like with the database, there is a command to synchronize files:
-
-
 
