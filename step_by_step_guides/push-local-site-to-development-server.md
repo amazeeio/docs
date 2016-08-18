@@ -8,5 +8,6 @@ Before we can do the first push, we need to configure some more things, no worri
 
 During the Step-by-Step process we just added some lines to your existing settings.php file. Even though this works great, we suggest to use our provided settings.php examples. Find them [here](/drupal/settingsphpfiles.md).
 
+If you don't have existing custom settings in your settings.php file, it's perfectly fine to overwrite an existing settings.php file with the provided one from us. If there are settings already, we suggest to move them either to `all.settings.php` (if you need them on development and production sites) or to `development.settings.php` or to `production.settings.php` (depending where you need them).
 
 
