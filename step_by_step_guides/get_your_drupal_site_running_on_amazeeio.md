@@ -176,7 +176,5 @@ In order to make use of the amazee.io automatic deployments you need to place a 
 
 ###.amazeeio.yml
 
-
-
 In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
 
