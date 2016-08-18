@@ -66,7 +66,7 @@ In order to teach Drush about our amazee.io environment, create a new file named
 ```
 <?php
 if (getenv('AMAZEEIO_BASE_URL')) {
-$options['uri'] = getenv('AMAZEEIO_BASE_URL');
+  $options['uri'] = getenv('AMAZEEIO_BASE_URL');
 }
 ```
 
