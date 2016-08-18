@@ -22,7 +22,7 @@ Drupal 8: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/D
 
 The .amazeeio.yml file needs to be placed in the root directory of your git repository.
 
-
+## Step 3: Extended Drush Configuration Files
 
 
 
