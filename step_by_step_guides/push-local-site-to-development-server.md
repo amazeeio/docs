@@ -24,5 +24,11 @@ The .amazeeio.yml file needs to be placed in the root directory of your git repo
 
 ## Step 3: Extended Drush Configuration Files
 
+We will use Drush later to synchronize our sites, but we need to tell Drush about our remote sites first.
+
+This happens with a file called \`aliases.drushrc.php\` which needs to be placed inside a folder called \`drush\` in your root folder of your git repository.
+
+You can find the file here: https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal8\/drush\/aliases.drushrc.php \(it's the same for Drupal 6, 7 or 8\).
+
 
 
