@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-
+Running on Mac OS X? We created a (fully documented step by step guide on our blog)[] for you.
 
 ## Site Setup
 
