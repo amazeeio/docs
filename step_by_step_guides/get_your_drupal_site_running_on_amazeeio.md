@@ -63,7 +63,12 @@ We do not suggest to just use this simple configuration for production sites, bu
 
 In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
 
-
+```
+<?php
+if (getenv('AMAZEEIO_BASE_URL')) {
+$options['uri'] = getenv('AMAZEEIO_BASE_URL');
+}
+```
 
 ### Step 4: Test connection to the database
 
