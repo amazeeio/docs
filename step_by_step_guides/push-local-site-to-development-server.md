@@ -51,12 +51,13 @@ Now it's time for testing: run drush site-alias inside your docker container and
 
 ```
 🐳 drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush site-alias
-@dev
 @none
-@prod
+@develop
 @self
 default
 ```
 
-See the `@dev` and `@prod`
+See the `@develop` site alias. This is the site alias of your development site were the `develop` branch is deployed to (or the branch name you told us to use in Step 0).
+
+
 
