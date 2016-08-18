@@ -89,3 +89,7 @@ To git@github.com:amazeeio/mysite.git
   980afa9..410e523 develop -> develop
 ```
 
+## Step 6: Synchronize your local database and files to the develop site
+
+
+
