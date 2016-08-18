@@ -170,11 +170,15 @@ Enjoy your Drupal site!
 As learned during the import of the DB, the Drupal directory is completely available inside the Docker Container.  
 So to add your Drupal files, just put them in the directory you had them before, probably `sites/default/files`.
 
-###.amazeeio.yml
+## Pushing to an amazee.io development site
+
+
+
+### .amazeeio.yml
 
 In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
 
-###.amazeeio.yml
+### Drush Configuration Files
 
 In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
 
