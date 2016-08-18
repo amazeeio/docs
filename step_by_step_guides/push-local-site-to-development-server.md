@@ -10,4 +10,5 @@ During the Step-by-Step process we just added some lines to your existing settin
 
 If you don't have existing custom settings in your settings.php file, it's perfectly fine to overwrite an existing settings.php file with the provided one from us. If there are settings already, we suggest to move them either to `all.settings.php` (if you need them on development and production sites) or to `development.settings.php` or to `production.settings.php` (depending where you need them).
 
+After adapting the settings.php files, test that your Local Drupal site still works, the Docker based environment fully understands the multi settings.php files.
 
