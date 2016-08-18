@@ -80,7 +80,7 @@ The easiest way is to commit an empty commit and push that:
 
 ```
 🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
-[dev 410e523] go, go! Power Rangers!
+[develop 410e523] go, go! Power Rangers!
 🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push 
 Counting objects: 1, done. 
 Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done. 
@@ -89,23 +89,54 @@ To git@github.com:amazeeio/mysite.git
   980afa9..410e523 develop -> develop
 ```
 
-## Step 6: Synchronize your local database to the develop site
+## Step 6: Synchronize local database to the develop site
 
-The code is commited, but a vital part of every Drupal site is missing: The database.
+The code is committed, but a vital part of every Drupal site is missing: The database.
 
-As we have the database  in our local development site, we can just easily synchronize it to the develop site:
+As we have the database in our local development site, we can just easily synchronize it to the develop site via the command:
+
+
+
+Example:
 
 ```
-🐳 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush sql-sync @self @dev
+🐳 drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush sql-sync @self @develop
+
 You will destroy data in dev1.compact.amazee.io/amazee_io and replace with data from drupal.
 Do you really want to continue? (y/n): y
 Starting to dump database on Source. [ok]
 Database dump saved to /var/www/drupal/drush-backups/drupal/20160818211446/drupal_20160818_211446.sql.gz [success]
 Starting to discover temporary files directory on Destination. [ok]
-You will delete files in amazee_io@dev1.compact.amazee.io:/var/www/amazee_io/tmp/drupal_20160818_211446.sql.gz and replace with data from /var/www/drupal/drush-backups/drupal/20160818211446/drupal_20160818_211446.sql.gz
+You will delete files in mysite_develop@zh1.compact.amazee.io:/var/www/mysite_develop/tmp/drupal_20160818_211446.sql.gz and replace with data from /var/www/drupal/drush-backups/drupal/20160818211446/drupal_20160818_211446.sql.gz
 Do you really want to continue? (y/n): y
 Copying dump file from Source to Destination. [ok]
 Starting to import dump file onto Destination database. [ok]
 ```
+
+Now let's try another deployment, again with an empty commit:
+
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
+[develop 410e523] go, go! Power Rangers!
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To git@github.com:amazeeio/mysite.git
+ 980afa9..410e523 develop -> develop
+```
+
+This time the deployment should be all green and happy:
+
+![](/assets/deploy_green.jpg)
+
+Click the URL in the Slack message and your site should load the first time, just without images missing.
+
+But we can get them into very easy, you probably guessed it, with drush!
+
+## Step 7: Synchronize local files to the develop site
+
+Like with the database, there is a command to synchronize files:
+
 
 
