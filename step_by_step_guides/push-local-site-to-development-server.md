@@ -12,9 +12,19 @@ If you don't have existing custom settings in your settings.php file, it's perfe
 
 After adapting the settings.php files, test that your Local Drupal site still works, the Docker based environment fully understands the multi settings.php files.
 
-## Step 2: Create .amazeeio.yml file
+## Step 2: Extended Drush Configuration Files
 
-The .amazeeio.yml file tells the amazee.io systems about deployment tasks and more. These tasks are super powerfull and allow to automate almost everything you can imagine. You can find more about them at [.amazeeio.yml file](/drupal/amazeeioyml_file.md). As it takes a bit time to figure out all the possibilities, we suggest to just use these files as a start:
+We will use Drush later to synchronize our sites, but we need to tell Drush about our remote sites first.
+
+This happens with a file called `aliases.drushrc.php` which needs to be placed inside a folder called `drush` in your root folder of your git repository.
+
+You can find the file here: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal8\/drush\/aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php) \(it's the same for Drupal 6, 7 or 8\).
+
+While you are on it, we also suggest to adapt the `drushrc.php` file you probably during the step-by-step guide. Please replace the content of it with these: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal8\/drush\/drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/drushrc.php) \(it's the same for Drupal 6, 7 or 8\).
+
+## Step 3: Create .amazeeio.yml file and adapt `sitegroup`
+
+The .amazeeio.yml file tells the amazee.io systems about deployment tasks and more. These tasks are super powerfull and allow to automate almost everything you can imagine. You can find more about them at [.amazeeio.yml file](/drupal/amazeeioyml_file.md). As it takes a bit time to figure out all the possibilities, we suggest to just use these files as a start, they will clear the cache and run db-update on every deployment.
 
 Drupal 7: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal7\/.amazeeio.yml](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal7/.amazeeio.yml)
 
@@ -22,13 +32,5 @@ Drupal 8: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/D
 
 The .amazeeio.yml file needs to be placed in the root directory of your git repository.
 
-## Step 3: Extended Drush Configuration Files
-
-We will use Drush later to synchronize our sites, but we need to tell Drush about our remote sites first.
-
-This happens with a file called \`aliases.drushrc.php\` which needs to be placed inside a folder called \`drush\` in your root folder of your git repository.
-
-You can find the file here: https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal8\/drush\/aliases.drushrc.php \(it's the same for Drupal 6, 7 or 8\).
-
-
+Please adapt the `sitegroup` in that yml file to the one you got from the amazee.io team.
 
