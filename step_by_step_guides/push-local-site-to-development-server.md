@@ -16,5 +16,13 @@ After adapting the settings.php files, test that your Local Drupal site still wo
 
 The .amazeeio.yml file tells the amazee.io systems about deployment tasks and more. These tasks are super powerfull and allow to automate almost everything you can imagine. You can find more about them at [.amazeeio.yml file](/drupal/amazeeioyml_file.md). As it takes a bit time to figure out all the possibilities, we suggest to just use these files as a start:
 
+Drupal 7: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal7\/.amazeeio.yml](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal7/.amazeeio.yml)
+
+Drupal 8: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal8\/.amazeeio.yml](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/.amazeeio.yml)
+
+The .amazeeio.yml file needs to be placed in the root directory of your git repository.
+
+
+
 
 
