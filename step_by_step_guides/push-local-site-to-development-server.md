@@ -142,6 +142,6 @@ But we can get them into very easy, you probably guessed it, with drush!
 Like with the database, there is a command to synchronize files:
 
 ```
-drush sql-sync @self @develop
+drush rsync @self:%files @develop:%files
 ```
 
