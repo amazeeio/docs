@@ -29,7 +29,7 @@ Please make sure that this `public_html` directory is the same where your Drupal
 
 
 Important for [Drupal Composer Project Users](https://github.com/drupal-composer/drupal-project):  
-You will not see an `index.php` file here, instead you will see a `web` folder and a `composer.json` file. Plus when you run `drush` later, first change into the directory where the Drupal `index.php` file is (most probably just via `cd web`)
+You will not see an `index.php` file here, instead you will see a `web` folder (or a similar folder) and a `composer.json` file. Plus when you run `drush` later, first change into the directory where the Drupal `index.php` file is (most probably just via `cd web`)
 
 ### Step 3: settings.php
 
@@ -96,9 +96,6 @@ The database connection:
     Database username      :  drupal
     Database name          :  drupal
 
-The Site URI which should be the same as you defined in the `docker-compose.yml`
-
-    Site URI               :  http://amazee_io.docker.amazee.io
 
 ### Step 5: Install Drupal
 
