@@ -4,7 +4,18 @@ So you have your Drupal Site locally running with following the [Step-by-Step gu
 
 Before we can do the first push, we need to configure some more things, no worries, they are all very straight forward to use.
 
-## Step 1: Use full flegged settings.php files
+## Step 0: Setup of development server
+
+We need to set you up with the required things first. We are working hard to fully automate this step and make it as easy as everything else within amazee.io, but for now we need to know from you:
+
+1. SSH-Public Keys of everybody that should get access to the development server
+2. The URL of the Git repository which will host the Drupal Code
+3. The Git branch you would like to use as your development server \(in this example we will use `develop`, but it realy can be any name!\)
+4. Give our deployment systems access to the Git repository \(see [Grant access to your sourcecode](/step_by_step_guides/grant_amazeeio_access_to_sourcecode.md) on how to do that\)
+
+That's it! You can actually continue with Steps 1-3 even though we
+
+## Step 1: Use full fledged settings.php files
 
 During the Step-by-Step process we just added some lines to your existing settings.php file. Even though this works great, we suggest to use our provided settings.php examples. Find them [here](/drupal/settingsphpfiles.md).
 
@@ -33,4 +44,19 @@ Drupal 8: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/D
 The .amazeeio.yml file needs to be placed in the root directory of your git repository.
 
 Please adapt the `sitegroup` in that yml file to the one you got from the amazee.io team.
+
+## Step 4: Let's test!
+
+Now it's time for testing: run drush site-alias inside your docker container and it should show you additional site aliases beside of `@none`, `@self` and `default`
+
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush site-alias
+@dev
+@none
+@prod
+@self
+default
+```
+
+See the `@dev` and `@prod`
 
