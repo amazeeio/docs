@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-Running on Mac OS X? We created a (fully documented step by step guide on our blog)[] for you.
+Running on Mac OS X? We created a (fully documented step by step guide on our blog)[https://stories.amazee.io/easy-local-drupal-development-on-os-x-a01a343f99e3] for you.
 
 ## Site Setup
 
