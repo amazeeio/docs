@@ -57,7 +57,35 @@ Now it's time for testing: run drush site-alias inside your docker container and
 default
 ```
 
-See the `@develop` site alias. This is the site alias of your development site were the `develop` branch is deployed to (or the branch name you told us to use in Step 0).
+See the `@develop` site alias. This is the site alias of your development site were the `develop` branch is deployed to \(or the branch name you told us to use in Step 0\).
 
+Now let's test the SSH access to this develop site. We do that with running `drush @develop ssh`, that will connect us via ssh to the development site:
 
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ drush @develop ssh
+🔨 mysite_develop@zh1.compact.amazee.io:~/public_html $
+```
+
+Isn't it magic? No need to know any usernames, password or how servers are called. It all happens fully automatically.
+
+btw: if it does not work, no worries, hit us up in our [Slack Channel](/slack.amazee.io) and we help you right away.
+
+## Step 5: Your first deployment
+
+Ok here we go, we will do the first deployment. We hope you are as excited as we are! 💃
+
+In order to deploy on the `develop` site we just need to git push into it. And everything will happen from there.
+
+The easiest way is to commit an empty commit and push that:
+
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
+[dev 410e523] go, go! Power Rangers!
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push 
+Counting objects: 1, done. 
+Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done. 
+Total 1 (delta 0), reused 0 (delta 0) 
+To git@github.com:amazeeio/mysite.git
+  980afa9..410e523 develop -> develop
+```
 
