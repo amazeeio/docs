@@ -173,3 +173,10 @@ So to add your Drupal files, just put them in the directory you had them before,
 ###.amazeeio.yml
 
 In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
+
+###.amazeeio.yml
+
+
+
+In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
+
