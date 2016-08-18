@@ -59,7 +59,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-We do not suggest to just use this simple configuration for production sites, but for now, it's all good. See [Drupal Configuration](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
+We do not suggest to just use this simple configuration for production sites, but for now, it's all good. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
 
 In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
 
@@ -70,7 +70,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-There are actually more Drush files available, read more in our [Drush Configuration Files](../drupal/drush-configuration-files.md) section about it. But for now this is all you need
+There are actually more Drush files available, read more in our [Drush Configuration Files](../drupal/drush-configuration-files.md) section about it. But for now this is all you need.
 
 ### Step 4: Test connection to the database
 
@@ -181,15 +181,9 @@ Enjoy your Drupal site!
 As learned during the import of the DB, the Drupal directory is completely available inside the Docker Container.  
 So to add your Drupal files, just put them in the directory you had them before, probably `sites/default/files`.
 
-## Pushing to an amazee.io development site
+## Done!
 
-If you like to not only have 
+Congrats to you again! You have now a full local Drupal Hosting environment at your fingertips. We wish happy drupaling.
 
-### .amazeeio.yml
-
-In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
-
-### Drush Configuration Files
-
-In order to make use of the amazee.io automatic deployments you need to place a file named `.amazeeio.yml` please [see the specific part of the documentation](/drupal/amazeeioyml_file.md)
+Btw: Pushing your site to an amazee.io server is as easy as just a git push.
 
