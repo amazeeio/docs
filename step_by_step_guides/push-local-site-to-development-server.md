@@ -12,3 +12,4 @@ If you don't have existing custom settings in your settings.php file, it's perfe
 
 After adapting the settings.php files, test that your Local Drupal site still works, the Docker based environment fully understands the multi settings.php files.
 
+## Step 2: Create .amazeeio.yml file
