@@ -17,10 +17,10 @@ Choose a Drupal Docker Container for your site, create the `docker-compose.yml` 
 You should end up with a Terminal like this:
 
     docker-compose up -d
-    Creating amazee_io.docker.amazee.io
+    Creating mysite.docker.amazee.io
 
-    docker exec -itu drupal amazee_io.docker.amazee.io bash
-    🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$
+    docker exec -itu drupal mysite.docker.amazee.io bash
+    🔨 drupal@mysite.docker.amazee.io:~/public_html (dev)$
 
 Please make sure that this `public_html` directory is the same where your Drupal lives in, so where the `index.php` file is:
 
@@ -76,10 +76,10 @@ There are actually more Drush files available, read more in our [Drush Configura
 
 It's time to test! Easiest is that done with Drush, it will tell you some information about your site:
 
-    🔨  drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush status
+    🔨  drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush status
 
     Drupal version         :  8.0.6
-    Site URI               :  http://amazee_io.docker.amazee.io
+    Site URI               :  http://mysite.docker.amazee.io
     Database driver        :  mysql
     Database hostname      :  127.0.0.1
     Database port          :  3306
@@ -112,7 +112,7 @@ The database connection:
 
 It's time to install Drupal and test the site in your browser! Again best and easiest done via Drush, this time via `drush site-install`
 
-    🔨 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush site-install
+    🔨 drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush site-install
 
     You are about to DROP all tables in your 'drupal' database. Do you want to continue? (y/n): y
 
@@ -122,7 +122,7 @@ It's time to install Drupal and test the site in your browser! Again best and ea
     Unable to send email. Contact the site administrator if the problem persists.
     Congratulations, you installed Drupal!
 
-That's it! Now visit the URL you defined for you Docker Container in your browser and you should see a fresh installed Drupal Site. In this example, this is `http://amazee_io.docker.amazee.io`
+That's it! Now visit the URL you defined for you Docker Container in your browser and you should see a fresh installed Drupal Site. In this example, this is `http://mysite.docker.amazee.io`
 
 Congratulations! You just created your first amazee.io Drupal Site!
 
