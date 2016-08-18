@@ -70,7 +70,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-There are actually more Drush files available, read more in our [Drush Configuration Files](../drupal/) section about it 
+There are actually more Drush files available, read more in our [Drush Configuration Files](../drupal/drush-configuration-files.md) section about it. But for now this is all you need
 
 ### Step 4: Test connection to the database
 
