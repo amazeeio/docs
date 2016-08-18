@@ -31,7 +31,7 @@ Please make sure that this `public_html` directory is the same where your Drupal
 Important for [Drupal Composer Project Users](https://github.com/drupal-composer/drupal-project):  
 You will not see an `index.php` file here, instead you will see a `web` folder (or a similar folder) and a `composer.json` file. Plus when you run `drush` later, first change into the directory where the Drupal `index.php` file is (most probably just via `cd web`)
 
-### Step 3: settings.php
+### Step 3: settings.php and drushrc.php
 
 amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database, how to connect to it.  
 This has two main advantages:
@@ -60,6 +60,10 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 ```
 
 We do not suggest to just use this simple configuration for production sites, but for now, it's all good. See [Drupal Configuration](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
+
+In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
+
+
 
 ### Step 4: Test connection to the database
 
