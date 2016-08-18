@@ -89,7 +89,23 @@ To git@github.com:amazeeio/mysite.git
   980afa9..410e523 develop -> develop
 ```
 
-## Step 6: Synchronize your local database and files to the develop site
+## Step 6: Synchronize your local database to the develop site
 
+The code is commited, but a vital part of every Drupal site is missing: The database.
+
+As we have the database  in our local development site, we can just easily synchronize it to the develop site:
+
+```
+🐳 drupal@amazee_io.docker.amazee.io:~/public_html (dev)$ drush sql-sync @self @dev
+You will destroy data in dev1.compact.amazee.io/amazee_io and replace with data from drupal.
+Do you really want to continue? (y/n): y
+Starting to dump database on Source. [ok]
+Database dump saved to /var/www/drupal/drush-backups/drupal/20160818211446/drupal_20160818_211446.sql.gz [success]
+Starting to discover temporary files directory on Destination. [ok]
+You will delete files in amazee_io@dev1.compact.amazee.io:/var/www/amazee_io/tmp/drupal_20160818_211446.sql.gz and replace with data from /var/www/drupal/drush-backups/drupal/20160818211446/drupal_20160818_211446.sql.gz
+Do you really want to continue? (y/n): y
+Copying dump file from Source to Destination. [ok]
+Starting to import dump file onto Destination database. [ok]
+```
 
 
