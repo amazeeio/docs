@@ -2,6 +2,9 @@
 
 So you have your Drupal Site locally running with following the [Step-by-Step guide](/step_by_step_guides/get_your_drupal_site_running_on_amazeeio.md) and would like now to push it to an amazee.io development server? Then you are correct here!
 
+<!-- toc -->
+
+
 Before we can do the first push, we need to configure some more things, no worries, they are all very straight forward to use.
 
 ## Step 0: Setup of development server
@@ -191,5 +194,5 @@ BTW: if you want to synchronize the files and database down again from a develop
 
 That's the beauty of amazee.io: It's exactly the same. It's basically Step 5-7 just with the branchname you defined to be your production branch.
 
-Or even easier: Instead of synchronizing the DB and Files from your local to the production site, you can also synchronize from a development to the production site, check out [Synchronize Sites](/drupal/synchronize_sites.md) how that works. 
+Or even easier: Instead of synchronizing the DB and Files from your local to the production site, you can also synchronize from a development to the production site, check out [Synchronize Sites](/drupal/synchronize_sites.md) how that works.
 
