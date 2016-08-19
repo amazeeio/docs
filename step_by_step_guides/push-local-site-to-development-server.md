@@ -96,6 +96,22 @@ To git@github.com:amazeeio/mysite.git
   980afa9..410e523 develop -> develop
 ```
 
+A couple of seconds later you will see the deployment start message by our deployment bot in the Slack channel:
+
+![](/assets/first_deploy_start.jpg)
+
+This message tells you that the deployment has started. You can see which branch is deployed, plus the URL of the site that this branch is assigned to.
+
+In the background the deployment system will now checkout the Git code and run your deployment tasks. Read more at [Automated Deployments](/automated_deployments.md) on how they exactly work. Depending on how the amount and type of tasks you have defined, this can take either couple of seconds or couple of minutes.
+
+As soon as the deployment is through the deployment bot informs us again. Most probably it will be a failed deployment that looks like this:
+
+![](/assets/first_deploy_fail.jpg)
+
+No worries, that is perfectly fine like that. In the Slack message we can see that the task `drush -y updb` has failed, the reason for that is simple: We don't have a database yet! So let's give our development site one:
+
+Btw: We are working hard on not having a failed first deployment, as it is a bit confusing 🤓
+
 ## Step 6: Synchronize local database to the develop site
 
 The code is committed, but a vital part of every Drupal site is missing: The database.
@@ -144,4 +160,18 @@ Like with the database, there is a command to synchronize files:
 ```
 drush rsync @self:%files @develop:%files
 ```
+
+Like  `drush sql-sync`, this command will ask for a confirmation before it synces the files. Please make sure that the directories do not contain the string `%files`, but the correct folders for the files.
+
+Here how it should look like:
+
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html/sites/default (develop)$ drush rsync @self:%files @develop:%files
+You will delete files in mysite_develop@zh1.compact.amazee.io:/var/www/mysite_develop/public_html/sites/default/files and replace with data from /var/www/drupal/public_html/sites/default/files
+Do you really want to continue? (y/n): 
+```
+
+and a bad example:
+
+
 
