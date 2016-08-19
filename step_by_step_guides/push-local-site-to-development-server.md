@@ -179,5 +179,11 @@ You will delete files in mysite_develop@zh1.compact.amazee.io:/var/www/mysite_de
 Do you really want to continue? (y/n):
 ```
 
-see the path `/var/www/mysite_develop/public_html/%files` which is wrong. If this is the case, Drush cannot figure out the files directory itself. For an easy workaround, just use `drush rsync @self:sites/default/files @develop:sites/default/files` instead
+see the path `/var/www/mysite_develop/public_html/%files` which is wrong. If this is the case, Drush cannot figure out the files directory itself. For an easy workaround, just use `drush rsync @self:sites/default/files @develop:sites/default/files` instead.
+
+## Step 8: There is no more step
+
+That's it! You successfully pushed a local site to a development server. Now you know everything 
+
+
 
