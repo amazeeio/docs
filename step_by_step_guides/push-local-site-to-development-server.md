@@ -173,5 +173,11 @@ Do you really want to continue? (y/n):
 
 and a bad example:
 
+```
+🐳 drupal@mysite.docker.amazee.io:~/public_html/sites/default (develop)$ drush rsync @self:%files @develop:%files
+You will delete files in mysite_develop@zh1.compact.amazee.io:/var/www/mysite_develop/public_html/%files and replace with data from /var/www/drupal/public_html/sites/default/files
+Do you really want to continue? (y/n):
+```
 
+see the path `/var/www/mysite_develop/public_html/%files` which is wrong. If this is the case, Drush cannot figure out the files directory itself. For an easy workaround, just use `drush rsync @self:sites/default/files @develop:sites/default/files` instead
 
