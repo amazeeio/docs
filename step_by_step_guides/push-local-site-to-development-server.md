@@ -183,7 +183,13 @@ see the path `/var/www/mysite_develop/public_html/%files` which is wrong. If thi
 
 ## Step 8: There is no more step
 
-That's it! You successfully pushed a local site to a development server. Now you know everything 
+That's it! You successfully pushed a local site to a development server. Now you can develop locally and all you need to do is push your code and it will be deployed automatically.
 
+BTW: if you want to synchronize the files and database down again from a development site to your local site, check out [Synchronize Sites](/drupal/synchronize_sites.md).
 
+## But wait: How about other sites like production?
+
+That's the beauty of amazee.io: It's exactly the same. It's basically Step 5-7 just with the branchname you defined to be your production branch.
+
+Or even easier: Instead of synchronizing the DB and Files from your local to the production site, you can also synchronize from a development to the production site, check out [Synchronize Sites](/drupal/synchronize_sites.md) how that works. 
 
