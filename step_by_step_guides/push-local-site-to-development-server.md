@@ -4,7 +4,6 @@ So you have your Drupal Site locally running with following the [Step-by-Step gu
 
 <!-- toc -->
 
-
 Before we can do the first push, we need to configure some more things, no worries, they are all very straight forward to use.
 
 ## Step 0: Setup of development server
