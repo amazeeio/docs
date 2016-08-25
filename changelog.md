@@ -5,7 +5,7 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 <!-- toc -->
 
 ## 2016-08-09 - 📬 Mail Logfile
-Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outoging mails.
+Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outgoing mails.
 You'll find the `mail.log` in your homedirectory `logs/mail.log`
 
 ## 2016-08-09 - 🔐 HTTP Strict Transport Security Headers
@@ -34,7 +34,7 @@ versions:
   node: 4
 ```
 
-to your .amazeeio.yml file. This will let amazee.io know which Node.js version you would like. In this example the newest Node.js version 4. This versionw will be used whenever you run a command like npm or node.
+to your .amazeeio.yml file. This will let amazee.io know which Node.js version you would like. In this example the newest Node.js version 4. This version will be used whenever you run a command like npm or node.
 
 If you need a specific minor or patch version (like 6.3.0), you can also define that.
 
@@ -78,7 +78,7 @@ Btw if you would like to see real time logs, try:
 
 `tail -f ~/logs/nginx/10fe-$AMAZEEIO_SITENAME.access.log`
 
-and you will see the access logs of the frontend Nginx in real🕔, wooho!
+and you will see the access logs of the frontend Nginx in real🕔, woohoo!
 
 ---
 ## 2016-07-13 - New environment variables which makes your Drupal Life easier

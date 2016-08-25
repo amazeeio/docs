@@ -47,7 +47,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 2. On the left side click on `Settings`
   ![](giving-access/bitbucket2.png)
 
-3. Navigate to `Access manaagement`
+3. Navigate to `Access management`
 ![](giving-access/bitbucket3.png)
 
 4. Under Users add the user `amazeeio-deploy` and add `read` permission for that user

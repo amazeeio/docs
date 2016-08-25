@@ -1,6 +1,6 @@
 # Blackfire.io
 
-[Blackfire.io](https://blackfire.io) is the prefered way by amazee.io to profile your Drupal sites. Over are the times to handle clunky weird xhprof configurations and other things.
+[Blackfire.io](https://blackfire.io) is the preferred way by amazee.io to profile your Drupal sites. Over are the times to handle clunky weird xhprof configurations and other things.
 
 At amazee.io we ship Blackfire with every Local Drupal Development site and it is enabled on all development and production sites.
 
@@ -19,7 +19,7 @@ It is easily configured and setup:
 2. Find the commented Blackfire section inside your `docker-compose.yml` file \(see an example [here](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml#L13)\)
 3. Uncomment the lines `BLACKFIRE_SERVER_ID` and `BLACKFIRE_SERVER_TOKEN` and add the  information from your Blackfire.io account. Example:
 
-        services: 
+        services:
           drupal:
             hostname: &hostname mysite.docker.amazee.io
             environment:
@@ -43,7 +43,7 @@ Every amazee.io Docker image has the `blackfire` CLI tool already installed, so 
 
 1. Follow Steps 2-4 from _Local Docker Development with Blackfire Chrome Companion_
 2. Connect to the Docker Container
-3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example: 
+3. Run the `blackfire` command with defining the client-id and client-token from your [your Blackfire.io account](https://blackfire.io/account), example:
   ```
   blackfire --client-id="5f12d5ef-5b63-4d16-9bd8-2c741fe6a3ed" --client-token="13210acce473f9d8f485f19088f8b0b83c03bc2938efface72b9de1506ed211d" curl http://mysite.docker.amazee.io/
   ```
@@ -64,4 +64,3 @@ Blackfire calls them Scenarios and they are based on Tests. Read more about them
 The best practice is to add them add the last step within the `after_deploy` task list. Please see the [Trigger API documentation](https://blackfire.io/docs/reference-guide/builds-and-integrations#start-build-with-api) from Blackfire on how to call a trigger via curl or the blackfire tool \(which is also installed on all development and production sites\).
 
 Hint hint: the API needs to know the URL of the site to test via the `endpoint` parameter, we provide you the `AMAZEEIO_BASE_URL` environment variable which contains exactly that.
-

@@ -13,7 +13,7 @@ If you already are using the Docker Mac Beta client, please head over to the `py
 * Start it's own Virtual Machine which runs boot2docker. It does that because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
 * Start two services on OS X: FSEvents and NFS (which will share the folder `/User/you` into the virtual machine).
 * Creates the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq Docker container
-* Starta the necessary Docker Containers for the amazee.io Drupal Docker Development
+* Start the necessary Docker Containers for the amazee.io Drupal Docker Development
 * Adds the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more anytime)
 
 ### Prerequisites

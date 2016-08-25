@@ -37,7 +37,7 @@ While you are on it, we also suggest to adapt the `drushrc.php` file you probabl
 
 ## Step 3: Create .amazeeio.yml file and adapt `sitegroup`
 
-The .amazeeio.yml file tells the amazee.io systems about deployment tasks and more. These tasks are super powerfull and allow to automate almost everything you can imagine. You can find more about them at [.amazeeio.yml file](/drupal/amazeeioyml_file.md). As it takes a bit time to figure out all the possibilities, we suggest to just use these files as a start, they will clear the cache and run db-update on every deployment.
+The .amazeeio.yml file tells the amazee.io systems about deployment tasks and more. These tasks are super powerful and allow to automate almost everything you can imagine. You can find more about them at [.amazeeio.yml file](/drupal/amazeeioyml_file.md). As it takes a bit time to figure out all the possibilities, we suggest to just use these files as a start, they will clear the cache and run db-update on every deployment.
 
 Drupal 7: [https:\/\/github.com\/amazeeio\/drupal-setting-files\/blob\/master\/Drupal7\/.amazeeio.yml](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal7/.amazeeio.yml)
 
@@ -88,12 +88,12 @@ git push
 Example:
 
 ```
-🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!" 
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git commit --allow-empty -m "go, go! Power Rangers!"
 [develop 410e523] go, go! Power Rangers!
-🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push 
-Counting objects: 1, done. 
-Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done. 
-Total 1 (delta 0), reused 0 (delta 0) 
+🐳 drupal@mysite.docker.amazee.io:~/public_html (develop)$ git push
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 190 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
 To git@github.com:amazeeio/mysite.git
   980afa9..410e523 develop -> develop
 ```
@@ -170,7 +170,7 @@ Here how it should look like:
 ```
 🐳 drupal@mysite.docker.amazee.io:~/public_html/sites/default (develop)$ drush rsync @self:%files @develop:%files
 You will delete files in mysite_develop@zh1.compact.amazee.io:/var/www/mysite_develop/public_html/sites/default/files and replace with data from /var/www/drupal/public_html/sites/default/files
-Do you really want to continue? (y/n): 
+Do you really want to continue? (y/n):
 ```
 
 and a bad example:
@@ -194,4 +194,3 @@ BTW: if you want to synchronize the files and database down again from a develop
 That's the beauty of amazee.io: It's exactly the same. It's basically Step 5-7 just with the branchname you defined to be your production branch.
 
 Or even easier: Instead of synchronizing the DB and Files from your local to the production site, you can also synchronize from a development to the production site, check out [Synchronize Sites](/drupal/synchronize_sites.md) how that works.
-

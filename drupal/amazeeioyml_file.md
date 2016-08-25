@@ -1,6 +1,6 @@
 # .amazeeio.yml file
 
-To ensure a perfect system and tell the deployment system what it should do doring a deployment, your Git repository requires an `.amazeeio.yml` file to be present. It is written in YAML and needs to be in the root directory of the Git Repository.
+To ensure a perfect system and tell the deployment system what it should do during a deployment, your Git repository requires an `.amazeeio.yml` file to be present. It is written in YAML and needs to be in the root directory of the Git Repository.
 
 The most minimal file looks at follows:
 
@@ -52,7 +52,7 @@ versions:
 ## Explanation of keys
 
 ### `sitegroup` (required)
-Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup. 
+Defines the name of the site group this Git repository is in. You receive this sitegroup whenever you create a new sitegroup.
 
 ### `deploy_tasks` (optional)
 Group for all tasks that are automatically run during a deployment, unless there are branch specific tasks defined.
@@ -88,7 +88,7 @@ deploy_tasks:
 ```
 
 #### `deploy_tasks.production.after_deploy`
-List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `publich_html` directory. Commands doing database changes should be ran here. Failed commands will trigger a rollback of this deployment. See [steps during a production deployment](../automated_deployments.md).
+List of single tasks that are run as **after** the releases folder is public to a site marked with the environment type [production](../environment_type.md). These tasks are run inside the `public_html` directory. Commands doing database changes should be ran here. Failed commands will trigger a rollback of this deployment. See [steps during a production deployment](../automated_deployments.md).
 
 ```
 deploy_tasks:
