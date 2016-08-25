@@ -1,5 +1,5 @@
 # Regular Maintenance
-To ensure overal system security and roll out new features amazee.io has weekly maintenance Windows
+To ensure overall system security and roll out new features amazee.io has weekly maintenance Windows
 
 Upon signup you can subscribe to the weekly maintenance reminders which are sent every week by mail. Ongoing maintenance work is shown on our [statuspage](http://status.amazee.io).
 

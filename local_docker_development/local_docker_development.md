@@ -60,7 +60,7 @@ amazee.io implemented a Drupal Docker Development environment which handles all 
 
 The environment starts 3 containers:
 
-* [andyshinn\/dnsmasq](https://hub.docker.com/r/andyshinn/dnsmasq/) Docker container which will listen on port 53 and resolv all DNS requests from `*.docker.amazee.io` to `127.0.0.1` \(so basically a better way then filling your `/etc/hosts` file by hand\)
+* [andyshinn\/dnsmasq](https://hub.docker.com/r/andyshinn/dnsmasq/) Docker container which will listen on port 53 and resolve all DNS requests from `*.docker.amazee.io` to `127.0.0.1` \(so basically a better way then filling your `/etc/hosts` file by hand\)
 * [amazeeio\/haproxy](https://hub.docker.com/r/amazeeio/haproxy/) Docker container which will listen on port 80 and 443. It additionally listens to the Docker socket, realize when you start a new Drupal Container and adapt fully automatically it's haproxy configuration \(thanks to the awesome tool [docker-gen](https://github.com/jwilder/docker-gen)\). It forwards HTTP and HTTPs requests to the correct Drupal Container. With that we can access all Drupal Containers via a single Port.
 * [amazeeio\/ssh-agent](https://hub.docker.com/r/amazeeio/ssh-agent/) Docker container which will keeps an ssh-agent at hand for the other Drupal Containers. With that the Drupal Containers do not need to handle ssh-agenting themselves
 
@@ -157,4 +157,3 @@ The environment starts 3 containers:
                                           |                                                                               |
                                           +-------------------------------------------------------------------------------+
 ```
-

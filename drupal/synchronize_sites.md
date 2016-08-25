@@ -19,7 +19,7 @@ This command synchronizes the Database from the given site to the site you're ru
 `dsql` is actually a Bash alias for `drush sql-sync $1 default -d -v`
 
 {% hint style='info' %}
-We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride a production database!.
+We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override a production database!.
 {% endhint %}
 
 {% hint style='info' %}
@@ -44,7 +44,7 @@ This command synchronizes the file directory from the given site to the files di
 `dfiles` is actually a Bash alias for `drush rsync $1:%files default:%files -d -v`
 
 {% hint style='info' %}
-We suggest though to use `dfiles` in stead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and overwride production files!.
+We suggest though to use `dfiles` in stead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override production files!.
 {% endhint %}
 
 {% hint style='info' %}
@@ -57,6 +57,6 @@ Synchronizing files can take very long and use huge amount of storage space. In 
 
 Stage File Proxy will tell Drupal to connect to the production site and download a requested file if it does not exist on the current site. With that the need to synchronize files to local Docker Sites or any development sites is completely gone.
 
-amazee.io has full support for Stage File Proxy and exposes an environment variable called `AMAZEEIO_PRODUCTION_URL` which contains the URL to the production site. Stage File Proxy suppports setting the production URL via settings.php. Additionally the functionality of the module can be disabled without the need to uninstall the module. This is required on production sites, as on production sites the module does not make sense, but selective deinstalled modules is very hard to acchieve with Configuration Management or Features.
+amazee.io has full support for Stage File Proxy and exposes an environment variable called `AMAZEEIO_PRODUCTION_URL` which contains the URL to the production site. Stage File Proxy supports setting the production URL via settings.php. Additionally the functionality of the module can be disabled without the need to uninstall the module. This is required on production sites, as on production sites the module does not make sense, but selective deinstalled modules is very hard to achieve with Configuration Management or Features.
 
 Please see https://github.com/amazeeio/drupal-setting-files for examples on how to use Stage File Proxy with amazee.io (check the `development.settings.php` and `production.settings.php` files for your Drupal Version).

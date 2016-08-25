@@ -25,7 +25,7 @@ For testing purposes, production sites can also be reached via the same URL stru
 
     http://[domain].[branchname].[servername].amazee.io
 
-In the example where the domain of the production site is `www.yoursite.com` and the branch of the production site ist `master`, the site is also reachable under:
+In the example where the domain of the production site is `www.yoursite.com` and the branch of the production site is `master`, the site is also reachable under:
 
     http://www.yoursite.com.master.zh1.compact.amazee.io/
 
