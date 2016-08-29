@@ -1,8 +1,8 @@
 # Comparison of amazee.io, Pantheon, Acquia Cloud, Platform.sh
 
-We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work! 
+We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work!
 
-Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository. 
+Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository.
 
 <div style="overflow-x: scroll;">
 	<table>
@@ -29,7 +29,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>Custom web server configurations</strong></td>
 				<td>✅ Custom configurations possible. Easy testing inside Local Docker Development</td>
-				<td>❌️ No custom configurations</td>
+				<td>⚠️ Some customizability via pantheon.yml file</td>
 				<td>⚠️ Some customizability - PHP version, memory limits, memcache pool size</td>
 				<td>⚠️ Some customizability via ‘.platform.app.yaml’ file</td>
 			</tr>
@@ -56,7 +56,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>24x7 infrastructure and application monitoring</strong></td>
 				<td>✅</td>
-				<td>⚠️ Only on Elite plan</td>
+				<td>✅ New Relic APM Pro free for all sites. Additional monitoring for Elite plan</td>
 				<td>⚠️ Self serve tools, full monitoring on Enterprise and Elite plans</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
@@ -307,7 +307,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>Custom deployment tasks</strong></td>
 				<td>✅ Any command possible</td>
-				<td>❌️ No custom deployment tasks, only update.php and drush cr</td>
+				<td>⚠️ Before/after deployment scripts defined via pantheon.yml</td>
 				<td>✅ Any command possible</td>
 				<td>✅ Any command possible</td>
 			</tr>
@@ -442,7 +442,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>Support for external (Amazon S3, Dropbox, etc.) backups via “backup and migrate” module</strong></td>
 				<td>✅ Full support to save backups externally. Custom crons provide even more flexibility.</td>
-				<td>⚠️ “backup and migrate” module not recommended</td>
+				<td>⚠️ Backups made to S3 automatically. “backup and migrate” module not recommended</td>
 				<td>❌️ No support of “backup and migrate” module</td>
 				<td>✅</td>
 			</tr>
