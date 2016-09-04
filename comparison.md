@@ -56,7 +56,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>24x7 infrastructure and application monitoring</strong></td>
 				<td>✅</td>
-				<td>⚠️ Only on Elite plan</td>
+				<td>⚠️ Self serve tools (free New Relic APM Pro). Additional monitoring for Elite plan</td>
 				<td>⚠️ Self serve tools, full monitoring on Enterprise and Elite plans</td>
 				<td>⚠️ Only on Enterprise plan</td>
 			</tr>
@@ -375,7 +375,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>New Relic</strong></td>
 				<td>✅ Free New Relic Pro (all production sites in one single account)</td>
-				<td>✅ Free New Relic Pro (each production site in separate accounts)</td>
+				<td>✅ Free New Relic Pro for all sites (including free pre-launch sites) and all environments (Each site in its own account)</td>
 				<td>⚠️ Only NewRelic Lite</td>
 				<td>❌️ No New Relic</td>
 			</tr>
