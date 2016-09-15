@@ -28,3 +28,5 @@ Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
 Important is **`with Xdebug`**, which tells you that the Xdebug module is properly loaded.
 
 If you don't see `with Xdebug` in this block, make sure that your browser sends a debugging Cookie (search on the phpinfo page for `$_COOKIE['XDEBUG_SESSION']`)
+
+We are happy to support you in our 
