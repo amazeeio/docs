@@ -5,24 +5,28 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 <!-- toc -->
 
 ## 2016-09-14 - 🐳 Better support of Docker for Mac
-
-Docker for Mac is out of Beta since a couple of weeks and there are still big improvement in speed released on every new version. So the amazee.io team decided to wait a bit before we will deprecated cachalot and fully focus on pygmy, as we understand how important that a fast local development environment is.
+Docker for Mac is out of Beta since a couple of weeks and there are still big improvements in speed released on every new version. So the amazee.io team decided to wait a bit before we will deprecate cachalot and fully focus on pygmy, as we understand how important that a fast local development environment is.
 
 But there are already developers using pygmy and Docker for Mac on their machines and we want to provide them the best experience possible.
 
-So we fixed two problems that were bottering ourselves:
+So we fixed two problems that were bothering ourselves:
 
 1. The git prompt is now around 20x faster while you are inside a docker container.
+
 2. Xdebug is now as easy as with cachalot: Just start a debugging session and done. 
 
-The second one was a bit a harder one. Unfortunately the networking within Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a [known issue](ttps://docs.docker.com/docker-for-mac/networking/#/i-cannot-ping-my-containers) and the [suggested workaround](https://docs.docker.com/docker-for-mac/networking/#/use-cases-and-workarounds) is to create an alias on the loopback interface with an unused IP address.
+The second one was a bit a harder one. Unfortunately, the networking within Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a [known issue](ttps://docs.docker.com/docker-for-mac/networking/#/i-cannot-ping-my-containers) and the [suggested workaround](https://docs.docker.com/docker-for-mac/networking/#/use-cases-and-workarounds) is to create an alias on the loopback interface with an unused IP address.
 
 So we are doing that now!
+
 - `pygmy up` is creating a new alias IP: `172.16.172.16` (which is also cleaned up during `pygmy down`
-- During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hardcoding this IP in the `X-Forwarded-For` Header from nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingeable, we are still using the regular `X-Forwarded-For` behavior, as for Linux, Windows and OS X with cachalot Docker environments, this works perfectly.
+
+- During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hard coding this IP in the `X-Forwarded-For` Header from Nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingable, we are still using the regular `X-Forwarded-For` behavior, as for Linux, Windows and OS X with cachalot Docker environments, this works perfectly.
 
 In order to profit from this new system, please:
+
 - [Update pygmy](https://docs.amazee.io/local_docker_development/linux_pygmy.html#update-pygmy)
+
 - [Update the Docker Images](https://docs.amazee.io/local_docker_development/drupal_site_containers.html#update-images)
 
 If you have any questions or problems, please just ask in our [Slack Channel](slack.amazee.io).
