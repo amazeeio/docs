@@ -25,6 +25,8 @@ In order to profit from this new system, please:
 - [Update pygmy](https://docs.amazee.io/local_docker_development/linux_pygmy.html#update-pygmy)
 - [Update the Docker Images](https://docs.amazee.io/local_docker_development/drupal_site_containers.html#update-images)
 
+If you have any questions or problems, please just ask in our [Slack Channel](slack.amazee.io)
+
 ## 2016-08-09 - 📬 Mail Logfile
 Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outgoing mails.
 You'll find the `mail.log` in your homedirectory `logs/mail.log`
