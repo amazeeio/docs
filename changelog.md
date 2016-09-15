@@ -15,7 +15,9 @@ So we fixed two problems that were bottering ourselves:
 1. The git prompt is now around 20x faster while you are inside a docker container.
 2. Xdebug Access is now as easy as with cachalot: Just start a debugging session and done. 
 
-The second one was a bit a harder one. Unfortunately the networking with Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a (known issue)[]
+The second one was a bit a harder one. Unfortunately the networking within Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a [known issue](ttps://docs.docker.com/docker-for-mac/networking/#/i-cannot-ping-my-containers) and the [suggested workaround](https://docs.docker.com/docker-for-mac/networking/#/use-cases-and-workarounds) is to create an alias on the loopback interface with an unused IP address.
+
+this 
 
 
 ## 2016-08-09 - 📬 Mail Logfile
