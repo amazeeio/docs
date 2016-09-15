@@ -19,7 +19,9 @@ The second one was a bit a harder one. Unfortunately the networking within Docke
 
 So we are doing that now!
 - `pygmy up` is creating a new alias IP: `172.16.172.16` (which is also cleaned up during `pygmy down`
-- During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hardcoding this IP in the `X-Forwarded-For` Header from nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingeable, it uses the regular 
+- During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hardcoding this IP in the `X-Forwarded-For` Header from nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingeable, we are still using the regular `X-Forwarded-For` behavior, as for Linux, Windows and OS X with cachalot Docker environments, this works perfectly.
+
+
 
 ## 2016-08-09 - 📬 Mail Logfile
 Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outgoing mails.
