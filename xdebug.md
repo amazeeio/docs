@@ -13,6 +13,17 @@ Just follow steps 2-8 from the [PhpStorm documentation](https://confluence.jetbr
 If you have problems, ensure that Xdebug is properly loaded inside the container:
 
 1. Login as Administrator on your Drupal site
-2. Enable the Debugging Cookie (Step 4 from [PhpStorm documentation](https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm))
+2. Enable the Debugging Cookie (Step 4 from the [PhpStorm documentation](https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm))
 3. Visit http://mysitename.com.docker.amazee.io/admin/reports/status/php (replace mysitename.com with your site name)
-4. Enable 
+4. On this page you should see in the second box something like that:
+
+```
+This program makes use of the Zend Scripting Language Engine:
+Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
+   with Zend OPcache v7.0.10-2+deb.sury.org~trusty+1, Copyright (c) 1999-2016, by Zend Technologies 
+   with Xdebug v2.4.1, Copyright (c) 2002-2016, by Derick Rethans
+   with blackfire v1.12.0, https://blackfire.io, by Blackfireio Inc.
+```
+
+Important is **`with Xdebug`**, which tells you that the Xdebug module is properly loaded.
+
