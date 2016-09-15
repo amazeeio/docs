@@ -12,4 +12,4 @@ Just follow steps 2-8 from the PhpStorm documentation: https://confluence.jetbra
 
 If you have problems, ensure that Xdebug is properly loaded inside the container:
 1. Visit your Drupal Site and login
-2. visit http://mysitename.com.docker.amazee.io
+2. visit http://mysitename.com.docker.amazee.io/admin/reports/status/php
