@@ -13,13 +13,13 @@ In any case, there are already developers using pygmy and Docker for Mac on thei
 So we fixed two problems that were bottering ourselves:
 
 1. The git prompt is now around 20x faster while you are inside a docker container.
-2. Xdebug Access is now as easy as with cachalot: Just start a debugging session and done. 
+2. Xdebug is now as easy as with cachalot: Just start a debugging session and done. 
 
 The second one was a bit a harder one. Unfortunately the networking within Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a [known issue](ttps://docs.docker.com/docker-for-mac/networking/#/i-cannot-ping-my-containers) and the [suggested workaround](https://docs.docker.com/docker-for-mac/networking/#/use-cases-and-workarounds) is to create an alias on the loopback interface with an unused IP address.
 
 So we are doing that now!
 - `pygmy up` is creating a new alias IP: `172.16.172.16` (which is also cleaned up during `pygmy down`
-- During the start of the Docker containers a small script tries to ping the IP 
+- During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hardcoding this IP in the `X-Forwarded-For` Header from nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingeable, it uses the regular 
 
 ## 2016-08-09 - 📬 Mail Logfile
 Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outgoing mails.
