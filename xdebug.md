@@ -4,7 +4,7 @@
 
 The local Docker development environment supports Xdebug out of the box. 
 
-As running the PHP Xdebug module makes PHP around 25% slower, implemented a clever way to have the speed and convenience of Xdebug: The nginx analyses your request and if it sees `xdebug` inside a cookie or an GET parameter, will automatically use a PHP process with Xdebug enabled. With that you don't have to worry about starting or stopping Xdebug.
+As running the PHP Xdebug module makes PHP around 25% slower, we implemented a clever way to have the speed and convenience of Xdebug: The nginx analyses your request and if it sees `xdebug` inside a cookie or an GET parameter it will automatically use a PHP process with Xdebug enabled. With that you don't have to worry about starting or stopping Xdebug at all.
 
 In order to start an Xdebug debugging session from your IDE, we need to tell PHP which Xdebug IDE key to use. In our example we are using PhpStorm, but in any other IDE it is gonna be very similar:
 
@@ -27,3 +27,4 @@ Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies
 
 Important is **`with Xdebug`**, which tells you that the Xdebug module is properly loaded.
 
+If you don't see `with Xdebug` in this block, make sure that your browser sends a debugging Cookie (search on the phpinfo page for `$_COOKIE['XDEBUG_SESSION']`)
