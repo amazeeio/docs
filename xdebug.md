@@ -29,4 +29,4 @@ Important is **`with Xdebug`**, which tells you that the Xdebug module is proper
 
 If you don't see `with Xdebug` in this block, make sure that your browser sends a debugging Cookie (search on the phpinfo page for `$_COOKIE['XDEBUG_SESSION']`)
 
-We are happy to support you in our 
+Still problems? [We're happy to support you](https://docs.amazee.io/support.html).
