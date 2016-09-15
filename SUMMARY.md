@@ -35,9 +35,9 @@
     * [Drupal Configuration and settings.php](drupal/settingsphpfiles.md)
     * [Drush Configuration Files](drupal/drush-configuration-files.md)
     * [Synchronize Sites](drupal/synchronize_sites.md)
-* Tools
+* [Tools](tools.md)
     * [Blackfire.io](tools/blackfireio.md)
-    * [Xdebug](xdebug.md)
+    * [Xdebug](tools/xdebug.md)
 * [Add-ons](add-on/add-on.md)
     * [CDN Integration](add-on/cdn_integration.md)
     * [Dropguard](add-on/dropguard.md)
