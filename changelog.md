@@ -21,7 +21,6 @@ The second one was a bit a harder one. Unfortunately, the networking within Dock
 So we are doing that now!
 
 - `pygmy up` is creating a new alias IP: `172.16.172.16` (which is also cleaned up during `pygmy down`
-
 - During the start of the Docker containers a small script tries to ping the IP `172.16.172.16`, if that succeeds, we are hard coding this IP in the `X-Forwarded-For` Header from Nginx, which then will be used by Xdebug to make the connection to the debugger. If this IP is not pingable, we are still using the regular `X-Forwarded-For` behavior, as for Linux, Windows and OS X with cachalot Docker environments, this works perfectly.
 
 In order to profit from this new system, please:
