@@ -13,7 +13,9 @@ In any case, there are already developers using pygmy and Docker for Mac on thei
 So we fixed two problems that were bottering ourselves:
 
 1. The git prompt is now around 20x faster while you are inside a docker container.
+2. Xdebug Access is now as easy as with cachalot: Just start a debugging session and done. 
 
+The second one was a bit a harder one. Unfortunately the networking with Docker for Mac is not perfect yet, and there is currently no way for a Docker container to know how to talk to the Docker Host itself. This is a (known issue)[]
 
 
 ## 2016-08-09 - 📬 Mail Logfile
