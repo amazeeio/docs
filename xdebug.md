@@ -8,7 +8,7 @@ As running the PHP Xdebug module makes PHP around 25% slower, implemented a clev
 
 In order to start an Xdebug debugging session from your IDE, we need to tell PHP which Xdebug IDE key to use. In our example we are using PhpStorm, but in any other IDE it is gonna be very similar:
 
-Just follow steps 2-8 from the PhpStorm documentation: https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm 
+Just follow steps 2-8 from the [PhpStorm documentation](https://confluence.jetbrains.com/display/PhpStorm/Zero-configuration+Web+Application+Debugging+with+Xdebug+and+PhpStorm). 
 
 If you have problems, ensure that Xdebug is properly loaded inside the container:
 
