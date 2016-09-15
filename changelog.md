@@ -4,6 +4,18 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 
 <!-- toc -->
 
+## 2016-09-14 - 🐳 Better support of Docker for Mac
+
+Docker for Mac is out of Beta since a couple of weeks, but there are still big improvement in speed released. So the amazee.io team decided to wait a bit, before we will deprecated cachalot and fully focus on pygmy.
+
+In any case, there are already developers using pygmy and Docker for Mac on their machines and we want to provide them the best experience possible.
+
+So we fixed two problems that were bottering ourselves:
+
+1. The git prompt is now around 20x faster while you are inside a docker container.
+
+
+
 ## 2016-08-09 - 📬 Mail Logfile
 Did you ever wonder how many mails are sent out via your website? We do too! We implemented some logging for your outgoing mails.
 You'll find the `mail.log` in your homedirectory `logs/mail.log`
