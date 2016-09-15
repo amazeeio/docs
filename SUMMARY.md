@@ -37,7 +37,7 @@
     * [Synchronize Sites](drupal/synchronize_sites.md)
 * Tools
     * [Blackfire.io](tools/blackfireio.md)
-    * Xdebug
+    * [Xdebug](xdebug.md)
 * [Add-ons](add-on/add-on.md)
     * [CDN Integration](add-on/cdn_integration.md)
     * [Dropguard](add-on/dropguard.md)
