@@ -5,6 +5,7 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 <!-- toc -->
 
 ## 2016-09-14 - 🐳 Better support of Docker for Mac
+
 Docker for Mac is out of Beta since a couple of weeks and there are still big improvements in speed released on every new version. So the amazee.io team decided to wait a bit before we will deprecate cachalot and fully focus on pygmy, as we understand how important that a fast local development environment is.
 
 But there are already developers using pygmy and Docker for Mac on their machines and we want to provide them the best experience possible.
