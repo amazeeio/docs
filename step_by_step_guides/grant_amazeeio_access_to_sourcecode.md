@@ -24,6 +24,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 6. If everything is okay you'll see that the `Copy invite link` button has disappeared now you're good to start deploying to amazee.io
 ![](giving-access/github6.png)
 
+**Webhook:** Add following webhook to have automated deployments working (see Webhooks & services): `https://deploy.amazeeio.cloud/github-webhook/`
 ## Gitlab
 1. Navigate to the Gitlab Repository which will be deployed to amazee.io
   ![](giving-access/gitlab1.png)
@@ -56,6 +57,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 5. Afterwards you should see the User in the List with the appropriate access permission
 ![](giving-access/bitbucket5.png)
 
+**Webhook:** Add following webhook to have automated deployments working (see Integrations > Webhooks): `https://deploy.amazeeio.cloud/bitbucket-hook/`
 ## Other / Generic Git Hosting
 You're using a private installation of GitLab, AWS Git repositories or something else we didn't come up with yet?
 
