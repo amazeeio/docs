@@ -16,7 +16,7 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 
 ##### [Documentation for OS X ](./os_x_cachalot.md)
 
-##### [Documentation for Linux & OS X ](./linux_pygmy.md)
+##### [Documentation for Linux & OS X ](./pygmy.md)
 
 ##### [Documentation for Windows ](./windows.md)
 
