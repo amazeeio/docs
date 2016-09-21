@@ -1,4 +1,4 @@
-# Linux `pygmy`
+# Linux & OS X `pygmy`
 
 <!-- toc -->
 
