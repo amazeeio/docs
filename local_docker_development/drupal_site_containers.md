@@ -72,7 +72,7 @@ We constantly make improvements, updates and some other nice things to our conta
 	docker-compose pull
 	docker-compose up -d
 
-###### Slow Updates?
+### Slow Updates?
 
 When pulling a new docker image, the download can get stuck. There is a nice workaround for that: pull a second time :)
 
