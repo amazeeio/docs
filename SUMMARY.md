@@ -10,7 +10,7 @@
 * [Local Docker Development](local_docker_development/local_docker_development.md)
     * [OS X - cachalot](local_docker_development/os_x_cachalot.md)
         * [Help](local_docker_development/os_x_cachalot/help.md)
-    * [Linux - pygmy](local_docker_development/linux_pygmy.md)
+    * [Linux & OS X - pygmy](local_docker_development/linux_pygmy.md)
         * [Help](local_docker_development/pygmy/help.md)
     * [Windows](local_docker_development/windows.md)
     * [Drupal Docker Containers](local_docker_development/drupal_site_containers.md)
