@@ -30,7 +30,7 @@
     * [example for Drupal 8 without composer](drupal/example-for-drupal-8.md)
     * [example for Drupal 8 with composer](drupal/example-for-drupal-8-with-composer.md)
     * [Automatic synchronization of sites](drupal/automatic-synchronization-of-sites.md)
-* [Environment Variables](drupal/environment_variables.md)
+* [Environment Variables](environment_variables.md)
 * [Drupal & Drush](drupal/drupal.md)
     * [Drupal Configuration and settings.php](drupal/settingsphpfiles.md)
     * [Drush Configuration Files](drupal/drush-configuration-files.md)
