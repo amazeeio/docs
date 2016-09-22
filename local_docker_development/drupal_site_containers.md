@@ -28,13 +28,13 @@ To run commands like `git` or other things within the container, you need to con
 
 There are two ways for that:
 
-#### Connect via `docker-compose` (easier, but does not work in Windows)
+### Connect via `docker-compose` (easier, but does not work in Windows)
 
 This is the easier way, you need to be in the same folder where also the `docker-compose.yml` for that to work:
 
     docker-compose exec --user drupal drupal bash
 
-#### Connect via `docker` (only way for Windows)
+### Connect via `docker` (only way for Windows)
 
 If you want to connect to a container wherever you are right now with your bash:
 
