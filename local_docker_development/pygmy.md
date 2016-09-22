@@ -15,27 +15,34 @@ If you don't run the new Docker for Mac: Sorry `pygmy` is not for you, we have a
 * If on Mac with Docker for Mac: Creates the file `/etc/resolver/docker.amazee.io` which tells OS X to forward DNS requests for `*.docker.amazee.io` to the dnsmasq container
 * Tries to add the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more any time)
 
-
+#Installation of Pygmy
 
 ## Prerequisites
+Make sure you have the following dependencies installed:
+
 1. Docker (Version >= 1.11.1), see [the official guides](https://docs.docker.com/engine/installation/) how to do that
 2. Ruby, see [the official guides ](https://www.ruby-lang.org/en/documentation/installation/)
 3. If you are on Ubuntu, disable the DNS that is started by default, see: http://askubuntu.com/a/233223
 
 ## Installation
+The installation of `pygmy` is fairly simple and can be accomplished via the ruby gem package manager
+
     gem install pygmy
 
 ## Start
+To start `pygmy` run following command
 
     pygmy up
 
 `pygmy` will now start all the required Docker containers and add the ssh key.
 
+**All done?** Head over to [Drupal Docker Containers](./drupal_site_containers.md) to learn how to work with docker containers.
+
 ## Help
 
 See Help for `pygmy`
 
-## CLI Usage
+# Command line usage
 
 ```
 pygmy help
@@ -51,7 +58,7 @@ Commands:
   pygmy version                 # Check current installed version of pygmy
 ```
 
-### Adding ssh keys
+## Adding ssh keys
 
 Call the `addkey` command with the **absolute** path to the key you would like to add. In case this they is passphrase protected, it will ask for your passphrase.
 
@@ -60,7 +67,7 @@ Call the `addkey` command with the **absolute** path to the key you would like t
     Enter passphrase for /Users/amazeeio/.ssh/my_other_ke:
     Identity added: /Users/amazeeio/.ssh/my_other_key (/Users/amazeeio/.ssh/my_other_key)
 
-### Checking the status
+## Checking the status
 
 Run `pygmy status` and `pygmy` will tell you how it feels right now and which ssh-keys it currently has in it's stomach:
 
@@ -73,13 +80,13 @@ Run `pygmy status` and `pygmy` will tell you how it feels right now and which ss
     4096 SHA256:QWzGNs1r2dfdfX2PHdPi5sdMxdsuddUbPSi7HsrRAwG43sHI /Users/amazeeio/.ssh/my_other_key (RSA)
 
 
-### `pygmy down` vs `pygmy stop`
+## `pygmy down` vs `pygmy stop`
 
 `pygmy` behaves like Docker, it's a whale in the end!  
 During regular development `pygmy stop` is perfectly fine, it will keep the Docker containers still alive, just in stopped state.
 If you like to cleanup though, use `pygmy down` to really remove the Docker containers.
 
-### Update Docker Containers with `pygmy`
+## Update Docker Containers with `pygmy`
 
 `pygmy` can update shared docker containers for you:
 
@@ -88,7 +95,7 @@ If you like to cleanup though, use `pygmy down` to really remove the Docker cont
 After it updated all containers, it will recreate them as well.
 
 
-### Update `pygmy`
+# Update `pygmy`
 
 `pygmy` gets new releases sometimes and who doesn't like them, so much excitement for new functionality!
 
