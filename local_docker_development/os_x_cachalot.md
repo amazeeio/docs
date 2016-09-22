@@ -2,6 +2,8 @@
 
 <!-- toc -->
 
+# Installation of cachalot
+
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Until Docker has released their Docker for Mac, we provide our own system, called `cachalot`
 
 {% hint style='info' %}
@@ -16,7 +18,7 @@ If you already are using the Docker for Mac  client, please head over to the `py
 * Start the necessary Docker Containers for the amazee.io Drupal Docker Development
 * Adds the ssh key in `~/.ssh/id_rsa` to the ssh-agent container (no worries if that is the wrong key, you can add more anytime)
 
-### Prerequisites
+## Prerequisites
 
 1. OS X Yosemite (10.10) or newer
 1. [Homebrew](http://brew.sh/)
@@ -66,7 +68,7 @@ To check that everything has been installed correctly, open http://docker.amazee
 
 **You are all set-up!** Are you ready to get your first site setup on your local environment? Yes? Then head over to [Part II: Drupal Docker Containers](drupal_site_containers.md).
 
-## CLI Usage
+# Command line usage
 
 ```
 cachalot help
@@ -138,7 +140,7 @@ Run `cachalot status` and `cachalot` will tell you how it feels right now and wh
 
 After it updated all containers, it will recreate them as well.
 
-## Upgrade
+# Upgrade
 
 To update cachalot itself, run
 
