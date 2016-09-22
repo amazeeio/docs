@@ -33,6 +33,8 @@ Make sure you have the following dependencies installed:
 
 `pygmy` will now start all the required Docker containers and add the ssh key.
 
+**All done?** Head over to [Drupal Docker Containers](./drupal_site_containers.md) to learn how to work with docker containers.
+
 ## Help
 
 See Help for `pygmy`
