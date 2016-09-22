@@ -25,9 +25,12 @@ Make sure you have the following dependencies installed:
 3. If you are on Ubuntu, disable the DNS that is started by default, see: http://askubuntu.com/a/233223
 
 ## Installation
+The installation of `pygmy` is fairly simple and can be accomplished via the ruby gem package manager
+
     gem install pygmy
 
 ## Start
+To start `pygmy` run following command
 
     pygmy up
 
