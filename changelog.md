@@ -12,9 +12,7 @@ Yesterday [Yarn](https://yarnpkg.com) was released. Yarn is a full replacement f
 
 At amazee.io our mission is to provide the best experience and tools to our developers. So we spared not time and rolled out yarn on all amazee.io servers and in our Docker images, in order for everybody out there to use it right away (see the [official documentation](https://yarnpkg.com/en/docs/) on how to use it).
 
-
-
-
+Happy ~~developing~~ knitting!
 
 
 ## 2016-09-14 - 🐳 Better support of Docker for Mac
