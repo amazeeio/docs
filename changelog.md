@@ -6,13 +6,13 @@ Hi there! As we are improving amazee.io we started to release changelogs to high
 
 ## 2016-10-12 - Welcome Yarn to the family
 
-Using Node.js and it's packages is almost a standard for frontend build systems, it allows developers to automate tasks that would take a lot of time or are not even possible. Installing all these packages, their dependencies with the correct versioning is not an easy task. Till yesterday the only way to do that was npm (Node Package Manager), but it was slow, sometimes very slow. This made deployments taking up to 3 minutes just to install all packages. So people tried to implement caching support on top of npm, but it never fully took off. Another problem was version and dependency handling: Npm had a possibility to lock packages to a specific versions, but it was not enforced by default.
+Using Node.js and it’s packages is almost a standard for frontend build systems, it allows developers to automate tasks that would take a lot of time or are not even possible. Installing all these packages, their dependencies with the correct versioning is not an easy task. Till yesterday the only way to do that was npm (Node Package Manager), but it was slow, sometimes very slow. This made deployments taking multiple minutes just to install all packages. So people tried to implement caching support on top of npm, but it never fully took off. Another problem was version and dependency handling: Npm had a possibility to lock packages to a specific version, but it was not enforced by default.
 
-Yesterday [Yarn](https://yarnpkg.com) was released. Yarn is a full replacement for npm (Node Package Manager). And its a [lot faster](https://yarnpkg.com/en/compare). It also has a built in local cache, plus brings it's own (and enforced) lock file.
+Yesterday [Yarn](https://yarnpkg.com) was released. Yarn is a full replacement for npm (Node Package Manager). And it's a [lot faster](https://yarnpkg.com/en/compare). It also has a built in local cache, plus brings its own (and enforced) lock file.
 
-At amazee.io our mission is to provide the best experience and tools to our developers. So we spared not time and rolled out yarn on all amazee.io servers and in our Docker images, in order for everybody out there to use it right away (see the [official documentation](https://yarnpkg.com/en/docs/) on how to use it).
+At amazee.io our mission is to provide the best experience and tools to our developers. So we spared not time and rolled out Yarn on all amazee.io servers and in our Docker images, in order for everybody out there to use it right away (see the [official documentation](https://yarnpkg.com/en/docs/) on how to use it).
 
-Happy ~~developing~~ knitting!
+Happy knitting!
 
 
 ## 2016-09-14 - 🐳 Better support of Docker for Mac
