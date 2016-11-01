@@ -26,7 +26,6 @@ We created a thorough comparison of amazee.io and our competitors: [Comparison](
 
 Find our stories at [stories.amazee.io](https://stories.amazee.io)
 
-
 ## Changelog 📃
 
 We are releasing new features every week to the amazee.io universe, find them at: [changelog.amazee.io](http://changelog.amazee.io) 
