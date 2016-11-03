@@ -110,7 +110,7 @@ The database connection:
 
 ### Step 5: Install Drupal
 
-It's time to install Drupal and test the site in your browser! Again best and easiest done via Drush, this time via `drush site-install`
+It's time to install Drupal and test the site in your browser! Again the best and easiest way is with Drush, this time via `drush site-install`
 
     🔨 drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush site-install
 
