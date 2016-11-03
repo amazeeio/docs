@@ -74,7 +74,7 @@ There are more Drush files available, read more in our [Drush Configuration File
 
 ### Step 4: Test connection to the database
 
-It's time to test! Easiest is that done with Drush, it will tell you some information about your site:
+It's time to test! That is done with Drush, it will tell you information about your site:
 
     🔨  drupal@mysite.docker.amazee.io:~/public_html (dev)$ drush status
 
