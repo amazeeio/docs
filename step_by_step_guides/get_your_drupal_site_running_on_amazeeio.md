@@ -130,7 +130,7 @@ Congratulations! You just created your first amazee.io Drupal Site!
 
 ## Add existing database
 
-You may have an already existing Drupal database you would like to import into your Docker Container. Of course, we support that.
+You may have an existing Drupal database you would like to import into your Docker Container. Of course, we support that.
 
 ### Step 1: Get a database dump
 
