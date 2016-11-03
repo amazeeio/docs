@@ -8,7 +8,7 @@ Running on Mac OS X? We created a [fully documented step by step guide on our bl
 
 ### Step 1: Get Drupal Docker Development Environment
 
-The best and easiest way to get your site running on an amazee.io server, is first to get it running inside our [Drupal Docker Development Environment](../local_docker_development/local_docker_development.md). The Docker Environment is exactly the same as the amazee.io servers, so if you site is running inside the Docker Environment, it will also run on the amazee.io servers.
+The best and easiest way to get your site running on an amazee.io server is to first to get it running inside our [Drupal Docker Development Environment](../local_docker_development/local_docker_development.md). The Docker Environment is exactly the same as the amazee.io servers, so if your site is running inside the Docker Environment, it will also run on the amazee.io servers.
 
 ### Step 2: Drupal Docker Container
 
@@ -33,10 +33,10 @@ You will not see an `index.php` file here, instead you will see a `web` folder (
 
 ### Step 3: settings.php and drushrc.php
 
-amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database, how to connect to it.  
+amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database and how to connect to it.  
 This has two main advantages:
-1. There are no passwords or usernames at all saved in settings.php files, so you safely share your whole Drupal Code, without being worried, that somebody know credentials about your site.
-2. The settings.php is the exact same one, no matter if the Drupal is running on your Local Docker, on the development or production site.
+1. There are no passwords or usernames saved in settings.php files, so you can safely share your whole Drupal Code, without sharing credentials about your site.
+2. The settings.php is the exact same on your Local Docker, on the development and on the production site. 
 
 Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
@@ -59,7 +59,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-We do not suggest to just use this simple configuration for production sites, but for now, it's all good. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
+We do not suggest to just use this simple configuration for production sites, but for now, it will do. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) for the whole magic of amazee.io settings.php files.
 
 In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
 
