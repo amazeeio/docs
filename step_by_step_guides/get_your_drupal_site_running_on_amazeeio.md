@@ -177,12 +177,12 @@ That's it! It is a good idea to clear all caches via `drush cr` for Drupal 8 or 
 
 ## Add existing files
 
-As learned during the import of the DB, the Drupal directory is completely available inside the Docker Container.  
-So to add your Drupal files, just put them in the directory you had them before, probably `sites/default/files`.
+The Drupal directory is available inside the Docker Container.  
+In order to add your Drupal files, just put them in the directory you had them before, `sites/default/files`.
 
 ## Done!
 
-Congrats to you again! You have now a full local Drupal Hosting environment at your fingertips. We wish happy drupaling.
+Congratulations! You have now a full local Drupal Hosting environment at your fingertips. We wish you happy drupaling.
 
 Btw: Pushing your site to an amazee.io server is as easy as just a git push.
 
