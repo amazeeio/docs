@@ -4,4 +4,4 @@ We provide extended example settings files for all versions of Drupal and ways o
 
 Each file is fully documented and contains best practices and explanations.
 
-If you like you can have your fully own way of handling the Drupal configuration and the settings files, please see our documentation of [Environment Variables](../environment_variables.md) to see a list of all existing environment variables.
+If you are interested you can handle Drupal configuration and the settings files as you prefere, please see our documentation of [Environment Variables](../environment_variables.md) to see a list of all existing environment variables.
