@@ -134,8 +134,8 @@ You may have an existing Drupal database you would like to import into your Dock
 
 ### Step 1: Get a database dump
 
-This step depends on how you currently host. There are a lot of different ways on how to create a database dump.  
-If your current hosting provider has Drush installed, you can use something like that:
+This step depends on how you currently host. There are many different ways on how to create a database dump.  
+If your current hosting provider has Drush installed, you can use the following:
 
     drush sql-dump --result-file=dump.sql
 
@@ -172,9 +172,8 @@ You can verify that it worked with:
     cache_container
     ... (a lot more here)
 
-That's it! It might be clever to clear all caches via `drush cr` for Drupal 8 or `drush cc all` for Drupal 7.
+That's it! It is a good idea to clear all caches via `drush cr` for Drupal 8 or `drush cc all` for Drupal 7.
 
-Enjoy your Drupal site!
 
 ## Add existing files
 
