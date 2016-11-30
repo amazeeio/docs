@@ -1,4 +1,7 @@
 # Linux `pygmy` Help
+
+<!-- toc -->
+
 Most issues with `pygmy` can be resolved with:
 
 ![Have you tried turning it off and on again?](itsupport.gif)
