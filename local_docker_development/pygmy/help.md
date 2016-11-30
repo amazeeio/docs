@@ -30,7 +30,7 @@ You should stop this service or Docker container first.
 
 If during starting of `pygmy` you see an error like that:
 
-        Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-dnsmasq: 
+        Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-dnsmasq:
         Error starting userland proxy: listen tcp 0.0.0.0:53: bind: address already in use
         Error: failed to start containers: amazeeio-dnsmasq
 
