@@ -42,6 +42,7 @@
     * [CDN Integration](add-on/cdn_integration.md)
     * [Dropguard](add-on/dropguard.md)
     * [New Relic](add-on/newrelic.md)
+* [Customizations](customizations.md)
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [Changelog](changelog.md)
