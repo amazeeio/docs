@@ -1,6 +1,6 @@
 # Grant amazee.io access to your git repository
 
-Amazee.io needs to have read access on the git repositories which needs to be deployed. To support you in getting this permissions aligned please follow following guide:
+Amazee.io needs **read access** on the git repositories which need to be deployed. Also you need to setup a **Webhook** to inform Amazee.io about repository pushes. To support you in getting this permissions aligned please follow following guide:
 
 <!-- toc -->
 
