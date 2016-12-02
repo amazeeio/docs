@@ -19,9 +19,11 @@ To create a test a custom nginx configuration:
 
   `docker-compose down`
 
-* Create an `amazeeio` directory with `nginx` subdirectory in the same level as the `docker-compose.yml` file in your repo
+* Create an `amazeeio` directory with `nginx` subdirectory in the same level as the docker-compose.yml file in your repo
 
   * Both `10fe-drupal.conf` and `20be-drupal.conf` are needed, however, your customizations should be in `20be-drupal.conf`
+
+
 
 * Copy the example nginx configuration into the amazeeio/nginx directory
 
