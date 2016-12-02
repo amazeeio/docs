@@ -42,7 +42,7 @@
     * [CDN Integration](add-on/cdn_integration.md)
     * [Dropguard](add-on/dropguard.md)
     * [New Relic](add-on/newrelic.md)
-* [Customizations](customizations.md)
+* [Service Customization](customizations.md)
     * [Solr Customization](solr-customization.md)
     * [nginx Customization](nginx-customization.md)
 * [Support](support.md)
