@@ -6,12 +6,16 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 * If already running, shut down the site's drupal container 
   `docker-compose down`
-* Create an `amazeeio` directory with a `solr` subdirectory, in the same level of your repo as the docker-compose.yml file.
+* Create an `amazeeio directory with a solr subdirectory, in the same level of your repo as the docker-compose.yml file.`
 
 * Copy the [example config files](http://cgit.drupalcode.org/search_api_solr/tree/solr-conf/3.x) from the `search_api_solr module into the amazeeio/solr directory.`
+
 * Ensure that your `docker-compose.yml file has one of our Solr capable images set as the image`
-* In the `volumes: section of the docker-compose.yml file, add the entry which will connect your custom config to solr in the container`
+
+
+* In the `volumes:` section of the `docker-compose.yml` file, add the entry which will connect your custom config to solr in the container
   `- ./docker/solr:/etc/solr/conf/drupal/conf`
+
 * Start the drupal docker container `docker-compose up -d`
 
 
