@@ -20,7 +20,9 @@ If it is desired to customize your Solr configuration, use the following steps a
   `- ./docker/solr:/etc/solr/conf/drupal/conf`
 
 
-* Start the drupal docker container `docker-compose up -d`
+* Start the drupal docker container 
+
+  `docker-compose up -d`
 
 
 
