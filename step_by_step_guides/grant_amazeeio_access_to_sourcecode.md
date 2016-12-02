@@ -4,7 +4,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 
 <!-- toc -->
 
-## Github
+## Github - Code Access
 
 1. Navigate to the Github Repository which will be deployed to amazee.io
   ![](giving-access/github1.png)
@@ -24,8 +24,25 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 6. If everything is okay you'll see that the `Copy invite link` button has disappeared now you're good to start deploying to amazee.io
 ![](giving-access/github6.png)
 
-**Webhook:** Add following webhook to have automated deployments working (see Webhooks & services): `https://deploy.amazeeio.cloud/github-webhook/`
-## Gitlab
+7. Yay! amazee.io can now access your sourcecode. You are not quite done yet. Read on and add also the Webhook to the repository.
+
+
+## Github - Webhook
+You need to add a webhook to your Github repository to inform amazee.io that code has been pushed.
+
+1. Click on `Webhooks`
+![](giving-access/github_webhook1.png)
+
+2. Click `Add webhook`
+![](giving-access/github_webhook2.png)
+
+3. Add the Payload URL : ``https://deploy.amazeeio.cloud/github-webhook/` and click `Add webhook`
+![](giving-access/github_webhook3.png)
+
+4. Check that there is a green checkmark next to your newly created webhook. This tells you that everything works as planned and the creation of the webhook has been successful.
+![](giving-access/github_webhook4.png)
+
+## Gitlab - Code Access
 1. Navigate to the Gitlab Repository which will be deployed to amazee.io
   ![](giving-access/gitlab1.png)
 
@@ -60,7 +77,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 6. Yay! amazee.io can now access your sourcecode. You are not quite done yet. Read on and add also the Webhook to the repository.
 
 ## Bitbucket - Webhook
-To notify amazee.io that code has been pushed to the repository.
+You need to add a webhook to your Bitbucket repository to inform amazee.io that code has been pushed.
 
 1. Click on Webhooks
 ![](giving-access/bitbucket_webhook1.png)
@@ -74,7 +91,6 @@ When you're done click `Save`
 ![](giving-access/bitbucket_webhook4.png)
 
 
-**Webhook:** Add following webhook to have automated deployments working (see Integrations > Webhooks): `https://deploy.amazeeio.cloud/bitbucket-hook/`
 ## Other / Generic Git Hosting
 You're using a private installation of GitLab, AWS Git repositories or something else we didn't come up with yet?
 
