@@ -75,7 +75,7 @@ Set them with
 
 Sometimes the IP address of the docker-machine VM changes on restart, which in turn causes the certificates for the VM to not work. Current versions of docker-machine don't handle this for you, and neither does Dinghy, so to fix this you need to regenerate the certificates with:
 
-    $ docker-machine regenerate-certs cachalot
+    $ docker-machine regenerate-certs amazeeio-cachalot
 
 Replace `cachalot` with the VM machine name if you aren't using the default name.
 
