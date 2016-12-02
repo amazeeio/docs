@@ -1,4 +1,4 @@
-nginx Customization
+# nginx Customization #
 
 By default, the amazee.io nginx configuration will only allow execution of index.php. If you require a customized nginx configuration, we welcome you to test locally using the Docker environment, and then amazee.io will review your customizations and add to your sites when ready.
 
