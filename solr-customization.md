@@ -12,7 +12,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 * Copy the [example config files](http://cgit.drupalcode.org/search_api_solr/tree/solr-conf/3.x) from the `search_api_solr module into the amazeeio/solr directory.`
 
-* Ensure that your `docker-compose.yml` file has one of our Solr capable images set as the `image`
+* Ensure that your `docker-compose.yml` file has one of our Solr capable images set as the `image`. See our [example files](https://github.com/amazeeio/docker)
 
 
 * In the \`volumes: section of the docker-compose.yml file, add the entry which will connect your custom config to solr in the container
