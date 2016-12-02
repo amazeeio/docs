@@ -5,7 +5,6 @@ Amazee.io needs **read access** on the git repositories which need to be deploye
 <!-- toc -->
 
 ## Github - Code Access
-
 1. Navigate to the Github Repository which will be deployed to amazee.io
   ![](giving-access/github1.png)
 
