@@ -8,7 +8,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
   `docker-compose down`
 
-* Create an `amazeeio directory with a solr subdirectory, in the same level of your repo as the docker-compose.yml file.`
+* Create an `amazeeio` directory with a `solr` subdirectory, in the same level of your repo as the `docker-compose.yml file.`
 
 * Copy the [example config files](http://cgit.drupalcode.org/search_api_solr/tree/solr-conf/3.x) from the `search_api_solr module into the amazeeio/solr directory.`
 
