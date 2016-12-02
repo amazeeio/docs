@@ -36,7 +36,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
 2. Click `Add webhook`
 ![](giving-access/github_webhook2.png)
 
-3. Add the Payload URL : ``https://deploy.amazeeio.cloud/github-webhook/` and click `Add webhook`
+3. Add the Payload URL : `https://deploy.amazeeio.cloud/github-webhook/` and click `Add webhook`
 ![](giving-access/github_webhook3.png)
 
 4. Check that there is a green checkmark next to your newly created webhook. This tells you that everything works as planned and the creation of the webhook has been successful.
