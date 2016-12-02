@@ -27,7 +27,7 @@ To create a test a custom nginx configuration:
 
 * Copy the example nginx configuration into the amazeeio/nginx directory
 
-* Add an entry to the `volumes: section of docker-compose.yml`
+* Add an entry to the `volumes:` section of `docker-compose.yml`
 
   `- ./docker/nginx:/etc/nginx/sites-enabled`
 
