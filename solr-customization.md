@@ -15,7 +15,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 * Ensure that your `docker-compose.yml` file has one of our Solr capable images set as the `image`. See our [example files](https://github.com/amazeeio/docker)
 
 
-* In the \`volumes: section of the docker-compose.yml file, add the entry which will connect your custom config to solr in the container
+* In the `volumes:` section of the `docker-compose.yml` file, add the entry which will connect your custom config to solr in the container
 
   `- ./docker/solr:/etc/solr/conf/drupal/conf`
 
