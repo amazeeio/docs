@@ -44,6 +44,7 @@
     * [New Relic](add-on/newrelic.md)
 * [Customizations](customizations.md)
     * [Solr Customization](solr-customization.md)
+    * [nginx Customization](nginx-customization.md)
 * [Support](support.md)
 * [Regular Maintenance](regular_maintenance.md)
 * [Changelog](changelog.md)
