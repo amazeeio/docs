@@ -41,7 +41,7 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 5. Verify that the user has been added to your git repository. you're good to go ahead and start you first deployment
   ![](giving-access/gitlab6.png)
 
-## Bitbucket
+## Bitbucket - Code Access
 1. Navigate to the Bitbucket Repository which will be deployed to Amazee.io
   ![](giving-access/bitbucket1.png)
 
@@ -56,6 +56,23 @@ Amazee.io needs to have read access on the git repositories which needs to be de
 
 5. Afterwards you should see the User in the List with the appropriate access permission
 ![](giving-access/bitbucket5.png)
+
+6. Yay! amazee.io can now access your sourcecode. You are not quite done yet. Read on and add also the Webhook to the repository.
+
+## Bitbucket - Webhook
+To notify amazee.io that code has been pushed to the repository.
+
+1. Click on Webhooks
+![](giving-access/bitbucket_webhook1.png)
+2. Click on `Add Webhook`
+![](giving-access/bitbucket_webhook2.png)
+3. Choose a Title and add the Webhook url `https://deploy.amazeeio.cloud/bitbucket-hook/`
+You don't need to change SSL/TLS or Triggers default values are fine.
+When you're done click `Save`
+![](giving-access/bitbucket_webhook3.png)
+4. You get back to the overview where you can see the newly created webhook.
+![](giving-access/bitbucket_webhook4.png)
+
 
 **Webhook:** Add following webhook to have automated deployments working (see Integrations > Webhooks): `https://deploy.amazeeio.cloud/bitbucket-hook/`
 ## Other / Generic Git Hosting
