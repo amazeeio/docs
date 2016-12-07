@@ -68,6 +68,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
   ![](giving-access/gitlab_webhook3.png)
 
 4. Click `Test`
+  
   Please note, until the repo is associated with a sitegroup, this test will fail.
   ![](giving-access/gitlab_webhook4.png)
 
