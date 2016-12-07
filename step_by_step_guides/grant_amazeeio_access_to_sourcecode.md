@@ -69,6 +69,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
 
 4. Click `Test`
   Please note, until the repo is associated with a sitegroup, this test will fail.
+  ![](giving-access/gitlab_webhook4.png)
 
 ## Bitbucket - Code Access
 1. Navigate to the Bitbucket Repository which will be deployed to Amazee.io
