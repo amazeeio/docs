@@ -58,7 +58,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
   ![](giving-access/gitlab6.png)
 
 ## Gitlab - Webhook
-1. Click on `Webhooks`
+1. On the top right corner click the gear icon and then `Webhooks`
   ![](giving-access/gitlab-webhook1.png)
 
 2. Add the URL : `https://deploy.amazeeio.cloud/gitlab/build_now`
