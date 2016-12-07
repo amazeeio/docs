@@ -62,6 +62,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
   ![](giving-access/gitlab-webhook1.png)
 
 2. Add the URL : `https://deploy.amazeeio.cloud/gitlab/build_now`
+  ![](giving-access/gitlab-webhook2.png)
 
 ## Bitbucket - Code Access
 1. Navigate to the Bitbucket Repository which will be deployed to Amazee.io
