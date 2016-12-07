@@ -59,10 +59,16 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
 
 ## Gitlab - Webhook
 1. On the top right corner click the gear icon and then `Webhooks`
-  ![](giving-access/gitlab-webhook1.png)
+  ![](giving-access/gitlab_webhook1.png)
 
 2. Add the URL : `https://deploy.amazeeio.cloud/gitlab/build_now`
-  ![](giving-access/gitlab-webhook2.png)
+  ![](giving-access/gitlab_webhook2.png)
+
+3. Make sure `Push events` is selected and click `Add Webhook`
+  ![](giving-access/gitlab_webhook3.png)
+
+4. Click `Test`
+  Please note, until the repo is associated with a sitegroup, this test will fail.
 
 ## Bitbucket - Code Access
 1. Navigate to the Bitbucket Repository which will be deployed to Amazee.io
