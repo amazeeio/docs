@@ -45,7 +45,7 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
 1. Navigate to the Gitlab Repository which will be deployed to amazee.io
   ![](giving-access/gitlab1.png)
 
-2. On the top right corner slick on the wrench icon and then `Members`
+2. On the top right corner slick on the gear icon and then `Members`
   ![](giving-access/gitlab2.png)
 
 3. Search for the user `amazeeio-deploy`
@@ -56,6 +56,12 @@ You need to add a webhook to your Github repository to inform amazee.io that cod
 
 5. Verify that the user has been added to your git repository. you're good to go ahead and start you first deployment
   ![](giving-access/gitlab6.png)
+
+## Gitlab - Webhook
+1. Click on `Webhooks`
+  ![](giving-access/gitlab-webhook1.png)
+
+2. Add the URL : `https://deploy.amazeeio.cloud/gitlab/build_now`
 
 ## Bitbucket - Code Access
 1. Navigate to the Bitbucket Repository which will be deployed to Amazee.io
