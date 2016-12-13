@@ -35,3 +35,9 @@ If during starting of `pygmy` you see an error like that:
         Error: failed to start containers: amazeeio-dnsmasq
 
 You are probably on Ubuntu and the by default started DNS server by Ubuntu conflicts with the one we provide with `pygmy`. You should disable it, see here: http://askubuntu.com/a/233223 (no worries, the default started DNS server is actually not used, so it's safe to disable it).
+
+If you still run into the error run following command `sudo netstat -tulpn` to see the processlist look for the service running on port 53 (you should find that process in the `Local Address` column). Look for the Process ID (PID)
+
+With the Process ID you can now run following command:
+
+> sudo kill [Process ID]
