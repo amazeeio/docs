@@ -38,7 +38,7 @@ docker-compose up -d
 
 Unfortunately the nice dnsmasq trick used on OS X and Linux does not work on Windows. So we are forced to define each single Drupal Docker Container you would like to run via the Windows Hosts File.
 
-There is a nice tool called "Hosts File Editor" that you can find and download here: [https:\/\/hostsfileeditor.codeplex.com\/](https://hostsfileeditor.codeplex.com/).   
+There is a nice tool called "Hosts File Editor" that you can find and download here: [https://github.com/scottlerch/HostsFileEditor/releases](https://github.com/scottlerch/HostsFileEditor/releases).   
 We suggest to use that.
 
 For each Drupal Docker Container you start, just define it's URL with the IP Address 127.0.0.1.
@@ -76,4 +76,3 @@ Run `ssh-key-add.cmd` from inside the `amazeeio-docker-windows` folder and pass 
 ```
 ssh-key-add.cmd C:\Users\[yourname]\.ssh\id_rsa
 ```
-
