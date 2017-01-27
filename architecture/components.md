@@ -46,3 +46,7 @@ Web development would be much more complicated if there weren't any Dependency m
 
 [NodeJS](https://nodejs.org/en/) is a JavaScript runtime which supports you in simplifying your frontend workflow by enabling you to make use of the rich ecosystem which can be accessed by its package manager NPM.
 amaze.io ships per default with NodeJS 6 LTS, but you can define any other NodeJS version via the `.amazeeio.yml` files, [read more](../drupal/amazeeioyml_file.md) about them.
+
+### Yarn
+
+[Yarn Package Manager](https://yarnpkg.com/) is a full replacement for npm (Node Package Manager) — and it’s a lot faster. Yarn has a built-in local cache, plus its own (and enforced) lock file.
