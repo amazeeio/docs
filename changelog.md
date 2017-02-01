@@ -7,7 +7,7 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 ## 2017-01-31 - MailHog on Local Docker Environments and better Linux Docker support
 
-**TL;DR:** Update our Docker Images and `pygmy` or `cachalot`
+TL;DR: Update our Docker Images and `pygmy` or `cachalot`
 
 As promised in our [2017 Roadmap](https://stories.amazee.io/amazee-io-2017-product-roadmap-4cd4ce394ae3#.jgezlr9lk), we are continuously improving the Local Docker Environments. Today we are adding [MailHog](https://github.com/mailhog/MailHog) to the toolset. MailHog is a graphical interface for locally sent emails. As it is technically not possible to send emails from local systems, we now forward all mails generated within the Docker Container to a MailHog Docker Container where you can read them, inspect them and even have desktop notifications. The perfect tool for anybody who has to work with emails locally. 
 
@@ -15,7 +15,7 @@ We also improved our support for running the Local Development Environment on Li
 
 Both changes involve new Docker Images and a new version of `pygmy` and `cachalot`, so read carefully how to upgrade:
 
-##### Upgrade Docker Images
+**Upgrade Docker Images**
 
 1. `docker-compose pull` (run in each Drupal site)
 2. `docker-compose up -d --force` (restarts the container with the new image)
@@ -24,7 +24,7 @@ Hint: as we have 4 different Docker Images (php7/php56, solr/basic). You don't n
 
 In case you run into issues: `docker-compose down -v` and then `docker-compose up -d` - This will though remove the local database, so make sure you don't have any unsynced things in there.
 
-#### Update `pygmy`
+**Update `pygmy`**
 
 1. `gem update pygmy`
 2. `gem uninstall pygmy` (select the old version to deinstall)
@@ -33,7 +33,7 @@ In case you run into issues: `docker-compose down -v` and then `docker-compose u
 5. `pygmy version` (it should show at least version `0.9.7`)
 6. Visit http://mailhog.docker.amazee.io/ and you should see MailHog loaded.
 
-#### Update `cachalot`
+**Update `cachalot`**
 
 1. `brew update`
 2. `brew upgrade cachalot`
@@ -42,7 +42,7 @@ In case you run into issues: `docker-compose down -v` and then `docker-compose u
 5. `cachalot version` (it should show at least version `0.12.1`)
 6. Visit http://mailhog.docker.amazee.io/ and you should see MailHog loaded.
 
-#### Problems?
+**Problems?**
 
 Join our [Slack](https://slack.amazee.io/) and we gonna help you :)
 
