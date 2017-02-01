@@ -6,7 +6,10 @@
         "layout",
         "gtm",
         "hints",
-        "advanced-emoji"
+        "advanced-emoji",
+        "-lunr",
+        "-search",
+        "search-pro"
     ],
     "pluginsConfig": {
         "layout": {
