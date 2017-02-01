@@ -19,10 +19,9 @@ Both changes involve new Docker Images and a new version of `pygmy` and `cachalo
 
 1. `docker-compose pull` (run in each Drupal site)
 2. `docker-compose up -d --force` (restarts the container with the new image)
+3. In case you run into issues: `docker-compose down -v` and then `docker-compose up -d` - This will though remove the local database, so make sure you don't have any unsynced things in there.
 
 Hint: as we have 4 different Docker Images (php7/php56, solr/basic). You don't need to run it in every project, just make sure you run it for each of the four images (you can see which one you use in `docker-compose.yml` under `images:`)
-
-In case you run into issues: `docker-compose down -v` and then `docker-compose up -d` - This will though remove the local database, so make sure you don't have any unsynced things in there.
 
 **Update `pygmy`**
 
