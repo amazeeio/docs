@@ -5,6 +5,53 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-01-31 - MailHog on Local Docker Environments and better Linux Docker support
+
+**TL;DR:** Update our Docker Images and `pygmy` or `cachalot`
+
+As promised in our [2017 Roadmap](https://stories.amazee.io/amazee-io-2017-product-roadmap-4cd4ce394ae3#.jgezlr9lk), we are continuously improving the Local Docker Environments. Today we are adding [MailHog](https://github.com/mailhog/MailHog) to the toolset. MailHog is a graphical interface for locally sent emails. As it is technically not possible to send emails from local systems, we now forward all mails generated within the Docker Container to a MailHog Docker Container where you can read them, inspect them and even have desktop notifications. The perfect tool for anybody who has to work with emails locally. 
+
+We also improved our support for running the Local Development Environment on Linux. In the past the `drupal` user within the Docker container was running as User-ID `3201`. For Linux systems it is better to run them as User-ID `1000`, which is the most common User-ID on Linux systems and with that generates less issues with the mounted files. In the past the workaround was to change the permissions of mounted files to 777, this should now not be necessary anymore.
+
+Both changes involve new Docker Images and a new version of `pygmy` and `cachalot`, so read carefully how to upgrade:
+
+##### Upgrade Docker Images
+
+1. `docker-compose pull` (run in each Drupal site)
+2. `docker-compose up -d --force` (restarts the container with the new image)
+
+Hint: as we have 4 different Docker Images (php7/php56, solr/basic). You don't need to run it in every project, just make sure you run it for each of the four images (you can see which one you use in `docker-compose.yml` under `images:`)
+
+In case you run into issues: `docker-compose down -v` and then `docker-compose up -d` - This will though remove the local database, so make sure you don't have any unsynced things in there.
+
+#### Update `pygmy`
+
+1. `gem update pygmy`
+2. `gem uninstall pygmy` (select the old version to deinstall)
+3. `pygmy update`
+4. `pygmy restart`
+5. `pygmy version` (it should show at least version `0.9.7`)
+6. Visit http://mailhog.docker.amazee.io/ and you should see MailHog loaded.
+
+#### Update `cachalot`
+
+1. `brew update`
+2. `brew upgrade cachalot`
+3. `cachalot docker_update`
+4. `cachalot restart`
+5. `cachalot version` (it should show at least version `0.12.1`)
+6. Visit http://mailhog.docker.amazee.io/ and you should see MailHog loaded.
+
+#### Problems?
+
+Join our [Slack](https://slack.amazee.io/) and we gonna help you :)
+
+## 2017-01-31 - Drupal Console Launcher
+
+Since the beginning we had support for running Drupal Console, but you had to run it via the a bit cumbersome command `./vendor/bin/drupal`. Starting today every site and the local development environment has the Drupal Console Launcher installed. Which allows you to use the Drupal Conseole like you would expect, just with:
+
+    drupal
+
 ## 2016-10-12 - Welcome Yarn to the family
 
 Using Node.js and it’s packages is almost a standard for frontend build systems, it allows developers to automate tasks that would take a lot of time or are not even possible. Installing all these packages, their dependencies with the correct versioning is not an easy task. Till yesterday the only way to do that was npm (Node Package Manager), but it was slow, sometimes very slow. This made deployments taking multiple minutes just to install all packages. So people tried to implement caching support on top of npm, but it never fully took off. Another problem was version and dependency handling: Npm had a possibility to lock packages to a specific version, but it was not enforced by default.
