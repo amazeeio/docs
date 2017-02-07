@@ -144,6 +144,10 @@ Defines installation and usage of software or tools on the CLI. (the PHP Version
 
 Defines the version number of Node.js that should automatically be installed and used. Can be defined as either just a major version number like `4` or specific versions like `6.3.0`. We're using `nvm` to handle the different nodejs versions, please check with nvm which versions do apply.
 
+{% hint style='info' %}
+**Performance Implications**: Be aware that deployments and logins will be slower when a specific node version is defined.
+{% endhint %}
+
 If defined, every connection via SSH to a site or deployment tasks will have the defined version of nodejs first installed and all nodejs specific commands are ran with that version (like `node` or `npm`).
 
 If no versions of node is defined, the default of amazee.io (newest LTS version) is used.
