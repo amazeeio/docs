@@ -5,13 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "gitbook-cli": "^2.3.0",
-    "gitbook-plugin-atoc": "git://github.com/dasrecht/gitbook-plugin-atoc#5a4411f7b8193c4a197cdaf628cc7ac127b65153",
-    "gitbook-plugin-copy-code-button": "^0.0.2",
-    "gitbook-plugin-advanced-emoji": "^0.2.1",
-    "gitbook-plugin-gtm": "^0.0.4",
-    "gitbook-plugin-heading-anchors": "^1.0.3",
-    "gitbook-plugin-hints": "^1.0.1",
-    "gitbook-plugin-layout": "^0.0.1"
+    "gitbook-plugin-atoc": "git://github.com/dasrecht/gitbook-plugin-atoc#5a4411f7b8193c4a197cdaf628cc7ac127b65153"
   },
   "devDependencies": {},
   "scripts": {
