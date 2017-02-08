@@ -4,13 +4,13 @@ Every site within amazee.io runs in a certain environment. Either this is **prod
 
 ## Production Environment
 
-- Varnish enabled by default
-- NewRelic is enabled
-- PHP Errors are not displayed (`display_errors = off` and `display_startup_errors = off`)
+- **Varnish** enabled by default
+- **NewRelic** is enabled
+- **PHP Errors** are not displayed (`display_errors = off` and `display_startup_errors = off`)
 
 ## Development Environment
 
-- Varnish bypassed by default
-- NewRelic is disabled
-- PHP Errors are displayed (`display_errors = on` and `display_startup_errors = on`)
-- Every server response is appended with a no-index header that tells search engines to not index this url (`X-Robots-Tag: noindex, nofollow`)
+- **Varnish** bypassed by default
+- **NewRelic** is disabled
+- **PHP Errors** are displayed (`display_errors = on` and `display_startup_errors = on`)
+- **Response Headers** - Every server response is appended with a no-index header that tells search engines to not index this url (`X-Robots-Tag: noindex, nofollow`)
