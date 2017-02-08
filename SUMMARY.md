@@ -24,6 +24,7 @@
     * [Environment type](architecture/environment_type.md)
     * [E-Mail Delivery](architecture/e-mail_delivery.md)
     * [URL Structure](architecture/url-structure.md)
+    * [Upstream Testing](architecture/backend_upstream.md)
 * [Automated Deployments](automated_deployments.md)
 * [.amazeeio.yml file](drupal/amazeeioyml_file.md)
     * [example for Drupal 7](drupal/example-for-drupal-7.md)
@@ -50,4 +51,3 @@
 * [Changelog](changelog.md)
 * [FAQ](faq.md)
 * [Comparison](comparison.md)
-
