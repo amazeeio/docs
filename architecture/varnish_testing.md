@@ -1,4 +1,4 @@
-# Backend and Upstream Testing
+# Varnish testing
 
 Sometimes you need to debug an issue on production without varnish being in your way.
 Or you need to debug a development issue and you want to have varnish cache enabled to see if it works.
