@@ -1,8 +1,8 @@
 # Varnish testing
 
 We make use of Varnish to cache your website and deliver it as fast as possible.
-Varnish is enabled on `production` sites by default. For `development` sites and on
-your local docker environment Varnish is installed but not enabled for caching.
+Varnish is enabled on `production` environments by default. For `development` environments and on
+your local docker environment Varnish is installed but not actively caching.
 
 Sometimes you need to debug an issue on production without varnish being in your way.
 Or you need to debug a development issue and you want to have varnish cache enabled to see if it works.
