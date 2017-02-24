@@ -59,7 +59,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-We do not suggest to just use this simple configuration for production sites, but for now, it will do. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) and check out the flexibility amazee.io settings.php files allows. 
+We **do not** suggest to just use this simple configuration for production sites, but for now, it will do. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) and check out the flexibility amazee.io settings.php files allows. 
 
 In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
 
