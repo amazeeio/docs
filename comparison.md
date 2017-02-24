@@ -195,7 +195,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>Caching</strong></td>
 				<td>✅ Varnish 4, definable max-caching time</td>
 				<td>✅ Varnish, maximum caching of 24h</td>
-				<td>✅ Varnish 3</td>
+				<td>✅ Varnish 4</td>
 				<td>✅ No Varnish but HTTP Caching on nginx level, maximum caching of 15min (⚠️)</td>
 			</tr>
 			<tr>
