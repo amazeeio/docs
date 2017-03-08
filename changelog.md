@@ -7,7 +7,7 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 ## 2017-03-07 - PostgreSQL PHP Module
 
-We might not have PostgreSQL Databases yet (!), but we added the PHP Module for PostgreSQL to our Docker containers and production environments, so in case you would like to connect to an external PostgreSQL Server you can now perfectly do that. 
+We might not have PostgreSQL Databases yet (!), but we added the PHP Module for PostgreSQL to our Docker containers and production environments, so in case you would like to connect to an external PostgreSQL Server you can now perfectly do that. Wanna use this in your local docker? `docker-compose pull` 
 
 ## 2017-01-31 - MailHog on Local Docker Environments and better Linux Docker support
 
