@@ -29,7 +29,7 @@ To create a test a custom nginx configuration:
 
 * Add an entry to the `volumes:` section of `docker-compose.yml`
 
-  `- ./docker/nginx:/etc/nginx/sites-enabled`
+  `- ./amazeeio/nginx:/etc/nginx/sites-enabled`
 
 * Start the Drupal Docker container
 

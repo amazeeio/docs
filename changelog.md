@@ -1,15 +1,23 @@
 # Changelog
 
-Hi there! 
+Hi there!
 As we are improving amazee.io we started to release changelogs to highlight changes and new additions to the hosting stack.
 
 <!-- toc -->
+
+## 2017-03-07 - Custom domains for development sites
+
+Launching today, we now support the use of your own FQDN on development sites. This now means you can have `staging.customersite.com` as your URL, instead of the amazee.io server URLs. And as a bonus, if you use this you can utilized Let's Encrypt for these development sites. Want to put this in place for your site? Just reach out in Slack and we'll make it happen!
+
+## 2017-03-07 - PostgreSQL PHP Module
+
+We might not have PostgreSQL Databases yet (!), but we added the PHP Module for PostgreSQL to our Docker containers and production environments, so in case you would like to connect to an external PostgreSQL Server you can now perfectly do that. Wanna use this in your local docker? `docker-compose pull`
 
 ## 2017-01-31 - MailHog on Local Docker Environments and better Linux Docker support
 
 TL;DR: Update our Docker Images and `pygmy` or `cachalot`
 
-As promised in our [2017 Roadmap](https://stories.amazee.io/amazee-io-2017-product-roadmap-4cd4ce394ae3#.jgezlr9lk), we are continuously improving the Local Docker Environments. Today we are adding [MailHog](https://github.com/mailhog/MailHog) to the toolset. MailHog is a graphical interface for locally sent emails. As it is technically not possible to send emails from local systems, we now forward all mails generated within the Docker Container to a MailHog Docker Container where you can read them, inspect them and even have desktop notifications. The perfect tool for anybody who has to work with emails locally. 
+As promised in our [2017 Roadmap](https://stories.amazee.io/amazee-io-2017-product-roadmap-4cd4ce394ae3#.jgezlr9lk), we are continuously improving the Local Docker Environments. Today we are adding [MailHog](https://github.com/mailhog/MailHog) to the toolset. MailHog is a graphical interface for locally sent emails. As it is technically not possible to send emails from local systems, we now forward all mails generated within the Docker Container to a MailHog Docker Container where you can read them, inspect them and even have desktop notifications. The perfect tool for anybody who has to work with emails locally.
 
 We also improved our support for running the Local Development Environment on Linux. In the past the `drupal` user within the Docker container was running as User-ID `3201`. For Linux systems it is better to run them as User-ID `1000`, which is the most common User-ID on Linux systems and with that generates less issues with the mounted files. In the past the workaround was to change the permissions of mounted files to 777, this should now not be necessary anymore.
 
@@ -274,7 +282,7 @@ Happy Deployments!
 ---
 ## 2016-04-12 IPv6 - Redirects and Resolver
 
-IPv6 is gaining momentum but it looked like our server level redirect didn't support it right from the beginning ☔️. And visitors ended up seeing our splash-page 😾.  
+IPv6 is gaining momentum but it looked like our server level redirect didn't support it right from the beginning ☔️. And visitors ended up seeing our splash-page 😾.
 
 We fixed that by now and all domain redirects work now out of the box with IPv6 👌🏼
 
