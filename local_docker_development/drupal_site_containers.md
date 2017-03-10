@@ -58,7 +58,7 @@ function ddrush() {
 }
 ```
 
-Fish:
+Fish Shell - ([fishshell.com](https://fishshell.com/)):
 ```
 function drush --description 'Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. '
   if test -f (git root)/.amazeeio.yml
