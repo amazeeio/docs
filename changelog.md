@@ -7,7 +7,7 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 ## 2017-03-07 - Custom domains for development sites
 
-Launching today, we now support the use of your own FQDN on development sites. This now means you can have `staging.customersite.com` as your URL, instead of the amazee.io server URLs. And as a bonus, if you use this you can utilized Let's Encrypt for these development sites. Want to put this in place for your site? Just reach out in Slack and we'll make it happen!
+Launching today, we now support the use of your own FQDN on development sites. This now means you can have `staging.example.com` as your URL, instead of the amazee.io server URLs. And as a bonus, if you use this you can utilized Let's Encrypt for these development sites. Want to put this in place for your site? Just reach out in Slack and we'll make it happen!
 
 ## 2017-03-07 - PostgreSQL PHP Module
 
