@@ -6,11 +6,9 @@
 
  OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Until Docker has released their Docker for Mac, we provide our own system, called `cachalot`
 
-{% hint style='info' %}
-If you already are using the Docker for Mac  client, please head over to the `pygmy`, it is fully compatible to Docker for Mac.
-We still advise our customers to use cachalot on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker.
+{% hint style='working' %}
+While Docker for Mac and `pygmy` work well. We still advise to use `cachalot` on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker itself.
 {% endhint %}
-
 
 `cachalot` will handle for you:
 * Start it's own Virtual Machine which runs boot2docker. It does that because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
