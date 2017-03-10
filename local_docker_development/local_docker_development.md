@@ -17,6 +17,9 @@ The shared docker containers for HAProxy and the SSH Agent, these are used by al
 ##### [Documentation for OS X ](./os_x_cachalot.md)
 
 ##### [Documentation for Linux & OS X ](./pygmy.md)
+{% hint style='info' %}
+We still advise our customers to use cachalot on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker.
+{% endhint %}
 
 ##### [Documentation for Windows ](./windows.md)
 

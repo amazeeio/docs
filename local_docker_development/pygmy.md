@@ -7,6 +7,7 @@
 
 {% hint style='info' %}
 If you don't run the new Docker for Mac: Sorry `pygmy` is not for you, we have a bigger whale for you: `cachalot` for OS X!
+We still advise our customers to use cachalot on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker.
 {% endhint %}
 
 `pygmy` will handle for you:

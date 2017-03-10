@@ -8,6 +8,7 @@
 
 {% hint style='info' %}
 If you already are using the Docker for Mac  client, please head over to the `pygmy`, it is fully compatible to Docker for Mac.
+We still advise our customers to use cachalot on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker.
 {% endhint %}
 
 
