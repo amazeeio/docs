@@ -46,6 +46,7 @@ If you want to connect to a container wherever you are right now with your bash:
 
 To use drush, you can either connect to the container as above, or add a bash function that will connect for you to run your drush command. To add the function, add this to your .bashrc file:
 
+Bash:
 ```
 function ddrush() {
   args=""
@@ -56,6 +57,21 @@ function ddrush() {
   docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/\"\$WEBROOT\" && PATH=`pwd`/../vendor/bin:$PATH && drush ${args}"
 }
 ```
+
+Fish:
+```
+function drush --description 'Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. '
+  if test -f (git root)/.amazeeio.yml
+    echo "Using Amazee.io Docker Container Drush"
+    command docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/docroot && PATH=`pwd`/../vendor/bin:\$PATH && drush $argv"
+  else
+    command drush $argv
+  end
+end
+
+funcsave drush
+```
+
 
 When you next start a bash session, you'll be able to use `ddrush` just like your normal `drush` command.
 
