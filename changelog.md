@@ -5,6 +5,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-03-14 - New Drush Alias PHP File
+
+As from today there are new `aliases.drushrc.php` files available which are more robust. Also the endpoint of the inclusion shifts from github to our own servers. For forseeable future we keep the old way of including the aliases file available but will start to notify customers about the update during the drush run. You can find the new files here [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php).
+
 ## 2017-03-07 - Custom domains for development sites
 
 Launching today, we now support the use of your own FQDN on development sites. This now means you can have `staging.example.com` as your URL, instead of the amazee.io server URLs. And as a bonus, if you use this you can utilized Let's Encrypt for these development sites. Want to put this in place for your site? Just reach out in Slack and we'll make it happen!
