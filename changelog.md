@@ -5,6 +5,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-03-14 - Support for Solr 5/6
+
+Starting today, sites running on our compact tier have access to Solr 5/6. This also announces the first production service which we run in Docker. If you want your site to use this feature, please ping us and we will enable it for you. To set up your local environment, just grab the correct docker-compose.yml file, examples are in our [repo](https://github.com/amazeeio/docker).
+
 ## 2017-03-14 - New Drush Alias PHP File
 
 As from today there are new `aliases.drushrc.php` files available which are more robust. Also the endpoint of the inclusion shifts from github to our own servers. For forseeable future we keep the old way of including the aliases file available but will start to notify customers about the update during the drush run. You can find the new files here [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php).
