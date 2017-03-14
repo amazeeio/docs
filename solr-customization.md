@@ -1,7 +1,9 @@
 # Solr Customization
 
 amazee.io offers the following Solr versions, and provides a default configuration from the [search\_api\_solr module](http://dgo.to/search_api_solr) module for each.
-||Version||Schema||
+
+| Version | Schema |
+| -- | -- |
 | 3.6.2 | drupal-4.3-solr-3.x. |
 | 5.5.3 | drupal-4.4-solr-5.x |
 | 6.3.0 | drupal-5.2-solr-6.x |
@@ -44,7 +46,8 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 * Under the `solr` service definition, add a `volume` entry like
 
-```    volumes:
+```
+    volumes:
       - ./amazeeio/solr:/solr-conf
 ```
 
