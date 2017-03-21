@@ -21,7 +21,7 @@ Make sure this file is updated on all branches.
 
 **Timeline of fadeout for old file**  
 2017-03-14 - Releasing new `aliases.drushrc.php` file.  
-2017-03-21 - Starting to show warning message when using old file.  
+2017-03-21 - Starting to show a warning message when the old file is still used.  
 2017-05-01 - Disabling drush API functionality within old file with message to upgrade to the new version of `aliases.drushrc.php`  
 
 ## 2017-03-07 - Custom domains for development sites
