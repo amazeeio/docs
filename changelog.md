@@ -12,14 +12,14 @@ Starting today, sites running on our compact tier have access to Solr 5/6. This 
 ## 2017-03-14 - New Drush Aliases PHP File
 
 Since today there are more robust `aliases.drushrc.php` files available, this file tells Drush how to communicate with our API and we're switching from `file_get_contents()` to `curl`. Additionally the file included within is now hosted on our own servers instead of Github. You can find the new files here [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php).
-For the next couple of weeks we keep the old file on github available but will start to notify customers about the update during a drush command. 
+For the next couple of weeks we keep the old file on github available but will start to notify customers about the update during a drush command.
 
 **How to upgrade**
 In order to use the new `aliases.drushrc.php` file just replace the existing file with this updated version: [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php) (It's the same for Drupal 6, 7 and 8).
 
 Make sure this file is updated on all branches.
 
-**Timeline of fadout for old file**
+**Timeline of fadeout for old file**
 2017-03-14 - Releasing new aliases.drushrc.php file.
 2017-03-21 - Starting to show warning message when using old file.
 2017-05-01 - Disabling drush api functionality within old file with message to upgrade to the new version of aliases.drushrc.php
