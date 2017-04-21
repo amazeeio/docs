@@ -8,3 +8,8 @@ a.gitbook-link {
 .book .book-body .page-wrapper .page-inner {
   max-width: 1000px;
 }
+
+/* Remove annoying pref and next navigation arrows */
+.navigation.navigation-prev, .navigation.navigation-next  {
+  display: none;
+}
