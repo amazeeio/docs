@@ -60,7 +60,7 @@ function ddrush() {
 
 Fish Shell - ([fishshell.com](https://fishshell.com/)):
 ```
-function drush --description 'Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. '
+function ddrush --description 'Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. '
   if test -f (git root)/.amazeeio.yml
     echo "Using Amazee.io Docker Container Drush"
     command docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/docroot && PATH=`pwd`/../vendor/bin:\$PATH && drush $argv"
