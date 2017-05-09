@@ -63,6 +63,10 @@ Or for **zsh** users:
 
     echo "eval \$(cachalot env)" >> ~/.zshrc
 
+Or for **fish** users:
+
+    echo "eval (cachalot env)" >> ~/.config/fish/config.fish
+
 To check that everything has been installed correctly, open http://docker.amazee.io/stats and you should see a Status Page of haproxy.
 
 **You are all set-up!** Are you ready to get your first site setup on your local environment? Yes? Then head over to [Part II: Drupal Docker Containers](drupal_site_containers.md).
