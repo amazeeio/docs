@@ -51,3 +51,4 @@
 * [Changelog](changelog.md)
 * [FAQ](faq.md)
 * [Comparison](comparison.md)
+* [Events](events.md)

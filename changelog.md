@@ -5,6 +5,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-05-16 - Cachalot update ##
+
+Today we released a small update to Cachalot, it includes some behind the scene fixes, but most importantly we have introduced a sudoers file so that you no longer need to sudo with every start/stop of Cachalot. Update to the latest version, then run `cachalot sudoers_configure` to put it in place, or, it will be installed the next time you start Cachalot.
+
 ## 2017-03-14 - Support for Solr 5/6
 
 Starting today, sites running on our compact tier have access to Solr 5/6. This also announces the first production service which we run in Docker. If you want your site to use this feature, please ping us and we will enable it for you. To set up your local environment, just grab the correct docker-compose.yml file, examples are in our [repo](https://github.com/amazeeio/docker).

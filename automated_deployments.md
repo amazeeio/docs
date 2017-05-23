@@ -37,7 +37,7 @@ This shows the order of a production deployment. If on a cluster stack, these ta
   * If any of these `before_deploy` tasks failed (return code is not 0), the deployment is stopped immediately and the created directory for the failed deployment within the `releases` directory is removed.
 
 4. The `public_html` symlink is switched to the new folder within `releases` 
-  * This is referred to the actual **deploy** to happening (this why the tasks are called `before` and `after` deploy tasks)
+  * This is referred to as the actual **deploy**. (this why the tasks are called `before` and `after` deploy tasks)
 
 5. The `after_deploy` tasks are executed (if on cluster only on one backend!).
   * Important: `after_deploy` tasks should be used for tasks that change database related things like `drush updb` or for tasks that should be executed only once in a cluster environment, like `drush cr`.

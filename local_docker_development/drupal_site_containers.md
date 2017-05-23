@@ -28,13 +28,13 @@ To run commands like `git` or other things within the container, you need to con
 
 There are two ways for that:
 
-### Connect via `docker-compose` (easier, but does not work in Windows)
+### Connect via `docker-compose` (easier)
 
 This is the easier way, you need to be in the same folder where also the `docker-compose.yml` for that to work:
 
     docker-compose exec --user drupal drupal bash
 
-### Connect via `docker` (only way for Windows)
+### Connect via `docker`
 
 If you want to connect to a container wherever you are right now with your bash:
 
@@ -61,7 +61,7 @@ function ddrush() {
 Fish Shell - ([fishshell.com](https://fishshell.com/)):
 ```
 function ddrush --description 'Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. '
-  if test -f (git root)/.amazeeio.yml
+  if test -f (git rev-parse --show-toplevel)/.amazeeio.yml
     echo "Using Amazee.io Docker Container Drush"
     command docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/docroot && PATH=`pwd`/../vendor/bin:\$PATH && drush $argv"
   else
