@@ -78,7 +78,7 @@ Join our [Slack](https://slack.amazee.io/) and we gonna help you :)
 
 ## 2017-01-31 - Drupal Console Launcher
 
-Since the beginning we had support for running Drupal Console, but you had to run it via the a bit cumbersome command `./vendor/bin/drupal`. Starting today every site and the local development environment has the Drupal Console Launcher installed. Which allows you to use the Drupal Conseole like you would expect, just with:
+Since the beginning we had support for running Drupal Console, but you had to run it via the a bit cumbersome command `./vendor/bin/drupal`. Starting today every site and the local development environment has the Drupal Console Launcher installed. Which allows you to use the Drupal Console like you would expect, just with:
 
     drupal
 
