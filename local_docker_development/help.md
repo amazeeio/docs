@@ -116,7 +116,7 @@ This will remove your whole local MySQL database and maybe existing other local 
 {% endhint %}
 
 
-But sometimes we might have some old volumes and images that we don't need anymore, you can also get rid of them:
+If you get an error like `cannot create temp file for here-document: No space left on device` then you can free up space by removing old volumes and images that we don't need anymore:
 
     docker volume rm $(docker volume ls -q)
 
