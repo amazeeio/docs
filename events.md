@@ -1,4 +1,5 @@
 Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at hello@amazee.io.
+
 # 2017 Events
 ### December
 * No events yet!
@@ -10,7 +11,7 @@ Here you'll find each event amazee.io supports via organizing, sponsoring, speak
 * BADCamp
 
 ### September
-* DevOpsDays London
+* [DevOpsDays London](http://www.devopsdays.org/events/2017-london)
 
 ### August
 * GovCon
