@@ -1,55 +1,73 @@
-Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at hello@amazee.io. 
+Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at hello@amazee.io.
 # 2017 Events
-### December 
+### December
 * No events yet!
+
 ### November
-* Drupal South Auckland, New Zealand 
+* Drupal South Auckland, New Zealand
+
 ### October
 * BADCamp
+
 ### September
-* DevOpsDays London 
+* DevOpsDays London
+
 ### August
-* GovCon 
+* GovCon
 * Devops Days Portland
 * DrupalCamp Costa Rica
+
 ### July
-* Drupal Business & Community Days Heidelberg 
-* DrupalCamp Colorado 
+* Drupal Business & Community Days Heidelberg
+* DrupalCamp Colorado
+
 ### June
 * Texas Camp
 * Twin Cities Drupal Camp
 * DigiComp Dev Days
-### May 
+
+### May
 * DevOpsDays Zurich
 * J on the Beach
+
 ### April
 * DockerCon
 * DrupalCon Baltimore
+
 ### March
 * DrupalCamp London
 * Insomnihack
+
 ### February
 * Portland Drupal Users Group
 * MountainCamp Davos
 * SandCamp
 * NorthernLights
+
 ### January
-* No events 
-## 2016 Events 
+* No events
+
+## 2016 Events
 ### December
 * Munich DrupalCamp
-### November 
+
+### November
 * IronCamp
 * TelAviv DrupalCamp
+
 ### October
 * Capetown DrupalCamp
 * BADcamp
+
 ### September
-* Austin Drupal Users Group 
-* DrupalCon Ireland 
-### August 
+* Austin Drupal Users Group
+* DrupalCon Ireland
+
+### August
 * ColoradoCamp
-### July 
+
+### July
 * GovCon
+
 ### May
 * DrupalCon New Orleans
