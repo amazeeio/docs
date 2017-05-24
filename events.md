@@ -1,6 +1,8 @@
-Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at hello@amazee.io.
+# Events
 
-# 2017 Events
+Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at [hello@amazee.io](mailto:hello@amazee.io)
+
+## 2017 Events
 ### December
 * No events yet!
 
