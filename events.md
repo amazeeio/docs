@@ -27,29 +27,29 @@ Here you'll find each event amazee.io supports via organizing, sponsoring, speak
 * DigiComp Dev Days
 
 ### May
-* DevOpsDays Zurich
-* J on the Beach
+* [DevOpsDays Zurich](https://www.devopsdays.org/events/2017-zurich/)
+* [J on the Beach](https://jonthebeach.com/)
 
 ### April
 * DockerCon
 * DrupalCon Baltimore
 
 ### March
-* DrupalCamp London
-* Insomnihack
+* [DrupalCamp London](http://drupalcamp.london/)
+* [Insomnihack](https://insomnihack.ch/)
 
 ### February
 * Portland Drupal Users Group
-* MountainCamp Davos
+* [Drupal MountainCamp Davos](http://drupalmountaincamp.ch/)
 * SandCamp
-* NorthernLights
+* [NorthernLights](https://dcnlights.drupal.is/)
 
 ### January
 * No events
 
 ## 2016 Events
 ### December
-* Munich DrupalCamp
+* [Munich DrupalCamp](http://dcmuc16.drupalcamp.de/)
 
 ### November
 * IronCamp
