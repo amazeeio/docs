@@ -1,6 +1,8 @@
-Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at hello@amazee.io.
+# Events
 
-# 2017 Events
+Here you'll find each event amazee.io supports via organizing, sponsoring, speaking, or attending. Want us to speak at or sponsor your event? Give us a shout at [hello@amazee.io](mailto:hello@amazee.io)
+
+## 2017 Events
 ### December
 * No events yet!
 
@@ -25,7 +27,7 @@ Here you'll find each event amazee.io supports via organizing, sponsoring, speak
 ### June
 * Texas Camp
 * Twin Cities Drupal Camp
-* DigiComp Dev Days
+* [DigiComp Dev Days](https://www.digicomp.ch/events/softwareentwicklung-events/devday-zuerich-2017-2-tag)
 
 ### May
 * [DevOpsDays Zurich](https://www.devopsdays.org/events/2017-zurich/)
