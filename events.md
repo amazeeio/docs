@@ -27,7 +27,6 @@ Here you'll find each event amazee.io supports via organizing, sponsoring, speak
 ### June
 * Texas Camp
 * Twin Cities Drupal Camp
-* [DigiComp Dev Days](https://www.digicomp.ch/events/softwareentwicklung-events/devday-zuerich-2017-2-tag)
 
 ### May
 * [DevOpsDays Zurich](https://www.devopsdays.org/events/2017-zurich/)
