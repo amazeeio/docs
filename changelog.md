@@ -5,6 +5,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-06-09 - Node 8 Docker Images ##
+
+[Node 8 has just been released](https://nodejs.org/en/blog/release/v8.0.0/). And we are happy to provide support for it already! Find the [Runtime Image](https://hub.docker.com/r/amazeeio/centos7-node/tags/) on Dockerhub ([Git Repo](https://github.com/amazeeio/docker-centos7-node/tree/8)) and also the [Build Image](https://hub.docker.com/r/amazeeio/centos7-node-builder/tags/) ([Git Repo](https://github.com/amazeeio/docker-centos7-node-builder/tree/8)).
+
 ## 2017-06-09 - Cachalot & Pygmy HA Proxy: Support for all containers ##
 
 We released a new version of the Local Development Environment HA Proxy (The small but powerfull tool that allows you to use Docker locally with nice URLs like mysite.docker.amazee.io instead of multiple ports). Now you can use the HA Proxy for all your proxy needs for all kind of Docker Images! Head over to the [HA-Proxy Documentation](https://github.com/amazeeio/docker-haproxy#use-with-non-amazeeio-containers) to learn how to use it .
