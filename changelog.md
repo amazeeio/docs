@@ -5,6 +5,12 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-06-09 - Cachalot & Pygmy HA Proxy: Support for all containers ##
+
+We released a new version of the Local Development Environment HA Proxy (The small but powerfull tool that allows you to use Docker locally with nice URLs like mysite.docker.amazee.io instead of multiple ports). Now you can use the HA Proxy for all your proxy needs for all kind of Docker Images! Head over to the [HA-Proxy Documentation](https://github.com/amazeeio/docker-haproxy#use-with-non-amazeeio-containers) to learn how to use it .
+
+Don't forget to upgrade your local Docker images with either `cachalot docker_update` or `pygmy update`. 
+
 ## 2017-05-16 - Cachalot update ##
 
 Today we released a small update to Cachalot, it includes some behind the scene fixes, but most importantly we have introduced a sudoers file so that you no longer need to sudo with every start/stop of Cachalot. Update to the latest version, then run `cachalot sudoers_configure` to put it in place, or, it will be installed the next time you start Cachalot.
