@@ -15,9 +15,9 @@ If you don't have `oc` installed yet, please check the [installation](/openshift
          oc project <my-project-name>
 
 3. run rsync command
-
-         oc rsync </source/directory> $(oc get pod -o go-template --template '\{\{(index .items 0).metadata.name}}' --show-all=false -l branch=<branchname>):</destination/directory>
-
+{% raw %}
+         oc rsync </source/directory> $(oc get pod -o go-template --template '{{(index .items 0).metadata.name}}' --show-all=false -l branch=<branchname>):</destination/directory>
+{% endraw %}
 The rsync command needs to be adapted to your needs:
 
 * `/source/directory>`  the directory on your computer you would like to rsync, needs to be a directory. If you omit a trailing slash, the given directory will be created within the destination directory
