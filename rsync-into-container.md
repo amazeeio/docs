@@ -7,18 +7,16 @@ In order for this to work, you need `rsync` installed inside the container, adap
 If you don't have `oc` installed yet, please check the [installation](/openshift-beta.md) first. 
 
 1. select the right openshift project with showing first all projects:
-   ```
-   oc projects
-   ```
+
+         oc projects
+
 2. select the correct project
-   ```
-   oc project <my-project-name>
-   ```
+
+         oc project <my-project-name>
+
 3. run rsync command
 
-   ```
-   oc rsync </source/directory> $(oc get pod -o go-template --template '{{(index .items 0).metadata.name}}' --show-all=false -l branch=<branchname>):</destination/directory>
-   ```
+         oc rsync </source/directory> $(oc get pod -o go-template --template '{{(index .items 0).metadata.name}}' --show-all=false -l branch=<branchname>):</destination/directory>
 
 The rsync command needs to be adapted to your needs:
 
