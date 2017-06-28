@@ -16,10 +16,18 @@ This command synchronizes the Database from the given site to the site you're ru
 
 ###### Remarks
 
-`dsql` is actually a Bash alias for `drush sql-sync $1 default -d -v`
+`dsql` is a Bash function
+
+```
+function dsql() {
+  drush sql-sync $1 default
+}
+```
+
+Performing `dsql @master` is the equivilent of `drush sql-sync @master default -d -v`
 
 {% hint style='info' %}
-We suggest though to use `dsql` in stead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override a production database!.
+We suggest though to use `dsql` instead of `drush sql-sync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override a production database!.
 {% endhint %}
 
 {% hint style='info' %}
@@ -41,10 +49,17 @@ This command synchronizes the file directory from the given site to the files di
 
 ###### Remarks
 
-`dfiles` is actually a Bash alias for `drush rsync $1:%files default:%files -d -v`
+`dfiles` is actually a Bash function
+
+```
+function dfiles() {
+  drush rsync $1:%files default:%files
+}
+```
+
 
 {% hint style='info' %}
-We suggest though to use `dfiles` in stead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override production files!.
+We suggest though to use `dfiles` instead of `drush rsync`, as there is a danger to switch the source and destination of the command and with that synchronize in the wrong direction and override production files!.
 {% endhint %}
 
 {% hint style='info' %}
