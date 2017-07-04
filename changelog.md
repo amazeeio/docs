@@ -5,6 +5,12 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2017-07-04 - New Solr 3 Docker Images
+We started rolling out the Support for Solr 5/6 around 2 months ago. Now we also support solr3 in a seperate Docker container. To set up your local environment, just grab the correct [docker-compose.yml](https://docs.amazee.io/local_docker_development/drupal_site_containers.html#docker-composeyml-example-files) file, examples are in our [repo](https://github.com/amazeeio/docker).
+
+## 2017-07-04 - Fixed Blackfire support on cluster environments
+We rolled out an improvement for using blackfire with [clustered environments behind a loadbalancer](https://blackfire.io/docs/reference-guide/configuration#load-balancer). 👏
+
 ## 2017-06-09 - Node 8 Docker Images ##
 
 [Node 8 has just been released](https://nodejs.org/en/blog/release/v8.0.0/). And we are happy to provide support for it already! Find the [Runtime Image](https://hub.docker.com/r/amazeeio/centos7-node/tags/) on Dockerhub ([Git Repo](https://github.com/amazeeio/docker-centos7-node/tree/8)) and also the [Build Image](https://hub.docker.com/r/amazeeio/centos7-node-builder/tags/) ([Git Repo](https://github.com/amazeeio/docker-centos7-node-builder/tree/8)).
