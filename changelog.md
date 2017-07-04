@@ -19,7 +19,7 @@ We rolled out an improvement for using blackfire with [clustered environments be
 
 We released a new version of the Local Development Environment HA Proxy (The small but powerfull tool that allows you to use Docker locally with nice URLs like mysite.docker.amazee.io instead of multiple ports). Now you can use the HA Proxy for all your proxy needs for all kind of Docker Images! Head over to the [HA-Proxy Documentation](https://github.com/amazeeio/docker-haproxy#use-with-non-amazeeio-containers) to learn how to use it .
 
-Don't forget to upgrade your local Docker images with either `cachalot docker_update` or `pygmy update`. 
+Don't forget to upgrade your local Docker images with either `cachalot docker_update` or `pygmy update`.
 
 ## 2017-05-16 - Cachalot update ##
 
