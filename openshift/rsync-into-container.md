@@ -16,14 +16,14 @@ If you don't have `oc` installed yet, please check the [installation](/openshift
 
 3. run rsync command
 {% raw %}
-         oc rsync </source/directory> $(oc get pod -o go-template --template '{{(index .items 0).metadata.name}}' --show-all=false -l branch=<branchname>):</destination/directory>
+         oc rsync </source/directory> $(oc get pod -o go-template --template '{{(index .items 0).metadata.name}}' --show-all=false -l service=<servicename>):</destination/directory>
 {% endraw %}
 The rsync command needs to be adapted to your needs:
 
 * `/source/directory>`  the directory on your computer you would like to rsync, needs to be a directory. If you omit a trailing slash, the given directory will be created within the destination directory
 * `</destination/directory>` the directory inside the container were the source folder should be synced to. Important: This directory should be defined as a persistent storage directory in order for the files to exist between deployments
-* `<branchname>` the name of the branch you would like to connect to, can be things like `master`, `staging`, etc.
-* If your application consists of multiple containers, you should also define the container via `--container=<containername>`
+* `<servicename>` the name of the service (as defined in `.amazeeio.yml`) you would like to connect to, can be things like `node`, `nginx`, etc.
+* If your service consists of multiple containers, you should also define the container via `--container=<containername>`
 
 
 
