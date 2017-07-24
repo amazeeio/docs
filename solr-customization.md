@@ -22,7 +22,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
   `docker-compose up -d`
 
-* Solr will be availbale on `solr:8983` ipv4 address.
+* Solr will be available on `solr:8983` ipv4 address.
 
 #### Default Config:
 
@@ -30,13 +30,13 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 #### Custom Config:
 
-In case you need a custom config, you would need to add it to `amazeeio/solr-conf` folder in your project's root folder (same level of your repo as the `docker-compose.yml` file.) before starting container.
+In case you need a custom config, you need to add it to `amazeeio/solr-conf` folder in your project's root folder (same level of your repo as the `docker-compose.yml` file.) before starting container.
 
 * In the `volumes:` section of the `docker-compose.yml` file, add the entry which will connect your custom config to solr in the container
 
   `- ./amazeeio/solr:/etc/solr/conf/drupal/conf`
 
-You also can find examples in [amazee.io's docker repo](https://github.com/amazeeio/docker/blob/master/example-php70-solr3-custom-config.yml)
+You also can find a example in [amazee.io's docker repo](https://github.com/amazeeio/docker/blob/master/example-php70-solr3-custom-config.yml)
 
 ## Solr 5/6
 
