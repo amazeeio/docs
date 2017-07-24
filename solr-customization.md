@@ -41,7 +41,7 @@ You also can find a example in [amazee.io's docker repo](https://github.com/amaz
 Check out right php and solr versions, we have config availables different versions of php and solr
 
 | php | solr | docker-compose.yml | solr-config |
-| -- | -- | -- |
+| -- | -- | -- | -- |
 | 5.6 | 3.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr3-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.3-solr-3.x/conf) |
 | 5.6 | 5.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr5-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.4-solr-5.x/conf) |
 | 5.6 | 6.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr6-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-5.2-solr-6.x/conf) |
