@@ -1,6 +1,6 @@
 # Solr Customization
 
-amazee.io offers the following Solr versions, and provides a default configuration from the [search\_api\_solr module](http://dgo.to/search_api_solr) module for each.
+amazee.io offers the following Solr versions, and provides a default configuration from the [search\_api\_solr module]([default config](https://github.com/amazeeio/docker/blob/master/solr/) module for each.
 
 | Version | Schema |
 | -- | -- |
@@ -10,7 +10,7 @@ amazee.io offers the following Solr versions, and provides a default configurati
 
 If it is desired to customize your Solr configuration, use the following steps as a guide to making these modifications in our local development environment. After it is exhibited that they work correctly in Docker, we can then add the changes to your amazee.io hosted sites.
 
-## Solr 3
+## Set up config files
 
 * If already running, shut down the site's drupal container. WARNING: this will delete your site's container, but that is necessary for these changes, save a copy of your database first if it is important to you
 
@@ -26,7 +26,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 #### Default Config:
 
-* Amazeeio solr 3 docker image is preconfigured with this [default config](https://github.com/amazeeio/docker/blob/master/drupal-4.3-solr-3.x/conf).
+* Amazeeio solr 3 docker image is preconfigured with following files [default config](https://github.com/amazeeio/docker/blob/master/solr/).
 
 #### Custom Config:
 
@@ -34,28 +34,17 @@ In case you need a custom config, you need to add it to `amazeeio/solr-conf` fol
 
 * In the `volumes:` section of the `docker-compose.yml` file, add the entry which will connect your custom config to solr in the container
 
-  `- ./amazeeio/solr:/etc/solr/conf/drupal/conf`
+  `- ./amazeeio/solr-conf:/solr-conf`
 
-You also can find a example in [amazee.io's docker repo](https://github.com/amazeeio/docker/blob/master/example-php70-solr3-custom-config.yml)
+You also can find a example in [amazee.io's docker repo](https://github.com/amazeeio/docker/blob/master/solr/)
 
-## Solr 5/6
+Check out right php and solr versions, we have config availables different versions of php and solr
 
-* If already running, shut down the site's drupal container. WARNING: this will delete your site's container, but that is necessary for these changes, save a copy of your database first if it is important to you.
-
-  `docker-compose down`
-
-* Create an `amazeeio` directory with a `solr` subdirectory, in the same level of your repo as the `docker-compose.yml file.`
-
-* Copy the appropriate [conf directory](https://github.com/amazeeio/docker-solr) from our docker-solr repo into the `amazeeio/solr` directory. Hint: make sure the path to `schema.xml` is `amazeeio/solr/conf/schema.xml`.
-
-* Ensure that your `docker-compose.yml` file is one which includes the correct solr service you would like to run. See our [example files](https://github.com/amazeeio/docker)
-
-* Under the `solr` service definition, add a `volume` entry like
-
-```
-    volumes:
-      - ./amazeeio/solr:/solr-conf
-```
-
-
-* Start the containers with `docker-compose up -d`
+| php | solr | docker-compose.yml | solr-config |
+| -- | -- | -- |
+| 5.6 | 3.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr3-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.3-solr-3.x/conf) |
+| 5.6 | 5.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr5-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.4-solr-5.x/conf) |
+| 5.6 | 6.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr6-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-5.2-solr-6.x/conf) |
+| 7.0 | 3.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr3-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.3-solr-3.x/conf) |
+| 7.0 | 5.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr5-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.4-solr-5.x/conf) |
+| 7.0 | 6.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr6-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-5.2-solr-6.x/conf) |
