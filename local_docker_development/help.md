@@ -137,3 +137,17 @@ This can happen when you start a Drupal Container via `docker-compose up -d`
 The Drupal Containers are depending on the `ssh-agent` shared Docker container (this is in order to have shared ssh-keys) and somehow this container is missing.
 
 Try to restart either `pygmy` or `cachalot`, this will create the `ssh-agent` container with the name `amazeeio-ssh-agent` and then try again.
+
+## Working Offline
+
+Amazeeio uses a remote DNS server to resolve your `*.docker.amazee.io` addresses which means if you don't have an internet connection you are not going to be able to get to your site. However, you can use your `hosts` file in this scenario. This file is typically located at `/etc/hosts` on Linux and macOS and `C:\Windows\System32\Drivers\etc\host` on Windows. You will need administrative privileges to edit this file.
+
+If you are unfamiliar with this process, follow this tutorial at [How-To Geek](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).
+
+You are going to want to point your site to `192.168.99.100`
+
+### Example host entry
+
+```bash
+192.168.99.100 awesomesauce.kbox.site
+```
