@@ -31,7 +31,9 @@ We will use Drush later to synchronize our sites, but we need to tell Drush abou
 
 This happens with a file called `aliases.drushrc.php` which needs to be placed inside a folder called `drush` in your root folder of your git repository.
 
-You can find the file here: [https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php) \(it's the same for Drupal 6, 7 or 8\).
+You can find the file here: 
+[Drupal 7](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal7/drush/aliases.drushrc.php)
+[Drupal 8](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php)
 
 While you are on it, we also suggest to adapt the `drushrc.php` file you probably during the step-by-step guide. Please replace the content of it with these: [https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/drushrc.php) \(it's the same for Drupal 6, 7 or 8\).
 
