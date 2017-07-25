@@ -149,5 +149,5 @@ You are going to want to point your site to `192.168.99.100`
 ### Example host entry
 
 ```bash
-192.168.99.100 awesomesauce.kbox.site
+192.168.99.100 awesomesauce.docker.amazee.io
 ```
