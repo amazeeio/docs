@@ -144,10 +144,16 @@ Amazeeio uses a remote DNS server to resolve your `*.docker.amazee.io` addresses
 
 If you are unfamiliar with this process, follow this tutorial at [How-To Geek](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/).
 
-You are going to want to point your site to `192.168.99.100`
+If you're using cachalot you are going to want to point your site to the value returned by `cachalot ip` (typically 192.168.99.100), while on pygmy you will want to use 127.0.0.1. Here are some examples:
 
-### Example host entry
+### Host entry if using cachalot
 
 ```bash
 192.168.99.100 awesomesauce.docker.amazee.io
+```
+
+### Host entry if using pygmy
+
+```bash
+127.0.0.1 awesomesauce.docker.amazee.io
 ```
