@@ -13,8 +13,8 @@ Amazee.io exposes services to the web application by making use of environment v
 | `AMAZEEIO_DB_PORT` | Database Port | `3306` |
 | `AMAZEEIO_HOSTINGSTACK` | The stack identifier this site is running | `compact` or `cluster` |
 | `AMAZEEIO_LOCATION` | System location \(used for debugging purposes\) | `digitalocean` |
-| `AMAZEEIO_REDIS_PORT` | System location \(used for debugging purposes\) | `6379` |
-| `AMAZEEIO_REDIS_HOST` | System location \(used for debugging purposes\) | `127.0.0.1` |
+| `AMAZEEIO_REDIS_PORT` | Redis port | `6379` |
+| `AMAZEEIO_REDIS_HOST` | Redis ip address) | `127.0.0.1` |
 | `AMAZEEIO_SITE_BRANCH` | The branch configured for your site | `prod` |
 | `AMAZEEIO_SITE_ENVIRONMENT` | Environment Type | `production` or `development` |
 | `AMAZEEIO_SITE_NAME` | Sitegroup name suffixed with branch | `mysite_com_prod` |
