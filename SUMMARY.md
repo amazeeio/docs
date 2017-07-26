@@ -15,6 +15,7 @@
   * [Windows](local_docker_development/windows.md)
   * [Drupal Docker Containers](local_docker_development/drupal_site_containers.md)
     * [Connect to MySQL](local_docker_development/connect_to_mysql_from_external.md)
+    * [Map additional ports](local_docker_development/map_addtitional_ports.md)
   * [Help](local_docker_development/help.md)
 * [Architecture](architecture/architecture.md)
   * [Stack-Types](architecture/stack-types.md)
