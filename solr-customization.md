@@ -14,7 +14,7 @@ amazee.io offers the three Solr versions, and provides a default configuration f
 
   `docker-compose down`
 
-* Update your `docker-compose.yml` with adding the the solr container, see our [example files](https://github.com/amazeeio/docker/) for each Solr and PHP Version.
+* Update your `docker-compose.yml` with adding the the solr container, see our [example files](https://github.com/amazeeio/docker/) for each Solr and PHP Version. (Do not miss to add links section under `drupal` docker service)
 
 * Start both containers
 
@@ -38,4 +38,3 @@ If you would like to customize your Solr configuration, you can develop and test
 
 4. Restart your containers with `docker-compose restart solr` and verify that the Solr container and config is loaded correctly
 5. Change your Solr config according to your needs and restart the container with `docker-compose restart solr`
-
