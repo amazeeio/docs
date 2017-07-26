@@ -4,11 +4,7 @@
 
 # Installation of cachalot
 
- OS X is currently not able to run Docker natively. [Docker announced](https://blog.docker.com/2016/03/docker-for-mac-windows-beta/) a much better system for OS X and also Windows in the making. Until Docker has released their Docker for Mac, we provide our own system, called `cachalot`
-
-{% hint style='working' %}
-While Docker for Mac and `pygmy` work well. We still advise to use `cachalot` on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker itself.
-{% endhint %}
+ amazee.io recommends cachalot as the preferred method for running [Docker on OSX](https://www.docker.com/docker-mac). Whilst a stable release of Docker for Mac has been available since June 2016 and enables OS X to run Docker natively, it has a number of performance issues. For more information head over to [Docker on Mac Performance: Docker Machine vs Docker for Mac](https://stories.amazee.io/docker-on-mac-performance-docker-machine-vs-docker-for-mac-4c64c0afdf99). As soon as Docker for Mac is faster than Docker Machine, we will provide a migration path for all our clients.
 
 `cachalot` will handle for you:
 * Start it's own Virtual Machine which runs boot2docker. It does that because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.
