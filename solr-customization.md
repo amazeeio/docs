@@ -16,7 +16,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
   `docker-compose down`
 
-* Ensure that your `docker-compose.yml` file has one of our Solr capable images set as the `image`. See our [example files](https://github.com/amazeeio/docker/blob/master/example-php70-solr3.yml)
+* Ensure that your `docker-compose.yml` file has one of our Solr capable images set as the `image`. See our [example files](https://github.com/amazeeio/docker/blob/master/solr)
 
 * Start the drupal docker container
 
@@ -26,7 +26,7 @@ If it is desired to customize your Solr configuration, use the following steps a
 
 #### Default Config:
 
-* Amazeeio solr 3 docker image is preconfigured with following files [default config](https://github.com/amazeeio/docker/blob/master/solr/).
+* Amazeeio solr docker images are preconfigured with following files [default config](https://github.com/amazeeio/docker/blob/master/solr/).
 
 #### Custom Config:
 
@@ -37,14 +37,3 @@ In case you need a custom config, you need to add it to `amazeeio/solr-conf` fol
   `- ./amazeeio/solr-conf:/solr-conf`
 
 You also can find a example in [amazee.io's docker repo](https://github.com/amazeeio/docker/blob/master/solr/)
-
-Check out right php and solr versions, we have config availables different versions of php and solr
-
-| php | solr | docker-compose.yml | solr-config |
-| -- | -- | -- | -- |
-| 5.6 | 3.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr3-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.3-solr-3.x/conf) |
-| 5.6 | 5.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr5-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.4-solr-5.x/conf) |
-| 5.6 | 6.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php56-solr6-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-5.2-solr-6.x/conf) |
-| 7.0 | 3.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr3-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.3-solr-3.x/conf) |
-| 7.0 | 5.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr5-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-4.4-solr-5.x/conf) |
-| 7.0 | 6.x | [docker](https://github.com/amazeeio/docker/blob/master/solr/example-php70-solr6-custom-config.yml) | [solr](https://github.com/amazeeio/docker/tree/master/solr/drupal-5.2-solr-6.x/conf) |
