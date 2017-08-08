@@ -3,3 +3,5 @@ sites/default/aliases.drushrc.php
 package.json
 node_modules
 docker-compose.yml
+Dockerfile
+docker
