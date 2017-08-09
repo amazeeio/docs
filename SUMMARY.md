@@ -9,14 +9,14 @@
   * [Going Live](step_by_step_guides/golive_on_amazeeio.md)
 * [Local Docker Development](local_docker_development/local_docker_development.md)
   * [OS X - cachalot](local_docker_development/os_x_cachalot.md)
-    * [Help](local_docker_development/os_x_cachalot/help.md)
+    * [Help](local_docker_development/troubleshooting.md)
   * [Linux & OS X - pygmy](local_docker_development/pygmy.md)
-    * [Help](local_docker_development/pygmy/help.md)
+    * [Help](local_docker_development/troubleshooting.md)
   * [Windows](local_docker_development/windows.md)
   * [Drupal Docker Containers](local_docker_development/drupal_site_containers.md)
     * [Connect to MySQL](local_docker_development/connect_to_mysql_from_external.md)
     * [Map additional ports](local_docker_development/map_addtitional_ports.md)
-  * [Help](local_docker_development/help.md)
+  * [Troubleshooting](local_docker_development/troubleshooting.md)
 * [Architecture](architecture/architecture.md)
   * [Stack-Types](architecture/stack-types.md)
     * [Compact Stack](architecture/stack-types/compact.md)
@@ -55,6 +55,3 @@
 * [Events](events.md)
 * [OpenShift \(beta\)](openshift/openshift-beta.md)
   * [rsync into container](openshift/rsync-into-container.md)
-
-
-
