@@ -13,7 +13,7 @@ During [Part I](./local_docker_development.md#part-i-shared-docker-containers) w
 ## Find the right `docker-compose.yml`
 
 1. Visit https://github.com/amazeeio/docker or clone https://github.com/amazeeio/docker.git into a folder on your computer
-2. Copy the desired example file into your Drupal directory (see descriptions below). Pick a 'basic' file if unsure.
+2. Copy the desired example file into your Drupal directory (see descriptions below). Use `example-docker-compose-drupal.yml` if unsure.
 3. Rename the file to `docker-compose.yml`
 4. Edit the file according to your needs, change at least the hostname. _Btw: It's perfectly fine to commit this file into your git repo, so others that are also using amazee.io docker can use it as well._
 5. Run in the same directory as the `docker-compose.yml`:
@@ -97,15 +97,7 @@ Just open another terminal window at the exact same directory than you run the f
 
 ## `docker-compose.yml` example files
 
-| Example File                                                                                  | PHP | Services                      | Description                                                                                                                     |
-|-----------------------------------------------------------------------------------------------|-----|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [`php70-basic`](https://github.com/amazeeio/docker/blob/master/example-php70-basic.yml)       | 7.0 | nginx, varnish, mariadb       | prefered for Drupal 8                                                                                                           |
-| [`php56-basic`](https://github.com/amazeeio/docker/blob/master/example-php56-basic.yml)       | 5.6 | nginx, varnish, mariadb       | prefered for Drupal 7                                                                                                           |
-| [`php70-composer`](https://github.com/amazeeio/docker/blob/master/example-php70-composer.yml) | 7.0 | nginx, varnish, mariadb       | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web`, or another folder (configurable in the `docker-compose.yml`) |
-| [`php56-composer`](https://github.com/amazeeio/docker/blob/master/example-php56-composer.yml) | 5.6 | nginx, varnish, mariadb       | For [Drupal Composer Project](https://github.com/drupal-composer/drupal-project), the Drupal root expected in the folder `/web`, or another folder (configurable in the `docker-compose.yml`) |
-| [`php70-solr3`](https://github.com/amazeeio/docker/blob/master/example-php70-solr3.yml)         | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but with an additional Apache Solr 3 container. Check the yaml file on how to define your solr configs          |
-| [`php70-solr5`](https://github.com/amazeeio/docker/blob/master/example-php70-solr5.yml)         | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but with an additional Apache Solr 5 container. Check the yaml file on how to define your solr configs          |
-| [`php70-solr6`](https://github.com/amazeeio/docker/blob/master/example-php70-solr6.yml)         | 7.0 | nginx, varnish, mariadb, solr | The same as php70-basic but with an additional Apache Solr 6 container. Check the yaml file on how to define your solr configs          |
-| [`php56-solr3`](https://github.com/amazeeio/docker/blob/master/example-php56-solr3.yml)         | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but with an additional Apache Solr 3 container. Check the yaml file on how to define your solr configs          |
-| [`php56-solr5`](https://github.com/amazeeio/docker/blob/master/example-php56-solr5.yml)         | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but with an additional Apache Solr 5 container. Check the yaml file on how to define your solr configs          |
-| [`php56-solr6`](https://github.com/amazeeio/docker/blob/master/example-php56-solr6.yml)         | 5.6 | nginx, varnish, mariadb, solr | The same as php56-basic but with an additional Apache Solr 6 container. Check the yaml file on how to define your solr configs          |
+| Example File                                                                                                           | PHP    | Services                           | Description                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------|--------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [`example-docker-compose-drupal.yml`](https://github.com/amazeeio/docker/blob/master/example-docker-compose-drupal.yml)          | 5.6/7.0| nginx, varnish, mariadb       |Drupal container without provisions for solr. See comments in file for choosing PHP version and customizing for Composer sites   |
+| [`example-docker-compose-drupal-solr.yml`](https://github.com/amazeeio/docker/blob/master/example-docker-compose-drupal-solr.yml)| 5.6/7.0| nginx, varnish, mariadb, solr |Drupal container with provisions for solr. See comments in file for choosing PHP version and customizing for Composer sites      |
