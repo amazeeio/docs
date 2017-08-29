@@ -5,8 +5,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
-## 2017-08-29 - PHP 7.1 Support for Legacy Platform
-We wanted to release PHP 7.1 support along with our coming Drupal on Docker services, but you kept asking for it _now_. So, starting today, your amazee.io sites can now run on PHP 7.1. A fresh new Docker image has been pushed to the Docker Hub (amazeeio/drupal:php71-basic) for you to pull into your local environment, ping us once your testing is complete to update your sites 😊
+## 2017-08-29 - You asked, we answered: PHP 7.1 support starts today!
+We had intended to release PHP 7.1 support along with our Drupal on Docker services, but then thought, why wait?
+
+Starting today, your amazee.io sites can now run on PHP 7.1. A fresh new Docker image has been pushed to the Docker Hub (amazeeio/drupal:php71-basic) for you to pull into your local environment. Ping us once your testing is complete and we’ll update your sites 😃
 
 ## 2017-07-04 - New Solr 3 Docker Images
 We started rolling out the Support for Solr 5/6 around 2 months ago. Now we also support solr3 in a seperate Docker container. To set up your local environment, just grab the correct [docker-compose.yml](https://docs.amazee.io/local_docker_development/drupal_site_containers.html#docker-composeyml-example-files) file, examples are in our [repo](https://github.com/amazeeio/docker).
