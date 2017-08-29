@@ -13,7 +13,7 @@ The biggest and most reliable setup you can host your site on is our Cluster Sta
 
 * **Backend Nginx:**
 The second Nginx instance takes care of running the actual drupal site. PHP requests are passed to PHP-FPM.
-* **FastCGI Process Manager:** PHP-FPM with either PHP 5.6 or PHP 7.0
+* **FastCGI Process Manager:** PHP-FPM with either PHP 5.6, PHP 7.0 or PHP 7.1
 * **Maxscale Database Proxy:** Connects to the correct MariaDB Server within the Galera Cluster
 
 
