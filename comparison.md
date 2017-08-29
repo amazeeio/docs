@@ -129,8 +129,8 @@ Help improve our documentation! If you find anything wrong or which could be imp
 				<td><strong>PHP Versions</strong></td>
 				<td>5.6, 7.0, 7.1</td>
 				<td>5.3, 5.4, 5.5, 5.6, 7.0</td>
-				<td>5.6, 7.0</td>
-				<td>5.6, 7.0, HHVM</td>
+				<td>5.6, 7.0, 7.1</td>
+				<td>5.6, 7.0, 7.1, 7.2, HHVM</td>
 			</tr>
 			<tr>
 				<td><strong>Drupal core &amp; contrib security updates</strong></td>
