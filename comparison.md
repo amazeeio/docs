@@ -1,8 +1,8 @@
 # Comparison of amazee.io, Pantheon, Acquia Cloud, Platform.sh
 
-We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work! 
+We’ve put together this chart to help highlight the differences between industry vendors with the intention of providing clarity and a fair comparison of real service offerings. This project is not intended as critique -- we like our competitors and they do outstanding work!
 
-Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository. 
+Help improve our documentation! If you find anything wrong or which could be improved in our chart, please [submit a pull request](https://github.com/amazeeio/docs/blob/master/comparison.md) to our GitHub repository.
 
 <div style="overflow-x: scroll;">
 	<table>
@@ -127,10 +127,10 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			</tr>
 			<tr>
 				<td><strong>PHP Versions</strong></td>
-				<td>5.6, 7.0</td>
+				<td>5.6, 7.0, 7.1</td>
 				<td>5.3, 5.4, 5.5, 5.6, 7.0</td>
-				<td>5.6, 7.0</td>
-				<td>5.6, 7.0, HHVM</td>
+				<td>5.6, 7.0, 7.1</td>
+				<td>5.6, 7.0, 7.1, 7.2, HHVM</td>
 			</tr>
 			<tr>
 				<td><strong>Drupal core &amp; contrib security updates</strong></td>
@@ -168,16 +168,16 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			<tr>
 				<td><strong>Free SSL/HTTPs</strong></td>
 				<td>✅</td>
-				<td>❌️ Extra costs</td>
+				<td>✅</td>
 				<td>⚠️ Provide own bought certificate via Self Serve SSL</td>
 				<td>✅</td>
 			</tr>
 			<tr>
 				<td><strong>Free SSL Certificate provided</strong></td>
 				<td>✅ Free and fully automated Let’s Encrypt certificate. Or bring your own certificate</td>
+				<td>✅</td>
 				<td>❌️ Need to self organize, additional costs</td>
-				<td>❌️ Need to self organize, additional costs</td>
-				<td>❌️ Need to self organize, additional costs</td>
+				<td>✅</td>
 			</tr>
 			<tr>
 				<td colspan="5"><h3>Caching</h3>

@@ -8,7 +8,7 @@ The compact stack (sometimes also referred as single stack) is tailored for sing
 **All services are running in one instance:**
 
 * Webserver: Nginx (Frontend and Backend)
-* Frontend Caching: Varnish  
-* FastCGI Process Manager: PHP-FPM with either PHP 5.6 or PHP 7.0
+* Frontend Caching: Varnish
+* FastCGI Process Manager: PHP-FPM with either PHP 5.6, PHP 7.0 or PHP 7.1
 * Database: MariaDB
 * Search: Apache Solr

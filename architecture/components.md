@@ -22,7 +22,7 @@ Every browser request needs to be forwarded to PHP and Drupal. amazee.io uses th
 
 ## Server-side Scripting Language: PHP
 
-Every request is passed from PHP-FPM to PHP and is executed there. amazee.io supports PHP 5.6 and PHP 7.0.
+Every request is passed from PHP-FPM to PHP and is executed there. amazee.io supports PHP 5.6, PHP 7.0 and 7.1.
 
 ## Database: MariaDB
 

@@ -4,6 +4,7 @@ amazee.io enables you to send out emails from any environment. There is a local 
 
 - [SendGrid](https://sendgrid.com/)
 - [AmazonSES](https://aws.amazon.com/ses/?nc1=h_ls)
+- [Mailgun](https://www.mailgun.com/)
 - [Mailjet](https://www.mailjet.com/)
 
 If you plan on using an external Mail Provider you can make use of the [Drupal SMTP Authentication Module](https://www.drupal.org/project/smtp).
