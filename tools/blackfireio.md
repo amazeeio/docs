@@ -30,7 +30,7 @@ It is easily configured and setup:
 
         docker-compose up -d --force-recreate
 
-5. Visit your local Docker site \(in this example http:\/\/mysite.docker.amazee.io\)
+5. Visit your local Docker site \(in this example http://mysite.docker.amazee.io\)
 
 6. Click on the Blackfire Chrome Companion Icon, select "Profile" and after a couple of seconds you will have local site profiled.
 
