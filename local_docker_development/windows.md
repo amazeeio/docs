@@ -1,17 +1,17 @@
 # Windows
 
 amazee.io uses the newest Docker for Windows version, which is currently in beta.
-There is an older version of Docker called "Docker Toolbox" which is not supported by amazee.io. Read more here: [https:\/\/docs.docker.com\/engine\/installation\/windows\/](https://docs.docker.com/engine/installation/windows/)
+There is an older version of Docker called "Docker Toolbox" which is not supported by amazee.io. Read more here: [https://docs.docker.com/engine/installation/windows/](https://docs.docker.com/engine/installation/windows/)
 
 ### Prerequisites
 
-* If not installed already, install Git for Windows: [https:\/\/git-scm.com\/download\/win](https://git-scm.com/download/win)
-* Download and install Docker for Windows: [https:\/\/docs.docker.com\/docker-for-windows\/](https://docs.docker.com/docker-for-windows/)  
+* If not installed already, install Git for Windows: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+* Download and install Docker for Windows: [https://docs.docker.com/docker-for-windows/](https://docs.docker.com/docker-for-windows/)  
 * Configure Docker:
-  1. Share at least the Volumes which contain the Drupal Code: [https:\/\/docs.docker.com\/docker-for-windows\/\#\/shared-drives](https://docs.docker.com/docker-for-windows/#/shared-drives)
-  2. Configure the Memory to at least 4GB: [https:\/\/docs.docker.com\/docker-for-windows\/\#\/advanced](https://docs.docker.com/docker-for-windows/#/advanced)
+  1. Share at least the Volumes which contain the Drupal Code: [https://docs.docker.com/docker-for-windows/\#/shared-drives](https://docs.docker.com/docker-for-windows/#/shared-drives)
+  2. Configure the Memory to at least 4GB: [https://docs.docker.com/docker-for-windows/\#/advanced](https://docs.docker.com/docker-for-windows/#/advanced)
 
-* Download an install ConEmu: [https:\/\/conemu.github.io\/](https://conemu.github.io/) \(amazee.io will work without this, but there are some issues with special characters and general things that happen inside a real linux bash, so we suggest to use that\)
+* Download an install ConEmu: [https://conemu.github.io/](https://conemu.github.io/) \(amazee.io will work without this, but there are some issues with special characters and general things that happen inside a real linux bash, so we suggest to use that\)
 
 
 ### Installation
@@ -51,11 +51,11 @@ As a test define this:
 
 Click the tick in front of the IP Address and click "Save".
 
-To test if everything works open your browser at: [http:\/\/docker.amazee.io\/stats](http://docker.amazee.io/stats), if you see a website with "HAProxy Version xxx" you are all set!
+To test if everything works open your browser at: [http://docker.amazee.io/stats](http://docker.amazee.io/stats), if you see a website with "HAProxy Version xxx" you are all set!
 
 ### SSH keys
 
-amazee.io does all authentifications via SSH keys and no passwords. Some Windows users might already have SSH keys generated \(for example via PuttyGen\), this is perfectly fine, just follow [http:\/\/stackoverflow.com\/a\/2224204\/2397973](http://stackoverflow.com/a/2224204/2397973) to generate SSH keys in the OpenSSH format.
+amazee.io does all authentifications via SSH keys and no passwords. Some Windows users might already have SSH keys generated \(for example via PuttyGen\), this is perfectly fine, just follow [http://stackoverflow.com/a/2224204/2397973](http://stackoverflow.com/a/2224204/2397973) to generate SSH keys in the OpenSSH format.
 
 ##### Generating SSH keys \(if you don't have any yet\)
 
