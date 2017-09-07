@@ -1,5 +1,7 @@
 # `.amazeeio.yml` Example for Drupal 8 with Composer
 
+We recommend using following the instructions [here](https://github.com/amazeeio/drupal-project) to create your drupal project using composer install, which automatically gives you the file below.
+
 If Drupal 8 is installed via composer, composer is in charge of downloading Drupal Core, Drupal Contrib and external libraries. See the `composer install` command as a first command for `development` and `production` sites in order to make sure that everything is correctly installed.
 
 Additionally the Drupal directory is usually installed within a subfolder of the Git repository. Therefore Drush and other Drupal related bash commands need to executed within that subfolder. 
