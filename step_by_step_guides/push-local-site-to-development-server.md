@@ -10,10 +10,15 @@ Before we can do the first push, we need to configure some more things, no worri
 
 We need to set you up with the required things first. We are working hard to fully automate this step and make it as easy as everything else within amazee.io, but for now we need to know from you:
 
-1. SSH-Public Keys of everybody that should get access to the development server
-2. The URL of the Git repository which will host the Drupal Code
-3. The Git branch you would like to use as your development server \(in this example we will use `develop`, but it realy can be any name!\)
+1. **SSH-Public Keys** of everybody that should get access to the development server
+2. The **URL of the Git repository** which will host the Drupal Code (`git@example.com:test/test.git`)
+3. The **Git branch** you would like to use as your development server \(in this example we will use `develop`, but it realy can be any name!\)
 4. Give our deployment systems access to the Git repository \(see [Grant access to your sourcecode](/step_by_step_guides/grant_amazeeio_access_to_sourcecode.md) on how to do that\)
+5. **Main Domain** (e.g. example.com)
+6. **Redirect Domains** - Domains which will be redirected to the main domain (e.g. www.example.com)
+7. **PHP Version** - We support 5.6, 7.0, 7.1
+8. **Solr** - If you need Solr you can choose between following versions 4,6,7
+9. **Webroot** - If you have a different webroot than the main directory of your git repository (e.g. `public` or `web`)
 
 That's it! You can actually continue with Steps 1-3 even though we didn't set up everything on our side yet.
 
