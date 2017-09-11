@@ -31,7 +31,7 @@ We will use Drush later to synchronize our sites, but we need to tell Drush abou
 
 This happens with a file called `aliases.drushrc.php` which needs to be placed inside a folder called `drush` in your root folder of your git repository.
 
-You can find the file here: 
+You can find the file here:
 [Drupal 7](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal7/drush/aliases.drushrc.php) &
 [Drupal 8](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php)
 
