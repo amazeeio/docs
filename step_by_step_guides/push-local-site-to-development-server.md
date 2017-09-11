@@ -15,7 +15,7 @@ We need to set you up with the required things first. We are working hard to ful
 3. The Git branch you would like to use as your development server \(in this example we will use `develop`, but it realy can be any name!\)
 4. Give our deployment systems access to the Git repository \(see [Grant access to your sourcecode](/step_by_step_guides/grant_amazeeio_access_to_sourcecode.md) on how to do that\)
 
-That's it! You can actually continue with Steps 1-3 even though we
+That's it! You can actually continue with Steps 1-3 even though we didn't set up everything on our side yet.
 
 ## Step 1: Use full fledged settings.php files
 
