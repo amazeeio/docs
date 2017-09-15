@@ -40,8 +40,8 @@ This has two main advantages:
 
 Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
-```
-if(getenv('AMAZEEIO_SITENAME')){
+```php
+if(getenv('AMAZEEIO_SITENAME')) {
   $databases['default']['default'] = array(
     'driver' => 'mysql',
     'database' => getenv('AMAZEEIO_SITENAME'),
