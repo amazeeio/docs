@@ -20,7 +20,7 @@ Or via `docker-compose` inside a Drupal repository
 
 If you are on Linux and run docker natively, you also need to get the IP of the container
 
-    $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' changeme.net.docker.amazee.io
+    $ docker inspect -f '{{range $i, $e := .NetworkSettings.Networks}}{{if ne $i "amazeeio-network"}}{{.IPAddress}}{{end}}{{end}}' changeme.net.docker.amazee.io
     172.17.0.4
 
 ### Connect to MySQL
