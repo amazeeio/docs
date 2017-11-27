@@ -152,9 +152,9 @@ As the Docker Container has automatically access to your whole Drupal code, you 
 
 ### Step 3: Import database from dump
 
-Again drush, this time `drush sql-connect`, the backticks are important!
+Again drush, this time `drush sql-cli`.
 
-    `drush sql-connect` < dump.sql
+    drush sql-cli < dump.sql
 
 You can verify that it worked with:
 
