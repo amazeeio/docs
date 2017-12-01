@@ -54,7 +54,7 @@ function ddrush() {
     args="${args} '$1'" && shift
   done;
 
-  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd \"$AMAZEEIO_WEBROOT\" && PATH=`pwd`/../vendor/bin:$PATH && drush ${args}"
+  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd \"$AMAZEEIO_WEBROOT\" && PATH=`pwd`/../vendor/bin:\$PATH && drush ${args}"
 }
 ```
 
