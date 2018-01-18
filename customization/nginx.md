@@ -13,7 +13,7 @@ Some reasons for having a custom nginx configuration can include:
 * Access to custom PHP script
 
 
-To create a test a custom nginx configuration:
+## Implement an nginx customization
 
 * Stop your Drupal Docker container if running
 
