@@ -1,6 +1,6 @@
 # Synchronize Sites
 
-amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. You need the `aliases.drushrc.php` file correctly placed in order for site synchronizations to work, see [Drush Configuration Files](./drush_configuration_files.md)
+amazee.io leverages [Drush](http://www.drush.org/) and [Drush Aliases](http://docs.drush.org/en/master/shellaliases/?highlight=alias) to run site synchronizations. You need the `aliases.drushrc.php` file correctly placed in order for site synchronizations to work, see [Drush Configuration Files](./drush-configuration-files.md)
 
 ## Synchronizing Databases
 
