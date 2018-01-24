@@ -147,6 +147,17 @@ If you also want to get rid of all the docker images you can run:
 
 Now you have a completely empty Docker, now it's time to start again with `pygmy` or `cachalot`.
 
+### No space left on device
+
+If you need to free up some disk space, you can do this:
+  - start all containers that you need to preserve
+  - run the following commands
+    ```
+    docker system prune
+    docker image prune -a
+    docker volume prune
+    ```
+
 ### I get an error like `port is already allocated.` during start
 
 If during the start of Docker containers you see an error like that:
