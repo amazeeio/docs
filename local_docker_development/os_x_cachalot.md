@@ -4,7 +4,7 @@
 
 # Installation of cachalot
 
- amazee.io recommends cachalot as the preferred method for running [Docker on OSX](https://www.docker.com/docker-mac). Whilst a stable release of Docker for Mac has been available since June 2016 and enables OS X to run Docker natively, it has a number of performance issues. For more information head over to [Docker on Mac Performance: Docker Machine vs Docker for Mac](https://stories.amazee.io/docker-on-mac-performance-docker-machine-vs-docker-for-mac-4c64c0afdf99). As soon as Docker for Mac is faster than Docker Machine, we will provide a migration path for all our clients.
+ amazee.io no longer recommends cachalot as the preferred method for running [Docker on OSX](https://www.docker.com/docker-mac) due to performance increases made in Docker for Mac. If [pygmy](./pygmy.md) does not seem to be performant on your system, you can still use Cachalot, though we will be sunsetting support for it soon.
 
 `cachalot` will handle for you:
 * Start it's own Virtual Machine which runs boot2docker. It does that because the original docker-machine vm is not running on NFS and does not have support for File System Events. Both things which are important for speed and convenience during development.

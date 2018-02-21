@@ -6,8 +6,7 @@
 `pygmy` is the single tool needed to get the amazee.io Docker Drupal Development Environment running on your Linux based system. It is also capable of working together with the very new [Docker for Mac](https://docs.docker.com/docker-for-mac/)! (quite a lot for such a [small whale](https://en.wikipedia.org/wiki/Pygmy_sperm_whale) 🐳)
 
 {% hint style='working' %}
-If you don't run the new Docker for Mac: Sorry `pygmy` is not for you, we have a bigger whale for you: `cachalot` for OS X!
-While Docker for Mac and `pygmy` work well. We still advise to use `cachalot` on OSX, as the filesystem issues on Docker for Mac have not yet been solved by Docker itself.
+You do need to be running at least Docker for Mac version 17 to run `pygmy`. If for some reason you cannot do this, a Docker Machine based tool, [`cachalot`](./os_x_cachalot.md) is available for you.
 {% endhint %}
 
 `pygmy` will handle for you:
