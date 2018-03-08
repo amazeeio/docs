@@ -127,7 +127,7 @@ Help improve our documentation! If you find anything wrong or which could be imp
 			</tr>
 			<tr>
 				<td><strong>PHP Versions</strong></td>
-				<td>5.6, 7.0, 7.1</td>
+				<td>5.6, 7.0, 7.1, 7.2</td>
 				<td>5.3, 5.4, 5.5, 5.6, 7.0</td>
 				<td>5.6, 7.0, 7.1</td>
 				<td>5.6, 7.0, 7.1, 7.2, HHVM</td>
