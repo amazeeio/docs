@@ -17,7 +17,7 @@ We need to set you up with the required things first. We are working hard to ful
 5. **Main Domain** (e.g. example.com)
 6. **Redirect Domains** - Domains which will be redirected to the main domain (e.g. www.example.com)
 7. **PHP Version** - We support 5.6, 7.0, 7.1
-8. **Solr** - If you need Solr you can choose between following versions 4,6,7
+8. **Solr** - If you need Solr you can choose between following versions 3,5,6
 9. **Webroot** - If you have a different webroot than the main directory of your git repository (e.g. `public` or `web`)
 
 That's it! You can actually continue with Steps 1-3 even though we didn't set up everything on our side yet.
