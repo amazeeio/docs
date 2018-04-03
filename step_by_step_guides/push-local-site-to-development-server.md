@@ -77,7 +77,7 @@ Now let's test the SSH access to this develop site. We do that with running `dru
 
 Isn't it magic? No need to know any usernames, password or how servers are called. It all happens fully automatically.
 
-btw: if it does not work, no worries, hit us up in our [Slack Channel](/slack.amazee.io) and we help you right away.
+btw: if it does not work, no worries, hit us up in our [Slack Channel](https://slack.amazee.io) and we help you right away.
 
 ## Step 5: Your first deployment
 
