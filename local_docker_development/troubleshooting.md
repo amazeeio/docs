@@ -329,7 +329,7 @@ You will need to create the shared external network in docker first:
     docker network create amazeeio-network
 
 
-### I get an error like `ERROR: for amazeeio-haproxy  Cannot create container for service amazeeio-haproxy: b'Mount denied:\nThe source path "\\\\var\\\\run\\\\docker.sock:/tmp/docker.sock"\nis not a valid Windows path'
+### I get an error like `ERROR: for amazeeio-haproxy  Cannot create container for service amazeeio-haproxy: b'Mount denied:\nThe source path "\\\\var\\\\run\\\\docker.sock:/tmp/docker.sock"\nis not a valid Windows path'`
 
 Docker for Windows 18 included a change that [breaks path conversion on windows](https://github.com/docker/for-win/issues/1829). You can set an environment variable to force conversions.
 
