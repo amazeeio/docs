@@ -338,3 +338,11 @@ Powershell:
     $Env:COMPOSE_CONVERT_WINDOWS_PATHS=1
     
 You will need to set this variable for every session or [set it permanently](https://trevorsullivan.net/2016/07/25/powershell-environment-variables/)
+
+### I get an error like `ERROR: for amazeeio-haproxy  Cannot start service amazeeio-haproxy: b'driver failed programming external connectivity on endpoint'`
+
+This can be caused by a few things:
+
+1.  Another program on your computer is using port 80 or port 443. Close any [programs that are using these ports](https://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows) and restart the containers.
+
+2.  There is a [bug in Docker for Windows where network ports are lost on reboot](https://github.com/docker/for-win/issues/1038). Restart Docker for Windows and try again. If this happens everytime you reboot, try [disabling `Windows Fast Startup`](https://github.com/docker/for-win/issues/1038#issuecomment-385889065).
