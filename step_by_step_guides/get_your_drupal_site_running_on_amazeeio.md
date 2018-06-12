@@ -2,6 +2,10 @@
 
 <!-- toc -->
 
+## Legacy Platform
+
+This documentation is for the legacy platform of amazee.io. If you are setting up a new project, it is likely using [Lagoon](https://github.com/amazeeio/lagoon) and has different requirements. Please see the [Lagoon Documentation](http://lagoon.readthedocs.io/en/latest/)
+
 Running on Mac OS X? We created a [fully documented step by step guide on our blog](https://stories.amazee.io/easy-local-drupal-development-on-os-x-a01a343f99e3) for you.
 
 ## Site Setup
@@ -36,7 +40,7 @@ You will not see an `index.php` file here, instead you will see a `web` folder (
 amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database and how to connect to it.  
 This has two main advantages:
 1. There are no passwords or usernames saved in settings.php files, so you can safely share your whole Drupal Code, without sharing credentials about your site.
-2. The settings.php is the exact same on your Local Docker, on the development and on the production site. 
+2. The settings.php is the exact same on your Local Docker, on the development and on the production site.
 
 Following you find a very basic example to configure the connection to the database. Just add that at the bottom of existing `settings.php` from Drupal.
 
@@ -59,7 +63,7 @@ if (getenv('AMAZEEIO_BASE_URL')) {
 }
 ```
 
-We **do not** suggest to just use this simple configuration for production sites, but for now, it will do. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) and check out the flexibility amazee.io settings.php files allows. 
+We **do not** suggest to just use this simple configuration for production sites, but for now, it will do. See [Drupal Configuration and settings.php](../drupal/settingsphpfiles.md) and check out the flexibility amazee.io settings.php files allows.
 
 In order to teach Drush about our amazee.io environment, create a new file named `drushrc.php` inside a folder named `drush` inside the root directory of your Git repository:
 
@@ -185,4 +189,3 @@ In order to add your Drupal files, just put them in the directory you had them b
 Congratulations! You have now a full local Drupal Hosting environment at your fingertips. We wish you happy drupaling.
 
 Btw: Pushing your site to an amazee.io server is as easy as just a git push.
-
