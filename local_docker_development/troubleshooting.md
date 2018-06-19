@@ -319,3 +319,30 @@ If you still run into the error run following command `sudo netstat -tulpn` to s
 With the Process ID you can now run following command:
 
 > sudo kill [Process ID]
+
+## Windows
+
+### I get an error like `ERROR: Network amazeeio-network declared as external, but could not be found.`
+
+You will need to create the shared external network in docker first:
+
+    docker network create amazeeio-network
+
+
+### I get an error like `ERROR: for amazeeio-haproxy  Cannot create container for service amazeeio-haproxy: b'Mount denied:\nThe source path "\\\\var\\\\run\\\\docker.sock:/tmp/docker.sock"\nis not a valid Windows path'`
+
+Docker for Windows 18 included a change that [breaks path conversion on windows](https://github.com/docker/for-win/issues/1829). You can set an environment variable to force conversions.
+
+Powershell:
+
+    $Env:COMPOSE_CONVERT_WINDOWS_PATHS=1
+    
+You will need to set this variable for every session or [set it permanently](https://trevorsullivan.net/2016/07/25/powershell-environment-variables/)
+
+### I get an error like `ERROR: for amazeeio-haproxy  Cannot start service amazeeio-haproxy: b'driver failed programming external connectivity on endpoint'`
+
+This can be caused by a few things:
+
+1.  Another program on your computer is using port 80 or port 443. Close any [programs that are using these ports](https://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows) and restart the containers.
+
+2.  There is a [bug in Docker for Windows where network ports are lost on reboot](https://github.com/docker/for-win/issues/1038). Restart Docker for Windows and try again. If this happens everytime you reboot, try [disabling `Windows Fast Startup`](https://github.com/docker/for-win/issues/1038#issuecomment-385889065).
