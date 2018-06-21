@@ -299,7 +299,6 @@ To get the gateway IP, run `ipconfig` in Windows terminal, and search for `Defau
 Example `hosts` file contents:
 
     10.0.2.2 my-local-website.com.docker.amazee.io
-    10.0.2.2 localhost
 
 ## pygmy
 
