@@ -1,0 +1,9 @@
+FROM amazeeio/node:8-builder as nodebuilder
+RUN echo '{ "allow_root": true }' > /home/.bowerrc
+RUN echo 'unsafe-perm=true' > /home/.npmrc
+COPY . /app
+RUN yarn install && node ./node_modules/gitbook-cli/bin/gitbook.js install && node ./node_modules/gitbook-cli/bin/gitbook.js build
+
+FROM amazeeio/nginx
+RUN echo "~^changelog.amazee.io   https://docs.amazee.io/changelog.html;" >> /etc/nginx/redirects-map.conf
+COPY --from=nodebuilder /app/_book /app

@@ -1,0 +1,8 @@
+docker-compose-yaml: docker-compose.yml
+
+environments:
+  master:
+    routes:
+        - nginx:
+            - docs.amazee.io
+            - changelog.amazee.io
