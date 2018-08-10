@@ -27,7 +27,7 @@ services:
       args:
         CLI_IMAGE: *lagoon-project # Inject the name of the cli image
     labels:
-      lagoon.type: nginx-php
+      lagoon.type: nginx
     << : *default-user # uses the defined user from top
     environment:
       << : *default-environment # loads the defined environment variables from the top
