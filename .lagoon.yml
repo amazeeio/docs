@@ -4,4 +4,5 @@ environments:
   master:
     routes:
         - nginx:
-            - "docs.amazee.io"
+            - docs.amazee.io
+            - changelog.amazee.io
