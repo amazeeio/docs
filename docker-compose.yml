@@ -1,20 +1,48 @@
-# Create here the Drupal site you would like
-version: '2'
-services:
-  drupal:
-    build: .
-    # Choose your URL and hostname for this Docker Container
-    # NEEDS to end with '.docker.amazee.io' !
-    # DO NOT remove the '&hostname'
-    hostname: &hostname docs.amazee.io.docker.amazee.io
+version: '2.3'
 
-    environment:
-      AMAZEEIO: AMAZEEIO
-      AMAZEEIO_URL: *hostname
-      AMAZEEIO_HTTP_PORT: 8080
-      WEBROOT: _book
-      VIRTUAL_HOST: *hostname
-    container_name: *hostname
+x-lagoon-project:
+  # Lagoon project name (leave `&lagoon-project` when you edit this)
+  &lagoon-project drupal-example
+
+x-volumes:
+  &default-volumes
+    # Define all volumes you would like to have real-time mounted into the docker containers
     volumes:
-      - ./_book:/app
-    network_mode: bridge
+      - .:/app-foo:delegated
+
+x-environment:
+  &default-environment
+    LAGOON_PROJECT: *lagoon-project
+    # Route that should be used locally, if you are using pygmy, this route *must* end with .docker.amazee.io
+    LAGOON_ROUTE: http://docs.amazee.io.docker.amazee.io
+    # Uncomment if you like to have the system behave like in production
+    #LAGOON_ENVIRONMENT_TYPE: production
+    # Uncomment to enable xdebug and then restart via `docker-compose up -d`
+    #XDEBUG_ENABLE: "true"
+
+x-user:
+  &default-user
+    # The default user under which the containers should run. Change this if you are on linux and run with another user than id `1000`
+    user: '1000'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+      args:
+        CLI_IMAGE: *lagoon-project # Inject the name of the cli image
+    labels:
+      lagoon.type: nginx-php
+    << : *default-volumes # loads the defined volumes from the top
+    << : *default-user # uses the defined user from top
+    environment:
+      << : *default-environment # loads the defined environment variables from the top
+      LAGOON_LOCALDEV_URL: docs.amazee.io.docker.amazee.io # generate another route for nginx, by default we go to varnish
+    networks:
+      - amazeeio-network
+      - default
+
+networks:
+  amazeeio-network:
+    external: true
