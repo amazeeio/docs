@@ -34,7 +34,7 @@ If you would like to customize your Solr configuration, you can develop and test
 2. Fill the config according to your Solr version from our [default configs](https://github.com/amazeeio/docker/tree/master/solr/)
 3. In the `volumes:` section of the `solr:` container in the `docker-compose.yml` file, add the entry which will connect your custom config to solr in the container (it should be already there, just uncomment it)
 
-      `- ./amazeeio/solr-conf:/solr-conf`
+      `- ./amazeeio/solr-conf:/solr-conf/conf`
 
 4. Restart your containers with `docker-compose restart solr` and verify that the Solr container and config is loaded correctly
 5. Change your Solr config according to your needs and restart the container with `docker-compose restart solr`
