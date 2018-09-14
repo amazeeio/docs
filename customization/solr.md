@@ -1,5 +1,9 @@
 # Solr Customization
 
+{% hint style='info' %}
+This Documentation covers the legacy amazee.io System. If you are running on Lagoon please check the: [Lagoon Documentation](https://lagoon.readthedocs.io/en/latest/using_lagoon/drupal/services/solr/){% endhint %}
+
+
 amazee.io offers the three Solr versions, and provides a default configuration from the [search\_api\_solr module]([default config](https://github.com/amazeeio/docker/blob/master/solr/)) module for each.
 
 | Solr Version | Drupal Solr Config/Schema |
