@@ -5,5 +5,5 @@ COPY . /app
 RUN yarn install && node ./node_modules/gitbook-cli/bin/gitbook.js install && node ./node_modules/gitbook-cli/bin/gitbook.js build
 
 FROM amazeeio/nginx
-RUN echo "~^changelog.amazee.io   https://docs.amazee.io/changelog.html;" >> /etc/nginx/redirects-map.conf
+RUN echo "~^changelog.amazee.io   https://github.com/amazeeio/lagoon/releases;" >> /etc/nginx/redirects-map.conf
 COPY --from=nodebuilder /app/_book /app

@@ -1,5 +1,8 @@
 # Changelog
 
+{% hint style='danger' %}
+This site has been deprecated: You can find the release notes of Lagoon over at Github: [Lagoon Releases](https://github.com/amazeeio/lagoon/releases){% endhint %}
+
 Hi there!
 As we are improving amazee.io we started to release changelogs to highlight changes and new additions to the hosting stack.
 
