@@ -1,0 +1,12 @@
+{% extends template.self %}
+
+{% block book_inner %}
+        <div class="alert hints-alert">
+            <div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div>
+            <div class="hints-container">
+                <p>This is the legacy documentation of the amazee.io infrastructure. If you are using Lagoon please head over
+                    to the <a href="https://lagoon.readthedocs.io">Lagoon Documentation</a></p>
+            </div>
+        </div>
+{{ super() }}
+{% endblock %}
