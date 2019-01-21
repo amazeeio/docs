@@ -16,7 +16,7 @@ We need to set you up with the required things first. We are working hard to ful
 4. Give our deployment systems access to the Git repository \(see [Grant access to your sourcecode](/step_by_step_guides/grant_amazeeio_access_to_sourcecode.md) on how to do that\)
 5. **Main Domain** (e.g. example.com)
 6. **Redirect Domains** - Domains which will be redirected to the main domain (e.g. www.example.com)
-7. **PHP Version** - We support 5.6, 7.0, 7.1
+7. **PHP Version** - We support 7.1 
 8. **Solr** - If you need Solr you can choose between following versions 3,5,6
 9. **Webroot** - If you have a different webroot than the main directory of your git repository (e.g. `public` or `web`)
 

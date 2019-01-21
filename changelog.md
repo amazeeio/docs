@@ -8,6 +8,12 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2019-01-21 - Supported PHP Versions
+
+As of January 1st, PHP 5.6 and 7.0 are no longer supported.
+We encourage you to you upgrade your site to use 7.1 as soon as is convenient.
+If you wish to upgrade to PHP 7.2 or later, ask your support engineer if lagoon is right for you.
+
 ## 2017-08-29 - You asked, we answered: PHP 7.1 support starts today!
 We had intended to release PHP 7.1 support along with our Drupal on Docker services, but then thought, why wait?
 
