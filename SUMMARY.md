@@ -52,5 +52,3 @@
 * [Changelog](changelog.md)
 * [FAQ](faq.md)
 * [Comparison](comparison.md)
-* [OpenShift \(beta\)](openshift/openshift-beta.md)
-  * [rsync into container](openshift/rsync-into-container.md)
