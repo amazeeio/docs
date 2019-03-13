@@ -33,12 +33,12 @@ Please make sure that this `public_html` directory is the same where your Drupal
     -rw-r--r-- 1 501 dialout 549 Apr 26 06:11 index.php
 
 
-Important for [Drupal Composer Project Users](https://github.com/drupal-composer/drupal-project):  
+Important for [Drupal Composer Project Users](https://github.com/drupal-composer/drupal-project):
 You will not see an `index.php` file here, instead you will see a `web` folder (or a similar folder) and a `composer.json` file. Plus when you run `drush` later, first change into the directory where the Drupal `index.php` file is (most probably just via `cd web`)
 
 ### Step 3: settings.php and drushrc.php
 
-amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database and how to connect to it.  
+amazee.io has a unique environment variable system, which will tell your Drupal all about the environment it is in, like where to find the Database and how to connect to it.
 This has two main advantages:
 1. There are no passwords or usernames saved in settings.php files, so you can safely share your whole Drupal Code, without sharing credentials about your site.
 2. The settings.php is the exact same on your Local Docker, on the development and on the production site.
@@ -139,7 +139,7 @@ You may have an existing Drupal database you would like to import into your Dock
 
 ### Step 1: Get a database dump
 
-This step depends on how you currently host. There are many different ways on how to create a database dump.  
+This step depends on how you currently host. There are many different ways on how to create a database dump.
 If your current hosting provider has Drush installed, you can use the following:
 
     drush sql-dump --result-file=dump.sql
@@ -182,7 +182,7 @@ That's it! It is a good idea to clear all caches via `drush cr` for Drupal 8 or 
 
 ## Add existing files
 
-The Drupal directory is available inside the Docker Container.  
+The Drupal directory is available inside the Docker Container.
 In order to add your Drupal files, just put them in the directory you had them before, `sites/default/files`.
 
 ## Done!
