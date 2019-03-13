@@ -2,9 +2,10 @@
 
 <!-- toc -->
 
+{% hint style='working' %}
 ## Legacy Platform
-
 This documentation is for the legacy platform of amazee.io. If you are setting up a new project, it is likely using [Lagoon](https://github.com/amazeeio/lagoon) and has different requirements. Please see the [Lagoon Documentation](http://lagoon.readthedocs.io/en/latest/)
+{% endhint %}
 
 Running on Mac OS X? We created a [fully documented step by step guide on our blog](https://stories.amazee.io/easy-local-drupal-development-on-os-x-a01a343f99e3) for you.
 
