@@ -8,6 +8,10 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 
+## 2019-11-20 - SFTP Fixes
+We've rolled out fixes that under certain circumstances broke SFTP client
+access to the servers.
+
 ## 2019-01-21 - Supported PHP Versions
 
 As of January 1st, PHP 5.6 and 7.0 are no longer supported.
