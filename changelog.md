@@ -7,6 +7,9 @@ Hi there!
 As we are improving amazee.io we started to release changelogs to highlight changes and new additions to the hosting stack.
 
 <!-- toc -->
+## 2019-12-10 - PHP 7.3
+A very long awaited feature - With the deprecation of php 5.6/7.0 and 7.1 we started rolling out PHP 7.3 which is available on the legacy platform.
+PHP 7.3 Docker images will also be available soon
 
 ## 2019-11-20 - SFTP Fixes
 We've rolled out fixes that under certain circumstances broke SFTP client
@@ -54,15 +57,15 @@ Starting today, sites running on our compact tier have access to Solr 5/6. This 
 Since today there are more robust `aliases.drushrc.php` files available, this file tells Drush how to communicate with our API and we're switching from `file_get_contents()` to `curl`. Additionally the file included within is now hosted on our own servers instead of Github. You can find the new files here [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php).
 For the next couple of weeks we keep the old file on github available but will start to notify customers about the update during a drush command.
 
-**How to upgrade**  
+**How to upgrade**
 In order to use the new `aliases.drushrc.php` file just replace the existing file with this updated version: [aliases.drushrc.php](https://github.com/amazeeio/drupal-setting-files/blob/master/Drupal8/drush/aliases.drushrc.php) (It's the same for Drupal 6, 7 and 8).
 
 Make sure this file is updated on all branches.
 
-**Timeline of fadeout for old file**  
-2017-03-14 - Releasing new `aliases.drushrc.php` file.  
-2017-03-21 - Starting to show a warning message when the old file is still used.  
-2017-05-01 - Disabling drush API functionality within old file with message to upgrade to the new version of `aliases.drushrc.php`  
+**Timeline of fadeout for old file**
+2017-03-14 - Releasing new `aliases.drushrc.php` file.
+2017-03-21 - Starting to show a warning message when the old file is still used.
+2017-05-01 - Disabling drush API functionality within old file with message to upgrade to the new version of `aliases.drushrc.php`
 
 ## 2017-03-07 - Custom domains for development sites
 
