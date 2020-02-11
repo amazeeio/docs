@@ -8,7 +8,7 @@ As we are improving amazee.io we started to release changelogs to highlight chan
 
 <!-- toc -->
 ## 2020-02-11 - SSL Cipher and SSL Version updates
-As TLS 1.0 and TLS 1.1 [starts to get discouraged](https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols) by most of the browsers in 2020 we moved away from those TLS Versions and enabled TLS 1.2 on all environments.
+As TLS 1.0 and TLS 1.1 [start to get discouraged](https://blog.qualys.com/ssllabs/2018/11/19/grade-change-for-tls-1-0-and-tls-1-1-protocols) by most browsers druing 2020 we decided to update to the latest Mozilla SSL security guidelines. This means SSL connections run solely over TLS 1.2 as well as the most up to date ciphersuites
 
 ## 2019-12-10 - PHP 7.3
 A very long awaited feature - With the deprecation of php 5.6/7.0 and 7.1 we started rolling out PHP 7.3 which is available on the legacy platform.
