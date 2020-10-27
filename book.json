@@ -3,18 +3,11 @@
         "atoc",
         "copy-code-button",
         "heading-anchors",
-        "gtm",
         "hints",
         "advanced-emoji",
         "-lunr",
-        "-search",
-        "search-pro"
+        "-search"
     ],
-    "pluginsConfig": {
-        "gtm": {
-            "token": "GTM-MRPMJ2"
-        }
-    },
     "title": "docs.amazee.io",
     "links": {
         "sidebar": {
