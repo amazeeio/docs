@@ -2,7 +2,9 @@ FROM amazeeio/node:8-builder as nodebuilder
 RUN echo '{ "allow_root": true }' > /home/.bowerrc
 RUN echo 'unsafe-perm=true' > /home/.npmrc
 COPY . /app
-RUN yarn install && node ./node_modules/gitbook-cli/bin/gitbook.js install && node ./node_modules/gitbook-cli/bin/gitbook.js build
+RUN yarn install
+RUN node ./node_modules/gitbook-cli/bin/gitbook.js install
+RUN node ./node_modules/gitbook-cli/bin/gitbook.js build
 
 FROM amazeeio/nginx
 RUN echo "~^changelog.amazee.io   https://github.com/amazeeio/lagoon/releases;" >> /etc/nginx/redirects-map.conf
