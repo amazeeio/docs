@@ -1,0 +1,1198 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Troubleshooting · docs.amazee.io</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../architecture/architecture.html" />
+    
+    
+    <link rel="prev" href="map_addtitional_ports.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.amazee.io" target="_blank" class="custom-link">www.amazee.io</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step_by_step_guides/step_by_step_guides.html">
+            
+                <a href="../step_by_step_guides/step_by_step_guides.html">
+            
+                    
+                    Step by Step Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../step_by_step_guides/technical_requirements.html">
+            
+                <a href="../step_by_step_guides/technical_requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../step_by_step_guides/get_your_drupal_site_running_on_amazeeio.html">
+            
+                <a href="../step_by_step_guides/get_your_drupal_site_running_on_amazeeio.html">
+            
+                    
+                    Get your Drupal Site locally running
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../step_by_step_guides/push-local-site-to-development-server.html">
+            
+                <a href="../step_by_step_guides/push-local-site-to-development-server.html">
+            
+                    
+                    Push local site to development server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../step_by_step_guides/grant_amazeeio_access_to_sourcecode.html">
+            
+                <a href="../step_by_step_guides/grant_amazeeio_access_to_sourcecode.html">
+            
+                    
+                    Grant access to your sourcecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../step_by_step_guides/golive_on_amazeeio.html">
+            
+                <a href="../step_by_step_guides/golive_on_amazeeio.html">
+            
+                    
+                    Going Live
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="local_docker_development.html">
+            
+                <a href="local_docker_development.html">
+            
+                    
+                    Local Docker Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="pygmy.html">
+            
+                <a href="pygmy.html">
+            
+                    
+                    Linux & OS X - pygmy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="os_x_cachalot.html">
+            
+                <a href="os_x_cachalot.html">
+            
+                    
+                    OS X Alternative - cachalot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="windows.html">
+            
+                <a href="windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="drupal_site_containers.html">
+            
+                <a href="drupal_site_containers.html">
+            
+                    
+                    Drupal Docker Containers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="connect_to_mysql_from_external.html">
+            
+                <a href="connect_to_mysql_from_external.html">
+            
+                    
+                    Connect to MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="map_addtitional_ports.html">
+            
+                <a href="map_addtitional_ports.html">
+            
+                    
+                    Map additional ports
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="troubleshooting.html">
+            
+                <a href="troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../architecture/architecture.html">
+            
+                <a href="../architecture/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../architecture/stack-types.html">
+            
+                <a href="../architecture/stack-types.html">
+            
+                    
+                    Stack-Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../architecture/stack-types/compact.html">
+            
+                <a href="../architecture/stack-types/compact.html">
+            
+                    
+                    Compact Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../architecture/stack-types/cluster.html">
+            
+                <a href="../architecture/stack-types/cluster.html">
+            
+                    
+                    Cluster Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../architecture/components.html">
+            
+                <a href="../architecture/components.html">
+            
+                    
+                    Stack Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../architecture/environment_type.html">
+            
+                <a href="../architecture/environment_type.html">
+            
+                    
+                    Environment type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../architecture/e-mail_delivery.html">
+            
+                <a href="../architecture/e-mail_delivery.html">
+            
+                    
+                    E-Mail Delivery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../architecture/url-structure.html">
+            
+                <a href="../architecture/url-structure.html">
+            
+                    
+                    URL Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../architecture/varnish_testing.html">
+            
+                <a href="../architecture/varnish_testing.html">
+            
+                    
+                    Varnish Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../automated_deployments.html">
+            
+                <a href="../automated_deployments.html">
+            
+                    
+                    Automated Deployments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../drupal/amazeeioyml_file.html">
+            
+                <a href="../drupal/amazeeioyml_file.html">
+            
+                    
+                    .amazeeio.yml file
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../drupal/example-for-drupal-7.html">
+            
+                <a href="../drupal/example-for-drupal-7.html">
+            
+                    
+                    example for Drupal 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../drupal/example-for-drupal-8.html">
+            
+                <a href="../drupal/example-for-drupal-8.html">
+            
+                    
+                    example for Drupal 8 without composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../drupal/example-for-drupal-8-with-composer.html">
+            
+                <a href="../drupal/example-for-drupal-8-with-composer.html">
+            
+                    
+                    example for Drupal 8 with composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../drupal/automatic-synchronization-of-sites.html">
+            
+                <a href="../drupal/automatic-synchronization-of-sites.html">
+            
+                    
+                    Automatic synchronization of sites
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../environment_variables.html">
+            
+                <a href="../environment_variables.html">
+            
+                    
+                    Environment Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../drupal/drupal.html">
+            
+                <a href="../drupal/drupal.html">
+            
+                    
+                    Drupal & Drush
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../drupal/settingsphpfiles.html">
+            
+                <a href="../drupal/settingsphpfiles.html">
+            
+                    
+                    Drupal Configuration and settings.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../drupal/drush-configuration-files.html">
+            
+                <a href="../drupal/drush-configuration-files.html">
+            
+                    
+                    Drush Configuration Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../drupal/synchronize_sites.html">
+            
+                <a href="../drupal/synchronize_sites.html">
+            
+                    
+                    Synchronize Sites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../drupal/drush9.html">
+            
+                <a href="../drupal/drush9.html">
+            
+                    
+                    Drush 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../tools.html">
+            
+                <a href="../tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../tools/blackfireio.html">
+            
+                <a href="../tools/blackfireio.html">
+            
+                    
+                    Blackfire.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../tools/xdebug.html">
+            
+                <a href="../tools/xdebug.html">
+            
+                    
+                    Xdebug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../add-on/add-on.html">
+            
+                <a href="../add-on/add-on.html">
+            
+                    
+                    Add-ons
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../add-on/cdn_integration.html">
+            
+                <a href="../add-on/cdn_integration.html">
+            
+                    
+                    CDN Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../add-on/dropguard.html">
+            
+                <a href="../add-on/dropguard.html">
+            
+                    
+                    Dropguard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../add-on/newrelic.html">
+            
+                <a href="../add-on/newrelic.html">
+            
+                    
+                    New Relic
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../customizations.html">
+            
+                <a href="../customizations.html">
+            
+                    
+                    Customization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../customization/solr.html">
+            
+                <a href="../customization/solr.html">
+            
+                    
+                    Solr Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../customization/nginx.html">
+            
+                <a href="../customization/nginx.html">
+            
+                    
+                    nginx Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../customization/docker.html">
+            
+                <a href="../customization/docker.html">
+            
+                    
+                    Docker Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../support.html">
+            
+                <a href="../support.html">
+            
+                    
+                    Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../regular_maintenance.html">
+            
+                <a href="../regular_maintenance.html">
+            
+                    
+                    Regular Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../changelog.html">
+            
+                <a href="../changelog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../comparison.md">
+            
+                <span>
+            
+                    
+                    Comparison
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+<div class="alert-danger hints-alert">
+    <div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div>
+    <div class="hints-container">
+        <p>This is the legacy documentation of the amazee.io infrastructure. If you are using Lagoon please head over
+            to the <a href="https://lagoon.readthedocs.io">Lagoon Documentation</a></p>
+    </div>
+</div>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="troubleshooting-local-development-environments">Troubleshooting local development environments</h1>
+<!-- toc -->
+<ul>
+<li><a href="#generic-issues">Generic Issues</a><ul>
+<li><a href="#restart-shared-docker-containers">Restart shared Docker containers</a></li>
+<li><a href="#restart-drupal-containers">Restart Drupal Containers</a></li>
+<li><a href="#drupal-container-logs">Drupal Container logs</a></li>
+<li><a href="#shared-container-logs">Shared container logs</a></li>
+<li><a href="#i-get-an-error-like-permission-denied-publickey-and-i-only-see-an-alias-for-none-in-drush-sa">I get an error like <code>Permission denied (publickey).</code> and I only see an alias for <code>@none</code> in <code>drush sa</code></a></li>
+<li><a href="#i-get-an-error-like-conflict-the-name-amazeeiodockeramazeeio-is-already-in-use-by-container">I get an error like <code>Conflict. The name &quot;/amazee_io.docker.amazee.io&quot; is already in use by container</code></a><ul>
+<li><a href="#remove-a-container">Remove a container</a></li>
+<li><a href="#remove-all-containers-and-all-volumes">Remove all containers and all volumes</a></li>
+</ul>
+</li>
+<li><a href="#no-space-left-on-device">No space left on device</a></li>
+<li><a href="#i-get-an-error-like-port-is-already-allocated-during-start">I get an error like <code>port is already allocated.</code> during start</a></li>
+<li><a href="#i-get-an-error-like-service-drupal-mounts-volumes-from-amazeeio-ssh-agent-which-is-not-the-name-of-a-service-or-container">I get an error like <code>Service &quot;drupal&quot; mounts volumes from &quot;amazeeio-ssh-agent&quot;, which is not the name of a service or container.</code></a></li>
+<li><a href="#working-offline">Working Offline</a></li>
+<li><a href="#host-entry-if-using-cachalot">Host entry if using cachalot</a></li>
+<li><a href="#host-entry-if-using-pygmy">Host entry if using pygmy</a></li>
+</ul>
+</li>
+<li><a href="#cachalot">cachalot</a><ul>
+<li><a href="#i-dont-see-any-files-inside-my-drupal-docker-container">I don&apos;t see any files inside my Drupal Docker container</a></li>
+<li><a href="#cannot-access-any-docker-sites">Cannot access any docker sites</a></li>
+<li><a href="#cachalot-starts-with-nfs-failed-to-run">Cachalot starts with <code>NFS failed to run</code></a></li>
+<li><a href="#the-docker-client-gives-an-ssl-error-or-times-out">The <code>docker</code> client gives an SSL error or times out</a></li>
+<li><a href="#the-docker-client-reports-errors-like-x509-certificate-is-valid-for-192168xy-not-192168xz">The <code>docker</code> client reports errors like <code>x509: certificate is valid for 192.168.x.y, not 192.168.x.z</code></a></li>
+<li><a href="#im-running-into-file-permissions-issues-on-the-nfs-mounted-volumes">I&apos;m running into file permissions issues on the NFS mounted volumes</a></li>
+<li><a href="#i-cant-connect-to-an-app-running-in-docker-from-another-vm-commonly-to-test-in-ie">I can&apos;t connect to an app running in docker from another VM (commonly to test in IE)</a><ul>
+<li><a href="#for-pygmy">For pygmy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pygmy">pygmy</a><ul>
+<li><a href="#i-get-an-error-like-listen-tcp-000053-bind-address-already-in-use-during-pygmy-up">I get an error like <code>listen tcp 0.0.0.0:53: bind: address already in use</code> during <code>pygmy up</code></a></li>
+</ul>
+</li>
+<li><a href="#windows">Windows</a><ul>
+<li><a href="#i-get-an-error-like-error-network-amazeeio-network-declared-as-external-but-could-not-be-found">I get an error like <code>ERROR: Network amazeeio-network declared as external, but could not be found.</code></a></li>
+<li><a href="#i-get-an-error-like-error-for-amazeeio-haproxy--cannot-create-container-for-service-amazeeio-haproxy-bmount-deniednthe-source-path-varrundockersocktmpdockersocknis-not-a-valid-windows-path">I get an error like <code>ERROR: for amazeeio-haproxy  Cannot create container for service amazeeio-haproxy: b&apos;Mount denied:\nThe source path &quot;\\\\var\\\\run\\\\docker.sock:/tmp/docker.sock&quot;\nis not a valid Windows path&apos;</code></a></li>
+<li><a href="#i-get-an-error-like-error-for-amazeeio-haproxy--cannot-start-service-amazeeio-haproxy-bdriver-failed-programming-external-connectivity-on-endpoint">I get an error like <code>ERROR: for amazeeio-haproxy  Cannot start service amazeeio-haproxy: b&apos;driver failed programming external connectivity on endpoint&apos;</code></a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h2 id="generic-issues">Generic Issues</h2>
+<p>For most problems with the Docker Development environment, it&apos;s the best to restart all shared and Drupal specific Docker containers.</p>
+<h3 id="restart-shared-docker-containers">Restart shared Docker containers</h3>
+<p>This is done either in <code>pygmy</code> or <code>cachalot</code></p>
+<pre><code>cachalot restart
+</code></pre><p>or</p>
+<pre><code>pygmy restart -d
+</code></pre><p>now you should also restart the Drupal specific Containers:</p>
+<h3 id="restart-drupal-containers">Restart Drupal Containers</h3>
+<p>needs to be done separate for each Drupal container. Run this command where the <code>docker-compose.yml</code> is:</p>
+<pre><code>docker-compose restart
+</code></pre><p>sometimes this is not enough, we can tell docker compose to recreate the containers:</p>
+<pre><code>docker-compose up -d --force-recreate
+</code></pre><p>If this still is not enough, this is the &#x1F528;  method:</p>
+<pre><code>docker-compose down -v
+docker-compose up
+</code></pre><p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).</p>
+</div></div></p>
+<h3 id="drupal-container-logs">Drupal Container logs</h3>
+<p>The above commands all assume that something is wrong with the containers, sometimes though the issue lies somewhere else.
+To find such issues, we need to analyze the docker logs, do that via:</p>
+<pre><code>docker-compose logs
+Attaching to amazee_io.docker.amazee.io
+amazee_io.docker.amazee.io | *** Running /etc/my_init.d/00_regen_ssh_host_keys.sh...
+amazee_io.docker.amazee.io | *** Running /etc/my_init.d/20_virtual_host_replace.sh...
+amazee_io.docker.amazee.io | *** Running /etc/rc.local...
+amazee_io.docker.amazee.io | *** Booting runit daemon...
+amazee_io.docker.amazee.io | *** Runit started as PID 33
+amazee_io.docker.amazee.io | tail: cannot open &#x2018;/var/log/nginx/10fe-drupal.error.log&#x2019; for reading: No such file or directory
+amazee_io.docker.amazee.io | tail: cannot open &#x2018;/var/log/nginx/20be-drupal.error.log&#x2019; for reading: No such file or directory
+amazee_io.docker.amazee.io | tail: cannot open &#x2018;/var/log/nginx/error.log&#x2019; for reading: No such file or directory
+amazee_io.docker.amazee.io | tail: cannot open &#x2018;/var/log/nginx/ssl-10fe-drupal.error.log&#x2019; for reading: No such file or directory
+amazee_io.docker.amazee.io | 160502 05:13:44 mysqld_safe Logging to syslog.
+amazee_io.docker.amazee.io | child (246) Started
+amazee_io.docker.amazee.io | Child (246) said Child starts
+</code></pre><p>Check the latest few lines of code and you probably see the issue.
+Stuck here? Join our Slack at <a href="https://slack.amazee.io" target="_blank">slack.amazee.io</a> and we help you.</p>
+<h3 id="shared-container-logs">Shared container logs</h3>
+<p>To see the logs of the shared container started via <code>pygmy</code> or <code>cachalot</code>, first display all docker containers:</p>
+<pre><code>docker ps
+
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+9e27b9eadc67        amazeeio/drupal:php70-basic   &quot;/sbin/my_init&quot;          5 minutes ago       Up 5 minutes        80/tcp, 443/tcp, 0.0.0.0:32782-&gt;3306/tcp   amazee_io.docker.amazee.io
+5ce655cd369f        andyshinn/dnsmasq:2.75        &quot;dnsmasq -k -A /docke&quot;   24 minutes ago      Up 24 minutes       0.0.0.0:53-&gt;53/tcp, 0.0.0.0:53-&gt;53/udp     amazeeio-dnsmasq
+124b3919e89a        amazeeio/ssh-agent            &quot;/run.sh ssh-agent&quot;      24 minutes ago      Up 24 minutes                                                  amazeeio-ssh-agent
+93eb7a384640        amazeeio/haproxy              &quot;/app/docker-entrypoi&quot;   24 minutes ago      Up 24 minutes       0.0.0.0:80-&gt;80/tcp, 0.0.0.0:443-&gt;443/tcp   amazeeio-haproxy
+</code></pre><p>You can see three containers that have names with starting <code>amazeeio-</code> these are the shared containers.</p>
+<p>You can view each container&apos;s logs via:</p>
+<pre><code>docker logs -f [container name]
+</code></pre><p>Btw, you can also see the logs of the Drupal Containers, via that command.</p>
+<h3 id="i-get-an-error-like-permission-denied-publickey-and-i-only-see-an-alias-for-none-in-drush-sa">I get an error like <code>Permission denied (publickey).</code> and I only see an alias for <code>@none</code> in <code>drush sa</code></h3>
+<p>First try restarting your container, it may have lost the volume mount to the ssh-agent</p>
+<pre><code>docker-compose up --force -d
+</code></pre><p>If that does not resolve the issue, restart pygmy/cachalot</p>
+<pre><code>cachalot restart
+</code></pre><p>or</p>
+<pre><code>pygmy restart -d
+</code></pre><h3 id="i-get-an-error-like-conflict-the-name-amazeeiodockeramazeeio-is-already-in-use-by-container">I get an error like <code>Conflict. The name &quot;/amazee_io.docker.amazee.io&quot; is already in use by container</code></h3>
+<p>It happened to all of us, you remove a local <code>docker-compose.yml</code> file, recreate it and now during <code>docker-compose up -d</code>, docker yells at you and tells you this container exists already.</p>
+<p>The easiest way would be to just give your new container another name, but there are better ways:</p>
+<h4 id="remove-a-container">Remove a container</h4>
+<ol>
+<li><p>Find the name of the container you would like to completely remove via:</p>
+<pre><code> docker ps
+
+ CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+ 9e27b9eadc67        amazeeio/drupal:php70-basic   &quot;/sbin/my_init&quot;          10 minutes ago      Up 10 minutes       80/tcp, 443/tcp, 0.0.0.0:32782-&gt;3306/tcp   amazee_io.docker.amazee.io
+</code></pre></li>
+<li><p>Stop the container</p>
+<pre><code> docker stop amazee_io.docker.amazee.io
+</code></pre></li>
+<li><p>Remove the container with it&apos;s volumes:</p>
+<pre><code> docker rm -v amazee_io.docker.amazee.io
+</code></pre></li>
+</ol>
+<h4 id="remove-all-containers-and-all-volumes">Remove all containers and all volumes</h4>
+<p>You shouldn&apos;t really need to do this, and if you think so, first try the above help. But sometimes the best way is to completely restart:</p>
+<pre><code>docker rm -vf $(docker ps -q -a)
+</code></pre><p>This will stop and remove <strong>all</strong> containers and <strong>all</strong> attached volumes.</p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>This will remove your whole local MySQL database and maybe existing other local created volumes (like the solr search index).</p>
+</div></div></p>
+<p>If you get an error like <code>cannot create temp file for here-document: No space left on device</code> then you can free up space by removing old volumes and images that we don&apos;t need anymore:</p>
+<pre><code>docker volume rm $(docker volume ls -q)
+</code></pre><p>If you also want to get rid of all the docker images you can run:</p>
+<pre><code>docker rmi $(docker images -q)
+</code></pre><p>Now you have a completely empty Docker, now it&apos;s time to start again with <code>pygmy</code> or <code>cachalot</code>.</p>
+<h3 id="no-space-left-on-device">No space left on device</h3>
+<p>If you need to free up some disk space, you can do this:</p>
+<ul>
+<li>start all containers that you need to preserve</li>
+<li>run the following commands<pre><code>docker system prune
+docker image prune -a
+docker volume prune
+</code></pre></li>
+</ul>
+<h3 id="i-get-an-error-like-port-is-already-allocated-during-start">I get an error like <code>port is already allocated.</code> during start</h3>
+<p>If during the start of Docker containers you see an error like that:</p>
+<pre><code>docker: Error response from daemon: driver failed programming external connectivity on endpoint
+amazeeio-haproxy (654d1f1c17b0f7304570a763e1017808b214b81648045a5c64ed6a395daeec92):
+Bind for 0.0.0.0:443 failed: port is already allocated.
+</code></pre><p>This means that another service (can be another Docker container, or in case of Linux based systems another service like an installed nginx) is already using this Port.</p>
+<p>You should stop this service or Docker container first.</p>
+<h3 id="i-get-an-error-like-service-drupal-mounts-volumes-from-amazeeio-ssh-agent-which-is-not-the-name-of-a-service-or-container">I get an error like <code>Service &quot;drupal&quot; mounts volumes from &quot;amazeeio-ssh-agent&quot;, which is not the name of a service or container.</code></h3>
+<p>This can happen when you start a Drupal Container via <code>docker-compose up -d</code> and the cachalot or pygmy service has stopped</p>
+<pre><code>docker-compose up -d
+ERROR: Service &quot;drupal&quot; mounts volumes from &quot;amazeeio-ssh-agent&quot;, which is not the name of a service or container.
+</code></pre><p>The Drupal Containers are depending on the <code>ssh-agent</code> shared Docker container (this is in order to have shared ssh-keys) and somehow this container is missing.</p>
+<p>Try to restart either <code>pygmy</code> or <code>cachalot</code>, this will create the <code>ssh-agent</code> container with the name <code>amazeeio-ssh-agent</code> and then try again.</p>
+<h3 id="working-offline">Working Offline</h3>
+<p>Amazeeio uses a remote DNS server to resolve your <code>*.docker.amazee.io</code> addresses which means if you don&apos;t have an internet connection you are not going to be able to get to your site. However, you can use your <code>hosts</code> file in this scenario. This file is typically located at <code>/etc/hosts</code> on Linux and macOS and <code>C:\Windows\System32\Drivers\etc\host</code> on Windows. You will need administrative privileges to edit this file.</p>
+<p>If you are unfamiliar with this process, follow this tutorial at <a href="http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/" target="_blank">How-To Geek</a>.</p>
+<p>If you&apos;re using cachalot you are going to want to point your site to the value returned by <code>cachalot ip</code> (typically 192.168.99.100), while on pygmy you will want to use 127.0.0.1. Here are some examples:</p>
+<h3 id="host-entry-if-using-cachalot">Host entry if using cachalot</h3>
+<pre><code class="lang-bash">192.168.99.100 awesomesauce.docker.amazee.io
+</code></pre>
+<h3 id="host-entry-if-using-pygmy">Host entry if using pygmy</h3>
+<pre><code class="lang-bash">127.0.0.1 awesomesauce.docker.amazee.io
+</code></pre>
+<h2 id="cachalot">cachalot</h2>
+<h3 id="i-dont-see-any-files-inside-my-drupal-docker-container">I don&apos;t see any files inside my Drupal Docker container</h3>
+<p>Currently only files that are inside of your home folder (something like <code>/User/yourname</code> are shared inside the Docker Containers.
+If you connect to the Docker container and there are no files at all, make sure that your Drupal and the docker-compose.yml file are within your home folder. If this is not the case, move everything and restart the container via:</p>
+<pre><code>docker-compose up -d --force
+</code></pre><h3 id="cannot-access-any-docker-sites">Cannot access any docker sites</h3>
+<p>The best to solve issues around not accessible docker sites is to try to turn it off and on again:</p>
+<ol>
+<li><p>Make sure everything is running correctly</p>
+<pre><code>cachalot status
+</code></pre></li>
+<li><p>Restart cachalot:</p>
+<pre><code>cachalot restart
+</code></pre></li>
+</ol>
+<h3 id="cachalot-starts-with-nfs-failed-to-run">Cachalot starts with <code>NFS failed to run</code></h3>
+<ol>
+<li>Restart your cachalot with <code>cachalot restart</code></li>
+<li><p>Check if your brew installation is all correct, do that with</p>
+<pre><code>brew doctor
+</code></pre><p>and fix any reported issues. Then restart <code>cachalot restart</code></p>
+</li>
+</ol>
+<h3 id="the-docker-client-gives-an-ssl-error-or-times-out">The <code>docker</code> client gives an SSL error or times out</h3>
+<p>First check that <code>cachalot</code> is actually running:</p>
+<pre><code>cachalot status
+</code></pre><p>If not, start it : )</p>
+<p>Another common cause is the <code>DOCKER_*</code> environment variables not being set correctly. Check the output of <code>cachalot status</code> from the same terminal window. If it displays a message such as</p>
+<pre><code>Environment variables not set.
+</code></pre><p>Set them with</p>
+<pre><code>eval $(cachalot env)
+</code></pre><h3 id="the-docker-client-reports-errors-like-x509-certificate-is-valid-for-192168xy-not-192168xz">The <code>docker</code> client reports errors like <code>x509: certificate is valid for 192.168.x.y, not 192.168.x.z</code></h3>
+<p>Sometimes the IP address of the docker-machine VM changes on restart, which in turn causes the certificates for the VM to not work. Current versions of docker-machine don&apos;t handle this for you, and neither does Dinghy, so to fix this you need to regenerate the certificates with:</p>
+<pre><code>$ docker-machine regenerate-certs amazeeio-cachalot
+</code></pre><p>Replace <code>cachalot</code> with the VM machine name if you aren&apos;t using the default name.</p>
+<h3 id="im-running-into-file-permissions-issues-on-the-nfs-mounted-volumes">I&apos;m running into file permissions issues on the NFS mounted volumes</h3>
+<p>Unfortunately, there isn&apos;t yet a one-size-fits-all solution for sharing folders from the host OS X machine into the Linux VM and then into the docker containers, and permissions issues are sometimes a problem. This isn&apos;t an issue unique to cachalot, and is a common point of discussion in projects like Docker Machine as well.</p>
+<p>Because cachalot is geared toward development, it optimizes for sharing source code directories between the containers and host, and then uses NFS for performance. This works really well for editing code in OS X and seeing the changes immediately in your running containers, but can cause problems with mounting volumes from the host in some containers that expect files to be owned by certain users, since the files can&apos;t be successfully chown&apos;d to the user running in the container.</p>
+<p>In practice, this means that it&apos;s usually best to run containers such as
+Postgres using a normal docker volume, rather than a host-shared volume. This is the default, so normally nothing needs to be done, but you may run into chown errors or other file permissions issues if you try to mount a host volume into such containers.</p>
+<p>For more background on the decisions made here, see the discussion in issues such as <a href="https://github.com/codekitchen/dinghy/issues/31" target="_blank">https://github.com/codekitchen/dinghy/issues/31</a> and
+<a href="https://github.com/codekitchen/dinghy/issues/15" target="_blank">https://github.com/codekitchen/dinghy/issues/15</a></p>
+<p>In the future, this may be solvable using user namespacing, which was introduced in a very limited form in docker 1.10. It would also be possible in theory to modify the NFS server process to do things such as ignore chown commands, but this isn&apos;t currently planned.</p>
+<h3 id="i-cant-connect-to-an-app-running-in-docker-from-another-vm-commonly-to-test-in-ie">I can&apos;t connect to an app running in docker from another VM (commonly to test in IE)</h3>
+<p>If you are running the Windows VM in VirtualBox, you can configure it to use the host DNS resolver:</p>
+<pre><code>VBoxManage modifyvm &quot;IE11 - Win10&quot; --natdnshostresolver1 on
+</code></pre><p>Replace <code>&quot;IE11 - Win10&quot;</code> with the name of your VM. This will allow the VM to resolve and connect directly to your <code>http://*.docker.amazee.io</code> services running in cachalot.</p>
+<h4 id="for-pygmy">For pygmy</h4>
+<p>An additional step is required if you use pygmy. Domains have to be added to Windows <code>hosts</code> file. They should point to the gateway IP address.</p>
+<p>To get the gateway IP, run <code>ipconfig</code> in Windows terminal, and search for <code>Default Gateway</code> in the output.</p>
+<p>Example <code>hosts</code> file contents:</p>
+<pre><code>10.0.2.2 my-local-website.com.docker.amazee.io
+</code></pre><h2 id="pygmy">pygmy</h2>
+<p>Most issues with <code>pygmy</code> can be resolved with:</p>
+<p><img src="../assets/itsupport.gif" alt="Have you tried turning it off and on again?"></p>
+<pre><code>pygmy restart -d
+</code></pre><p>If that does not help, try and restart other services, in this order:</p>
+<ol>
+<li>Docker</li>
+<li>Reboot your computer</li>
+</ol>
+<h3 id="i-get-an-error-like-listen-tcp-000053-bind-address-already-in-use-during-pygmy-up">I get an error like <code>listen tcp 0.0.0.0:53: bind: address already in use</code> during <code>pygmy up</code></h3>
+<p>If during starting of <code>pygmy</code> you see an error like that:</p>
+<pre><code>    Error response from daemon: driver failed programming external connectivity on endpoint amazeeio-dnsmasq:
+    Error starting userland proxy: listen tcp 0.0.0.0:53: bind: address already in use
+    Error: failed to start containers: amazeeio-dnsmasq
+</code></pre><p>You are probably on Ubuntu and the by default started DNS server by Ubuntu conflicts with the one we provide with <code>pygmy</code>. You should disable it, see here: <a href="http://askubuntu.com/a/233223" target="_blank">http://askubuntu.com/a/233223</a> (no worries, the default started DNS server is actually not used, so it&apos;s safe to disable it).</p>
+<p>If you still run into the error run following command <code>sudo netstat -tulpn</code> to see the processlist look for the service running on port 53 (you should find that process in the <code>Local Address</code> column). Look for the Process ID (PID)</p>
+<p>With the Process ID you can now run following command:</p>
+<blockquote>
+<p>sudo kill [Process ID]</p>
+</blockquote>
+<h2 id="windows">Windows</h2>
+<h3 id="i-get-an-error-like-error-network-amazeeio-network-declared-as-external-but-could-not-be-found">I get an error like <code>ERROR: Network amazeeio-network declared as external, but could not be found.</code></h3>
+<p>You will need to create the shared external network in docker first:</p>
+<pre><code>docker network create amazeeio-network
+</code></pre><h3 id="i-get-an-error-like-error-for-amazeeio-haproxy--cannot-create-container-for-service-amazeeio-haproxy-bmount-deniednthe-source-path-varrundockersocktmpdockersocknis-not-a-valid-windows-path">I get an error like <code>ERROR: for amazeeio-haproxy  Cannot create container for service amazeeio-haproxy: b&apos;Mount denied:\nThe source path &quot;\\\\var\\\\run\\\\docker.sock:/tmp/docker.sock&quot;\nis not a valid Windows path&apos;</code></h3>
+<p>Docker for Windows 18 included a change that <a href="https://github.com/docker/for-win/issues/1829" target="_blank">breaks path conversion on windows</a>. You can set an environment variable to force conversions.</p>
+<p>Powershell:</p>
+<pre><code>$Env:COMPOSE_CONVERT_WINDOWS_PATHS=1
+</code></pre><p>You will need to set this variable for every session or <a href="https://trevorsullivan.net/2016/07/25/powershell-environment-variables/" target="_blank">set it permanently</a></p>
+<h3 id="i-get-an-error-like-error-for-amazeeio-haproxy--cannot-start-service-amazeeio-haproxy-bdriver-failed-programming-external-connectivity-on-endpoint">I get an error like <code>ERROR: for amazeeio-haproxy  Cannot start service amazeeio-haproxy: b&apos;driver failed programming external connectivity on endpoint&apos;</code></h3>
+<p>This can be caused by a few things:</p>
+<ol>
+<li><p>Another program on your computer is using port 80 or port 443. Close any <a href="https://stackoverflow.com/questions/48198/how-can-you-find-out-which-process-is-listening-on-a-port-on-windows" target="_blank">programs that are using these ports</a> and restart the containers.</p>
+</li>
+<li><p>There is a <a href="https://github.com/docker/for-win/issues/1038" target="_blank">bug in Docker for Windows where network ports are lost on reboot</a>. Restart Docker for Windows and try again. If this happens everytime you reboot, try <a href="https://github.com/docker/for-win/issues/1038#issuecomment-385889065" target="_blank">disabling <code>Windows Fast Startup</code></a>.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="map_addtitional_ports.html" class="navigation navigation-prev " aria-label="Previous page: Map additional ports">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../architecture/architecture.html" class="navigation navigation-next " aria-label="Next page: Architecture">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Troubleshooting","level":"1.3.5","depth":2,"next":{"title":"Architecture","level":"1.4","depth":1,"path":"architecture/architecture.md","ref":"architecture/architecture.md","articles":[{"title":"Stack-Types","level":"1.4.1","depth":2,"path":"architecture/stack-types.md","ref":"architecture/stack-types.md","articles":[{"title":"Compact Stack","level":"1.4.1.1","depth":3,"path":"architecture/stack-types/compact.md","ref":"architecture/stack-types/compact.md","articles":[]},{"title":"Cluster Stack","level":"1.4.1.2","depth":3,"path":"architecture/stack-types/cluster.md","ref":"architecture/stack-types/cluster.md","articles":[]}]},{"title":"Stack Components","level":"1.4.2","depth":2,"path":"architecture/components.md","ref":"architecture/components.md","articles":[]},{"title":"Environment type","level":"1.4.3","depth":2,"path":"architecture/environment_type.md","ref":"architecture/environment_type.md","articles":[]},{"title":"E-Mail Delivery","level":"1.4.4","depth":2,"path":"architecture/e-mail_delivery.md","ref":"architecture/e-mail_delivery.md","articles":[]},{"title":"URL Structure","level":"1.4.5","depth":2,"path":"architecture/url-structure.md","ref":"architecture/url-structure.md","articles":[]},{"title":"Varnish Testing","level":"1.4.6","depth":2,"path":"architecture/varnish_testing.md","ref":"architecture/varnish_testing.md","articles":[]}]},"previous":{"title":"Map additional ports","level":"1.3.4.2","depth":3,"path":"local_docker_development/map_addtitional_ports.md","ref":"local_docker_development/map_addtitional_ports.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","copy-code-button","heading-anchors","hints","advanced-emoji","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"atoc":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"fontsettings":{"theme":"white","family":"sans","size":2},"heading-anchors":{},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"docs.amazee.io","links":{"sidebar":{"www.amazee.io":"https://www.amazee.io"}},"gitbook":"*"},"file":{"path":"local_docker_development/troubleshooting.md","mtime":"2018-09-14T18:31:55.490Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-10-27T10:52:49.553Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

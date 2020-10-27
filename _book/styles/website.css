@@ -1,0 +1,15 @@
+.book-summary ul.summary li span {
+  color: #cccccc !important;
+}
+a.gitbook-link {
+  display: none !important;
+}
+
+.book .book-body .page-wrapper .page-inner {
+  max-width: 1000px;
+}
+
+/* Remove annoying pref and next navigation arrows */
+.navigation.navigation-prev, .navigation.navigation-next  {
+  display: none;
+}

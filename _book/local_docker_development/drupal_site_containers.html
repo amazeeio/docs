@@ -1,0 +1,1053 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Drupal Docker Containers · docs.amazee.io</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="connect_to_mysql_from_external.html" />
+    
+    
+    <link rel="prev" href="windows.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.amazee.io" target="_blank" class="custom-link">www.amazee.io</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../step_by_step_guides/step_by_step_guides.html">
+            
+                <a href="../step_by_step_guides/step_by_step_guides.html">
+            
+                    
+                    Step by Step Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../step_by_step_guides/technical_requirements.html">
+            
+                <a href="../step_by_step_guides/technical_requirements.html">
+            
+                    
+                    Technical Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../step_by_step_guides/get_your_drupal_site_running_on_amazeeio.html">
+            
+                <a href="../step_by_step_guides/get_your_drupal_site_running_on_amazeeio.html">
+            
+                    
+                    Get your Drupal Site locally running
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../step_by_step_guides/push-local-site-to-development-server.html">
+            
+                <a href="../step_by_step_guides/push-local-site-to-development-server.html">
+            
+                    
+                    Push local site to development server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../step_by_step_guides/grant_amazeeio_access_to_sourcecode.html">
+            
+                <a href="../step_by_step_guides/grant_amazeeio_access_to_sourcecode.html">
+            
+                    
+                    Grant access to your sourcecode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../step_by_step_guides/golive_on_amazeeio.html">
+            
+                <a href="../step_by_step_guides/golive_on_amazeeio.html">
+            
+                    
+                    Going Live
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="local_docker_development.html">
+            
+                <a href="local_docker_development.html">
+            
+                    
+                    Local Docker Development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="pygmy.html">
+            
+                <a href="pygmy.html">
+            
+                    
+                    Linux & OS X - pygmy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="os_x_cachalot.html">
+            
+                <a href="os_x_cachalot.html">
+            
+                    
+                    OS X Alternative - cachalot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="windows.html">
+            
+                <a href="windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="drupal_site_containers.html">
+            
+                <a href="drupal_site_containers.html">
+            
+                    
+                    Drupal Docker Containers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="connect_to_mysql_from_external.html">
+            
+                <a href="connect_to_mysql_from_external.html">
+            
+                    
+                    Connect to MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="map_addtitional_ports.html">
+            
+                <a href="map_addtitional_ports.html">
+            
+                    
+                    Map additional ports
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="troubleshooting.html">
+            
+                <a href="troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../architecture/architecture.html">
+            
+                <a href="../architecture/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../architecture/stack-types.html">
+            
+                <a href="../architecture/stack-types.html">
+            
+                    
+                    Stack-Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../architecture/stack-types/compact.html">
+            
+                <a href="../architecture/stack-types/compact.html">
+            
+                    
+                    Compact Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../architecture/stack-types/cluster.html">
+            
+                <a href="../architecture/stack-types/cluster.html">
+            
+                    
+                    Cluster Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../architecture/components.html">
+            
+                <a href="../architecture/components.html">
+            
+                    
+                    Stack Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../architecture/environment_type.html">
+            
+                <a href="../architecture/environment_type.html">
+            
+                    
+                    Environment type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../architecture/e-mail_delivery.html">
+            
+                <a href="../architecture/e-mail_delivery.html">
+            
+                    
+                    E-Mail Delivery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../architecture/url-structure.html">
+            
+                <a href="../architecture/url-structure.html">
+            
+                    
+                    URL Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../architecture/varnish_testing.html">
+            
+                <a href="../architecture/varnish_testing.html">
+            
+                    
+                    Varnish Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../automated_deployments.html">
+            
+                <a href="../automated_deployments.html">
+            
+                    
+                    Automated Deployments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../drupal/amazeeioyml_file.html">
+            
+                <a href="../drupal/amazeeioyml_file.html">
+            
+                    
+                    .amazeeio.yml file
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../drupal/example-for-drupal-7.html">
+            
+                <a href="../drupal/example-for-drupal-7.html">
+            
+                    
+                    example for Drupal 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../drupal/example-for-drupal-8.html">
+            
+                <a href="../drupal/example-for-drupal-8.html">
+            
+                    
+                    example for Drupal 8 without composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../drupal/example-for-drupal-8-with-composer.html">
+            
+                <a href="../drupal/example-for-drupal-8-with-composer.html">
+            
+                    
+                    example for Drupal 8 with composer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../drupal/automatic-synchronization-of-sites.html">
+            
+                <a href="../drupal/automatic-synchronization-of-sites.html">
+            
+                    
+                    Automatic synchronization of sites
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../environment_variables.html">
+            
+                <a href="../environment_variables.html">
+            
+                    
+                    Environment Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../drupal/drupal.html">
+            
+                <a href="../drupal/drupal.html">
+            
+                    
+                    Drupal & Drush
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../drupal/settingsphpfiles.html">
+            
+                <a href="../drupal/settingsphpfiles.html">
+            
+                    
+                    Drupal Configuration and settings.php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../drupal/drush-configuration-files.html">
+            
+                <a href="../drupal/drush-configuration-files.html">
+            
+                    
+                    Drush Configuration Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../drupal/synchronize_sites.html">
+            
+                <a href="../drupal/synchronize_sites.html">
+            
+                    
+                    Synchronize Sites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../drupal/drush9.html">
+            
+                <a href="../drupal/drush9.html">
+            
+                    
+                    Drush 9
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../tools.html">
+            
+                <a href="../tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../tools/blackfireio.html">
+            
+                <a href="../tools/blackfireio.html">
+            
+                    
+                    Blackfire.io
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../tools/xdebug.html">
+            
+                <a href="../tools/xdebug.html">
+            
+                    
+                    Xdebug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../add-on/add-on.html">
+            
+                <a href="../add-on/add-on.html">
+            
+                    
+                    Add-ons
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../add-on/cdn_integration.html">
+            
+                <a href="../add-on/cdn_integration.html">
+            
+                    
+                    CDN Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../add-on/dropguard.html">
+            
+                <a href="../add-on/dropguard.html">
+            
+                    
+                    Dropguard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../add-on/newrelic.html">
+            
+                <a href="../add-on/newrelic.html">
+            
+                    
+                    New Relic
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../customizations.html">
+            
+                <a href="../customizations.html">
+            
+                    
+                    Customization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../customization/solr.html">
+            
+                <a href="../customization/solr.html">
+            
+                    
+                    Solr Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../customization/nginx.html">
+            
+                <a href="../customization/nginx.html">
+            
+                    
+                    nginx Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../customization/docker.html">
+            
+                <a href="../customization/docker.html">
+            
+                    
+                    Docker Customization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../support.html">
+            
+                <a href="../support.html">
+            
+                    
+                    Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../regular_maintenance.html">
+            
+                <a href="../regular_maintenance.html">
+            
+                    
+                    Regular Maintenance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../changelog.html">
+            
+                <a href="../changelog.html">
+            
+                    
+                    Changelog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../faq.html">
+            
+                <a href="../faq.html">
+            
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../comparison.md">
+            
+                <span>
+            
+                    
+                    Comparison
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+<div class="alert-danger hints-alert">
+    <div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div>
+    <div class="hints-container">
+        <p>This is the legacy documentation of the amazee.io infrastructure. If you are using Lagoon please head over
+            to the <a href="https://lagoon.readthedocs.io">Lagoon Documentation</a></p>
+    </div>
+</div>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="part-ii-drupal-docker-containers">Part II: Drupal Docker Containers</h1>
+<!-- toc -->
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#find-the-right-docker-composeyml">Find the right <code>docker-compose.yml</code></a></li>
+<li><a href="#connect-to-the-container">Connect to the container</a><ul>
+<li><a href="#connect-via-docker-compose-easier">Connect via <code>docker-compose</code> (easier)</a></li>
+<li><a href="#connect-via-docker">Connect via <code>docker</code></a></li>
+<li><a href="#drush-from-your-host-machine">Drush from your host machine</a></li>
+</ul>
+</li>
+<li><a href="#ssh-agent">SSH Agent</a></li>
+<li><a href="#update-images">Update Images</a><ul>
+<li><a href="#slow-updates">Slow Updates?</a></li>
+</ul>
+</li>
+<li><a href="#docker-composeyml-example-files"><code>docker-compose.yml</code> example files</a></li>
+</ul>
+<!-- tocstop -->
+<p>During <a href="local_docker_development.html#part-i-shared-docker-containers">Part I</a> we just started the shared Docker containers. For each Drupal Site we need an own Docker Container:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><a href="https://docs.docker.com/compose/install/" target="_blank">Docker Compose</a> (Version &gt;= 1.7.0)<ul>
+<li>On OS X just run <code>brew install docker-compose</code></li>
+<li>On Linux use your favorite package manager or <a href="https://docs.docker.com/compose/install/" target="_blank">https://docs.docker.com/compose/install/</a></li>
+<li>On Windows it&apos;s already installed with &quot;Docker for Windows&quot;</li>
+</ul>
+</li>
+</ul>
+<h2 id="find-the-right-docker-composeyml">Find the right <code>docker-compose.yml</code></h2>
+<ol>
+<li>Visit <a href="https://github.com/amazeeio/docker" target="_blank">https://github.com/amazeeio/docker</a> or clone <a href="https://github.com/amazeeio/docker.git" target="_blank">https://github.com/amazeeio/docker.git</a> into a folder on your computer</li>
+<li>Copy the desired example file into your Drupal directory (see descriptions below). Use <code>example-docker-compose-drupal.yml</code> if unsure.</li>
+<li>Rename the file to <code>docker-compose.yml</code></li>
+<li>Edit the file according to your needs, change at least the hostname. <em>Btw: It&apos;s perfectly fine to commit this file into your git repo, so others that are also using amazee.io docker can use it as well.</em></li>
+<li><p>Run in the same directory as the <code>docker-compose.yml</code>:</p>
+<pre><code> docker-compose up -d
+</code></pre></li>
+<li>If you are on Windows add the URL to the Hosts file (see <a href="local_docker_development/windows.md">windows documentation</a> for that).</li>
+<li>Open your browser with the entered URL in the <code>docker-compose.yml</code>, happy Drupaling!</li>
+</ol>
+<h2 id="connect-to-the-container">Connect to the container</h2>
+<p>To run commands like <code>git</code> or other things within the container, you need to connect to the container.</p>
+<p>There are two ways for that:</p>
+<h3 id="connect-via-docker-compose-easier">Connect via <code>docker-compose</code> (easier)</h3>
+<p>This is the easier way, you need to be in the same folder where also the <code>docker-compose.yml</code> for that to work:</p>
+<pre><code>docker-compose exec --user drupal drupal bash
+</code></pre><h3 id="connect-via-docker">Connect via <code>docker</code></h3>
+<p>If you want to connect to a container wherever you are right now with your bash:</p>
+<pre><code>docker exec -itu drupal changeme.com.docker.amazee.io bash
+</code></pre><p><em>Replace <code>changeme.com.docker.amazee.io</code> with the docker container you want to connect to</em></p>
+<h3 id="drush-from-your-host-machine">Drush from your host machine</h3>
+<p>To use drush, you can either connect to the container as above, or add a bash function that will connect for you to run your drush command. To add the function, add this to your .bashrc file:</p>
+<p>Bash:</p>
+<pre><code>function ddrush() {
+  args=&quot;&quot;
+  while [ &quot;$1&quot; != &quot;&quot; ]; do
+    args=&quot;${args} &apos;$1&apos;&quot; &amp;&amp; shift
+  done;
+
+  docker-compose exec --user drupal drupal bash -c &quot;source ~/.bash_envvars &amp;&amp; cd \&quot;$AMAZEEIO_WEBROOT\&quot; &amp;&amp; PATH=`pwd`/../vendor/bin:\$PATH &amp;&amp; drush ${args}&quot;
+}
+</code></pre><p>Fish Shell - (<a href="https://fishshell.com/" target="_blank">fishshell.com</a>):</p>
+<pre><code>function ddrush --description &apos;Drush fish (friendly interactive shell) function that detects Amazee.io Docker container. &apos;
+  if test -f (git rev-parse --show-toplevel)/.amazeeio.yml
+    echo &quot;Using Amazee.io Docker Container Drush&quot;
+    command docker-compose exec --user drupal drupal bash -c &quot;source ~/.bash_envvars &amp;&amp; cd \&quot;$AMAZEEIO_WEBROOT\&quot; &amp;&amp; PATH=`pwd`/../vendor/bin:\$PATH &amp;&amp; drush $argv&quot;
+  else
+    command drush $argv
+  end
+end
+
+funcsave drush
+</code></pre><p>When you next start a bash session, you&apos;ll be able to use <code>ddrush</code> just like your normal <code>drush</code> command.</p>
+<h2 id="ssh-agent">SSH Agent</h2>
+<p>Per default your SSH Key at <code>~/.ssh/id_rsa</code> is added to the Docker containers from either <code>cachalot</code> or <code>pygmy</code></p>
+<p>If you need another key, read the documentation of <a href="os_x_cachalot.html"><code>cachalot</code></a> or <a href="linux_pygmy.md"><code>pygmy</code></a> about this.</p>
+<h2 id="update-images">Update Images</h2>
+<p>We constantly make improvements, updates and some other nice things to our container images. Visit <a href="https://changelog.amazee.io" target="_blank">changelog.amazee.io</a> to see if there is something new. If you need to update the Docker Images to the newest version from the Docker Hub run in the same folder as the <code>docker-compose.yml</code>:</p>
+<pre><code>docker-compose pull
+docker-compose up -d
+</code></pre><h3 id="slow-updates">Slow Updates?</h3>
+<p>When pulling a new docker image, the download can get stuck. There is a nice workaround for that: pull a second time :)</p>
+<p>Just open another terminal window at the exact same directory than you run the first <code>docker-compose pull</code> and just run that command again. The download will be unstuck and continue again. If the download is stuck again, cancel the second command with CTRL+c, and run it again (no worries, the first one will continue to run). Repeat that until the download is completely done.</p>
+<h2 id="docker-composeyml-example-files"><code>docker-compose.yml</code> example files</h2>
+<table>
+<thead>
+<tr>
+<th>Example File</th>
+<th>PHP</th>
+<th>Services</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/amazeeio/docker/blob/master/example-docker-compose-drupal.yml" target="_blank"><code>example-docker-compose-drupal.yml</code></a></td>
+<td>5.6/7.0/7.1</td>
+<td>nginx, varnish, mariadb</td>
+<td>Drupal container without provisions for solr. See comments in file for choosing PHP version and customizing for Composer sites</td>
+</tr>
+<tr>
+<td><a href="https://github.com/amazeeio/docker/blob/master/example-docker-compose-drupal-solr.yml" target="_blank"><code>example-docker-compose-drupal-solr.yml</code></a></td>
+<td>5.6/7.0/7.1</td>
+<td>nginx, varnish, mariadb, solr</td>
+<td>Drupal container with provisions for solr. See comments in file for choosing PHP version and customizing for Composer sites</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="windows.html" class="navigation navigation-prev " aria-label="Previous page: Windows">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="connect_to_mysql_from_external.html" class="navigation navigation-next " aria-label="Next page: Connect to MySQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Drupal Docker Containers","level":"1.3.4","depth":2,"next":{"title":"Connect to MySQL","level":"1.3.4.1","depth":3,"path":"local_docker_development/connect_to_mysql_from_external.md","ref":"local_docker_development/connect_to_mysql_from_external.md","articles":[]},"previous":{"title":"Windows","level":"1.3.3","depth":2,"path":"local_docker_development/windows.md","ref":"local_docker_development/windows.md","articles":[]},"dir":"ltr"},"config":{"plugins":["atoc","copy-code-button","heading-anchors","hints","advanced-emoji","-lunr","-search"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"atoc":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"fontsettings":{"theme":"white","family":"sans","size":2},"heading-anchors":{},"highlight":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"docs.amazee.io","links":{"sidebar":{"www.amazee.io":"https://www.amazee.io"}},"gitbook":"*"},"file":{"path":"local_docker_development/drupal_site_containers.md","mtime":"2017-12-06T15:16:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2020-10-27T10:52:49.553Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
