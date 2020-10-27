@@ -1,14 +1,13 @@
 # amazee.io Documentation
+# NOTICE
+This is the legacy documentation of the amazee.io infrastructure. If you are using Lagoon please head over
+to the <a href="https://lagoon.readthedocs.io">Lagoon Documentation</a>
+
+
 
 
 <img src="./Docs_amazeeio.png" width="200" />
 
-# NOTICE
-Builds don't work reliably anymore - build it locally and commit _book to git.
-
-> yarn install
-> node ./node_modules/gitbook-cli/bin/gitbook.js install
-> node ./node_modules/gitbook-cli/bin/gitbook.js build
 
 Welcome to the amazee.io documentation. This site will give you insights into amazee.io and helps you getting your Drupal site online on our infrastructure as fast and easy as possible.
 
@@ -24,9 +23,6 @@ Join us in our Slack channel and we will help you right away: [slack.amazee.io](
 
 Learn more about amazee.io on our website [www.amazee.io](http://www.amazee.io)
 
-## Too many choices? ⚖
-
-We created a thorough comparison of amazee.io and our competitors: [Comparison](./comparison.md)
 
 ## Blog 📖
 
