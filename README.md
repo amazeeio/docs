@@ -1,7 +1,7 @@
 # amazee.io Documentation
 # NOTICE
 This is the legacy documentation of the amazee.io infrastructure. If you are using Lagoon please head over
-to the <a href="https://lagoon.readthedocs.io">Lagoon Documentation</a>
+to the <a href="https://docs.lagoon.sh/lagoon/">Lagoon Documentation</a>
 
 
 

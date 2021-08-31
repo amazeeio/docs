@@ -8,6 +8,6 @@
 
 FROM amazeeio/nginx
 RUN echo "~^changelog.amazee.io   https://github.com/amazeeio/lagoon/releases;" >> /etc/nginx/redirects-map.conf
-RUN echo "~^docs.amazee.io        https://support.amazee.io;" >> /etc/nginx/redirects-map.conf
+RUN echo "~^docs.amazee.io        https://docs.lagoon.sh/lagoon;" >> /etc/nginx/redirects-map.conf
 
 COPY _book /app
